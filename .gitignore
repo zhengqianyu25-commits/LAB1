@@ -1,0 +1,14 @@
+node_modules
+dist
+temp_docx
+temp_extract
+*.mp4
+*.MP4
+*.mov
+*.wav
+*.mp3
+*.MP3
+*.pptx
+*.docx
+*.xlsx
+*.twbx

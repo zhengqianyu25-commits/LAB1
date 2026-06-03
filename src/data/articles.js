@@ -1,0 +1,281 @@
+const articles = [
+  {
+    slug: 'concert-scalping', number: '01', category: 'scarcity',
+    titleEn: 'Sold Out in Seconds',
+    titleZh: 'How scarcity and price caps fuel a billion-dollar ticket resale market.',
+    conceptEn: 'Scarcity & Arbitrage', conceptZh: '稀缺性与套利',
+    readTime: '5 min', section: 'Market',
+    summary: 'When 500,000 fans chase 20,000 seats and tickets sell out in under a minute, a secondary market emerges where prices soar far beyond face value &mdash; and scalpers pocket the difference.',
+
+    body: [
+      'BEIJING &mdash; Tickets for Mandopop star Jay Chou&apos;s 2024 arena tour vanished from official platforms in roughly 30 seconds. Minutes later, identical seats appeared on resale sites at prices ranging from three to eight times face value, according to consumer complaint records reviewed by reporters.',
+      'The phenomenon, repeated across major concerts in China this year, has drawn public anger and government scrutiny. But economists and industry analysts say the scalping problem is not simply a matter of enforcement failure. It is, at root, a pricing problem.',
+      '&ldquo;When you price a good below what the market will bear, someone will capture that gap,&rdquo; said an economics researcher who studies ticket markets. &ldquo;Right now, that someone is rarely the artist or the promoter.&rdquo;',
+      'The mechanism is straightforward. A major concert might draw half a million intending buyers for 20,000 seats. If promoters set face-value prices at 880 to 1,880 yuan &mdash; constrained by fan expectations, brand image, and regulatory pressure &mdash; the true market-clearing price may be several times higher. The difference between these two numbers is the arbitrage opportunity that scalpers exploit.',
+      'Scalpers operate with three advantages, investigators have found: information advantage, knowing exactly when and where tickets drop; technical advantage, deploying automated bots that can complete purchases faster than any human; and channel advantage, maintaining informal relationships with some ticket distribution points.',
+      'Critics argue that promoters are effectively leaving money on the table &mdash; and directing it into an unregulated gray market. &ldquo;If your tickets consistently sell out within seconds and reappear at triple the price, your pricing model is broken,&rdquo; one industry analyst said.',
+      'But charging the full market price carries its own costs. It would turn concerts into exclusive events for the wealthy, shutting out the very fans whose loyalty built the artist&apos;s career. This tension between fairness and efficiency has no easy resolution.',
+      'Several countermeasures are being tested. Real-name registration tied to government ID, facial recognition at venue entrances, dynamic pricing that adjusts in real time, and fan-club presales that prioritize long-term supporters have all been deployed with mixed results. Each solution creates new problems: privacy concerns, longer entry queues, and the risk that dedicated but lower-income fans are priced out entirely.',
+      '&ldquo;The scalper is a symptom, not the disease,&rdquo; the researcher said. &ldquo;The underlying problem is that concert tickets are a scarce resource whose price is artificially suppressed. Until that changes, the secondary market will find a way.&rdquo;',
+    ],
+
+    lensExplanation: 'Ticket scalping is a textbook case of scarcity-driven arbitrage. When supply is fixed and demand far exceeds it, the true market price is higher than the official price. That gap creates room for intermediaries who buy low and sell high &mdash; capturing value that could have gone to artists, venues, or fans.',
+    whoGains: 'Scalpers capture the price spread through information and technical advantages. Some ticket distributors may benefit through informal channel arrangements. Consumers willing and able to pay the premium gain access to sold-out events.',
+    whoPays: 'Regular fans pay far above face value or are shut out entirely. Artists and promoters bear reputational damage and lost revenue. The overall cost of live entertainment rises, disproportionately excluding lower-income audiences.',
+    pullQuote: 'The scalper is a symptom, not the disease.',
+    takeaway: 'The scalping market is a signal: concert tickets are underpriced scarce goods. Stronger enforcement alone won&apos;t fix it. The solution lies in redesigning how tickets are allocated so the value flows to those who create it, not those who extract it.',
+
+    visualStyle: 'ticket-overlap', accentColor: '#B8860B',
+    keyStats: {
+      bigNumber: '30s',
+      bigLabel: 'Time for tickets to sell out',
+      compareA: { value: '¥880', label: 'Official face value' },
+      compareB: { value: '¥5,000', label: 'Resale market price' },
+    },
+    media: {
+      caption: 'MULTIMEDIA',
+      video: { src: '/media/concert-scalping/video.mp4', type: 'video/mp4', caption: 'Video report on concert ticket scalping in China' },
+      audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      images: [
+        { src: '/media/concert-scalping/image1.jpeg', alt: 'Concert crowd at a major arena show' },
+        { src: '/media/concert-scalping/image7.png', alt: 'Price comparison between official and resale ticket prices' },
+        { src: '/media/concert-scalping/image9.png', alt: 'Secondary market price premium data chart' },
+        { src: '/media/concert-scalping/image11.jpeg', alt: 'Fans lining up to purchase tickets' },
+        { src: '/media/concert-scalping/image12.jpeg', alt: 'Supply and demand analysis of the live music market' },
+        { src: '/media/concert-scalping/image13.jpeg', alt: 'Screenshot of a ticket platform sales interface' },
+      ],
+    },
+  },
+  {
+    slug: 'zibo-bbq', number: '02', category: 'attention-economy',
+    titleEn: 'Zibo\'s Barbecue Trend Takes Chinese Youth by Storm',
+    titleZh: 'How a viral food trend turned an industrial city into a national tourism phenomenon.',
+    conceptEn: 'Attention Economy', conceptZh: '注意力经济',
+    readTime: '5 min', section: 'City',
+    summary: 'A hashtag, a vlogger review, and 1.38 billion views later, Zibo transformed from an obscure Shandong industrial hub into China\'s most talked-about destination &mdash; drawing 240,000 visitors during the May Day holiday alone.',
+
+    body: [
+      'ZIBO, China &mdash; On March 5, the hashtag &ldquo;University Students Flock to Zibo for Barbecue&rdquo; trended as the top topic on Douyin. Students from Shandong University had visited Zibo that spring to thank the local government for its hospitality during the pandemic, and videos of their barbecue experiences quickly went viral, igniting enthusiasm among young people across the country.',
+
+      'On April 8, influential vlogger Super B Tai posted a review highlighting Zibo&apos;s barbecue stalls, praising their quality and generous portions. Within three hours, the video received half a million likes and was reposted by the official Douyin account of People&apos;s Daily, China&apos;s leading newspaper. Food bloggers and online influencers soon flocked to the city to document the phenomenon.',
+
+      'Since March, more than 285,000 online posts containing the keywords &ldquo;Zibo&rdquo; and &ldquo;barbecue&rdquo; have been generated, averaging over 10,000 posts per day. Related videos accumulated 1.38 billion views, while Weibo topics were read more than 230 million times. &ldquo;Zibo Barbecue&rdquo; became one of the most widely discussed subjects in the country.',
+
+      'Major state media &mdash; including CCTV, Xinhua News Agency, and People&apos;s Daily &mdash; swiftly reported on the trend. The Director of Zibo&apos;s Tourism and Culture Bureau personally addressed the media, introducing the city&apos;s distinctive barbecue style: grilled meat and vegetables on iron skewers, served with special sauce, chili powder, cumin, and wrapped in a thin pancake with spring onions.',
+
+      'The Zibo government moved quickly to accommodate the surge. On March 31, China Railway Group launched a dedicated barbecue train service from Jinan to Zibo, offering gifts and guidebooks to visitors. Within the city, 21 specialized bus routes were established, covering all popular barbecue areas. When a tourist was overcharged 20 yuan for a pancake originally priced at 6 yuan, the government launched rectification campaigns targeting restaurants, hotels, and transportation fees.',
+
+      'Local residents also joined the effort. Taxi drivers organized free rides for tourists at the train station. Locals handed out delicacies and gave up their own dining and parking spaces. Barbecue shop owners recommended competitors to minimize waiting times.',
+
+      'During the May Day holiday, Zibo hosted a dedicated &ldquo;Barbecue Festival,&rdquo; welcoming 240,000 visitors in five days. Tourism consumption rose 73 percent compared to April, and bookings surged 2,000 percent year-over-year, propelling Zibo to the top of national destination rankings.',
+
+      'The phenomenon demonstrates the raw power of attention economics: a single hashtag and a few viral videos converted public focus into consumer spending, infrastructure investment, and a national city brand virtually overnight. But the challenge remains: how to sustain that enthusiasm and translate a fleeting trend into lasting development. &ldquo;The question isn&apos;t whether you can go viral,&rdquo; a tourism economist said. &ldquo;It&apos;s what you build that outlasts the viral moment.&rdquo;',
+    ],
+
+    lensExplanation: 'The attention economy treats public focus as a scarce, monetizable resource. Zibo&apos;s barbecue phenomenon is a textbook case: a single hashtag and a vlogger review triggered 1.38 billion video views, which converted into tourism spending, government infrastructure investment, and a national city brand &mdash; all within weeks.',
+    whoGains: 'Zibo&apos;s hospitality and transportation sectors saw immediate revenue surges. The city gained a national brand virtually overnight. Content creators and platforms profited from massive engagement. Local businesses experienced unprecedented demand.',
+    whoPays: 'Local residents bore the costs of congestion, rising prices, and strained public services. The government committed substantial resources to manage the influx. Competing destinations lost tourism share. The city faces the risk of overinvestment if the trend fades.',
+    pullQuote: 'The question isn\'t whether you can go viral. It\'s what you build after.',
+    takeaway: 'Zibo proves that a single viral moment can transform a city&apos;s economic trajectory. But attention is rented, not owned. The real question is whether the infrastructure, governance, and brand equity built during the boom can generate returns long after the hashtag stops trending.',
+
+    visualStyle: 'flame-grill', accentColor: '#CC5500',
+    keyStats: {
+      bigNumber: '1.38B',
+      bigLabel: 'Total video views on Douyin',
+      compareA: { value: 'Before', label: 'Unknown industrial city' },
+      compareB: { value: '240K', label: 'May Day holiday visitors' },
+    },
+    media: {
+      caption: 'MULTIMEDIA',
+      video: { src: '/media/zibo-bbq/video.mp4', type: 'video/mp4', caption: 'Video report on the Zibo barbecue tourism phenomenon' },
+      audio: { src: '/media/zibo-bbq/audio.wav', type: 'audio/wav', caption: 'Audio report' },
+      images: [
+        { src: '/media/zibo-bbq/image1.jpeg', alt: 'Zibo barbecue with grilled meat and dipping sauce' },
+        { src: '/media/zibo-bbq/image2.jpeg', alt: 'Tourists enjoying Zibo\'s signature barbecue experience' },
+        { src: '/media/zibo-bbq/image3.jpeg', alt: 'Zibo city street scene during the barbecue boom' },
+      ],
+    },
+  },
+  {
+    slug: 'clothing-sizes', number: '03', category: 'cost-control',
+    titleEn: 'When &ldquo;Large&rdquo; Isn\'t Large Enough',
+    titleZh: 'The economics behind shrinking women\'s clothing sizes.',
+    conceptEn: 'Cost Control & Standards', conceptZh: '成本控制与标准缺失',
+    readTime: '5 min', section: 'Body',
+    summary: 'Across China\'s e-commerce platforms, women\'s clothing sizes are shrinking &mdash; a trend driven by cold cost calculations that shift the burden onto consumers\' bodies and mental health.',
+
+    body: [
+      'SHANGHAI &mdash; Browse any major Chinese e-commerce platform for women&apos;s clothing and the pattern is unmistakable: &ldquo;one size fits all&rdquo; labels dominate listings, &ldquo;S&rdquo; and &ldquo;XS&rdquo; sizes receive promotional pricing, and garments labeled &ldquo;large&rdquo; correspond to what older sizing standards would have called medium. For millions of female shoppers, the experience is the same: clothes that should fit do not.',
+      'Industry analysts say the primary driver is economic. Every additional size a brand produces requires a separate pattern, production run, and inventory management unit. By narrowing the size range and labeling generously, fast-fashion brands and e-commerce white-label sellers cut production costs and accelerate inventory turnover. &ldquo;It&apos;s not about aesthetics first,&rdquo; one supply-chain researcher said. &ldquo;It&apos;s about reducing stock-keeping complexity.&rdquo;',
+      'But cost control alone cannot explain why consumers accept it. A second mechanism is at work: the commodification of thinness. When social media platforms and fashion marketing converge on a single body ideal, &ldquo;fitting into small sizes&rdquo; becomes a status signal. Brands are selling more than fabric &mdash; they are selling inclusion in an aesthetic category.',
+      'Information asymmetry sharpens the problem. Online shoppers cannot try on garments before purchasing. They rely on size charts and model photography &mdash; both of which brands control. Models are selected for extreme thinness. Images are edited. Key measurements are omitted or averaged misleadingly. Consumers discover the mismatch only after delivery, and the time and psychological cost of returns often deters them from seeking redress.',
+      'The externalities are significant. When mainstream brands systematically exclude average body types, body dissatisfaction is amplified at a population level. Eating disorders, cosmetic surgery demand, and weight-loss product consumption all trace partial roots to a clothing market that defines normal bodies as too large. &ldquo;The brand saves a few centimeters of fabric,&rdquo; one consumer rights advocate said. &ldquo;Society picks up the tab in mental health costs.&rdquo;',
+      'China currently lacks enforceable, unified size standards for women&apos;s apparel. Different brands and platforms operate on incompatible sizing systems, depriving consumers of a reliable baseline for comparison. Some countries have moved toward mandatory truthful-size labeling and restrictions on digitally altered advertising images, but regulatory action in China remains limited.',
+      'The dilemma is structural: it is both a business choice and a cultural choice. Demanding more sizes from brands also means demanding broader social acceptance of diverse body types. The economic insight is that shrinking sizes are not a random aesthetic trend &mdash; they are a deliberate cost-shifting mechanism. Brands lower their costs; consumers absorb the anxiety.',
+    ],
+
+    lensExplanation: 'Shrinking women&apos;s clothing sizes can be explained through two economic lenses: cost control, where fewer sizes mean lower production and inventory costs; and information asymmetry, where brands exploit the fact that online shoppers cannot verify fit before purchase, offloading the cost of that uncertainty onto consumers.',
+    whoGains: 'Fast-fashion brands and e-commerce sellers reduce production and inventory costs, boosting margins. The appearance and weight-loss industry benefits from sustained demand driven by body dissatisfaction.',
+    whoPays: 'Consumers whose bodies fall outside the narrowed size range bear the psychological cost of exclusion and additional shopping time. Young women face systematically amplified body anxiety. Society absorbs the cultural cost of narrowing beauty standards.',
+    pullQuote: 'The brand saves a few centimeters of fabric. Society picks up the tab.',
+    takeaway: 'Shrinking clothing sizes are not merely a fashion trend. They are a cost-transfer mechanism: brands save on fabric and inventory, while millions of women pay in chronic body insecurity.',
+
+    visualStyle: 'measuring-tape', accentColor: '#8B5E3C',
+    keyStats: {
+      bigNumber: '65%',
+      bigLabel: 'Of brands now use one-size-fits-all',
+      compareA: { value: 'M (2010)', label: 'Standard size 10 years ago' },
+      compareB: { value: 'M (Today)', label: 'Fits like an XS' },
+    },
+    media: {
+      caption: 'MULTIMEDIA',
+      video: { src: '/media/clothing-sizes/video.mp4', type: 'video/mp4', caption: 'Video report on women\'s clothing size shrinkage' },
+      audio: { src: '/media/clothing-sizes/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      images: [
+        { src: '/media/clothing-sizes/image1.jpeg', alt: 'Side-by-side comparison of women\'s clothing sizes across brands' },
+        { src: '/media/clothing-sizes/image2.jpeg', alt: 'Fast-fashion brand size chart analysis' },
+        { src: '/media/clothing-sizes/image3.jpeg', alt: 'Examples of one-size-fits-all marketing' },
+        { src: '/media/clothing-sizes/image4.jpeg', alt: 'Visual representation of body image and sizing issues' },
+        { src: '/media/clothing-sizes/image5.jpeg', alt: 'Consumer feedback and complaints about sizing' },
+      ],
+    },
+  },
+  {
+    slug: 'child-stars', number: '04', category: 'labor-protection',
+    titleEn: 'After the Slap',
+    titleZh: 'Who protects child performers on China\'s film sets?',
+    conceptEn: 'Labor Protection', conceptZh: '劳动保护与监管成本',
+    readTime: '5 min', section: 'Rights',
+    summary: 'A viral video of a child actor being struck during filming ignited national outrage &mdash; and exposed a regulatory vacuum around underage performers in China\'s entertainment industry.',
+
+    body: [
+      'BEIJING &mdash; In early 2023, a behind-the-scenes clip showing a young actor being struck across the face by an adult performer during a television drama shoot spread rapidly across Chinese social media. The production team later stated the slap was intended to achieve &ldquo;artistic realism,&rdquo; but the public response zeroed in on a deeper question: what protections exist for children who work on film sets?',
+      'Labor economists describe child performers as a textbook case of vulnerable workers. They operate in an industry with acute power imbalances, long and unpredictable hours, and contracts often negotiated by parents who may have financial incentives that do not fully align with their child&apos;s welfare. &ldquo;The child has virtually no bargaining power,&rdquo; one labor rights researcher said. &ldquo;And the adults around them may have competing interests.&rdquo;',
+      'This is a classic principal-agent problem. Parents are legally the child&apos;s guardians, entrusted to act in their best interest. But when parents also function as the child&apos;s manager and primary beneficiary of their income, the alignment can break. The economic incentive to accept a lucrative role can override the protective impulse.',
+      'The regulatory gap is significant. Compared with South Korea, which tightened child-performer labor laws after a series of high-profile cases, or the United States, where California&apos;s Coogan Act mandates that 15 percent of a child performer&apos;s earnings be placed in a protected trust, China has limited enforceable rules governing working hours, mandatory education, psychological support, or independent on-set supervision for minors.',
+      'Establishing such protections imposes real costs: compliance monitoring, dedicated child welfare officers on set, restricted shooting schedules that extend production timelines. &ldquo;The question is who pays for those costs,&rdquo; the researcher said. &ldquo;When the answer is nobody, the protection doesn&apos;t happen.&rdquo;',
+      'There is also a trade-off. Excessively strict regulations could lead production companies to avoid casting children altogether, reducing opportunities for young performers. The challenge is designing rules that protect without excluding.',
+      '&ldquo;Ultimately, it comes down to whether we see child performers as workers or as children first,&rdquo; the researcher said. &ldquo;If they are workers, they deserve labor protections. If they are children first, their education and wellbeing must take priority over commercial interests. Either way, someone has to bear the cost. Right now, that cost falls on the child.&rdquo;',
+    ],
+
+    lensExplanation: 'Child performer rights are a labor-protection problem where the cost of safeguards is unallocated, so it defaults to zero. A principal-agent dynamic further complicates matters: parents, acting as agents, may not always prioritize the child&apos;s best interest when financial incentives conflict with protective duties.',
+    whoGains: 'Production companies and investors benefit from the marketability of child performers. Some families improve their economic circumstances through their child&apos;s income. The entertainment industry as a whole profits from the &ldquo;cuteness premium&rdquo; of young talent.',
+    whoPays: 'Child performers bear the physical and psychological toll of adult working conditions. Their education and normal social development are compromised. Society incurs downstream costs when former child stars face mental health struggles and career-transition difficulties as adults.',
+    pullQuote: 'When nobody is assigned to pay, protection doesn\'t happen.',
+    takeaway: 'Protecting child performers costs money. The question is not whether they should be protected, but who pays &mdash; and without mandatory cost allocation to those best positioned to bear it, child-star protections will remain paper promises.',
+
+    visualStyle: 'spotlight-stage', accentColor: '#6B3FA0',
+    keyStats: {
+      bigNumber: '0',
+      bigLabel: 'Enforceable child-performer protections in China',
+      compareA: { value: 'China', label: 'No mandatory trust or hour limits' },
+      compareB: { value: 'California', label: '15% earnings in protected trust' },
+    },
+    media: {
+      caption: 'MULTIMEDIA',
+      images: [
+        { src: '/media/child-stars/image4.png', alt: 'Child actor on a television drama set' },
+        { src: '/media/child-stars/image7.png', alt: 'Director briefing a young performer between takes' },
+        { src: '/media/child-stars/image9.png', alt: 'Film crew on a production set' },
+        { src: '/media/child-stars/image10.png', alt: 'Discussion forum on minor performer rights' },
+        { src: '/media/child-stars/image11.png', alt: 'Child protection advocacy in entertainment industry' },
+        { src: '/media/child-stars/image12.png', alt: 'Behind-the-scenes footage from a child-star production' },
+      ],
+    },
+  },
+  {
+    slug: 'stray-animals', number: '05', category: 'externalities',
+    titleEn: 'Adopt, Don\'t Shop',
+    titleZh: 'How China\'s animal rescues survive on love and small donations.',
+    conceptEn: 'Externalities & Donations', conceptZh: '外部性与捐赠经济',
+    readTime: '5 min', section: 'Public Good',
+    summary: 'China\'s stray animal population keeps growing while rescue organizations operate in permanent financial precarity &mdash; a sector powered by compassion that reveals the economics of externalities and volunteer labor.',
+
+    body: [
+      'GUANGZHOU &mdash; On any given evening, volunteers with one of the city&apos;s dozens of animal rescue groups sweep through parks and alleys, trapping stray cats and dogs for sterilization, vaccination, and rehoming. The work is grueling, unpaid, and ceaseless. The organizations that coordinate it are almost uniformly underfunded, relying on sporadic WeChat transfers and charity sales to cover monthly costs that can reach tens of thousands of yuan.',
+      'Economists describe stray animals as a negative-externality problem. When a person abandons a pet, the private benefit &mdash; freedom from the cost and responsibility of care &mdash; is fully captured by the individual. But the costs &mdash; public health risks from unvaccinated animals, noise complaints, sanitation issues &mdash; are distributed across the entire community. The person who creates the problem does not pay for its consequences.',
+      'Animal rescue, meanwhile, produces positive externalities. When a rescue group sterilizes and rehomes a stray, the entire neighborhood benefits from reduced disease risk and fewer nuisance animals. But the rescue group cannot charge every beneficiary for this service. Economists classify such services as public goods: everyone gains from them, yet no single person has sufficient incentive to fund them alone.',
+      'This structural mismatch explains the sector&apos;s chronic funding crisis. A typical rescue organization faces fixed monthly costs for rent, veterinary care, food, and sterilization surgeries that can exceed 30,000 yuan. On the revenue side, the same organization depends on unpredictable small donations and volunteer labor. &ldquo;We&apos;re always one bad month away from crisis,&rdquo; one shelter operator said.',
+      'The economics of volunteer labor are particularly striking. Most Chinese rescue groups rely almost entirely on unpaid workers who clean kennels, transport animals, manage adoption listings, and handle administrative tasks in their spare time. Their labor has enormous social value but is entirely invisible in GDP accounting. The true cost of rescue work &mdash; including volunteer hours &mdash; is systematically underestimated.',
+      'Some economists argue the solution requires internalizing the externalities: imposing an abandonment fee on pet purchases, mandating microchip registration, subsidizing sterilization, or requiring pet owners to carry liability insurance. Cities including Guangzhou and Shenzhen have begun experimenting with trap-neuter-return programs, and some municipalities are exploring administrative penalties for abandonment.',
+      '&ldquo;The sector doesn&apos;t lack compassion,&rdquo; the shelter operator said. &ldquo;It lacks a funding model. When the positive externalities of rescue can&apos;t be converted into stable revenue, and the negative externalities of abandonment can&apos;t be traced back to the person responsible, love and small donations can only carry you so far.&rdquo;',
+    ],
+
+    lensExplanation: 'Stray animal rescue sits at the intersection of multiple economic concepts. Abandonment generates negative externalities borne by society, while rescue produces positive externalities that cannot be efficiently charged for. Rescue organizations depend almost entirely on small donations and volunteer labor &mdash; a non-institutionalized funding model that keeps the sector in permanent resource scarcity.',
+    whoGains: 'Entire communities benefit from the public-health and safety gains produced by rescue organizations&apos; sterilization, vaccination, and adoption work. Adopters acquire pets at very low cost. Some platforms and content creators profit from rescue-related engagement and emotional content.',
+    whoPays: 'Volunteers contribute massive amounts of unpaid labor, absorbing physical exhaustion and emotional strain. Rescue leaders operate under persistent financial pressure. Donors collectively contribute significant sums without institutionalized safeguards or sustainability.',
+    pullQuote: 'We\'re always one bad month from crisis.',
+    takeaway: 'Stray animal rescue suffers not from a shortage of compassion but from a shortage of institutional design. When the positive externalities of rescue cannot be converted into stable funding, and the negative externalities of abandonment cannot be traced to perpetrators, a model built on love and spare change has structural limits.',
+
+    visualStyle: 'paw-heart', accentColor: '#C06014',
+    keyStats: {
+      bigNumber: '¥30K',
+      bigLabel: 'Monthly cost to run a rescue shelter',
+      compareA: { value: '¥0', label: 'Cost to abandon a pet' },
+      compareB: { value: '¥30,000', label: 'Monthly rescue operating cost' },
+    },
+    media: {
+      caption: 'MULTIMEDIA',
+      video: { src: '/media/stray-animals/video.mp4', type: 'video/mp4', caption: 'Video report on stray animal rescue operations' },
+      audio: { src: '/media/stray-animals/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      images: [
+        { src: '/media/stray-animals/image5.jpeg', alt: 'A stray cat on a city street' },
+        { src: '/media/stray-animals/image9.png', alt: 'Shelter volunteers caring for rescued dogs' },
+        { src: '/media/stray-animals/image10.png', alt: 'Animal rescue organization promotional material' },
+        { src: '/media/stray-animals/image11.png', alt: 'Adoption event for stray animals' },
+        { src: '/media/stray-animals/image12.png', alt: 'Daily care routine at a rescue shelter' },
+        { src: '/media/stray-animals/image13.png', alt: 'Rescue data and outcomes statistics' },
+        { src: '/media/stray-animals/image16.png', alt: 'Volunteers with rescued animals' },
+      ],
+    },
+  },
+  {
+    slug: 'student-films', number: '06', category: 'creator-economy',
+    titleEn: 'A Horror Film in a Dark Dorm',
+    titleZh: 'Why student creators go viral online but get average grades in class.',
+    conceptEn: 'Creator Economy', conceptZh: '创作者经济',
+    readTime: '5 min', section: 'Creator',
+    summary: 'A three-minute short filmed with a phone and a desk lamp earned millions of Bilibili views but a middling class grade. The disconnect reveals two systems for valuing creative work.',
+
+    body: [
+      'BEIJING &mdash; Using a smartphone, a desk lamp, and a dormitory corridor left dark by a water outage, a student at the Communication University of China produced a three-minute horror short that surpassed one million views on the video platform Bilibili. The production cost was near zero. The cast was the filmmaker&apos;s roommates. The editing software was free.',
+      'Online commenters praised its pacing, shot composition, and atmosphere. But in the classroom, the same film received only a moderate grade. The disconnect is not a story about unfair grading &mdash; it is a story about two fundamentally different systems for valuing creative work, each with its own logic.',
+      'On content platforms, value is measured in attention: view counts, likes, shares, and comment density. Platform algorithms reward high engagement and completion rates, favoring content that grabs viewers quickly and provokes an emotional response. Under this system, a student filmmaker&apos;s low budget is not a liability but an advantage &mdash; it signals authenticity and resourcefulness, qualities that algorithm-driven audiences reward.',
+      'Academic evaluation measures a different set of values: narrative coherence, technical proficiency, thematic depth, and scholarly rigor. These criteria align more closely with traditional film-industry standards and pedagogical goals. They reward work that demonstrates systematic training &mdash; a &ldquo;standard product,&rdquo; in economic terms.',
+      '&ldquo;Both systems are internally consistent,&rdquo; a media studies researcher said. &ldquo;The problem arises when a creator tries to satisfy both simultaneously and discovers they reward different things.&rdquo;',
+      'A deeper structural issue is the winner-take-all dynamic of platform economics. The volume of content uploaded to short-video and user-generated-content platforms grows exponentially, while total user attention is relatively fixed. The result is a superstar effect: a tiny fraction of creators capture the vast majority of views, while most receive almost nothing for their labor &mdash; including work that might score highly in an academic evaluation but lacks &ldquo;internet appeal.&rdquo;',
+      'For student creators, the temptation to optimize for attention is powerful. Platform metrics offer immediate, quantifiable validation that course grades cannot match. But the algorithms and audience tastes that confer virality shift rapidly, and chasing them can come at the expense of the narrative craft and technical foundation that constitute a creator&apos;s long-term competitive advantage.',
+      '&ldquo;The tension isn&apos;t about which system is right,&rdquo; the researcher said. &ldquo;It&apos;s about recognizing that they are different. Students who understand both &mdash; and can navigate the gap between them &mdash; are the ones who build sustainable creative careers.&rdquo;',
+    ],
+
+    lensExplanation: 'The creator economy empowers individuals to produce content at near-zero cost and distribute it through platforms where attention converts into reputation and opportunity. But platform algorithms optimize for engagement, not craft, while academic evaluation rewards systematic training. The winner-take-all structure means most creators&apos; labor generates no economic return.',
+    whoGains: 'Platforms benefit from a vast supply of free student content that fills their libraries and generates advertising revenue. The small fraction of creators who go viral gain industry attention and career opportunities. Audiences consume creative work at zero monetary cost.',
+    whoPays: 'The majority of student creators invest substantial time and creativity with little economic or academic return. Chasing viral appeal can erode systematic skill development. Algorithmic unpredictability generates persistent psychological pressure.',
+    pullQuote: 'The internet rewards attention. The classroom rewards craft.',
+    takeaway: 'Student creators operate not in a simple meritocracy of talent but at the intersection of two evaluation systems. The internet rewards attention; the classroom rewards craft. Those who learn to navigate both &mdash; without being captured by either &mdash; are the real winners of the creator economy.',
+
+    visualStyle: 'camera-lens', accentColor: '#2C6E8F',
+    keyStats: {
+      bigNumber: '¥0',
+      bigLabel: 'Production budget of the viral short',
+      compareA: { value: '1M+', label: 'Bilibili views' },
+      compareB: { value: 'B', label: 'Course grade received' },
+    },
+    media: {
+      caption: 'MULTIMEDIA',
+      video: { src: '/media/student-films/video.mov', type: 'video/quicktime', caption: 'Original student horror short film' },
+      audio: { src: '/media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      images: [
+        { src: '/media/student-films/image1.png', alt: 'Student film crew on location' },
+        { src: '/media/student-films/image24.png', alt: 'Post-production editing session' },
+        { src: '/media/student-films/image25.png', alt: 'Student director at the monitor' },
+        { src: '/media/student-films/image39.png', alt: 'Bilibili playback interface for student film' },
+        { src: '/media/student-films/image41.png', alt: 'Comparison of academic grading criteria and online feedback' },
+        { src: '/media/student-films/image42.png', alt: 'Low-budget set design and lighting setup' },
+        { src: '/media/student-films/image54.png', alt: 'Behind-the-scenes of student production' },
+      ],
+    },
+  },
+];
+
+export default articles;
