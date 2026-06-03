@@ -175,6 +175,21 @@ html.dark .dark-bright { color: #FFFFFF !important; }
 html.dark .dark-bright-gold { color: #E5B800 !important; }
 html.dark .dark-bright-card { background: rgba(30,30,30,0.9) !important; border-color: #444 !important; }
 
+/* Article pages: all text bright in dark mode */
+html.dark .article-width h1,
+html.dark .article-width h2,
+html.dark .article-width h3,
+html.dark .article-width h4,
+html.dark .article-width p,
+html.dark .article-width span,
+html.dark .article-width a[class*="accent-link"],
+html.dark .article-width label { color: #FFFFFF !important; }
+html.dark .article-width .section-label,
+html.dark .article-width span[class*="section-label"] { color: #E5B800 !important; }
+html.dark .article-width span[class*="opacity"],
+html.dark .article-width .opacity-50,
+html.dark .article-width .opacity-40 { color: #CCCCCC !important; }
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
