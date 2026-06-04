@@ -81,6 +81,7 @@ const articles = [
   {
     slug: 'zibo-bbq', number: '02', category: 'attention-economy',
     titleEn: 'Zibo Grills Its Way to Viral Fame',
+    audioTitle: "Beyond the Skewers: The Self-Media Engine Behind Zibo's Tourism Boom",
     titleZh: 'How digital attention converted into real tourism dollars — and whether the city can sustain the heat.',
     conceptEn: 'Attention Economy', conceptZh: '注意力经济',
     readTime: '5 min', section: 'City',
