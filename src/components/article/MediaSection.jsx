@@ -69,7 +69,17 @@ export default function MediaSection({ media }) {
 
         {video && (
           <div className="mb-8 rounded-xl overflow-hidden border border-paper-border">
-            {video.type === 'video/quicktime' ? (
+            {video.type === 'youtube' ? (
+              <div className="aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.src}`}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={video.caption || 'YouTube video'}
+                />
+              </div>
+            ) : video.type === 'video/quicktime' ? (
               <div className="p-6 text-center" style={{ background: 'var(--color-bg-secondary)' }}>
                 <p className="text-sm font-semibold mb-2" style={{ color: 'var(--color-text)' }}>{video.caption || 'Video'}</p>
                 <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
@@ -82,7 +92,7 @@ export default function MediaSection({ media }) {
                 Your browser does not support video playback.
               </video>
             )}
-            {video.caption && video.type !== 'video/quicktime' && (
+            {video.caption && video.type !== 'video/quicktime' && video.type !== 'youtube' && (
               <p className="px-4 py-2 text-xs" style={{ color: 'var(--color-text-muted)', background: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)' }}>{video.caption}</p>
             )}
           </div>
