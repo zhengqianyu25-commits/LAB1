@@ -2,6 +2,29 @@ import { useParams, Link } from 'react-router-dom';
 import articles from '../data/articles';
 
 const contentMap = {
+  'labor-protection': {
+    title: 'Labor Protection: Experiencing the Shadow Behind the Glory',
+    subtitle: 'What is Labor Protection?',
+    intro: 'Labor protection means setting clear rules so that the cost of work is not shifted onto vulnerable workers. For child actors, it includes limits on shooting hours, protection from physical harm, regular meals and rest, schooling time, and psychological safety.',
+    quote: 'A child actor is a performer on screen, but still a child behind the camera.',
+    sections: [
+      {
+        text: '',
+      },
+      {
+        game: 'https://www.66rpg.com/game/1641073',
+        source: 'Source: 66RPG interactive game',
+        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent. To understand what child actors face, readers can enter Oscar\'s day and make the next choice for themselves...',
+      },
+      {
+        tableau: 'https://public.tableau.com/views/story_16881121764440/1_1?:language=zh-CN&:display_count=n&:origin=viz_share_link',
+        source: 'Source: UNICEF Global Databases, last updated May 2022; visualized through Tableau Public',
+        text: 'The chart represents the global child labor rate based on UNICEF\'s data in May 2022. Child labor is a social issue of global concern. Despite many countries having legislated against child labor practices, there are still numerous children forced into dangerous work. These children are deprived of a normal childhood and the right to education, significantly affecting their physical and mental well-being, as well as their future development.',
+      },
+    ],
+    conclusion: 'This data page connects the child actor story to a broader labor-protection question. Child actors are not identical to children in hazardous labor, but both cases ask how adults, institutions and industries should prevent children from carrying risks they cannot fully understand or negotiate. The interactive game makes that question experiential, while the global map reminds readers that children\'s work and protection remain urgent public issues.',
+    relatedArticle: 'child-stars',
+  },
   'attention-economy': {
     title: 'Attention Economy: How Zibo Turned Hashtags into Hard Cash',
     subtitle: 'What is Attention Economy?',
@@ -72,7 +95,11 @@ export default function LabNotePage() {
           {data.sections.map((s, i) => (
             <div key={i}>
               <div className="border overflow-hidden rounded-sm mb-3" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
-                {s.tableau ? (
+                {s.game ? (
+                  <div className="aspect-[16/10]">
+                    <iframe src={s.game} className="w-full h-full border-0" allowFullScreen />
+                  </div>
+                ) : s.tableau ? (
                   <div className="aspect-[4/3]">
                     <iframe src={s.tableau} className="w-full h-full border-0" allowFullScreen />
                   </div>

@@ -21,6 +21,13 @@ export function AudioProvider({ children }) {
   useEffect(() => { localStorage.setItem('nf_liked', JSON.stringify(liked)); }, [liked]);
 
   useEffect(() => {
+    // Pause audio when any video on the page starts playing
+    const onVideoPlay = () => { if (audioRef.current && !audioRef.current.paused) { audioRef.current.pause(); setPlaying(false); } };
+    document.addEventListener('play', onVideoPlay, true);
+    return () => document.removeEventListener('play', onVideoPlay, true);
+  }, []);
+
+  useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
     const onTime = () => { setCurrentTime(audio.currentTime); setDuration(audio.duration || 0); };
@@ -65,6 +72,8 @@ export function AudioProvider({ children }) {
     if (!ep) return;
     const audio = audioRef.current;
     if (!audio) return;
+    // Pause any playing video on the page
+    document.querySelectorAll('video').forEach(v => { if (!v.paused) v.pause(); });
     if (episode?.number === ep.number) {
       if (audio.paused) { audio.play().catch(() => {}); } else { audio.pause(); }
       return;
