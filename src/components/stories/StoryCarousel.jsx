@@ -32,7 +32,7 @@ export default function StoryCarousel({ articles }) {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m9 18 6-6-6-6"/></svg>
         </button>
 
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2" style={{ bottom: 'calc(14% + 8px)' }}>
           {articles.map((_, i) => (
             <button key={i} onClick={(e) => { e.preventDefault(); setCurrent(i); }}
               className="rounded-full transition-all duration-300"
