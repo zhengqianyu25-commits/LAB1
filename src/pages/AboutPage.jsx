@@ -1,12 +1,5 @@
 import SectionTitle from '../components/common/SectionTitle';
 
-const photos = [
-  { src: '/media/lab-notes/scarcity-3.png', caption: 'The dissipation of the pandemic has brought music, shouting and agitation back this summer.' },
-  { src: '/media/lab-notes/scarcity-4.png', caption: 'However, a large number of fans who did not have tickets were plagued by high-priced scalper tickets.' },
-  { src: '/media/lab-notes/scarcity-5.png', caption: 'Many fans believed that scalpers were the key to making it so difficult to grab tickets, so they began to shout slogans to declare war on scalpers. Outside the concert venue, fans are still in the midst of fierce quarrels with scalpers, and the scene security is also in chaos.' },
-  { src: '/media/lab-notes/scarcity-6.png', caption: 'Fans without tickets listened to the song and cheered outside the Bird\'s Nest, where display screens and lights could be seen.' },
-];
-
 export default function AboutPage() {
   return (
     <div className="page-enter">
@@ -85,18 +78,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Photo gallery */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <h2 className="text-lg font-display font-medium mb-6" style={{ color: 'var(--color-text)' }}>Photo Journal</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {photos.map((p, i) => (
-              <div key={i} className="border overflow-hidden rounded-sm" style={{ borderColor: 'var(--color-border)' }}>
-                <img src={p.src} alt="" className="w-full h-64 object-cover" loading="lazy" />
-                <p className="px-4 py-3 text-xs leading-relaxed" style={{ color: 'var(--color-text-muted)', background: 'var(--color-bg-secondary)' }}>{p.caption}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
     </div>
   );
