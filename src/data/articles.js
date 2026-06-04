@@ -348,6 +348,7 @@ const articles = [
   {
     slug: 'student-films', number: '06', category: 'creator-economy',
     titleEn: '79-Point Horror Film Exposes Signal Failure Between Grade and Market',
+    audioTitle: 'Driven by fun: A student horror filmmaker bets on niche audience',
     titleZh: "A student's viral horror film scored 79 from a romance-preferring professor. The gap exposes a signal failure between classroom grading and real market demand.",
     conceptEn: 'Creator Economy', conceptZh: '创作者经济',
     readTime: '5 min', section: 'Creator',
