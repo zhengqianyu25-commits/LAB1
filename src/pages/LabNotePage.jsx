@@ -14,7 +14,7 @@ const contentMap = {
         text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
       },
       {
-        tableau: 'https://public.tableau.com/views/Otherdatas/1?:showVizHome=no&:embed=true',
+        tableau: 'https://public.tableau.com/views/Otherdatas/2?:showVizHome=no&:embed=true',
         source: 'Source: Guojí · Feigua Data',
         text: 'As search interest rose, so did the number of short videos. User-generated content supply jumped from almost zero to 10,000 videos on April 29 alone. This flood of free advertising lowered Zibo\'s customer acquisition cost to near zero. In attention economy terms, creators acted as unpaid brand ambassadors, amplifying the city\'s reach exponentially.',
       },
@@ -78,7 +78,7 @@ export default function LabNotePage() {
                     <iframe src={s.tableau} className="w-full h-full border-0" allowFullScreen />
                   </div>
                 ) : s.image ? (
-                  <div className="max-w-md mx-auto">
+                  <div className="max-w-[280px] mx-auto">
                     <img src={s.image} alt="" className="w-full h-auto" loading="lazy" />
                   </div>
                 ) : null}
