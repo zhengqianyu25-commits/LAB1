@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAudio, audioArticles } from '../../context/AudioContext';
 
 export default function MiniPlayer() {
-  const { episode, playing, currentTime, duration, play, pause, stop, seek, prev, next, liked, toggleLike, addToQueue, queue } = useAudio();
+  const { episode, playing, currentTime, duration, play, pause, stop, seek, prev, next, liked, toggleLike, addToQueue, removeFromQueue, queue } = useAudio();
   const navigate = useNavigate();
   const [showQueue, setShowQueue] = useState(false);
   if (!episode) return null;
@@ -32,10 +32,6 @@ export default function MiniPlayer() {
           />
         </div>
         <div className="container-main flex items-center gap-3 py-1.5">
-          <button onClick={stop} className="w-5 h-5 shrink-0 flex items-center justify-center rounded-full opacity-30 hover:opacity-60 transition-opacity" style={{ color: 'var(--color-text-muted)' }} aria-label="Close">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
-
           <div
             className="flex items-center gap-3 flex-1 min-w-0 cursor-pointer"
             onClick={() => navigate(`/listen/${idx}`)}
@@ -43,8 +39,8 @@ export default function MiniPlayer() {
             <div className="w-10 h-10 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
               {img && <img src={img} alt="" className="w-full h-full object-cover" />}
             </div>
-            <div className="min-w-0">
-              <p className="mini-text text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
+            <div className="min-w-0 overflow-hidden">
+              <p className="mini-text text-xs font-display font-medium whitespace-nowrap" style={{ color: 'var(--color-text)', animation: episode.titleEn && episode.titleEn.length > 30 ? 'marquee 12s linear infinite' : 'none' }}>{episode.titleEn}</p>
               <p className="mini-sub text-[0.55rem] truncate" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</p>
             </div>
           </div>
@@ -80,6 +76,10 @@ export default function MiniPlayer() {
               <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
             </svg>
           </button>
+
+          <button onClick={stop} className="w-5 h-5 shrink-0 flex items-center justify-center rounded-full opacity-30 hover:opacity-60 transition-opacity" style={{ color: 'var(--color-text-muted)' }} aria-label="Close">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
         </div>
       </div>
 
@@ -100,8 +100,9 @@ export default function MiniPlayer() {
                   if (found >= 0) { play(found); setShowQueue(false); }
                 }}
               >
-                <span className="text-[0.55rem] font-bold opacity-30 w-5" style={{ color: 'var(--color-text-muted)' }}>{q.number}</span>
+                <span className="text-[0.55rem] font-bold opacity-30 w-5 shrink-0" style={{ color: 'var(--color-text-muted)' }}>{q.number}</span>
                 <span className="text-xs truncate flex-1" style={{ color: episode.slug === q.slug ? 'var(--color-accent)' : 'var(--color-text)' }}>{q.title}</span>
+                <button onClick={(e) => { e.stopPropagation(); removeFromQueue(q.slug); }} className="opacity-0 group-hover:opacity-40 hover:!opacity-100 shrink-0 text-lg leading-none" style={{ color: 'var(--color-warn)' }}>&times;</button>
               </div>
             ))
           )}

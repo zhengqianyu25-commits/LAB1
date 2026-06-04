@@ -239,6 +239,13 @@ html.dark .article-width .opacity-40 { color: #CCCCCC !important; }
   animation: slideDown 0.4s ease-out;
 }
 
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+  80%  { transform: translateX(calc(-100% + 200px)); }
+  100% { transform: translateX(calc(-100% + 200px)); }
+}
+
 /* Mobile optimizations */
 @media (max-width: 767px) {
   html { font-size: 15px; }

@@ -26,12 +26,23 @@ export function AudioProvider({ children }) {
     const onTime = () => { setCurrentTime(audio.currentTime); setDuration(audio.duration || 0); };
     const onEnded = () => {
       setPlaying(false);
-      const curIdx = episode ? audioArticles.indexOf(episode) : -1;
-      const next = (curIdx + 1) % audioArticles.length;
-      const ep = audioArticles[next];
-      setEpisode(ep);
-      audio.src = ep.media.audio.src;
-      setTimeout(() => audio.play().catch(() => {}), 500);
+      // If queue has items, play next in queue
+      const q = JSON.parse(localStorage.getItem('nf_queue') || '[]');
+      const curSlug = episode?.slug;
+      const curQIdx = q.findIndex(e => e.slug === curSlug);
+      if (curQIdx >= 0 && curQIdx < q.length - 1) {
+        const nextQ = q[curQIdx + 1];
+        const nextEp = audioArticles.find(a => a.slug === nextQ.slug);
+        if (nextEp) {
+          setEpisode(nextEp);
+          audio.src = nextEp.media.audio.src;
+          setTimeout(() => audio.play().catch(() => {}), 500);
+          return;
+        }
+      }
+      // Otherwise stop and close
+      setEpisode(null);
+      setPlaying(false);
     };
     const onPlay = () => setPlaying(true);
     const onPause = () => setPlaying(false);
@@ -95,8 +106,12 @@ export function AudioProvider({ children }) {
     });
   };
 
+  const removeFromQueue = (slug) => {
+    setQueue(q => q.filter(e => e.slug !== slug));
+  };
+
   return (
-    <AudioCtx.Provider value={{ episode, playing, currentTime, duration, play, pause, stop, seek, prev, next, liked: isLiked, toggleLike, queue, addToQueue, playAll }}>
+    <AudioCtx.Provider value={{ episode, playing, currentTime, duration, play, pause, stop, seek, prev, next, liked: isLiked, toggleLike, queue, addToQueue, removeFromQueue, playAll }}>
       <audio ref={audioRef} id="global-audio" className="hidden" />
       {children}
     </AudioCtx.Provider>
