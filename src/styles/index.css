@@ -181,6 +181,12 @@ html.dark .dark-bright { color: #FFFFFF !important; }
 html.dark .dark-bright-gold { color: #E5B800 !important; }
 html.dark .dark-bright-card { background: rgba(30,30,30,0.9) !important; border-color: #444 !important; }
 
+/* Carousel overlay */
+.carousel-overlay { background: rgba(255,255,255,0.7); }
+.carousel-title { color: #1A1A1A; }
+html.dark .carousel-overlay { background: rgba(0,0,0,0.6); }
+html.dark .carousel-title { color: #FFFFFF; }
+
 /* Article pages: all text bright in dark mode */
 html.dark .article-width h1,
 html.dark .article-width h2,
