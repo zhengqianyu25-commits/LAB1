@@ -150,7 +150,8 @@ const articles = [
   },
   {
     slug: 'clothing-sizes', number: '03', category: 'cost-control',
-    titleEn: 'Chinese Actress Exposes Shrinking Women\'s Clothing Sizes – A Coordination Failure',
+    titleEn: 'I Once Doubted I Was Gaining Weight',
+    audioTitle: 'Chinese Actress Exposes Shrinking Women\'s Clothing Sizes – A Coordination Failure',
     titleZh: '中国女星吐槽女装尺码越做越小，为何无人能独自回头？',
     conceptEn: 'Coordination Failure', conceptZh: '协调失灵',
     readTime: '5 min', section: 'Body',
