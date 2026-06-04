@@ -7,6 +7,7 @@ import LabNotesPage from './pages/LabNotesPage';
 import AboutPage from './pages/AboutPage';
 import CreditsPage from './pages/CreditsPage';
 import PodcastPage from './pages/PodcastPage';
+import ListenPage from './pages/ListenPage';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="credits" element={<CreditsPage />} />
           <Route path="frequency" element={<PodcastPage />} />
         </Route>
+        <Route path="listen/:index" element={<ListenPage />} />
       </Routes>
     </HashRouter>
   );
