@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import ThemeToggle from '../common/ThemeToggle';
 import SearchModal from '../common/SearchModal';
+import { useFontSize } from '../../context/FontContext';
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -19,6 +20,7 @@ const navStyle = (isActive) => ({
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const { cycle, label } = useFontSize();
 
   return (
     <>
@@ -46,6 +48,7 @@ export default function Header() {
               </svg>
             </button>
 
+            <button onClick={cycle} className="text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full border transition-colors hover:text-[var(--color-accent)]" style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }} aria-label="Font size" title="Font size">{label}</button>
             <ThemeToggle />
 
             <button onClick={() => setMenuOpen(true)} className="md:hidden p-1" aria-label="Menu">
