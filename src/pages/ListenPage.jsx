@@ -101,24 +101,8 @@ export default function ListenPage() {
         )}
       </div>
 
-      {/* Bottom bar */}
-      <div className="border-t px-4 py-4 sticky bottom-0 z-10" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
-        <div className="max-w-xl mx-auto flex items-center justify-center gap-6">
-          <button onClick={prevEpisode} className="listen-nav p-2 opacity-50 hover:opacity-100 transition-opacity" aria-label="Previous" style={{ color: 'var(--color-text)' }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m19 20 1 0V4l-1 0v16zM4.5 12l10-6v12l-10-6z"/></svg>
-          </button>
-          <button onClick={() => playing ? pause() : play(idx)} className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110" style={{ background: 'var(--color-accent)' }} aria-label={playing ? 'Pause' : 'Play'}>
-            {playing ? (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
-            ) : (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
-            )}
-          </button>
-          <button onClick={nextEpisode} className="listen-nav p-2 opacity-50 hover:opacity-100 transition-opacity" aria-label="Next" style={{ color: 'var(--color-text)' }}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 4h1v16H5V4zm14.5 8-10 6V6l10 6z"/></svg>
-          </button>
-        </div>
-      </div>
+      {/* Spacer for MiniPlayer */}
+      <div className="h-16" />
     </div>
   );
 }

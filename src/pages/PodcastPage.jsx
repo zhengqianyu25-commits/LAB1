@@ -92,9 +92,6 @@ export default function PodcastPage() {
               <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
               Play All
             </button>
-            <span className="text-[0.6rem] font-semibold tracking-[0.1em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>
-              {audioArticles.length} episodes
-            </span>
           </div>
           {audioArticles.map((a, i) => (
             <EpisodeItem key={a.slug} article={a} index={i} />

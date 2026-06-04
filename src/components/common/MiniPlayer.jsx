@@ -24,8 +24,8 @@ export default function MiniPlayer() {
               {img && <img src={img} alt="" className="w-full h-full object-cover" />}
             </div>
             <div className="min-w-0">
-              <p className="text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
-              <p className="text-[0.55rem] opacity-40 truncate" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</p>
+              <p className="mini-text text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
+              <p className="mini-sub text-[0.55rem] opacity-40 truncate" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</p>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ export default function MiniPlayer() {
               onClick={() => { play(i); setShowQueue(false); }}
             >
               <span className="text-[0.55rem] font-bold opacity-30 w-5" style={{ color: 'var(--color-text-muted)' }}>{a.number}</span>
-              <span className="text-xs truncate flex-1" style={{ color: episode.number === a.number ? 'var(--color-accent)' : 'var(--color-text)' }}>{a.titleEn}</span>
+              <span className="queue-row text-xs truncate flex-1" style={{ color: episode.number === a.number ? 'var(--color-accent)' : 'var(--color-text)' }}>{a.titleEn}</span>
               {queue.find(q => q.number === a.number) && (
                 <span className="text-[0.5rem] opacity-30" style={{ color: 'var(--color-text-muted)' }}>✓</span>
               )}
