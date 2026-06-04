@@ -21,9 +21,9 @@ export default function StoryCarousel({ articles }) {
         <Link to={`/article/${a.slug}`}>
           <img src={a.media?.images?.[0]?.src} alt={a.titleEn} className="w-full h-full object-cover" />
           <img src={a.media?.images?.[0]?.src} alt={a.titleEn} className="w-full h-full object-cover" />
-          <div className="absolute bottom-0 left-0 right-0 h-[14%] bg-gradient-to-t from-black/50 to-transparent flex items-center justify-between px-6 md:px-10">
+          <div className="absolute bottom-0 left-0 right-0 h-[18%] bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end px-6 md:px-10 pb-1">
             <h2 className="text-sm md:text-lg font-display font-medium text-white leading-tight max-w-xl">{a.titleEn}</h2>
-            <div className="flex items-center gap-1.5 shrink-0 ml-4">
+            <div className="flex items-center justify-center gap-1.5 mt-2 mb-1">
               {articles.map((_, i) => (
                 <span key={i}
                   className="rounded-full transition-all duration-300"
