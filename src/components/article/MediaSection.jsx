@@ -40,17 +40,34 @@ export default function MediaSection({ media }) {
 
         {video && (
           <div className="mb-8 rounded-xl overflow-hidden border border-paper-border">
-            <video
-              controls
-              className="w-full"
-              poster={video.poster}
-              preload="metadata"
-            >
-              <source src={video.src} type={video.type || 'video/mp4'} />
-              Your browser does not support video playback.
-            </video>
-            {video.caption && (
-              <p className="px-4 py-2 text-xs text-paper-text-muted bg-paper-bg-secondary border-t border-paper-border">
+            {video.type === 'video/quicktime' ? (
+              <div className="p-6 text-center" style={{ background: 'var(--color-bg-secondary)' }}>
+                <p className="text-sm font-semibold mb-2" style={{ color: 'var(--color-text)' }}>
+                  {video.caption || 'Video'}
+                </p>
+                <p className="text-xs" style={{ color: 'var(--color-text-muted)' }}>
+                  This video is in QuickTime (.mov) format. {' '}
+                  <a href={video.src} download className="underline" style={{ color: 'var(--color-accent)' }}>
+                    Click here to download
+                  </a>{' '}
+                  and open with a media player.
+                </p>
+              </div>
+            ) : (
+              <video
+                controls
+                playsInline
+                webkit-playsinline="true"
+                className="w-full"
+                poster={video.poster}
+                preload="none"
+              >
+                <source src={video.src} type={video.type || 'video/mp4'} />
+                Your browser does not support video playback.
+              </video>
+            )}
+            {video.caption && video.type !== 'video/quicktime' && (
+              <p className="px-4 py-2 text-xs" style={{ color: 'var(--color-text-muted)', background: 'var(--color-bg-secondary)', borderTop: '1px solid var(--color-border)' }}>
                 {video.caption}
               </p>
             )}
