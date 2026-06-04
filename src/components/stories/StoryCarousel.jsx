@@ -20,6 +20,9 @@ export default function StoryCarousel({ articles }) {
       <div className="relative aspect-[2/1] md:aspect-[2.6/1] overflow-hidden">
         <Link to={`/article/${a.slug}`}>
           <img src={a.media?.images?.[0]?.src} alt={a.titleEn} className="w-full h-full object-cover" />
+          <div className="absolute bottom-0 left-0 right-0 h-[14%] bg-gradient-to-t from-black/50 to-transparent flex items-end px-6 md:px-10 pb-3 md:pb-4">
+            <h2 className="text-sm md:text-lg font-display font-medium text-white leading-tight max-w-xl">{a.titleEn}</h2>
+          </div>
         </Link>
 
         <button onClick={prev} className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/25 transition-colors text-white" aria-label="Previous">
