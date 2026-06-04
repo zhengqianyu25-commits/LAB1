@@ -91,8 +91,7 @@ export default function ListenPage() {
               }`}
             >
               <p
-                className={isActive ? 'text-lg md:text-xl font-medium' : 'text-sm md:text-base'}
-                
+                className={`${isActive ? 'text-lg md:text-xl font-medium' : 'text-sm md:text-base'} ${isActive ? 'lyric-active' : 'lyric-line'}`}
               >
                 {en}
               </p>
