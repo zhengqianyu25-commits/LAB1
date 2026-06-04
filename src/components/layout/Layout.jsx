@@ -30,7 +30,7 @@ export default function Layout() {
       const listenArticle = articles.filter(a => a.media?.audio)[idx];
       setBgImage(listenArticle?.media?.images?.[0]?.src || '');
     } else if (isHome) {
-      setBgImage('media/zibo-bbq/image3.jpeg');
+      setBgImage(articles[0]?.media?.images?.[0]?.src || '');
     } else {
       setBgImage(articles[0]?.media?.images?.[0]?.src || '');
     }

@@ -114,12 +114,12 @@ export default function LabNotePage() {
       <section className="container-main pt-12 md:pt-16 pb-8">
         <div className="border-b pb-8 mb-8" style={{ borderColor: 'var(--color-border)' }}>
           <span className="section-label mb-3 block">Lab Note</span>
-          <h1 className="text-2xl md:text-4xl font-display font-medium leading-tight mb-4" style={{ color: 'var(--color-text)' }}>{data.title}</h1>
+          <h1 className="lab-note-title text-2xl md:text-4xl font-display font-medium leading-tight mb-4" style={{ color: 'var(--color-text)' }}>{data.title}</h1>
           <div className="p-6 border-l-[3px] mb-6" style={{ borderColor: 'var(--color-accent)', background: 'var(--color-accent-dim)' }}>
-            <h2 className="text-lg md:text-xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>{data.subtitle}</h2>
-            <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{data.intro}</p>
+            <h2 className="lab-note-title text-lg md:text-xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>{data.subtitle}</h2>
+            <p className="lab-note-text text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{data.intro}</p>
           </div>
-          <p className="text-base md:text-lg font-display italic text-center max-w-2xl mx-auto" style={{ color: 'var(--color-accent)' }}>&ldquo;{data.quote}&rdquo;</p>
+          <p className="lab-note-title text-base md:text-lg font-display italic text-center max-w-2xl mx-auto" style={{ color: 'var(--color-accent)' }}>&ldquo;{data.quote}&rdquo;</p>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-12">
@@ -141,12 +141,12 @@ export default function LabNotePage() {
                 ) : null}
               </div>
               {s.source && <p className="text-[0.55rem] font-semibold tracking-wider uppercase opacity-40 mb-2" style={{ color: 'var(--color-text-muted)' }}>{s.source}</p>}
-              {s.text && <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{s.text}</p>}
+              {s.text && <p className="lab-note-text text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{s.text}</p>}
             </div>
           ))}
 
           <div className="border-t pt-8" style={{ borderColor: 'var(--color-border)' }}>
-            <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{data.conclusion}</p>
+            <p className="lab-note-text text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{data.conclusion}</p>
           </div>
 
           <div className="flex items-center justify-between pt-8 border-t" style={{ borderColor: 'var(--color-border)' }}>

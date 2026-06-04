@@ -186,6 +186,10 @@ html.dark .listen-nav { color: #FFFFFF !important; }
 html.dark .mini-text { color: #EEEEEE !important; }
 html.dark .mini-sub { color: #BBBBBB !important; }
 html.dark .queue-row { color: #DDDDDD !important; }
+html.dark .lab-note-text { color: #CCCCCC !important; }
+html.dark .lab-note-title { color: #FFFFFF !important; }
+html.dark .about-text { color: #CCCCCC !important; }
+html.dark .about-heading { color: #FFFFFF !important; }
 html.dark .dark-bright-gold { color: #E5B800 !important; }
 html.dark .dark-bright-card { background: rgba(30,30,30,0.9) !important; border-color: #444 !important; }
 
