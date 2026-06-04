@@ -5,7 +5,6 @@ import { useAudio, audioArticles } from '../context/AudioContext';
 export default function ListenPage() {
   const { index } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
   const { play, pause, playing } = useAudio();
   const idx = parseInt(index || '0', 10);
   const episode = audioArticles[idx];
