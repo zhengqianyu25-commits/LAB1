@@ -70,7 +70,11 @@ export default function MediaSection({ media }) {
         {video && (
           <div className="mb-8 rounded-xl overflow-hidden border border-paper-border">
             {video.type === 'youtube' ? (
-              <div className="aspect-video">
+              <div className="aspect-video" onClick={() => {
+                // Pause global audio when user clicks to play YouTube
+                const ga = document.getElementById('global-audio');
+                if (ga) { ga.pause(); ga.dispatchEvent(new Event('pause')); }
+              }}>
                 <iframe
                   src={`https://www.youtube-nocookie.com/embed/${video.src}?rel=0&modestbranding=1&showinfo=0&enablejsapi=1`}
                   className="w-full h-full"
