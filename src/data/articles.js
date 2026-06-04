@@ -191,7 +191,7 @@ const articles = [
   },
   {
     slug: 'child-stars', number: '04', category: 'labor-protection',
-    titleEn: 'After One Slap: Who Protects Child Actors on Set?',
+    titleEn: 'Who Speaks for Child Actors?',
     titleZh: "A Shanghai child actor was slapped for real during filming. His case exposes gaps in China's child performer protections.",
     conceptEn: 'Labor Protection', conceptZh: '劳动保护与监管成本',
     readTime: '5 min', section: 'Rights',
