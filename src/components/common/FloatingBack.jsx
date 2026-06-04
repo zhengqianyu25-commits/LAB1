@@ -3,17 +3,16 @@ import { useNavigate, useLocation, Link } from 'react-router-dom';
 export default function FloatingBack() {
   const { pathname } = useLocation();
 
-  // Only show on article pages, podcast page, and lab-notes/about/credits
-  if (pathname === '/' || pathname === '/stories') return null;
-
   let backTo = '/';
-  let label = 'Home';
+  let label = '';
 
   if (pathname.startsWith('/article/')) {
     backTo = '/stories'; label = 'Stories';
   } else if (pathname.startsWith('/listen/')) {
     backTo = '/frequency'; label = 'FM';
   }
+
+  if (!label) return null;
 
   return (
     <div className="fixed top-[4.5rem] left-4 md:left-8 z-40">
