@@ -22,7 +22,11 @@ export function AudioProvider({ children }) {
 
   useEffect(() => {
     // Pause audio when any video on the page starts playing
-    const onVideoPlay = () => { if (audioRef.current && !audioRef.current.paused) { audioRef.current.pause(); setPlaying(false); } };
+    const onVideoPlay = (e) => {
+      if (e.target.tagName === 'VIDEO' && audioRef.current && !audioRef.current.paused) {
+        audioRef.current.pause(); setPlaying(false);
+      }
+    };
     document.addEventListener('play', onVideoPlay, true);
     return () => document.removeEventListener('play', onVideoPlay, true);
   }, []);
