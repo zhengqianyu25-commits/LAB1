@@ -98,22 +98,6 @@ export default function MediaSection({ media }) {
           </div>
         )}
 
-        {audio && (
-          <div className="mb-8 p-5 border border-paper-border rounded-xl bg-paper-bg-secondary/50">
-            <div className="flex items-center gap-3 mb-2">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="text-paper-accent shrink-0">
-                <path d="M8 1v14M3 5v6M13 3v10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-              </svg>
-              <span className="text-xs font-mono text-paper-accent tracking-wider uppercase">Audio Story</span>
-            </div>
-            <audio controls className="w-full" preload="metadata">
-              <source src={audio.src} type={audio.type || 'audio/mpeg'} />
-              Your browser does not support audio playback.
-            </audio>
-            {audio.caption && <p className="mt-2 text-xs text-paper-text-muted">{audio.caption}</p>}
-          </div>
-        )}
-
         {images && images.length > 0 && (
           <ImageCarousel images={images} />
         )}
