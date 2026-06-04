@@ -96,11 +96,11 @@ export default function LabNotePage() {
           {/* Navigation */}
           <div className="flex items-center justify-between pt-8 border-t" style={{ borderColor: 'var(--color-border)' }}>
             <Link to="/lab-notes" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
-              &larr; See All Lab Notes
+              &larr; Back To Lab Notes
             </Link>
             {relatedArticle ? (
               <Link to={`/article/${data.relatedArticle}`} className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
-                Back to Story &rarr;
+                See the Story &rarr;
               </Link>
             ) : (
               <span />
