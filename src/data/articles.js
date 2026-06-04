@@ -34,6 +34,10 @@ const articles = [
 
       "Li Yang also emphasizes that assessing the profitability of scalpers should consider the overall dynamics of the ticketing market, rather than focusing solely on transaction prices. He highlights that scalping involves a lengthy money flow cycle — one where profits can evaporate overnight when conditions shift.",
 
+      "During the Mayday concert, not only was the venue packed, but it was also very crowded outside the venue. Many scalpers were selling concert tickets outside the venue. And it was very chaotic, with many police officers around to maintain order. Afterwards, we made a phone call to Mr. Chen, who was in charge of security work at the time, and he held some opinions on this.",
+
+      "\\"Mayday is a popular band with a lot of people and a lively atmosphere. I think scalpers' scalping behavior is quite bad. Many people who want to watch the concert cannot get tickets, and those who are unwilling to buy scalper tickets can only stay outside the venue. Sometimes, they argue with scalpers, which affects their governance. The scene is sometimes chaotic and out of control. And this situation is not easy to manage. So I'm quite resistant to this kind of behavior.\\"",
+
       "The case of Li Yang illustrates the core economic mechanics of ticket scalping: scarcity creates demand, connections provide supply access, and market volatility determines who profits and who loses. For every scalper counting cash outside a sold-out arena, there is another left holding worthless tickets when the traffic doesn't move.",
     ],
 
