@@ -179,8 +179,10 @@ html.dark .hero-section .section-label { color: #E5B800 !important; }
 html.dark .hero-section .hero-btn-primary { background: #FFFFFF !important; color: #0D0D0D !important; }
 html.dark .hero-section .hero-btn-secondary { border-color: rgba(255,255,255,0.5) !important; color: #DDDDDD !important; }
 html.dark .dark-bright { color: #FFFFFF !important; }
-html.dark .lyric-line { color: #CCCCCC !important; }
+html.dark .lyric-line { color: #E0E0E0 !important; }
 html.dark .lyric-active { color: #F5C518 !important; }
+html.dark .listen-title { color: #FFFFFF !important; }
+html.dark .listen-nav { color: #FFFFFF !important; }
 html.dark .dark-bright-gold { color: #E5B800 !important; }
 html.dark .dark-bright-card { background: rgba(30,30,30,0.9) !important; border-color: #444 !important; }
 

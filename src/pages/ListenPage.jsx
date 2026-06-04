@@ -72,7 +72,7 @@ export default function ListenPage() {
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: playing ? 'var(--color-accent)' : 'var(--color-text-muted)' }} />
             <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase opacity-50" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</span>
           </div>
-          <p className="text-base md:text-lg font-display font-medium" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
+          <p className="listen-title text-base md:text-lg font-display font-medium" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
         </div>
       </div>
 
@@ -126,7 +126,7 @@ export default function ListenPage() {
             <source src={episode.media.audio.src} type={episode.media.audio.type || 'audio/mpeg'} />
           </audio>
           <div className="flex items-center justify-center gap-6 mt-3">
-            <button onClick={prevEpisode} className="p-2 opacity-50 hover:opacity-100 transition-opacity" aria-label="Previous" style={{ color: 'var(--color-text)' }}>
+            <button onClick={prevEpisode} className="listen-nav p-2 opacity-50 hover:opacity-100 transition-opacity" aria-label="Previous" style={{ color: 'var(--color-text)' }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m19 20 1 0V4l-1 0v16zM4.5 12l10-6v12l-10-6z"/></svg>
             </button>
             <button onClick={togglePlay} className="w-12 h-12 rounded-full flex items-center justify-center transition-transform hover:scale-110" style={{ background: 'var(--color-accent)' }} aria-label={playing ? 'Pause' : 'Play'}>
@@ -136,7 +136,7 @@ export default function ListenPage() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>
               )}
             </button>
-            <button onClick={nextEpisode} className="p-2 opacity-50 hover:opacity-100 transition-opacity" aria-label="Next" style={{ color: 'var(--color-text)' }}>
+            <button onClick={nextEpisode} className="listen-nav p-2 opacity-50 hover:opacity-100 transition-opacity" aria-label="Next" style={{ color: 'var(--color-text)' }}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 4h1v16H5V4zm14.5 8-10 6V6l10 6z"/></svg>
             </button>
           </div>
