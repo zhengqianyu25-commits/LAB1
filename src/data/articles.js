@@ -57,18 +57,6 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'jI1g-iUrAO8', type: 'youtube', caption: 'How Concert Tickets Became a Business — video report' },
-      audio: { src: 'media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
-        subtitles: [
-          { time: 0, en: "During the Mayday concert, not only was the venue packed, but it was also very crowded outside the venue." },
-          { time: 7, en: "Many scalpers were selling concert tickets outside the venue, and it was very chaotic with many police officers around to maintain order." },
-          { time: 16, en: "Afterwards, we made a phone call to Mr. Chen, who was in charge of security work at the time, and he held some opinions on this." },
-          { time: 27, en: "Speaking of Mayday, they're a really popular band, so their concerts are always packed with lively crowds.", zh: "嗯五月天呢是比较热门的乐队嘛，现场的人就很多很热闹。" },
-          { time: 34, en: "In my opinion, ticket scalping by scalpers is really inappropriate.", zh: "然后呢我感觉的话呢就是黄牛这种倒卖行为啊还是挺不好的。" },
-          { time: 40, en: "Many fans dying to watch the concert cannot grab official tickets and refuse to buy pricey ones from scalpers, so they have no option but to linger outside the stadium.", zh: "好多想看演唱会的人呢抢不到票，又不愿意买黄牛票，就只能挤在场外。" },
-          { time: 49, en: "What's more, conflicts and quarrels between fans and scalpers often break out. It disturbs public order, creating messy and unpleasant scenes around the venue.", zh: "嗯然后呢还难免跟黄牛有拉扯吵架，还挺影响治安的，场面看起来也不是很好看，就是挺乱的。" },
-          { time: 59, en: "Such situations are hard to manage and contain. That's why I'm strongly against ticket scalping.", zh: "而且的话呢这种情况呢也不太好管理拦不住，所以呢我还是挺抵触这种行为的。" },
-        ],
-      },
       images: [
         { src: 'media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
         { src: 'media/concert-scalping/image2.png', alt: 'Fans quarreling with scalpers outside concert venue' },
@@ -124,20 +112,6 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'I6ndDG7Pcmw', type: 'youtube', caption: 'Zibo grills its way to viral fame — video report' },
-      audio: { src: 'media/zibo-bbq/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
-        subtitles: [
-          { time: 0, text: "I am Kang Qiujie, a researcher at the Institute of Communication Studies, Communication University of China. Today, let's talk about Zibo barbecue." },
-          { time: 6, text: "What role did self-media play in the explosion of Zibo barbecue? And how did they influence this phenomenon?" },
-          { time: 14, text: "The explosion of Zibo barbecue is itself a self-media event. Today's communication environment is highly socialized and contextualized. It starts with self-media, quickly ignites public opinion and social relationships, and then translates into social action." },
-          { time: 28, text: "What is the difference between the self-media that first introduced Zibo barbecue and those that appeared after it became popular?" },
-          { time: 35, text: "This is a common pattern in almost all self-media-driven events. The early stage has stronger spontaneity and independence. The content doesn't need to be complicated; a single element can attract attention." },
-          { time: 45, text: "Later on, it becomes more of a following behavior. Influencers join in for the hype and to ride the wave. Content becomes more homogenized. Only those who dig out different angles or so-called 'highlights' can get attention. Meanwhile, the quality becomes uneven, and problematic content also appears." },
-          { time: 63, text: "How do the communication methods and characteristics of self-media enable Zibo barbecue to reach audiences more widely and quickly? How do they effectively present the uniqueness and charm of Zibo barbecue?" },
-          { time: 75, text: "On topics like food, drink, and entertainment, self-media communication tends to easily trigger interest and heated discussion. The reason is exactly what you asked: it generates empathy and resonance, and easily stirs emotions." },
-          { time: 90, text: "So, Zibo barbecue is just a label. What really matters is the emotional contagion — warmth, hospitality, honest business practices, all-around service spirit, and so on." },
-          { time: 102, text: "Everyone knows that Zibo barbecue may not be that special, but Zibo itself seems different. So the focus is not eating barbecue; it's experiencing the atmosphere and emotion. That atmosphere and emotion are exactly the strengths of self-media communication." },
-        ],
-      },
       images: [
         { src: 'media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
         { src: 'media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
@@ -179,87 +153,6 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'media/clothing-sizes/video.mp4', type: 'video/mp4', caption: 'Video report on women\'s clothing size shrinkage' },
-      audio: { src: 'media/clothing-sizes/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
-      images: [
-        { src: 'media/clothing-sizes/image1.jpeg', alt: 'Side-by-side comparison of women\'s clothing sizes across brands' },
-        { src: 'media/clothing-sizes/image2.jpeg', alt: 'Fast-fashion brand size chart analysis' },
-        { src: 'media/clothing-sizes/image3.jpeg', alt: 'Examples of one-size-fits-all marketing' },
-        { src: 'media/clothing-sizes/image4.jpeg', alt: 'Visual representation of body image and sizing issues' },
-        { src: 'media/clothing-sizes/image5.jpeg', alt: 'Consumer feedback and complaints about sizing' },
-      ],
-    },
-  },
-  {
-    slug: 'child-stars', number: '04', category: 'labor-protection',
-    titleEn: 'After One Slap: Who Protects Child Actors on Set?',
-    titleZh: "A Shanghai child actor was slapped for real during filming. His case exposes gaps in China's child performer protections.",
-    conceptEn: 'Labor Protection', conceptZh: '劳动保护与监管成本',
-    readTime: '5 min', section: 'Rights',
-    summary: "A young Shanghai actor was slapped for real during filming, leaving his face visibly red and swollen. His case raises questions about child performers' rights, from safer filming methods to clearer industry standards for shooting hours, meals, and protection from physical harm.",
-
-    body: [
-      "SHANGHAI, May 23 — A worrying incident involving child actor Zhou Anxin in Shanghai has sparked widespread attention and concern over rights protection for child performers. The incident took place on the set of a film, where the production team opted for actual physical impact while portraying a scene in which a child is made to cry. After the shooting, the young actor's face remained red and swollen before recovering. His role that day required him to be slapped and cry.",
-
-      { "type": "image", "src": "media/child-stars/image2.png", "alt": "Crew uses artificial tears instead of forcing the child to cry", "caption": "During a crying scene, the 'Spark Fluorescent' crew used artificial tears instead of forcing the child actor to cry emotionally, aiming to protect the child's psychological well-being." },
-
-      "His mother said, \"After seeing the script, I actually didn't want him to shoot.\" She added, \"I went to the crew and asked whether we could use special effects or stage the action, but they didn't agree.\"",
-
-      "Despite his mother's prior inquiry about the possibility of using a staged action, her suggestion was not adopted because the production team leaned toward presenting an authentic scene. During the actual filming, Zhou Anxin cried real tears after being slapped and did not stop crying after the filming was over. His mother noticed that his face was visibly red and swollen, which made her deeply distressed and upset.",
-
-      "Zhou Anxin is an experienced child actor who has previously appeared in advertisements, TV dramas and films. His mother acknowledges the demands of the production team but genuinely hopes to find better and safer solutions. \"I could sometimes feel that he was under a lot of pressure, having to shoot and do homework, and going back to school to make up for it. Every time I see him exhausted, I think 'I don't want to count it,' but he doesn't tell me himself,\" his mother said.",
-
-      { "type": "image", "src": "media/child-stars/image1.png", "alt": "Crew prepared toys for the child actor before filming", "caption": "Before filming, the crew prepared toys for the child actor to reduce boredom and help create a more relaxed environment on set." },
-
-      "Numerous child actors are not given special care, and their rights are sometimes violated.",
-
-      "\"The use of child actors in the industry currently relies heavily on the awareness of each crew and lacks a uniform standard,\" said Frank Zhang, Assistant Production Controller at a culture communication company. \"While harsh beatings and forced labor are not common, children are often required to stay up late and shoot long hours, and filming is not purposely scheduled to avoid weekdays to ensure that the children have a normal school day.\"",
-
-      "\"It is also common for children to be treated poorly in order to advance the filming schedule. Due to gaps in national legislation and the lack of default norms in the industry, labor contracts often do not contain provisions specifically addressing the rights of child actors,\" Zhang added.",
-
-      "The lack of explicit legislation and specific regulations to protect child performers exposes them to various risks. Child performers often face issues such as sleep deprivation, long working hours, irregular eating habits and physical injuries.",
-
-      { "type": "image", "src": "media/child-stars/image3.png", "alt": "Crew member applies artificial tears tested by medical university", "caption": "A crew member applies artificial tears to the child actor during the crying scene. The material was tested in advance by doctoral students at Southern Medical University to confirm it was harmless to children." },
-
-      "For No Filter Lab, the case also shows the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost may be shifted onto children's bodies, emotions and education.",
-
-      "Against this backdrop, the \"Sparkling Stars\" project team, dedicated to safeguarding the legitimate rights of child actors, has expressed concern about the protection of their rights. The project team has conducted extensive interviews with child performers and agents, developing a set of professional standards aimed at safeguarding the rights of child actors. These standards include defining filming times, meal times and measures to prevent physical harm.",
-
-      "Project leader Yu Hailong expressed hope that more individuals will join efforts to protect the rights of child performers and urged the industry to promptly introduce relevant regulations.",
-
-      { "type": "image", "src": "media/child-stars/image4.png", "alt": "Crew films child actor while balancing production and child protection", "caption": "The crew films a child actor while trying to balance production needs with the protection of children's rights and mental health." },
-
-      "\"The overall goal of our project is to encourage the community to look at child performers as children in need of help, rather than only treating them as stars,\" Yu said. \"We hope people can focus more on the shadow of rights violations behind their glow. From there, more organizations can be called upon to defend their legal rights.\"",
-
-      { "type": "image", "src": "media/child-stars/image5.png", "alt": "Staff and child actors take a group photo after the project", "caption": "Staff and child actors take a group photo after the project, which aimed to explore a more child-friendly production model." },
-    ],
-
-    lensExplanation: "The case of Zhou Anxin exposes the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost is shifted onto children's bodies, emotions, and education. The lack of uniform industry standards means child performers' rights depend on individual crew awareness rather than enforceable regulations.",
-    whoGains: "Production companies save time and money by avoiding special effects, staged actions, and child-friendly scheduling. The entertainment industry benefits from child performers' marketability without bearing the full cost of their protection.",
-    whoPays: "Child performers bear the physical and psychological toll of adult working conditions, sleep deprivation, and irregular schedules. Their education and wellbeing are compromised. Parents face distress watching their children suffer. Society lacks a system to hold production companies accountable.",
-    pullQuote: "Look at child performers as children in need of help, rather than only treating them as stars.",
-    takeaway: "The Zhou Anxin case reveals that child performer protection in China relies on individual crew awareness rather than enforceable rules. Until uniform standards for filming hours, meals, and physical safety are legislated, the hidden costs of production will continue to fall on the most vulnerable.",
-
-    visualStyle: 'spotlight-stage', accentColor: '#6B3FA0',
-    keyStats: {
-      bigNumber: '0',
-      bigLabel: 'Uniform national standards for child actors in China',
-      compareA: { value: 'China', label: 'Relies on individual crew awareness' },
-      compareB: { value: 'Sparkling Stars', label: 'Proposed: filming times, meals, anti-harm measures' },
-    },
-    media: {
-      caption: 'MULTIMEDIA',
-      video: { src: 'wDxA0_yeFCY', type: 'youtube', caption: 'After One Slap: Who Protects Child Actors on Set? — video report' },
-      audio: { src: 'media/child-stars/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
-        subtitles: [
-          { time: 0, text: "One of the challenges in upholding the rights of child actors lies in the lack of awareness among certain 'parent agents' who hold guardianship. These individuals often disregard the perspectives of child actors, resulting in the lack of adequate protection for their rights. Frank Zhang, assistant production controller of Culture Communication Company, has shared relevant insight with us regarding this matter." },
-          { time: 23, text: "For child actors who have just entered the industry, or who want to enter the industry, they may work part-time or be relatively amateur. For many of them, their parents will act as their agents." },
-          { time: 34, text: "It is disconcerting that some parents prioritize financial gains over the rights of child actors, compromising their well-being for the sake of securing filming assignments." },
-          { time: 43, text: "More formal agencies will sign contracts and have standard terms. Of course, this is also to protect the rights of their own child actors. But some parents who act as agents do not pay much attention to this, so they do not mention this issue in their contracts." },
-          { time: 57, text: "Children should possess the autonomy to express their demands and protect their rights, which even parents must not encroach on." },
-          { time: 64, text: "Some parents may be more understanding, or care about their children and communicate with them. But there are also some parents who ask children to complete more filming tasks, rather than giving priority to protecting them, such as ensuring rest time and so on." },
-          { time: 80, text: "We hope for the enhancement of laws and regulations concerning child actors, ensuring the protection of their rights and limiting the control exerted by parent agents." },
-        ],
-      },
       images: [
         { src: 'media/child-stars/image1.png', alt: 'Crew prepared toys for child actor before filming' },
         { src: 'media/child-stars/image2.png', alt: 'Artificial tears used instead of forcing child to cry' },
@@ -323,18 +216,6 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'd-AP2J6K72g', type: 'youtube', caption: 'One Cup of Milk Tea: Changing the Fate of Stray Animals — video report' },
-      audio: { src: 'media/stray-animals/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
-        subtitles: [
-          { time: 0, text: "A girl was crying bitterly in front of a dog, because it looks very similar to her dog, but her dog has been dead for three years." },
-          { time: 7, text: "By coincidence, the dog she was looking at was three years old, the moment touched everyone present." },
-          { time: 13, text: "In addition, we heard many adoption stories at Adoption Day, and the helpers had a lot to say." },
-          { time: 19, text: "I've been doing rescue for 20 years. Adoption Day is more mature, so they came here. The adopters are more mature." },
-          { time: 25, text: "When asking her about her most memorable adoption experience, she said, 'There is a puppy in the process of being sent abroad, it's doing this abroad, and got lost during the formalities. Then I went to this place to look for it, I searched for four days.'" },
-          { time: 42, text: "I got it back at the time, but the dog didn't want to leave me, so she ended up staying with me." },
-          { time: 47, text: "My family rescued 7 dogs, more than 40 cats. When adopting, they are two brothers. Save it's easy, it's me who stopped the car, see what's wrong with the car and open the door, and when I got in the car, it was coming up." },
-          { time: 73, text: "We hope that all street animals can find homes of their own." },
-        ],
-      },
       images: [
         { src: 'media/stray-animals/image1.jpeg', alt: 'Low-cost equipment documenting adoption day' },
         { src: 'media/stray-animals/image2.jpeg', alt: 'Adoption forms and volunteer follow-up process' },
@@ -400,7 +281,6 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'bbCP__8pa6U', type: 'youtube', caption: '79-Point Horror Film — student documentary' },
-      audio: { src: 'media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
         { src: 'media/student-films/image1.png', alt: 'Living environment of director Li Hans' },
         { src: 'media/student-films/image2.png', alt: 'Corridor darkened to shoot night scene' },

@@ -11,6 +11,7 @@ import KeyStats from '../components/article/KeyStats';
 import PullQuote from '../components/article/PullQuote';
 import RelatedStories from '../components/article/RelatedStories';
 import Engagement from '../components/common/Engagement';
+import AudioLink from '../components/article/AudioLink';
 
 export default function ArticlePage() {
   const { slug } = useParams();
@@ -51,6 +52,8 @@ export default function ArticlePage() {
         conceptEn={article.conceptEn}
         explanation={article.lensExplanation}
       />
+
+      <AudioLink article={article} />
 
       <GainPayCard whoGains={article.whoGains} whoPays={article.whoPays} />
 

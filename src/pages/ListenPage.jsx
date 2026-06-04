@@ -2,8 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAudio, audioArticles } from '../context/AudioContext';
 
-const audioArticles = articles.filter(a => a.media?.audio);
-
 export default function ListenPage() {
   const { index } = useParams();
   const navigate = useNavigate();
