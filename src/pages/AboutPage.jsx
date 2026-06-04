@@ -61,7 +61,7 @@ export default function AboutPage() {
               { title: 'Excellence & Empowerment', body: 'We strive for the highest standards of clear expression and intellectual depth. Our content aims to be sharp yet approachable. Ultimately, we want to empower young readers — not only to understand the world, but to navigate choices more effectively in a reality full of trade-offs and incentives.' },
             ].map((item, i) => (
               <div key={i} className="p-6 text-center border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px', background: 'rgba(255,255,255,0.85)' }}>
-                <div className="text-2xl mb-4" style={{ color: 'var(--color-accent)' }}>{String.fromCharCode(9733 + i * 2)}</div>
+                <div className="text-2xl mb-4" style={{ color: 'var(--color-accent)' }}>&loz;</div>
                 <h3 className="text-sm font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>{item.title}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{item.body}</p>
               </div>
