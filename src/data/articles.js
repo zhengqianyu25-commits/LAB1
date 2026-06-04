@@ -52,7 +52,7 @@ const articles = [
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/concert-scalping/video.mp4', type: 'video/mp4', caption: 'How Concert Tickets Became a Business — video report' },
+      video: { src: 'jI1g-iUrAO8', type: 'youtube', caption: 'How Concert Tickets Became a Business — video report' },
       audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
         { src: '/media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
