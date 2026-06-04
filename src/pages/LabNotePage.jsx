@@ -9,7 +9,7 @@ const contentMap = {
     quote: "Traffic creates the spark; service decides whether it lasts.",
     sections: [
       {
-        tableau: 'https://public.tableau.com/views/Otherdatas/1?:showVizHome=no&:embed=true',
+        image: '/media/lab-notes/attention-economy-1.png',
         source: 'Source: Douyin (ByteDance) public data, compiled by Juzi Suannai',
         text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
       },
@@ -95,16 +95,16 @@ export default function LabNotePage() {
 
           {/* Navigation */}
           <div className="flex items-center justify-between pt-8 border-t" style={{ borderColor: 'var(--color-border)' }}>
+            <Link to="/lab-notes" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
+              &larr; See All Lab Notes
+            </Link>
             {relatedArticle ? (
               <Link to={`/article/${data.relatedArticle}`} className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
-                &larr; Back to Story
+                Back to Story &rarr;
               </Link>
             ) : (
               <span />
             )}
-            <Link to="/lab-notes" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
-              See All Lab Notes &rarr;
-            </Link>
           </div>
         </div>
       </section>
