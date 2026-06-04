@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import articles from '../data/articles';
-import ArticleBack from '../components/article/ArticleBack';
 import ArticleHero from '../components/article/ArticleHero';
 import ArticleBody from '../components/article/ArticleBody';
 import NoFilterLens from '../components/article/NoFilterLens';
@@ -26,7 +25,6 @@ export default function ArticlePage() {
         <p className="text-paper-text-secondary mb-8">
           No article found for "{slug}".
         </p>
-        <ArticleBack />
       </div>
     );
   }
@@ -34,7 +32,6 @@ export default function ArticlePage() {
   return (
     <div className="page-enter">
       <div className="container-main pt-6 pb-4">
-        <ArticleBack />
       </div>
 
       <div className="border-b border-paper-border">
@@ -64,7 +61,6 @@ export default function ArticlePage() {
 
       <div className="container-main py-8">
         <div className="article-width">
-          <ArticleBack />
         </div>
       </div>
     </div>
