@@ -49,6 +49,15 @@ export default function Header() {
 
             <Clock />
 
+            <button onClick={() => setSearchOpen(true)} className="p-1.5 text-white/70 hover:text-white transition-colors" aria-label="Search">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+
+            <button onClick={cycle} className="text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full border transition-colors hover:text-[var(--color-accent)]" style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }} aria-label="Font size" title="Font size">{label}</button>
+            <ThemeToggle />
+
             <button onClick={() => setLoginOpen(true)} className="text-white/70 hover:text-white transition-colors" aria-label="Sign in">
               {user ? (
                 <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'var(--color-accent)' }}>
@@ -61,15 +70,6 @@ export default function Header() {
                 </svg>
               )}
             </button>
-
-            <button onClick={() => setSearchOpen(true)} className="p-1.5 text-white/70 hover:text-white transition-colors" aria-label="Search">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-              </svg>
-            </button>
-
-            <button onClick={cycle} className="text-xs font-bold w-6 h-6 flex items-center justify-center rounded-full border transition-colors hover:text-[var(--color-accent)]" style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }} aria-label="Font size" title="Font size">{label}</button>
-            <ThemeToggle />
 
             <button onClick={() => setMenuOpen(true)} className="md:hidden p-1" aria-label="Menu">
               <span className="block w-5 h-0.5 bg-white mb-1" />
