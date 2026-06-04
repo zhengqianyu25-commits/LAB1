@@ -7,6 +7,7 @@ import ScrollToTop from '../common/ScrollToTop';
 import ProgressBar from '../common/ProgressBar';
 import BackToTop from '../common/BackToTop';
 import FloatingBack from '../common/FloatingBack';
+import MiniPlayer from '../common/MiniPlayer';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -36,6 +37,7 @@ export default function Layout() {
       </main>
       <BackToTop />
       <Footer />
+      <MiniPlayer />
     </div>
   );
 }

@@ -1,21 +1,18 @@
-import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import articles from '../data/articles';
+import { useAudio, audioArticles } from '../context/AudioContext';
 import SectionTitle from '../components/common/SectionTitle';
 import Engagement from '../components/common/Engagement';
 
-const audioArticles = articles.filter(a => a.media?.audio);
-
-function EpisodeItem({ article, index, onPlay }) {
+function EpisodeItem({ article, index }) {
   const img = article.media?.images?.[0]?.src;
   const hasSubtitles = !!article.media?.audio?.subtitles;
   const navigate = useNavigate();
-
-  const goListen = () => navigate(`/listen/${index}`);
+  const { play } = useAudio();
 
   return (
     <div
-      onClick={goListen}
+      onClick={() => navigate(`/listen/${index}`)}
       className="flex items-center gap-4 px-5 py-4 border transition-all duration-300 group hover:bg-[var(--color-bg-secondary)] border-l cursor-pointer"
       style={{
         borderColor: 'var(--color-border)',
@@ -51,7 +48,7 @@ function EpisodeItem({ article, index, onPlay }) {
       </div>
 
       <button
-        onClick={(e) => { e.stopPropagation(); onPlay(index); }}
+        onClick={(e) => { e.stopPropagation(); play(index); }}
         className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-all duration-300 hover:!bg-[var(--color-accent)] group"
         style={{ background: 'var(--color-bg-tertiary)' }}
         aria-label={`Play episode ${article.number}`}
@@ -65,21 +62,6 @@ function EpisodeItem({ article, index, onPlay }) {
 }
 
 export default function PodcastPage() {
-  const audioRef = useRef(null);
-
-  const handlePlay = (idx) => {
-    const ep = audioArticles[idx];
-    if (!ep) return;
-    const audio = audioRef.current;
-    if (!audio) return;
-    if (audio.src.includes(ep.media.audio.src) && !audio.paused) {
-      audio.pause();
-    } else {
-      audio.src = ep.media.audio.src;
-      audio.play().catch(() => {});
-    }
-  };
-
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
@@ -92,11 +74,9 @@ export default function PodcastPage() {
             </span>
           </div>
           {audioArticles.map((a, i) => (
-            <EpisodeItem key={a.slug} article={a} index={i} onPlay={handlePlay} />
+            <EpisodeItem key={a.slug} article={a} index={i} />
           ))}
         </div>
-
-        <audio ref={audioRef} className="hidden" />
 
         <Engagement slug="frequency" />
       </section>
