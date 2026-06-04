@@ -3,7 +3,9 @@ import { Link, NavLink } from 'react-router-dom';
 import ThemeToggle from '../common/ThemeToggle';
 import SearchModal from '../common/SearchModal';
 import { useFontSize } from '../../context/FontContext';
+import { useAuth } from '../../context/AuthContext';
 import Clock from '../common/Clock';
+import LoginModal from '../common/LoginModal';
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -21,7 +23,9 @@ const navStyle = (isActive) => ({
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   const { cycle, label } = useFontSize();
+  const { user } = useAuth();
 
   return (
     <>
@@ -44,6 +48,10 @@ export default function Header() {
             </nav>
 
             <Clock />
+
+            <button onClick={() => setLoginOpen(true)} className={`text-[0.65rem] font-semibold tracking-wider uppercase text-white/70 hover:text-white transition-colors ${user ? 'opacity-100' : ''}`}>
+              {user ? user.name.split(' ')[0] : 'Sign In'}
+            </button>
 
             <button onClick={() => setSearchOpen(true)} className="p-1.5 text-white/70 hover:text-white transition-colors" aria-label="Search">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -81,6 +89,7 @@ export default function Header() {
       </header>
 
       <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
+      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </>
   );
 }
