@@ -292,51 +292,71 @@ const articles = [
   },
   {
     slug: 'student-films', number: '06', category: 'creator-economy',
-    titleEn: 'A Horror Film in a Dark Dorm',
-    titleZh: 'Why student creators go viral online but get average grades in class.',
+    titleEn: '79-Point Horror Film Exposes Signal Failure Between Grade and Market',
+    titleZh: "A student's viral horror film scored 79 from a romance-preferring professor. The gap exposes a signal failure between classroom grading and real market demand.",
     conceptEn: 'Creator Economy', conceptZh: '创作者经济',
     readTime: '5 min', section: 'Creator',
-    summary: 'A three-minute short filmed with a phone and a desk lamp earned millions of Bilibili views but a middling class grade. The disconnect reveals two systems for valuing creative work.',
+    summary: "A group of Communication University of China students shot a thriller short in their dormitory that went viral on Bilibili. But their professor gave it a 79 — exposing a signal failure between academic grades and what audiences actually want to watch.",
 
     body: [
-      'BEIJING — Using a smartphone, a desk lamp, and a dormitory corridor left dark by a water outage, a student at the Communication University of China produced a three-minute horror short that surpassed one million views on the video platform Bilibili. The production cost was near zero. The cast was the filmmaker’s roommates. The editing software was free.',
-      'Online commenters praised its pacing, shot composition, and atmosphere. But in the classroom, the same film received only a moderate grade. The disconnect is not a story about unfair grading — it is a story about two fundamentally different systems for valuing creative work, each with its own logic.',
-      'On content platforms, value is measured in attention: view counts, likes, shares, and comment density. Platform algorithms reward high engagement and completion rates, favoring content that grabs viewers quickly and provokes an emotional response. Under this system, a student filmmaker’s low budget is not a liability but an advantage — it signals authenticity and resourcefulness, qualities that algorithm-driven audiences reward.',
-      'Academic evaluation measures a different set of values: narrative coherence, technical proficiency, thematic depth, and scholarly rigor. These criteria align more closely with traditional film-industry standards and pedagogical goals. They reward work that demonstrates systematic training — a “standard product,” in economic terms.',
-      '“Both systems are internally consistent,” a media studies researcher said. “The problem arises when a creator tries to satisfy both simultaneously and discovers they reward different things.”',
-      'A deeper structural issue is the winner-take-all dynamic of platform economics. The volume of content uploaded to short-video and user-generated-content platforms grows exponentially, while total user attention is relatively fixed. The result is a superstar effect: a tiny fraction of creators capture the vast majority of views, while most receive almost nothing for their labor — including work that might score highly in an academic evaluation but lacks “internet appeal.”',
-      'For student creators, the temptation to optimize for attention is powerful. Platform metrics offer immediate, quantifiable validation that course grades cannot match. But the algorithms and audience tastes that confer virality shift rapidly, and chasing them can come at the expense of the narrative craft and technical foundation that constitute a creator’s long-term competitive advantage.',
-      '“The tension isn’t about which system is right,” the researcher said. “It’s about recognizing that they are different. Students who understand both — and can navigate the gap between them — are the ones who build sustainable creative careers.”',
+      "A group of students from Communication University of China shot a thriller short film in their dormitory. It was released on the video website Bilibili on May 19, 2023. This short film, which was not expected by the professionals, was widely praised once released.",
+
+      "The name of this thriller short film is \"Bangzijing Murder Incident.\" The director is Li Hans, a sophomore majoring in digital media at the Communication University of China. He is a thriller fan. He found some friends and shot this short film at an ultra-low cost.",
+
+      { "type": "image", "src": "/media/student-films/image1.png", "alt": "The living environment of director Li Hans", "caption": "The living environment of director Li Hans in his dormitory at CUC." },
+
+      "This thriller short film is actually a course assignment of Li Hans, but contrary to the audience's praise on the Internet, this short film has achieved a very poor result. \"The professor gave me a score of 79, a very low score, because he did not like my theme. He preferred themes like suspense and love,\" director Li Hans said.",
+
+      "\"The professor thinks that I shoot genre films that can be industrialized. He thinks that literary and artistic films need more ideas, so other students generally shoot a lot of youth literary and artistic love films, which is easier to get the teacher's approval.\"",
+
+      "Even though he was denied, the director still decided to make movies according to his hobbies. Li Hans said, \"Everyone's aesthetic is different. Everyone should have the right to choose the topic they like. I just like the funny things like American horror movies.\"",
+
+      { "type": "image", "src": "/media/student-films/image2.png", "alt": "Director darkens the corridor to shoot a night scene during the day", "caption": "To shoot a night scene during the day, the director darkens the corridor by sealing its window with cloth." },
+
+      "The professor watched the thriller short film released on the Internet and learned the audience's views on the film. He understood the director's insistence. The professor commented, \"It is really entertaining.\"",
+
+      "Li Hans likes the grounded shooting theme, and his shooting inspiration also comes from the daily trivia that the general public will experience. Students' dormitories are always without water, which brings inconvenience to students' daily life. The director tried to express the students' dissatisfaction by shooting a thriller short film in the toilets and bathrooms where water is usually needed.",
+
+      "Although thriller short films are defined by professors as genre films that can be industrialized, there are not many high-quality thriller short films in mainland China in recent years. When the water supply in the student dormitory was cut off again, Li Hans said, \"We are preparing to make another thriller short film, which is related to zombies. I hope to do something in my favorite field and make a zombie film of good quality for friends who like thrillers.\"",
+
+      { "type": "image", "src": "/media/student-films/image3.png", "alt": "Director shoots Living Zombie in CUC at Bangzijing dormitory", "caption": "The director shoots \"Living Zombie in CUC\" at Bangzijing, the same dormitory where he shot his previous work." },
+
+      "Fortunately, Li Hans met a partner who liked thriller films as much as he did, which also supported him to continue to do what he liked. Li Houru was the leading actor who participated in the shooting of the thriller short film.",
+
+      "Li Houru said, \"I have participated in several other films, all of which are artistic films about emotion. Sometimes I even did not know what they wanted to express after I finished acting. I like the experience of shooting this film best.\" \"Not only is the film interesting, but the shooting process is also very interesting. I really look forward to the director's next film,\" Li Houru added.",
+
+      { "type": "image", "src": "/media/student-films/image4.png", "alt": "Actors break locks and rush to freedom in the final scene", "caption": "The director shoots the last scene as actors break locks and rush to freedom." },
+
+      "When asked by the reporter about the ultimate goal of making the film, Li Hans replied, \"What I hope most is that what I make can bring fun.\" The reaction of the actors and audience showed that he did it.",
+
+      "The professor's preference for romance pushed students toward love stories, not what audiences actually wanted to watch. The gap between Li Hans' 79-point grade and his online popularity exposed a signal failure between classroom grading and real market demand. By sticking with horror films, Li is betting on niche audiences instead of chasing a teacher's approval.",
     ],
 
-    lensExplanation: 'The creator economy empowers individuals to produce content at near-zero cost and distribute it through platforms where attention converts into reputation and opportunity. But platform algorithms optimize for engagement, not craft, while academic evaluation rewards systematic training. The winner-take-all structure means most creators’ labor generates no economic return.',
-    whoGains: 'Platforms benefit from a vast supply of free student content that fills their libraries and generates advertising revenue. The small fraction of creators who go viral gain industry attention and career opportunities. Audiences consume creative work at zero monetary cost.',
-    whoPays: 'The majority of student creators invest substantial time and creativity with little economic or academic return. Chasing viral appeal can erode systematic skill development. Algorithmic unpredictability generates persistent psychological pressure.',
-    pullQuote: 'The internet rewards attention. The classroom rewards craft.',
-    takeaway: 'Student creators operate not in a simple meritocracy of talent but at the intersection of two evaluation systems. The internet rewards attention; the classroom rewards craft. Those who learn to navigate both — without being captured by either — are the real winners of the creator economy.',
+    lensExplanation: "The gap between Li Hans' 79-point course grade and his viral online success exposes a signal failure in the creator economy. Academic evaluation rewards what professors value — literary romance — while the market rewards what audiences want — genre entertainment. This misalignment forces student creators to choose between grades and genuine creative expression.",
+    whoGains: "Platform audiences gain access to authentic, low-budget genre content that mainstream production ignores. Student creators who follow their interests build genuine portfolios and niche audiences. The internet rewards authenticity over academic approval.",
+    whoPays: "Student creators who pursue genre work risk lower grades from professors with different aesthetic preferences. The industry loses diverse talent when students are pushed toward homogeneous 'artistic' themes. Audiences miss out on genre innovation that could emerge from student experimentation.",
+    pullQuote: "The gap between 79 points and viral popularity exposes a signal failure between classroom grading and real market demand.",
+    takeaway: "Li Hans' story shows that academic evaluation and market demand can send completely different signals to student creators. When a professor's preference for romance films punishes a horror filmmaker with a 79, the real loss isn't the grade — it's the students who stop making what they love in pursuit of approval.",
 
     visualStyle: 'camera-lens', accentColor: '#2C6E8F',
     keyStats: {
-      bigNumber: '¥0',
-      bigLabel: 'Production budget of the viral short',
-      compareA: { value: '1M+', label: 'Bilibili views' },
-      compareB: { value: 'B', label: 'Course grade received' },
+      bigNumber: '79',
+      bigLabel: 'Course grade for the viral horror short',
+      compareA: { value: 'Viral', label: 'Audience praise on Bilibili' },
+      compareB: { value: '79 points', label: "Professor's score — preferred romance films" },
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/student-films/video.mov', type: 'video/quicktime', caption: 'Original student horror short film' },
+      video: { src: '/media/student-films/video.mov', type: 'video/quicktime', caption: 'Bangzijing Murder Incident — original student horror short' },
       audio: { src: '/media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
-        { src: '/media/student-films/image1.png', alt: 'Student film crew on location' },
-        { src: '/media/student-films/image24.png', alt: 'Post-production editing session' },
-        { src: '/media/student-films/image25.png', alt: 'Student director at the monitor' },
-        { src: '/media/student-films/image39.png', alt: 'Bilibili playback interface for student film' },
-        { src: '/media/student-films/image41.png', alt: 'Comparison of academic grading criteria and online feedback' },
-        { src: '/media/student-films/image42.png', alt: 'Low-budget set design and lighting setup' },
-        { src: '/media/student-films/image54.png', alt: 'Behind-the-scenes of student production' },
+        { src: '/media/student-films/image1.png', alt: 'Living environment of director Li Hans' },
+        { src: '/media/student-films/image2.png', alt: 'Corridor darkened to shoot night scene' },
+        { src: '/media/student-films/image3.png', alt: 'Shooting Living Zombie in CUC at Bangzijing' },
+        { src: '/media/student-films/image4.png', alt: 'Actors break locks and rush to freedom' },
       ],
     },
-  },
+  }
 ];
 
 export default articles;
