@@ -7,23 +7,25 @@ const AudioCtx = createContext();
 export function AudioProvider({ children }) {
   const [episode, setEpisode] = useState(null);
   const [playing, setPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [liked, setLiked] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('nf_liked') || '[]'); } catch { return []; }
+  });
   const [queue, setQueue] = useState(() => {
     try { return JSON.parse(localStorage.getItem('nf_queue') || '[]'); } catch { return []; }
   });
   const audioRef = useRef(null);
 
-  useEffect(() => {
-    localStorage.setItem('nf_queue', JSON.stringify(queue));
-  }, [queue]);
+  useEffect(() => { localStorage.setItem('nf_queue', JSON.stringify(queue)); }, [queue]);
+  useEffect(() => { localStorage.setItem('nf_liked', JSON.stringify(liked)); }, [liked]);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
-    const onPlay = () => setPlaying(true);
-    const onPause = () => setPlaying(false);
+    const onTime = () => { setCurrentTime(audio.currentTime); setDuration(audio.duration || 0); };
     const onEnded = () => {
       setPlaying(false);
-      // Auto-play next in queue
       const curIdx = episode ? audioArticles.indexOf(episode) : -1;
       const next = (curIdx + 1) % audioArticles.length;
       const ep = audioArticles[next];
@@ -31,10 +33,16 @@ export function AudioProvider({ children }) {
       audio.src = ep.media.audio.src;
       setTimeout(() => audio.play().catch(() => {}), 500);
     };
+    const onPlay = () => setPlaying(true);
+    const onPause = () => setPlaying(false);
+    audio.addEventListener('timeupdate', onTime);
+    audio.addEventListener('loadedmetadata', onTime);
     audio.addEventListener('play', onPlay);
     audio.addEventListener('pause', onPause);
     audio.addEventListener('ended', onEnded);
     return () => {
+      audio.removeEventListener('timeupdate', onTime);
+      audio.removeEventListener('loadedmetadata', onTime);
       audio.removeEventListener('play', onPlay);
       audio.removeEventListener('pause', onPause);
       audio.removeEventListener('ended', onEnded);
@@ -56,22 +64,39 @@ export function AudioProvider({ children }) {
   }, [episode]);
 
   const pause = () => audioRef.current?.pause();
+  const stop = () => { audioRef.current?.pause(); setEpisode(null); setPlaying(false); };
+  const seek = (t) => { if (audioRef.current) audioRef.current.currentTime = t; };
+  const prev = () => {
+    if (!episode) return;
+    const idx = audioArticles.indexOf(episode);
+    play((idx - 1 + audioArticles.length) % audioArticles.length);
+  };
+  const next = () => {
+    if (!episode) return;
+    const idx = audioArticles.indexOf(episode);
+    play((idx + 1) % audioArticles.length);
+  };
+  const toggleLike = () => {
+    if (!episode) return;
+    setLiked(l => l.includes(episode.slug) ? l.filter(s => s !== episode.slug) : [...l, episode.slug]);
+  };
+  const isLiked = episode ? liked.includes(episode.slug) : false;
 
-  const addToQueue = (ep) => {
+  const playAll = () => {
+    setQueue(audioArticles.map(a => ({ number: a.number, title: a.titleEn, slug: a.slug })));
+    play(0);
+  };
+
+  const addToQueue = () => {
+    if (!episode) return;
     setQueue(q => {
-      if (q.find(e => e.number === ep.number)) return q;
-      return [...q, { number: ep.number, title: ep.titleEn, slug: ep.slug }];
+      if (q.find(e => e.slug === episode.slug)) return q;
+      return [...q, { number: episode.number, title: episode.titleEn, slug: episode.slug }];
     });
   };
 
-  const removeFromQueue = (num) => {
-    setQueue(q => q.filter(e => e.number !== num));
-  };
-
-  const playAll = () => play(0);
-
   return (
-    <AudioCtx.Provider value={{ episode, playing, play, pause, queue, addToQueue, removeFromQueue, playAll }}>
+    <AudioCtx.Provider value={{ episode, playing, currentTime, duration, play, pause, stop, seek, prev, next, liked: isLiked, toggleLike, queue, addToQueue, playAll }}>
       <audio ref={audioRef} id="global-audio" className="hidden" />
       {children}
     </AudioCtx.Provider>
