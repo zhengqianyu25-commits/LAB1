@@ -6,7 +6,7 @@ export default function StoryStrip({ article }) {
   return (
     <Link
       to={`/article/${article.slug}`}
-      className="group flex items-center gap-5 px-4 py-3.5 border-b transition-all duration-300"
+      className="group flex items-center gap-3 px-4 py-3.5 border-b transition-all duration-300"
       style={{
         borderColor: 'var(--color-border)',
         background: 'rgba(255,255,255,0.55)',
@@ -14,11 +14,7 @@ export default function StoryStrip({ article }) {
       onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.8)'}
       onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.55)'}
     >
-      <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase shrink-0 w-6" style={{ color: 'var(--color-accent)' }}>
-        {article.number}
-      </span>
-
-      <div className="w-20 h-14 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
+      <div className="w-12 h-10 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
         {img ? (
           <img src={img} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
         ) : (
@@ -32,10 +28,6 @@ export default function StoryStrip({ article }) {
         </h3>
         <p className="text-xs md:text-[0.8rem] line-clamp-1 mt-1 opacity-70" style={{ color: 'var(--color-text-secondary)' }}>{article.titleZh}</p>
       </div>
-
-      <span className="text-[0.6rem] font-semibold tracking-wider uppercase shrink-0 opacity-30" style={{ color: 'var(--color-text-muted)' }}>
-        {article.readTime}
-      </span>
     </Link>
   );
 }
