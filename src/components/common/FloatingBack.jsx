@@ -7,7 +7,11 @@ export default function FloatingBack() {
   let label = '';
 
   if (pathname.startsWith('/article/')) {
-    backTo = '/stories'; label = 'Stories';
+    const params = new URLSearchParams(search);
+    const from = params.get('from');
+    const articleSlug = pathname.split('/').pop();
+    backTo = from === 'lab-note' ? `/lab-note/${articleSlug === 'zibo-bbq' ? 'attention-economy' : articleSlug}` : '/stories';
+    label = from === 'lab-note' ? 'Lab Note' : 'Stories';
   } else if (pathname.startsWith('/listen/')) {
     const params = new URLSearchParams(search);
     const fromSlug = params.get('from');

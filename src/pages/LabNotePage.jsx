@@ -98,7 +98,7 @@ export default function LabNotePage() {
               &larr; Back To Lab Notes
             </Link>
             {relatedArticle ? (
-              <Link to={`/article/${data.relatedArticle}`} className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
+              <Link to={`/article/${data.relatedArticle}?from=lab-note`} className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
                 See the Story &rarr;
               </Link>
             ) : (
