@@ -191,22 +191,6 @@ export default function PodcastPage() {
                 {currentEpisode.conceptEn} &middot; {currentEpisode.readTime}
               </p>
 
-              <audio
-                ref={audioRef}
-                controls
-                className="w-full"
-                key={currentEpisode.slug}
-                onPlay={() => setPlaying(true)}
-                onPause={() => setPlaying(false)}
-                onEnded={() => {
-                  const next = (activeIdx + 1) % audioArticles.length;
-                  setActiveIdx(next);
-                  setElapsed(0);
-                }}
-                onTimeUpdate={(e) => setElapsed(e.currentTarget.currentTime)}
-              >
-                <source src={currentEpisode.media.audio.src} type={currentEpisode.media.audio.type || 'audio/mpeg'} />
-              </audio>
 
               <AudioSubtitles article={currentEpisode} elapsed={elapsed} />
             </>
@@ -239,6 +223,33 @@ export default function PodcastPage() {
 
         <Engagement slug="frequency" />
       </section>
+
+      {currentEpisode && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 border-t px-4 py-3" style={{ background: 'var(--color-bg)', borderColor: 'var(--color-border)' }}>
+          <div className="max-w-3xl mx-auto flex items-center gap-4">
+            <div className="min-w-0 flex-1 hidden md:block">
+              <p className="text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{currentEpisode.titleEn}</p>
+              <p className="text-[0.6rem] opacity-50" style={{ color: 'var(--color-text-muted)' }}>EP {currentEpisode.number} &middot; {currentEpisode.conceptEn}</p>
+            </div>
+            <audio
+              ref={audioRef}
+              controls
+              className="flex-1 md:flex-none md:w-96"
+              key={currentEpisode.slug}
+              onPlay={() => setPlaying(true)}
+              onPause={() => setPlaying(false)}
+              onEnded={() => {
+                const next = (activeIdx + 1) % audioArticles.length;
+                setActiveIdx(next);
+                setElapsed(0);
+              }}
+              onTimeUpdate={(e) => setElapsed(e.currentTarget.currentTime)}
+            >
+              <source src={currentEpisode.media.audio.src} type={currentEpisode.media.audio.type || 'audio/mpeg'} />
+            </audio>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
