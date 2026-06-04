@@ -9,8 +9,14 @@ const contentMap = {
     quote: 'Official price caps create the shortage; secondary markets reveal true demand.',
     sections: [
       {
-        text: "On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that \"the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience.\" This is China's first explicit regulation on the public sale ratio of concert tickets, aimed at increasing supply in the primary market and curbing the scale of the secondary market.",
+        image: '/media/lab-notes/scarcity-1.png',
+        text: 'The pie chart shows that 70% of tickets come from official channels, exactly meeting the policy\'s minimum public sale requirement. However, 30% still flow through other channels. This indicates that even with the policy mandating 70% public sales, information asymmetry, differences in ticketing speed, and advantages from social capital still push some tickets into the secondary market. The shortage effect caused by the price ceiling has not been fully eliminated, and the policy has clear boundaries in its implementation.',
         source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association Notice, April 26, 2023',
+      },
+      {
+        image: '/media/lab-notes/scarcity-2.png',
+        text: "On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that \"the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience.\" This is China's first explicit regulation on the public sale ratio of concert tickets, aimed at increasing supply in the primary market and curbing the scale of the secondary market.",
+        source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association',
       },
     ],
     conclusion: 'The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
