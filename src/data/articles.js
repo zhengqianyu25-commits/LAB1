@@ -271,7 +271,7 @@ const articles = [
   },
   {
     slug: 'stray-animals', number: '05', category: 'externalities',
-    titleEn: 'One Cup of Milk Tea: Changing the Fate of Stray Animals',
+    titleEn: '20 Years of Finding Homes for Strays',
     titleZh: "How Beijing Adoption Day turns micro-donations into a systematic solution for stray animal welfare.",
     conceptEn: 'Externalities & Donations', conceptZh: '外部性与捐赠经济',
     readTime: '5 min', section: 'Public Good',
