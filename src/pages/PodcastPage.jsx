@@ -25,41 +25,21 @@ function Waveform({ playing }) {
   );
 }
 
-function CaptionOverlay({ article, elapsed }) {
+function AudioSubtitles({ article, elapsed }) {
   if (!article) return null;
   const paragraphs = article.body || [];
   const idx = Math.min(Math.floor(elapsed / 8), paragraphs.length - 1);
+  const p = paragraphs[idx];
+  if (!p || typeof p !== 'string') return null;
 
   return (
     <div className="mt-6 p-5 rounded-sm border transition-all duration-500" style={{ background: 'rgba(255,255,255,0.85)', borderColor: 'var(--color-accent)', borderLeftWidth: '3px' }}>
       <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase mb-2 block" style={{ color: 'var(--color-accent)' }}>
-        &ldquo;{article.conceptEn}&rdquo; &middot; {article.titleZh}
+        Subtitles &middot; {article.titleZh}
       </span>
       <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-        {paragraphs[idx]}
+        {p}
       </p>
-    </div>
-  );
-}
-
-function ImageSlideshow({ article, elapsed }) {
-  if (!article?.media?.images) return null;
-  const images = article.media.images;
-  const idx = Math.floor(elapsed / 12) % images.length;
-
-  return (
-    <div className="mt-6 grid grid-cols-3 gap-2">
-      {images.slice(0, 3).map((img, i) => (
-        <div
-          key={i}
-          className={`aspect-[4/3] overflow-hidden rounded-sm transition-all duration-500 ${
-            i === idx % 3 ? 'opacity-100 scale-100 ring-2' : 'opacity-50 scale-95'
-          }`}
-          style={{ '--tw-ring-color': 'var(--color-accent)' }}
-        >
-          <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
-        </div>
-      ))}
     </div>
   );
 }
@@ -205,8 +185,7 @@ export default function PodcastPage() {
                 <source src={currentEpisode.media.audio.src} type={currentEpisode.media.audio.type || 'audio/mpeg'} />
               </audio>
 
-              <CaptionOverlay article={currentEpisode} elapsed={elapsed} />
-              <ImageSlideshow article={currentEpisode} elapsed={elapsed} />
+              <AudioSubtitles article={currentEpisode} elapsed={elapsed} />
             </>
           ) : (
             <div className="text-center py-8">
