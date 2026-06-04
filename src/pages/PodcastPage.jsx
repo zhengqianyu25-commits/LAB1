@@ -28,15 +28,37 @@ function Waveform({ playing }) {
 function AudioSubtitles({ article, elapsed }) {
   if (!article) return null;
   const subtitles = article.media?.audio?.subtitles;
-  const source = subtitles || article.body || [];
-  const paragraphs = source.filter(p => typeof p === 'string');
+  const hasTimed = subtitles && typeof subtitles[0] === 'object';
+
+  if (hasTimed) {
+    let idx = 0;
+    for (let i = subtitles.length - 1; i >= 0; i--) {
+      if (elapsed >= subtitles[i].time) { idx = i; break; }
+    }
+    const current = subtitles[idx];
+    return (
+      <div className="mt-6 p-5 rounded-sm border transition-all duration-500" style={{ background: 'rgba(255,255,255,0.85)', borderColor: 'var(--color-accent)', borderLeftWidth: '3px' }}>
+        <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase mb-2 block" style={{ color: 'var(--color-accent)' }}>
+          Audio Transcript &middot; {article.titleZh}
+        </span>
+        <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+          {current.text}
+        </p>
+        <p className="text-[0.6rem] mt-2 opacity-40" style={{ color: 'var(--color-text-muted)' }}>
+          {String(Math.floor(current.time / 60)).padStart(2, '0')}:{String(current.time % 60).padStart(2, '0')}
+        </p>
+      </div>
+    );
+  }
+
+  const paragraphs = (subtitles || article.body || []).filter(p => typeof p === 'string');
   if (paragraphs.length === 0) return null;
   const idx = Math.min(Math.floor(elapsed / 10), paragraphs.length - 1);
 
   return (
     <div className="mt-6 p-5 rounded-sm border transition-all duration-500" style={{ background: 'rgba(255,255,255,0.85)', borderColor: 'var(--color-accent)', borderLeftWidth: '3px' }}>
       <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase mb-2 block" style={{ color: 'var(--color-accent)' }}>
-        {subtitles ? 'Audio Transcript' : 'Subtitles'} &middot; {article.titleZh}
+        Subtitles &middot; {article.titleZh}
       </span>
       <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
         {paragraphs[idx]}

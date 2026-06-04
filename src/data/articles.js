@@ -59,8 +59,14 @@ const articles = [
       video: { src: 'jI1g-iUrAO8', type: 'youtube', caption: 'How Concert Tickets Became a Business — video report' },
       audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
         subtitles: [
-          "During the Mayday concert, not only was the venue packed, but it was also very crowded outside the venue. Many scalpers were selling concert tickets outside the venue. And it was very chaotic, with many police officers around to maintain order. Afterwards, we made a phone call to Mr. Chen, who was in charge of security work at the time, and he held some opinions on this.",
-          "Mayday is a popular band with a lot of people and a lively atmosphere. I think scalpers' scalping behavior is quite bad. Many people who want to watch the concert cannot get tickets, and those who are unwilling to buy scalper tickets can only stay outside the venue. Sometimes, they argue with scalpers, which affects their governance. The scene is sometimes chaotic and out of control. And this situation is not easy to manage. So I'm quite resistant to this kind of behavior.",
+          { time: 0, text: "During the Mayday concert, not only was the venue packed, but it was also very crowded outside the venue." },
+          { time: 7, text: "Many scalpers were selling concert tickets outside the venue, and it was very chaotic with many police officers around to maintain order." },
+          { time: 16, text: "Afterwards, we made a phone call to Mr. Chen, who was in charge of security work at the time, and he held some opinions on this." },
+          { time: 27, text: "嗯五月天呢是比较热门的乐队嘛，现场的人就很多很热闹。Speaking of Mayday, they're a really popular band, so their concerts are always packed with lively crowds." },
+          { time: 34, text: "然后呢我感觉的话呢就是黄牛这种倒卖行为啊还是挺不好的。In my opinion, ticket scalping by scalpers is really inappropriate." },
+          { time: 40, text: "好多想看演唱会的人呢抢不到票，又不愿意买黄牛票，就只能挤在场外。Many fans dying to watch the concert cannot grab official tickets and refuse to buy pricey ones from scalpers, so they have no option but to linger outside the stadium." },
+          { time: 49, text: "嗯然后呢还难免跟黄牛有拉扯吵架，还挺影响治安的，场面看起来也不是很好看，就是挺乱的。What's more, conflicts and quarrels between fans and scalpers often break out. It disturbs public order, creating messy and unpleasant scenes around the venue." },
+          { time: 59, text: "而且的话呢这种情况呢也不太好管理拦不住，所以呢我还是挺抵触这种行为的。Such situations are hard to manage and contain. That's why I'm strongly against ticket scalping." },
         ],
       },
       images: [
