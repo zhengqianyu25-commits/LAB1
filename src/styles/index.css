@@ -19,16 +19,16 @@
 }
 
 .dark {
-  --color-bg: #0B0B0B;
-  --color-bg-secondary: #151515;
-  --color-bg-tertiary: #1F1F1F;
+  --color-bg: #0C0C0B;
+  --color-bg-secondary: #181816;
+  --color-bg-tertiary: #222220;
   --color-text: #0D0D0D;
   --color-text-secondary: #3A3A3A;
-  --color-text-muted: #555555;
-  --color-border: #444444;
-  --color-accent: #9E6B00;
-  --color-accent-light: #F5E0B0;
-  --color-accent-dim: rgba(158, 107, 0, 0.1);
+  --color-text-muted: #5C5C5C;
+  --color-border: #3A3A38;
+  --color-accent: #F5C518;
+  --color-accent-light: #3D3108;
+  --color-accent-dim: rgba(245, 197, 24, 0.1);
   --color-warn: #F87171;
   --pattern-dot: rgba(255, 255, 255, 0.04);
   --pattern-line: rgba(255, 255, 255, 0.02);
@@ -140,8 +140,8 @@
     background: rgba(255,255,255,0.75);
   }
   .dark .news-card {
-    background: rgba(255,255,255,0.88);
-    border-color: #555;
+    background: rgba(255,255,255,0.92);
+    border-color: rgba(255,255,255,0.12);
   }
   .news-card:hover {
     border-color: var(--color-accent);
@@ -149,7 +149,8 @@
     transform: translateY(-2px);
   }
   .dark .news-card:hover {
-    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 32px rgba(245,197,24,0.15);
   }
 
   /* Accent link */
