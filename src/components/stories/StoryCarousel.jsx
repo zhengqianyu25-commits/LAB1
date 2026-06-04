@@ -22,7 +22,7 @@ export default function StoryCarousel({ articles }) {
           <img src={a.media?.images?.[0]?.src} alt={a.titleEn} className="w-full h-full object-cover" />
 
           <div className="carousel-overlay absolute bottom-0 left-0 right-0 h-1/3 flex items-end px-6 md:px-10 pb-14 md:pb-16">
-            <h2 className="carousel-title text-base md:text-xl font-display font-medium leading-tight max-w-xl">{a.titleEn}</h2>
+            <h2 className="carousel-title text-lg md:text-2xl font-display font-medium leading-tight max-w-xl">{a.titleEn}</h2>
           </div>
         </Link>
 
