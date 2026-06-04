@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const examples = {
   scarcity: 'Limited seats, massive demand &mdash; the gap scalpers exploit.',
-  'attention-economy': 'When a city goes viral, tourism and spending flood in.',
+  'attention-economy': 'Zibo\'s Douyin search index skyrocketed 181,376% year-on-year, from near zero to over 11 million. 10,000 UGC videos flooded the platform on April 29 alone, acting as free advertising. On peak day, Zibo Station recorded 94,594 arrivals — online attention converted into physical footfall. Gen Z (18-30) drove 58% of engagement, with a 55% female skew accelerating trip planning. The result: a 73% consumption spike and 200% booking growth — but attention fades. The question is whether Zibo can build lasting brand value or become a one-season wonder.',
   'cost-control': 'One-size-fits-all is not just aesthetic; it\'s a cost decision.',
   'labor-protection': 'Child performers need stricter rules than adult actors.',
   externalities: 'Abandoned pets create costs society as a whole bears.',
