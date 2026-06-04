@@ -72,7 +72,7 @@ export default function MediaSection({ media }) {
             {video.type === 'youtube' ? (
               <div className="aspect-video">
                 <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${video.src}?rel=0&modestbranding=1&showinfo=0`}
+                  src={`https://www.youtube-nocookie.com/embed/${video.src}?rel=0&modestbranding=1&showinfo=0&enablejsapi=1`}
                   className="w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

@@ -78,12 +78,10 @@ export function AudioProvider({ children }) {
     if (!audio) return;
     // Pause all other media on the page
     document.querySelectorAll('video, audio').forEach(v => { if (!v.paused && v !== audioRef.current) v.pause(); });
-    // Stop YouTube/nocookie iframes by briefly toggling src
+    // Pause YouTube iframes via postMessage
     document.querySelectorAll('iframe').forEach(f => {
-      if (f.src && (f.src.includes('youtube-nocookie.com') || f.src.includes('youtube.com'))) {
-        const s = f.src;
-        f.src = '';
-        requestAnimationFrame(() => { f.src = s; });
+      if (f.src && f.src.includes('youtube')) {
+        try { f.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*'); } catch(e) {}
       }
     });
     if (episode?.number === ep.number) {
