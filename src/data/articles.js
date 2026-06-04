@@ -1,8 +1,8 @@
 const articles = [
   {
     slug: 'concert-scalping', number: '01', category: 'scarcity',
-    titleEn: "Why Scalpers Create Chaos Outside Mayday's Concerts for Profits",
-    audioTitle: "Ticket Scalping Causes Chaos Outside Mayday's Concert",
+    titleEn: 'How Concert Tickets Became a Business: The Harder Tickets Are to Get, the More Scalpers Profit',
+    audioTitle: 'Ticket Scalping Causes Chaos Outside Mayday\'s Concert',
     titleZh: "A student scalper reveals how scarcity, connections, and market dynamics fuel the concert ticket resale industry.",
     conceptEn: 'Scarcity & Arbitrage', conceptZh: '稀缺性与套利',
     readTime: '5 min', section: 'Market',
@@ -71,10 +71,9 @@ const articles = [
         ],
       },
       images: [
-        { src: 'media/concert-scalping/cover.png', alt: 'Concert cover', caption: 'The dissipation of the pandemic has brought music, shouting and agitation back this summer.' },
-        { src: 'media/concert-scalping/photo1.png', alt: 'Fans troubled by high-priced scalper tickets', caption: 'However, a large number of fans who did not have tickets were plagued by high-priced scalper tickets.' },
-        { src: 'media/concert-scalping/photo2.png', alt: 'Fans declared war on scalpers', caption: 'Many fans believed that scalpers were the key to making it so difficult to grab tickets, so they began to shout slogans to declare war on scalpers. Outside the concert venue, fans are still in the midst of fierce quarrels with scalpers, and the scene security is also in chaos.' },
-        { src: 'media/concert-scalping/photo3.png', alt: 'Fans cheered outside the Birds Nest', caption: 'Fans without tickets listened to the song and cheered outside the Bird\'s Nest, where display screens and lights could be seen.' },
+        { src: 'media/concert-scalping/img1.png', alt: 'Fans cheered outside the Birds Nest', caption: 'Fans without tickets listened to the song and cheered outside the Bird\'s Nest, where display screens and lights could be seen.' },
+        { src: 'media/concert-scalping/img2.png', alt: 'Fans quarreling with scalpers outside venue', caption: 'Outside the concert venue, fans were still in the midst of fierce quarrels with scalpers, and the scene security is also in chaos.' },
+        { src: 'media/concert-scalping/img3.png', alt: 'Music returned after the pandemic', caption: 'The dissipation of the pandemic has brought music, shouting and agitation back that summer.' },
       ],
     },
   },
