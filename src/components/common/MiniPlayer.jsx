@@ -15,9 +15,27 @@ export default function MiniPlayer() {
 
   return (
     <>
-      <div className="fixed bottom-0 left-0 right-0 z-50 border-t" style={{ background: 'rgba(255,255,255,0.97)', borderColor: 'var(--color-border)', backdropFilter: 'blur(20px)' }}>
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t" style={{ background: 'rgba(255,255,255,0.98)', borderColor: 'var(--color-border)', backdropFilter: 'blur(20px)' }}>
+        <div className="container-main flex items-center gap-3 pt-2 pb-0.5">
+          <div
+            className="flex items-center gap-3 flex-1 min-w-0 cursor-pointer"
+            onClick={() => navigate(`/listen/${idx}`)}
+          >
+            <div className="w-10 h-10 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
+              {img && <img src={img} alt="" className="w-full h-full object-cover" />}
+            </div>
+            <div className="min-w-0">
+              <p className="mini-text text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
+              <p className="mini-sub text-[0.55rem] truncate" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</p>
+            </div>
+          </div>
+          <button onClick={stop} className="w-5 h-5 shrink-0 flex items-center justify-center rounded-full opacity-30 hover:opacity-60 transition-opacity" style={{ color: 'var(--color-text-muted)' }} aria-label="Close">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
         {/* Progress bar */}
-        <div className="px-4 pt-2 pb-0">
+        <div className="px-4 pb-0.5">
           <input
             type="range"
             min="0"
@@ -31,21 +49,8 @@ export default function MiniPlayer() {
             }}
           />
         </div>
-        <div className="container-main flex items-center gap-3 py-1.5">
-          <div
-            className="flex items-center gap-3 flex-1 min-w-0 cursor-pointer"
-            onClick={() => navigate(`/listen/${idx}`)}
-          >
-            <div className="w-10 h-10 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
-              {img && <img src={img} alt="" className="w-full h-full object-cover" />}
-            </div>
-            <div className="min-w-0 overflow-hidden">
-              <p className="mini-text text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
-              <p className="mini-sub text-[0.55rem] truncate" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</p>
-            </div>
-          </div>
 
-          <div className="flex items-center gap-1.5">
+        <div className="container-main flex items-center justify-center gap-2 pb-2">
             <button onClick={toggleLike} className="w-7 h-7 flex items-center justify-center rounded-full transition-colors" style={{ color: liked ? 'var(--color-accent)' : 'var(--color-text-muted)', opacity: liked ? 1 : 0.4 }} aria-label="Like">
               <svg width="14" height="14" viewBox="0 0 24 24" fill={liked ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </button>
