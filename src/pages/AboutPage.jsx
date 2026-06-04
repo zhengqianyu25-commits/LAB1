@@ -88,6 +88,14 @@ export default function AboutPage() {
           <p className="text-center text-[0.6rem] mt-16 leading-relaxed max-w-2xl mx-auto" style={{ color: 'var(--color-text-muted)' }}>
             This website is based on multimedia reporting materials provided for the course. All images, videos, and text have been adapted for web, optimized for headlines, and reconstructed for explanatory depth to present facts with professional rigor.
           </p>
+
+          <div className="text-center mt-10 p-6 border max-w-lg mx-auto" style={{ borderColor: 'var(--color-border)', borderRadius: '2px', background: 'var(--color-accent-dim)' }}>
+            <h3 className="text-sm font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>Contribute</h3>
+            <p className="text-xs leading-relaxed mb-3" style={{ color: 'var(--color-text-secondary)' }}>
+              We welcome story pitches, data tips, and multimedia submissions from student journalists and researchers.
+            </p>
+            <p className="text-xs font-semibold tracking-wider" style={{ color: 'var(--color-accent)' }}>nofilterlab@outlook.com</p>
+          </div>
         </div>
       </section>
     </div>
