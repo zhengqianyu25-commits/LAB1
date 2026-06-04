@@ -37,6 +37,8 @@ export default function Header() {
             </span>
           </Link>
 
+          <Clock />
+
           <div className="flex items-center gap-3 md:gap-5">
             <nav className="hidden md:flex items-center gap-5">
               {navLinks.map((link) => (
@@ -46,8 +48,6 @@ export default function Header() {
                 >{link.label}</NavLink>
               ))}
             </nav>
-
-            <Clock />
 
             <button onClick={() => setSearchOpen(true)} className="p-1.5 text-white/70 hover:text-white transition-colors" aria-label="Search">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
