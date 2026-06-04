@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import ThemeToggle from '../common/ThemeToggle';
 import SearchModal from '../common/SearchModal';
 import { useFontSize } from '../../context/FontContext';
+import Clock from '../common/Clock';
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -41,6 +42,8 @@ export default function Header() {
                 >{link.label}</NavLink>
               ))}
             </nav>
+
+            <Clock />
 
             <button onClick={() => setSearchOpen(true)} className="p-1.5 text-white/70 hover:text-white transition-colors" aria-label="Search">
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
