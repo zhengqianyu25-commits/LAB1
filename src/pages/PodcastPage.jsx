@@ -62,15 +62,20 @@ function EpisodeItem({ article, index }) {
 }
 
 export default function PodcastPage() {
+  const { play } = useAudio();
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
         <SectionTitle>No Filter FM</SectionTitle>
 
         <div className="border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}>
-          <div className="px-5 py-3 border-b" style={{ borderColor: 'var(--color-border)' }}>
-            <span className="text-[0.65rem] font-semibold tracking-[0.15em] uppercase dark-bright opacity-70" style={{ color: 'var(--color-text-muted)' }}>
-              {audioArticles.length} Episodes
+          <div className="px-5 py-3 border-b flex items-center gap-3" style={{ borderColor: 'var(--color-border)' }}>
+            <button onClick={() => play(0)} className="flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-80" style={{ background: 'var(--color-accent)', color: '#fff' }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+              Play All
+            </button>
+            <span className="text-[0.6rem] font-semibold tracking-[0.1em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>
+              {audioArticles.length} episodes
             </span>
           </div>
           {audioArticles.map((a, i) => (
