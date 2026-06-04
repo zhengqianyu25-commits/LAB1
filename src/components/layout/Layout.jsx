@@ -57,7 +57,7 @@ export default function Layout() {
             className="absolute inset-0 bg-cover bg-center bg-fixed"
             style={{ backgroundImage: `url("${bgImage}")`, filter: 'blur(24px)', transform: 'scale(1.1)' }}
           />
-          <div className="absolute inset-0" style={{ background: dark ? 'rgba(0,0,0,0.65)' : 'rgba(255,255,255,0.55)' }} />
+          <div className="absolute inset-0" style={{ background: dark ? 'rgba(0,0,0,0.65)' : 'rgba(255,255,255,0.65)' }} />
         </div>
       )}
     </div>
