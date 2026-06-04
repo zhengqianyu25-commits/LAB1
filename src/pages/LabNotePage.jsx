@@ -9,9 +9,8 @@ const contentMap = {
     quote: "Traffic creates the spark; service decides whether it lasts.",
     sections: [
       {
-        image: '/media/lab-notes/attention-economy-1.png',
-        source: 'Source: Douyin (ByteDance) public data, compiled by Juzi Suannai',
         text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
+        source: 'Source: Douyin (ByteDance) public data, compiled by Juzi Suannai',
       },
       {
         tableau: 'https://public.tableau.com/views/Otherdatas/2?:showVizHome=no&:embed=true',
