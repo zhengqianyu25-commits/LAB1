@@ -96,8 +96,8 @@ export default function ListenPage() {
               </p>
               {hasBilingual && (
                 <p
-                  className={`mt-1.5 ${isActive ? 'text-sm md:text-base' : 'text-xs'}`}
-                  style={{ color: isActive ? 'var(--color-text-secondary)' : 'var(--color-text-muted)' }}
+                  className={`mt-1.5 ${isActive ? 'text-xs md:text-sm' : 'text-[0.65rem]'}`}
+                  style={{ color: 'var(--color-text-muted)' }}
                 >
                   {zh}
                 </p>
