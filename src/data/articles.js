@@ -400,7 +400,21 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'bbCP__8pa6U', type: 'youtube', caption: '79-Point Horror Film — student documentary' },
-      audio: { src: 'media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+            audio: { src: 'media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
+        subtitles: [
+          { time: 0, text: "Li Hans, a student of the digital media department of CUC, shot a short horror film \"Bangzijing Murder Incident\" in his dormitory in 2021." },
+          { time: 8, text: "Li, the director, said that the idea of this story was inspired by the water and power outage in Bangzijing. Then he applied it to later course assignments." },
+          { time: 18, text: "Li said, \"It is an assignment in a short film class. We shot it, edited it into a piece and handed it to the teacher, and sent it to Bilibili at the same time.\"" },
+          { time: 25, text: "Most of the reactions are very benign, and it does not rule out that there are some people who are not justified in some comments, such as some bad reviews; the teacher didn't like it very much." },
+          { time: 33, text: "He gave me a 79, a very low score. Literary films need ideas, and I don't like that kind of thing.\"" },
+          { time: 40, text: "According to him, students generally shoot more romantic youth films, which are more likely to win teachers' approval." },
+          { time: 48, text: "But he also said that everyone's aesthetic is different, and what he shoots are different. He respects each preference." },
+          { time: 53, text: "He shot a new short horror film in June this year in the same place, Bangzijing. The film \"Living Zombie in CUC\", which is also the type that teachers don't like." },
+          { time: 63, text: "For this new short film, Li once again stressed that he wanted his work to be \"le zi\", which means fun." },
+          { time: 69, text: "\"As a zombie film, I hope to make it well, because I'm in a lot of trouble right now, on the film-making side. The main thing is that I have a lot of things recently. The pressure is relatively large, and the actor can not find, which is the biggest trouble.\"" },
+          { time: 82, text: "\"If it works well, it will be put on Bilibili, hoping to entertain the audience. Driven by fun, ends with fun,\" Li said." },
+        ],
+      },
       images: [
         { src: 'media/student-films/image1.png', alt: 'Living environment of director Li Hans' },
         { src: 'media/student-films/image2.png', alt: 'Corridor darkened to shoot night scene' },
