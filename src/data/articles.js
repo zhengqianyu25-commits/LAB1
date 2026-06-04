@@ -94,7 +94,6 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: '/media/zibo-bbq/video.mp4', type: 'video/mp4', caption: 'Video report on the Zibo barbecue phenomenon' },
-      audio: { src: '/media/zibo-bbq/audio.wav', type: 'audio/wav', caption: 'Audio report' },
       images: [
         { src: '/media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
         { src: '/media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
