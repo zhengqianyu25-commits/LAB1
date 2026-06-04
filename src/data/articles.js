@@ -12,7 +12,7 @@ const articles = [
 
       "MAYDAY, the renowned Asian pop band, recently held a highly anticipated seven-day concert in Beijing, sparking great excitement among fans. This event took place against the backdrop of a resurgent performance market in mainland China, where concert tickets have become hot commodities, often selling out on the first day. This surge in demand for live performances has given rise to a thriving market, attracting scalpers who aim to capitalize on the situation and make substantial profits.",
 
-      { "type": "image", "src": "/media/concert-scalping/image1.png", "alt": "Fans without tickets listened and cheered outside the Bird's Nest", "caption": "Fans without tickets listened to the song and cheered outside the Bird's Nest, where display screens and lights could be seen." },
+      { "type": "image", "src": "media/concert-scalping/image1.png", "alt": "Fans without tickets listened and cheered outside the Bird's Nest", "caption": "Fans without tickets listened to the song and cheered outside the Bird's Nest, where display screens and lights could be seen." },
 
       "One such scalper, Li Yang (a pseudonym), recently shed light on the dynamics of the concert ticket scalping industry in an interview. Contrary to people's stereotyped views of scalpers, his slim, bespectacled look breaks common prejudices.",
 
@@ -20,13 +20,13 @@ const articles = [
 
       "Through extensive research on the ticketing market, Li Yang discovered the existence of the \"scalping\" industry, where individuals purchase and resell scarce tickets at inflated prices, profiting from the difference. Recognizing the potential business opportunity, he decided to give it a try.",
 
-      { "type": "image", "src": "/media/concert-scalping/image2.png", "alt": "Fans quarreled with scalpers outside the concert venue", "caption": "Outside the concert venue, fans were still in the midst of fierce quarrels with scalpers, and the scene security was also in chaos." },
+      { "type": "image", "src": "media/concert-scalping/image2.png", "alt": "Fans quarreled with scalpers outside the concert venue", "caption": "Outside the concert venue, fans were still in the midst of fierce quarrels with scalpers, and the scene security was also in chaos." },
 
       "Initially, Li Yang focused on gathering concert information to identify events that would generate high demand. He established connections with other scalpers through various channels and managed to purchase tickets from them. With diligent efforts, he started selling these tickets at the entrances of major concerts, reselling tickets at marked-up prices to eager fans. However, entering the industry as a newcomer proved challenging for Li Yang, requiring increased resources and contacts. He actively engaged in concert events, collaborating with experienced scalpers and learning from their expertise, refining his sales skills and enhancing his ability to acquire ticket resources.",
 
       "The cultural and entertainment events industry, including concerts, experienced a significant downturn during the pandemic, with many major events being canceled or postponed. This adverse situation dealt a severe blow to Li Yang's scalping business. As a scalper reliant on the resale of concert tickets for profitability, the suspension of concerts during the pandemic deprived him of access to scarce ticket resources and disrupted his profit-making ventures. The ticketing market he relied on slumped drastically. However, with the mainland performance market witnessing a remarkable resurgence in 2023, Li Yang has decided to reenter the scalping business, capitalizing on the MAYDAY concert in Beijing.",
 
-      { "type": "image", "src": "/media/concert-scalping/image3.png", "alt": "Music and excitement returned after the pandemic", "caption": "The dissipation of the pandemic has brought music, shouting and agitation back that summer." },
+      { "type": "image", "src": "media/concert-scalping/image3.png", "alt": "Music and excitement returned after the pandemic", "caption": "The dissipation of the pandemic has brought music, shouting and agitation back that summer." },
 
       "Li Yang emphasizes that the profitability of scalpers does not solely depend on the transaction price but also relies on the overall money flow cycle. He explains that ticketing companies often sign contracts with performers, allowing scalpers to acquire tickets at a price lower than the original cost. Li Yang points out that without connections to the organizers, ordinary people would have a hard time acquiring tickets priced at a reasonable level.",
 
@@ -57,7 +57,7 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'jI1g-iUrAO8', type: 'youtube', caption: 'How Concert Tickets Became a Business — video report' },
-      audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
+      audio: { src: 'media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
         subtitles: [
           { time: 0, text: "During the Mayday concert, not only was the venue packed, but it was also very crowded outside the venue." },
           { time: 7, text: "Many scalpers were selling concert tickets outside the venue, and it was very chaotic with many police officers around to maintain order." },
@@ -70,9 +70,9 @@ const articles = [
         ],
       },
       images: [
-        { src: '/media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
-        { src: '/media/concert-scalping/image2.png', alt: 'Fans quarreling with scalpers outside concert venue' },
-        { src: '/media/concert-scalping/image3.png', alt: 'Music returns after the pandemic' },
+        { src: 'media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
+        { src: 'media/concert-scalping/image2.png', alt: 'Fans quarreling with scalpers outside concert venue' },
+        { src: 'media/concert-scalping/image3.png', alt: 'Music returns after the pandemic' },
       ],
     },
   },
@@ -91,7 +91,7 @@ const articles = [
 
       'Following the viral spread of the “Zibo Barbecue” trend, many food bloggers and online influencers flocked to Zibo to experience and document the phenomenon. Since March, over 285,000 related online posts containing the keywords “Zibo” and “barbecue” have been generated, with an average daily dissemination rate of 10,179 posts. The videos related to Zibo’s barbecue culture have accumulated over 1.38 billion views, while the related topics on Weibo have been read over 230 million times. By any measure, “Zibo Barbecue” became one of the most widely discussed topics in China.',
 
-      { "type": "image", "src": "/media/zibo-bbq/image2.jpeg", "alt": "Food bloggers livestream from a barbecue street in Zibo", "caption": "Food bloggers livestream from a barbecue street in Zibo." },
+      { "type": "image", "src": "media/zibo-bbq/image2.jpeg", "alt": "Food bloggers livestream from a barbecue street in Zibo", "caption": "Food bloggers livestream from a barbecue street in Zibo." },
 
       'Major official media outlets, including CCTV, Xinhua News Agency, and People’s Daily, swiftly reported on the rising popularity of Zibo’s barbecue culture. The Director of Zibo’s Tourism and Culture Bureau personally addressed the media and live-streaming audiences, introducing the unique way of enjoying Zibo barbecue: “Grilled meat and vegetables on iron skewers, served with special barbecue sauce, chili powder, and cumin, then wrapped in a pancake along with scallions.”',
 
@@ -99,11 +99,11 @@ const articles = [
 
       'On April 16, a video of a tourist who paid 20 yuan for a pancake that was originally priced at 6 yuan quickly gained attention online. In response, the Zibo government launched initiatives to rectify various issues related to restaurant, hotel, and transportation fees. Meanwhile, local residents actively participated in efforts to enhance the city’s image. Taxi drivers organized free transportation services for tourists at the train station, and locals presented visitors with local delicacies while encouraging them to enjoy the barbecue, even at the expense of their own dining and parking spaces. Barbecue shop owners would proactively recommend other delicious barbecue establishments to minimize customers’ waiting time.',
 
-      { "type": "image", "src": "/media/zibo-bbq/image1.jpeg", "alt": "A customer grills skewers over a small stove at a Zibo barbecue stall", "caption": "A customer grills skewers over a small stove at a Zibo barbecue stall." },
+      { "type": "image", "src": "media/zibo-bbq/image1.jpeg", "alt": "A customer grills skewers over a small stove at a Zibo barbecue stall", "caption": "A customer grills skewers over a small stove at a Zibo barbecue stall." },
 
       'During the May Day holiday, the Zibo government organized a dedicated “Barbecue Festival,” attracting a large number of tourists who came to experience the city’s warmth and hospitality. Over the five-day holiday, Zibo welcomed a total of over 4.8 million visitors, resulting in a 73% increase in tourism consumption compared to April. Tourism bookings also grew by 2,000% compared to the previous year, catapulting Zibo to the top of the list of popular tourist destinations nationwide.',
 
-      { "type": "image", "src": "/media/zibo-bbq/image3.jpeg", "alt": "A chef prepares skewers in a Zibo restaurant kitchen", "caption": "A chef prepares skewers in a Zibo restaurant kitchen." },
+      { "type": "image", "src": "media/zibo-bbq/image3.jpeg", "alt": "A chef prepares skewers in a Zibo restaurant kitchen", "caption": "A chef prepares skewers in a Zibo restaurant kitchen." },
 
       'Leveraging the power of online platforms and social media, barbecue has become a calling card for Zibo — a textbook case of how digital attention converts into tourism revenue. Yet the real challenge is whether the city can sustain this momentum or face diminishing returns once the novelty fades. Zibo is now exploring long-term branding strategies to turn a viral moment into lasting growth.',
     ],
@@ -124,11 +124,11 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'I6ndDG7Pcmw', type: 'youtube', caption: 'Zibo grills its way to viral fame — video report' },
-      audio: { src: '/media/zibo-bbq/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      audio: { src: 'media/zibo-bbq/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
-        { src: '/media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
-        { src: '/media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
-        { src: '/media/zibo-bbq/image3.jpeg', alt: 'A chef preparing skewers in a Zibo restaurant kitchen' },
+        { src: 'media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
+        { src: 'media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
+        { src: 'media/zibo-bbq/image3.jpeg', alt: 'A chef preparing skewers in a Zibo restaurant kitchen' },
       ],
     },
   },
@@ -165,14 +165,14 @@ const articles = [
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/clothing-sizes/video.mp4', type: 'video/mp4', caption: 'Video report on women\'s clothing size shrinkage' },
-      audio: { src: '/media/clothing-sizes/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      video: { src: 'media/clothing-sizes/video.mp4', type: 'video/mp4', caption: 'Video report on women\'s clothing size shrinkage' },
+      audio: { src: 'media/clothing-sizes/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
-        { src: '/media/clothing-sizes/image1.jpeg', alt: 'Side-by-side comparison of women\'s clothing sizes across brands' },
-        { src: '/media/clothing-sizes/image2.jpeg', alt: 'Fast-fashion brand size chart analysis' },
-        { src: '/media/clothing-sizes/image3.jpeg', alt: 'Examples of one-size-fits-all marketing' },
-        { src: '/media/clothing-sizes/image4.jpeg', alt: 'Visual representation of body image and sizing issues' },
-        { src: '/media/clothing-sizes/image5.jpeg', alt: 'Consumer feedback and complaints about sizing' },
+        { src: 'media/clothing-sizes/image1.jpeg', alt: 'Side-by-side comparison of women\'s clothing sizes across brands' },
+        { src: 'media/clothing-sizes/image2.jpeg', alt: 'Fast-fashion brand size chart analysis' },
+        { src: 'media/clothing-sizes/image3.jpeg', alt: 'Examples of one-size-fits-all marketing' },
+        { src: 'media/clothing-sizes/image4.jpeg', alt: 'Visual representation of body image and sizing issues' },
+        { src: 'media/clothing-sizes/image5.jpeg', alt: 'Consumer feedback and complaints about sizing' },
       ],
     },
   },
@@ -187,7 +187,7 @@ const articles = [
     body: [
       "SHANGHAI, May 23 — A worrying incident involving child actor Zhou Anxin in Shanghai has sparked widespread attention and concern over rights protection for child performers. The incident took place on the set of a film, where the production team opted for actual physical impact while portraying a scene in which a child is made to cry. After the shooting, the young actor's face remained red and swollen before recovering. His role that day required him to be slapped and cry.",
 
-      { "type": "image", "src": "/media/child-stars/image2.png", "alt": "Crew uses artificial tears instead of forcing the child to cry", "caption": "During a crying scene, the 'Spark Fluorescent' crew used artificial tears instead of forcing the child actor to cry emotionally, aiming to protect the child's psychological well-being." },
+      { "type": "image", "src": "media/child-stars/image2.png", "alt": "Crew uses artificial tears instead of forcing the child to cry", "caption": "During a crying scene, the 'Spark Fluorescent' crew used artificial tears instead of forcing the child actor to cry emotionally, aiming to protect the child's psychological well-being." },
 
       "His mother said, \"After seeing the script, I actually didn't want him to shoot.\" She added, \"I went to the crew and asked whether we could use special effects or stage the action, but they didn't agree.\"",
 
@@ -195,7 +195,7 @@ const articles = [
 
       "Zhou Anxin is an experienced child actor who has previously appeared in advertisements, TV dramas and films. His mother acknowledges the demands of the production team but genuinely hopes to find better and safer solutions. \"I could sometimes feel that he was under a lot of pressure, having to shoot and do homework, and going back to school to make up for it. Every time I see him exhausted, I think 'I don't want to count it,' but he doesn't tell me himself,\" his mother said.",
 
-      { "type": "image", "src": "/media/child-stars/image1.png", "alt": "Crew prepared toys for the child actor before filming", "caption": "Before filming, the crew prepared toys for the child actor to reduce boredom and help create a more relaxed environment on set." },
+      { "type": "image", "src": "media/child-stars/image1.png", "alt": "Crew prepared toys for the child actor before filming", "caption": "Before filming, the crew prepared toys for the child actor to reduce boredom and help create a more relaxed environment on set." },
 
       "Numerous child actors are not given special care, and their rights are sometimes violated.",
 
@@ -205,7 +205,7 @@ const articles = [
 
       "The lack of explicit legislation and specific regulations to protect child performers exposes them to various risks. Child performers often face issues such as sleep deprivation, long working hours, irregular eating habits and physical injuries.",
 
-      { "type": "image", "src": "/media/child-stars/image3.png", "alt": "Crew member applies artificial tears tested by medical university", "caption": "A crew member applies artificial tears to the child actor during the crying scene. The material was tested in advance by doctoral students at Southern Medical University to confirm it was harmless to children." },
+      { "type": "image", "src": "media/child-stars/image3.png", "alt": "Crew member applies artificial tears tested by medical university", "caption": "A crew member applies artificial tears to the child actor during the crying scene. The material was tested in advance by doctoral students at Southern Medical University to confirm it was harmless to children." },
 
       "For No Filter Lab, the case also shows the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost may be shifted onto children's bodies, emotions and education.",
 
@@ -213,11 +213,11 @@ const articles = [
 
       "Project leader Yu Hailong expressed hope that more individuals will join efforts to protect the rights of child performers and urged the industry to promptly introduce relevant regulations.",
 
-      { "type": "image", "src": "/media/child-stars/image4.png", "alt": "Crew films child actor while balancing production and child protection", "caption": "The crew films a child actor while trying to balance production needs with the protection of children's rights and mental health." },
+      { "type": "image", "src": "media/child-stars/image4.png", "alt": "Crew films child actor while balancing production and child protection", "caption": "The crew films a child actor while trying to balance production needs with the protection of children's rights and mental health." },
 
       "\"The overall goal of our project is to encourage the community to look at child performers as children in need of help, rather than only treating them as stars,\" Yu said. \"We hope people can focus more on the shadow of rights violations behind their glow. From there, more organizations can be called upon to defend their legal rights.\"",
 
-      { "type": "image", "src": "/media/child-stars/image5.png", "alt": "Staff and child actors take a group photo after the project", "caption": "Staff and child actors take a group photo after the project, which aimed to explore a more child-friendly production model." },
+      { "type": "image", "src": "media/child-stars/image5.png", "alt": "Staff and child actors take a group photo after the project", "caption": "Staff and child actors take a group photo after the project, which aimed to explore a more child-friendly production model." },
     ],
 
     lensExplanation: "The case of Zhou Anxin exposes the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost is shifted onto children's bodies, emotions, and education. The lack of uniform industry standards means child performers' rights depend on individual crew awareness rather than enforceable regulations.",
@@ -237,11 +237,11 @@ const articles = [
       caption: 'MULTIMEDIA',
       video: { src: 'wDxA0_yeFCY', type: 'youtube', caption: 'After One Slap: Who Protects Child Actors on Set? — video report' },
       images: [
-        { src: '/media/child-stars/image1.png', alt: 'Crew prepared toys for child actor before filming' },
-        { src: '/media/child-stars/image2.png', alt: 'Artificial tears used instead of forcing child to cry' },
-        { src: '/media/child-stars/image3.png', alt: 'Crew member applies tested artificial tears' },
-        { src: '/media/child-stars/image4.png', alt: 'Filming while balancing production and child protection' },
-        { src: '/media/child-stars/image5.png', alt: 'Group photo after child-friendly production project' },
+        { src: 'media/child-stars/image1.png', alt: 'Crew prepared toys for child actor before filming' },
+        { src: 'media/child-stars/image2.png', alt: 'Artificial tears used instead of forcing child to cry' },
+        { src: 'media/child-stars/image3.png', alt: 'Crew member applies tested artificial tears' },
+        { src: 'media/child-stars/image4.png', alt: 'Filming while balancing production and child protection' },
+        { src: 'media/child-stars/image5.png', alt: 'Group photo after child-friendly production project' },
       ],
     },
   },
@@ -256,7 +256,7 @@ const articles = [
     body: [
       "BEIJING — Beijing's stray animals face numerous challenges in the bustling city. However, a group of dedicated volunteers is actively working to make a difference through an initiative known as Beijing Adoption Day. While driven by compassion, the initiative also serves as a grassroots response to the social costs imposed by pet overpopulation.",
 
-      { "type": "image", "src": "/media/stray-animals/image1.jpeg", "alt": "The team used low-cost equipment to multi-angle document Beijing Adoption Day", "caption": "The team used low-cost equipment to multi-angle document Beijing Adoption Day, delivering transparent, No Filter coverage of public welfare efforts." },
+      { "type": "image", "src": "media/stray-animals/image1.jpeg", "alt": "The team used low-cost equipment to multi-angle document Beijing Adoption Day", "caption": "The team used low-cost equipment to multi-angle document Beijing Adoption Day, delivering transparent, No Filter coverage of public welfare efforts." },
 
       "With the aim of curbing the rising stray animal population and addressing associated issues, such as abandonment and neglect, one of the pivotal aspects of Beijing Adoption Day is their \"Monthly Donations\" program. By donating an amount equivalent to the cost of a cup of milk tea each month, people can have a significant impact on the lives of these animals. The donations received help provide much-needed resources, including shelters, food, insulated water bowls during winter, vaccines, and sterilization surgeries for stray animals.",
 
@@ -266,7 +266,7 @@ const articles = [
 
       "This helps correct the resource misallocation often seen in commercial breeding markets.",
 
-      { "type": "image", "src": "/media/stray-animals/image2.jpeg", "alt": "Adopters fill detailed forms at Beijing Adoption Day", "caption": "Adopters fill detailed forms and receive regular follow-ups. This rule reduces moral hazard and ensures responsible adoption." },
+      { "type": "image", "src": "media/stray-animals/image2.jpeg", "alt": "Adopters fill detailed forms at Beijing Adoption Day", "caption": "Adopters fill detailed forms and receive regular follow-ups. This rule reduces moral hazard and ensures responsible adoption." },
 
       "In addition to facilitating adoptions, Beijing Adoption Day actively promotes age-appropriate sterilization as part of responsible pet ownership. Through educational campaigns and partnerships with local veterinary clinics, the organization aims to raise awareness about the benefits of spaying and neutering pets. By spreading this crucial message, they hope to prevent future instances of abandonment and reduce the stray animal population in the long run.",
 
@@ -274,7 +274,7 @@ const articles = [
 
       "Zhu Jiayin, one of the responsible personnel of Beijing Adoption Day, shared her two-year experience with the organization. She mentioned how the extended break brought about by the pandemic allowed her to actively participate in the work of Beijing Adoption Day and contribute to the welfare of vulnerable animals.",
 
-      { "type": "image", "src": "/media/stray-animals/image3.jpeg", "alt": "Beijing Adoption Day volunteers at a weekend event", "caption": "Unlike traditional charities that rely on emotional appeals, this operation runs on professionalized volunteerism. Their use of high-end cameras and audio gear isn't just for show — it's a strategic tool to produce data-backed visual reports." },
+      { "type": "image", "src": "media/stray-animals/image3.jpeg", "alt": "Beijing Adoption Day volunteers at a weekend event", "caption": "Unlike traditional charities that rely on emotional appeals, this operation runs on professionalized volunteerism. Their use of high-end cameras and audio gear isn't just for show — it's a strategic tool to produce data-backed visual reports." },
 
       "To maximize their initiatives' impact, Beijing Adoption Day primarily organizes events on weekends. Firstly, many volunteers have their regular jobs during weekdays, making weekends the best available time for their commitment. Secondly, organizing events on weekends attracts larger crowds, increasing exposure for Beijing Adoption Day and spreading awareness about its mission to a wider audience.",
 
@@ -300,9 +300,9 @@ const articles = [
       caption: 'MULTIMEDIA',
       video: { src: 'd-AP2J6K72g', type: 'youtube', caption: 'One Cup of Milk Tea: Changing the Fate of Stray Animals — video report' },
       images: [
-        { src: '/media/stray-animals/image1.jpeg', alt: 'Low-cost equipment documenting adoption day' },
-        { src: '/media/stray-animals/image2.jpeg', alt: 'Adoption forms and volunteer follow-up process' },
-        { src: '/media/stray-animals/image3.jpeg', alt: 'Beijing Adoption Day weekend volunteer event' },
+        { src: 'media/stray-animals/image1.jpeg', alt: 'Low-cost equipment documenting adoption day' },
+        { src: 'media/stray-animals/image2.jpeg', alt: 'Adoption forms and volunteer follow-up process' },
+        { src: 'media/stray-animals/image3.jpeg', alt: 'Beijing Adoption Day weekend volunteer event' },
       ],
     },
   },
@@ -319,7 +319,7 @@ const articles = [
 
       "The name of this thriller short film is \"Bangzijing Murder Incident.\" The director is Li Hans, a sophomore majoring in digital media at the Communication University of China. He is a thriller fan. He found some friends and shot this short film at an ultra-low cost.",
 
-      { "type": "image", "src": "/media/student-films/image1.png", "alt": "The living environment of director Li Hans", "caption": "The living environment of director Li Hans in his dormitory at CUC." },
+      { "type": "image", "src": "media/student-films/image1.png", "alt": "The living environment of director Li Hans", "caption": "The living environment of director Li Hans in his dormitory at CUC." },
 
       "This thriller short film is actually a course assignment of Li Hans, but contrary to the audience's praise on the Internet, this short film has achieved a very poor result. \"The professor gave me a score of 79, a very low score, because he did not like my theme. He preferred themes like suspense and love,\" director Li Hans said.",
 
@@ -327,7 +327,7 @@ const articles = [
 
       "Even though he was denied, the director still decided to make movies according to his hobbies. Li Hans said, \"Everyone's aesthetic is different. Everyone should have the right to choose the topic they like. I just like the funny things like American horror movies.\"",
 
-      { "type": "image", "src": "/media/student-films/image2.png", "alt": "Director darkens the corridor to shoot a night scene during the day", "caption": "To shoot a night scene during the day, the director darkens the corridor by sealing its window with cloth." },
+      { "type": "image", "src": "media/student-films/image2.png", "alt": "Director darkens the corridor to shoot a night scene during the day", "caption": "To shoot a night scene during the day, the director darkens the corridor by sealing its window with cloth." },
 
       "The professor watched the thriller short film released on the Internet and learned the audience's views on the film. He understood the director's insistence. The professor commented, \"It is really entertaining.\"",
 
@@ -335,13 +335,13 @@ const articles = [
 
       "Although thriller short films are defined by professors as genre films that can be industrialized, there are not many high-quality thriller short films in mainland China in recent years. When the water supply in the student dormitory was cut off again, Li Hans said, \"We are preparing to make another thriller short film, which is related to zombies. I hope to do something in my favorite field and make a zombie film of good quality for friends who like thrillers.\"",
 
-      { "type": "image", "src": "/media/student-films/image3.png", "alt": "Director shoots Living Zombie in CUC at Bangzijing dormitory", "caption": "The director shoots \"Living Zombie in CUC\" at Bangzijing, the same dormitory where he shot his previous work." },
+      { "type": "image", "src": "media/student-films/image3.png", "alt": "Director shoots Living Zombie in CUC at Bangzijing dormitory", "caption": "The director shoots \"Living Zombie in CUC\" at Bangzijing, the same dormitory where he shot his previous work." },
 
       "Fortunately, Li Hans met a partner who liked thriller films as much as he did, which also supported him to continue to do what he liked. Li Houru was the leading actor who participated in the shooting of the thriller short film.",
 
       "Li Houru said, \"I have participated in several other films, all of which are artistic films about emotion. Sometimes I even did not know what they wanted to express after I finished acting. I like the experience of shooting this film best.\" \"Not only is the film interesting, but the shooting process is also very interesting. I really look forward to the director's next film,\" Li Houru added.",
 
-      { "type": "image", "src": "/media/student-films/image4.png", "alt": "Actors break locks and rush to freedom in the final scene", "caption": "The director shoots the last scene as actors break locks and rush to freedom." },
+      { "type": "image", "src": "media/student-films/image4.png", "alt": "Actors break locks and rush to freedom in the final scene", "caption": "The director shoots the last scene as actors break locks and rush to freedom." },
 
       "When asked by the reporter about the ultimate goal of making the film, Li Hans replied, \"What I hope most is that what I make can bring fun.\" The reaction of the actors and audience showed that he did it.",
 
@@ -364,12 +364,12 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'bbCP__8pa6U', type: 'youtube', caption: '79-Point Horror Film — student documentary' },
-      audio: { src: '/media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      audio: { src: 'media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
-        { src: '/media/student-films/image1.png', alt: 'Living environment of director Li Hans' },
-        { src: '/media/student-films/image2.png', alt: 'Corridor darkened to shoot night scene' },
-        { src: '/media/student-films/image3.png', alt: 'Shooting Living Zombie in CUC at Bangzijing' },
-        { src: '/media/student-films/image4.png', alt: 'Actors break locks and rush to freedom' },
+        { src: 'media/student-films/image1.png', alt: 'Living environment of director Li Hans' },
+        { src: 'media/student-films/image2.png', alt: 'Corridor darkened to shoot night scene' },
+        { src: 'media/student-films/image3.png', alt: 'Shooting Living Zombie in CUC at Bangzijing' },
+        { src: 'media/student-films/image4.png', alt: 'Actors break locks and rush to freedom' },
       ],
     },
   }
