@@ -2,6 +2,20 @@ import { useParams, Link } from 'react-router-dom';
 import articles from '../data/articles';
 
 const contentMap = {
+  'scarcity': {
+    title: 'What is a Price Ceiling? How Ticket Caps Fuel Scalping',
+    subtitle: 'What is a Price Ceiling?',
+    intro: 'When regulators or organizers set a maximum ticket price below the market-clearing level, quantity demanded exceeds quantity supplied, creating a shortage. This shortage is typically rationed through non-price mechanisms such as lotteries, queues, or social connections rather than price. A secondary market then emerges to reallocate tickets to those willing to pay more.',
+    quote: 'Official price caps create the shortage; secondary markets reveal true demand.',
+    sections: [
+      {
+        text: "On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that \"the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience.\" This is China's first explicit regulation on the public sale ratio of concert tickets, aimed at increasing supply in the primary market and curbing the scale of the secondary market.",
+        source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association Notice, April 26, 2023',
+      },
+    ],
+    conclusion: 'The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
+    relatedArticle: 'concert-scalping',
+  },
   'labor-protection': {
     title: 'Labor Protection: Experiencing the Shadow Behind the Glory',
     subtitle: 'What is Labor Protection?',
