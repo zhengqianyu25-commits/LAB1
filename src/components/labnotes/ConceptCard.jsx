@@ -43,13 +43,13 @@ export default function ConceptCard({ article, index }) {
   const c = cards[article.category] || { title: article.conceptEn, explanation: article.lensExplanation, quote: '', related: '' };
 
   return (
-    <div className={`news-card p-7 flex flex-col animate-in stagger-${Math.min((index || 0) + 1, 6)}`} style={{ borderRadius: '2px' }}>
-      <div className="flex items-start justify-between mb-4">
-        <span className="text-4xl font-display font-medium opacity-10">{article.number}</span>
-        <span className="text-[0.6rem] font-semibold tracking-[0.15em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>Card {('0' + (index + 1)).slice(-2)}</span>
+    <div className={`news-card p-7 flex flex-col border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[var(--color-accent)]`} style={{ borderRadius: '2px', borderColor: 'var(--color-border)', background: 'rgba(255,255,255,0.7)' }}>
+      <div className="flex items-center gap-3 mb-4">
+        <span className="text-3xl font-display font-medium opacity-10">{article.number}</span>
+        <span className="text-[0.55rem] font-semibold tracking-[0.12em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>Lens {('0' + (index + 1)).slice(-2)}</span>
       </div>
 
-      <h3 className="text-xl font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>{c.title}</h3>
+      <h3 className="text-lg font-display font-medium mb-3 leading-snug" style={{ color: 'var(--color-text)' }}>{c.title}</h3>
       <p className="text-sm mb-4 leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{c.explanation}</p>
 
       {c.quote && (
@@ -65,7 +65,7 @@ export default function ConceptCard({ article, index }) {
         </Link>
       </div>
 
-      <Link to={`/lab-note/${article.category}`} className="accent-link">Explore Data &rarr;</Link>
+      <Link to={`/lab-note/${article.category}`} className="inline-flex items-center gap-1.5 mt-1 text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-70" style={{ color: 'var(--color-accent)' }}>Explore Data <span className="text-base">&rarr;</span></Link>
     </div>
   );
 }
