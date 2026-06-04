@@ -79,7 +79,7 @@ export function AudioProvider({ children }) {
     // Pause all other media on the page
     document.querySelectorAll('video, audio').forEach(v => { if (!v.paused && v !== audioRef.current) v.pause(); });
     // Pause YouTube iframes
-    document.querySelectorAll('iframe[src*="youtube.com/embed"], iframe[src*="youtube.com/embed"]').forEach(f => {
+    document.querySelectorAll('iframe').forEach(f => {
       f.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
     });
     if (episode?.number === ep.number) {
