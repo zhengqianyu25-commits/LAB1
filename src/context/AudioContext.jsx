@@ -2,13 +2,14 @@ import { createContext, useContext, useState, useRef, useEffect, useCallback } f
 import articles from '../data/articles';
 
 const audioArticles = articles.filter(a => a.media?.audio);
-const AudioCtx = createContext();
+const MediaCtx = createContext();
 
 export function AudioProvider({ children }) {
   const [episode, setEpisode] = useState(null);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+  const [video, setVideo] = useState(null);
   const [liked, setLiked] = useState(() => {
     try { return JSON.parse(localStorage.getItem('nf_liked') || '[]'); } catch { return []; }
   });
@@ -20,31 +21,6 @@ export function AudioProvider({ children }) {
   useEffect(() => { localStorage.setItem('nf_queue', JSON.stringify(queue)); }, [queue]);
   useEffect(() => { localStorage.setItem('nf_liked', JSON.stringify(liked)); }, [liked]);
 
-  // Pause audio when clicking on YouTube iframes
-  useEffect(() => {
-    const onClick = (e) => {
-      const iframe = e.target.closest?.('.aspect-video, [class*="youtube"]') || e.target.closest('iframe');
-      if (iframe) {
-        const ga = audioRef.current;
-        if (ga && !ga.paused) { ga.pause(); setPlaying(false); }
-      }
-    };
-    document.addEventListener('mousedown', onClick, true);
-    return () => document.removeEventListener('mousedown', onClick, true);
-  }, []);
-
-  // Pause audio when a native video/audio element plays
-  useEffect(() => {
-    const onMediaPlay = (e) => {
-      if ((e.target.tagName === 'VIDEO' || e.target.tagName === 'AUDIO') && audioRef.current && !audioRef.current.paused && e.target !== audioRef.current) {
-        audioRef.current.pause(); setPlaying(false);
-      }
-    };
-    document.addEventListener('play', onMediaPlay, true);
-    return () => document.removeEventListener('play', onMediaPlay, true);
-  }, []);
-
-  // Audio element event handlers
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -67,67 +43,54 @@ export function AudioProvider({ children }) {
       setEpisode(null);
       setPlaying(false);
     };
-    const onPlay = () => setPlaying(true);
-    const onPause = () => setPlaying(false);
     audio.addEventListener('timeupdate', onTime);
     audio.addEventListener('loadedmetadata', onTime);
-    audio.addEventListener('play', onPlay);
-    audio.addEventListener('pause', onPause);
     audio.addEventListener('ended', onEnded);
     return () => {
       audio.removeEventListener('timeupdate', onTime);
       audio.removeEventListener('loadedmetadata', onTime);
-      audio.removeEventListener('play', onPlay);
-      audio.removeEventListener('pause', onPause);
       audio.removeEventListener('ended', onEnded);
     };
   }, [episode]);
 
-  const play = useCallback((index) => {
+  const playAudio = useCallback((index) => {
     const ep = audioArticles[index];
     if (!ep) return;
     const audio = audioRef.current;
     if (!audio) return;
-    // Pause all other media
-    document.querySelectorAll('video, audio').forEach(v => { if (!v.paused && v !== audio) v.pause(); });
-    document.querySelectorAll('iframe').forEach(f => {
-      if (f.src && f.src.includes('youtube')) {
-        try { f.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*'); } catch(e) {}
-      }
-    });
+    setVideo(null);
     if (episode?.number === ep.number) {
-      if (audio.paused) { audio.play().catch(() => {}); } else { audio.pause(); }
+      if (audio.paused) { audio.play().catch(() => {}); setPlaying(true); } else { audio.pause(); setPlaying(false); }
       return;
     }
     setEpisode(ep);
     audio.src = ep.media.audio.src;
     audio.play().catch(() => {});
+    setPlaying(true);
   }, [episode]);
 
-  const pause = () => audioRef.current?.pause();
-  const stop = () => { audioRef.current?.pause(); setEpisode(null); setPlaying(false); };
+  const pause = () => { audioRef.current?.pause(); setPlaying(false); };
+  const stop = () => { audioRef.current?.pause(); setEpisode(null); setPlaying(false); setVideo(null); };
   const seek = (t) => { if (audioRef.current) audioRef.current.currentTime = t; };
   const prev = () => {
     if (!episode) return;
     const idx = audioArticles.indexOf(episode);
-    play((idx - 1 + audioArticles.length) % audioArticles.length);
+    playAudio((idx - 1 + audioArticles.length) % audioArticles.length);
   };
   const next = () => {
     if (!episode) return;
     const idx = audioArticles.indexOf(episode);
-    play((idx + 1) % audioArticles.length);
+    playAudio((idx + 1) % audioArticles.length);
   };
   const toggleLike = () => {
     if (!episode) return;
     setLiked(l => l.includes(episode.slug) ? l.filter(s => s !== episode.slug) : [...l, episode.slug]);
   };
   const isLiked = episode ? liked.includes(episode.slug) : false;
-
   const playAll = () => {
     setQueue(audioArticles.map(a => ({ number: a.number, title: a.titleEn, slug: a.slug })));
-    play(0);
+    playAudio(0);
   };
-
   const addToQueue = () => {
     if (!episode) return;
     setQueue(q => {
@@ -135,21 +98,24 @@ export function AudioProvider({ children }) {
       return [...q, { number: episode.number, title: episode.titleEn, slug: episode.slug }];
     });
   };
+  const removeFromQueue = (slug) => setQueue(q => q.filter(e => e.slug !== slug));
 
-  const removeFromQueue = (slug) => {
-    setQueue(q => q.filter(e => e.slug !== slug));
+  const playVideo = (v) => {
+    if (audioRef.current) { audioRef.current.pause(); setPlaying(false); }
+    setVideo(v);
   };
+  const closeVideo = () => setVideo(null);
 
   return (
-    <AudioCtx.Provider value={{ episode, playing, currentTime, duration, play, pause, stop, seek, prev, next, liked: isLiked, toggleLike, queue, addToQueue, removeFromQueue, playAll }}>
+    <MediaCtx.Provider value={{ episode, playing, currentTime, duration, play: playAudio, pause, stop, seek, prev, next, liked: isLiked, toggleLike, queue, addToQueue, removeFromQueue, playAll, video, playVideo, closeVideo }}>
       <audio ref={audioRef} id="global-audio" className="hidden" />
       {children}
-    </AudioCtx.Provider>
+    </MediaCtx.Provider>
   );
 }
 
 export function useAudio() {
-  return useContext(AudioCtx);
+  return useContext(MediaCtx);
 }
 
 export { audioArticles };

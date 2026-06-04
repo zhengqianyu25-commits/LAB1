@@ -8,6 +8,7 @@ import ProgressBar from '../common/ProgressBar';
 import BackToTop from '../common/BackToTop';
 import FloatingBack from '../common/FloatingBack';
 import MiniPlayer from '../common/MiniPlayer';
+import VideoModal from '../common/VideoModal';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ export default function Layout() {
       <BackToTop />
       <Footer />
       <MiniPlayer />
+      <VideoModal />
     </div>
   );
 }

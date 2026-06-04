@@ -1,4 +1,28 @@
 import { useState } from 'react';
+import { useAudio } from '../../context/AudioContext';
+
+function VideoThumb({ article }) {
+  const { playVideo } = useAudio();
+  const video = article.media.video;
+  return (
+    <div
+      className="aspect-video cursor-pointer relative group bg-black"
+      onClick={() => playVideo(video)}
+    >
+      <img
+        src={`https://img.youtube.com/vi/${video.src}/hqdefault.jpg`}
+        alt={video.caption || ''}
+        className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity"
+      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-16 h-16 rounded-full flex items-center justify-center transition-transform group-hover:scale-110" style={{ background: 'var(--color-accent)' }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+      </div>
+      {video.caption && <p className="absolute bottom-0 left-0 right-0 px-4 py-2 text-xs text-white/80 bg-black/50">{video.caption}</p>}
+    </div>
+  );
+}
 
 function Lightbox({ src, alt, onClose }) {
   return (
@@ -70,19 +94,7 @@ export default function MediaSection({ media }) {
         {video && (
           <div className="mb-8 rounded-xl overflow-hidden border border-paper-border">
             {video.type === 'youtube' ? (
-              <div className="aspect-video" onClick={() => {
-                // Pause global audio when user clicks to play YouTube
-                const ga = document.getElementById('global-audio');
-                if (ga) { ga.pause(); ga.dispatchEvent(new Event('pause')); }
-              }}>
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${video.src}?rel=0&modestbranding=1&showinfo=0&enablejsapi=1`}
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title={video.caption || 'YouTube video'}
-                />
-              </div>
+              <VideoThumb article={{ media: { video } }} />
             ) : video.type === 'video/quicktime' ? (
               <div className="p-6 text-center" style={{ background: 'var(--color-bg-secondary)' }}>
                 <p className="text-sm font-semibold mb-2" style={{ color: 'var(--color-text)' }}>{video.caption || 'Video'}</p>
