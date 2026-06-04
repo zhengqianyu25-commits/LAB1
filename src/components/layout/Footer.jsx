@@ -30,7 +30,6 @@ export default function Footer() {
               <Link to="/stories" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>All Stories</Link>
               <Link to="/frequency" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>No Filter Frequency</Link>
               <Link to="/about" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>About</Link>
-              <Link to="/credits" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>Credits</Link>
               <button
                 onClick={randomArticle}
                 className="text-xs text-left opacity-60 hover:opacity-100 transition-opacity dark-bright"

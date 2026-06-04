@@ -5,7 +5,6 @@ import StoriesPage from './pages/StoriesPage';
 import ArticlePage from './pages/ArticlePage';
 import LabNotesPage from './pages/LabNotesPage';
 import AboutPage from './pages/AboutPage';
-import CreditsPage from './pages/CreditsPage';
 import PodcastPage from './pages/PodcastPage';
 import ListenPage from './pages/ListenPage';
 import LabNotePage from './pages/LabNotePage';
@@ -21,7 +20,6 @@ export default function App() {
           <Route path="article/:slug" element={<ArticlePage />} />
           <Route path="lab-notes" element={<LabNotesPage />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="credits" element={<CreditsPage />} />
           <Route path="frequency" element={<PodcastPage />} />
           <Route path="listen/:index" element={<ListenPage />} />
           <Route path="lab-note/:slug" element={<LabNotePage />} />
