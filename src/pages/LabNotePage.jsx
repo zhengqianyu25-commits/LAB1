@@ -9,12 +9,12 @@ const contentMap = {
     quote: "Traffic creates the spark; service decides whether it lasts.",
     sections: [
       {
-        image: '/media/lab-notes/attention-economy-1.png',
+        tableau: 'https://public.tableau.com/views/Otherdatas/1?:showVizHome=no&:embed=true',
         source: 'Source: Douyin (ByteDance) public data, compiled by Juzi Suannai',
         text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
       },
       {
-        image: '/media/lab-notes/attention-economy-2.png',
+        tableau: 'https://public.tableau.com/views/Otherdatas/1?:showVizHome=no&:embed=true',
         source: 'Source: Guojí · Feigua Data',
         text: 'As search interest rose, so did the number of short videos. User-generated content supply jumped from almost zero to 10,000 videos on April 29 alone. This flood of free advertising lowered Zibo\'s customer acquisition cost to near zero. In attention economy terms, creators acted as unpaid brand ambassadors, amplifying the city\'s reach exponentially.',
       },
@@ -73,7 +73,15 @@ export default function LabNotePage() {
           {data.sections.map((s, i) => (
             <div key={i}>
               <div className="border overflow-hidden rounded-sm mb-3" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
-                <img src={s.image} alt="" className="w-full h-auto" loading="lazy" />
+                {s.tableau ? (
+                  <div className="aspect-[4/3]">
+                    <iframe src={s.tableau} className="w-full h-full border-0" allowFullScreen />
+                  </div>
+                ) : s.image ? (
+                  <div className="max-w-md mx-auto">
+                    <img src={s.image} alt="" className="w-full h-auto" loading="lazy" />
+                  </div>
+                ) : null}
               </div>
               <p className="text-[0.55rem] font-semibold tracking-wider uppercase opacity-40 mb-2" style={{ color: 'var(--color-text-muted)' }}>{s.source}</p>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{s.text}</p>
