@@ -9,10 +9,9 @@ export default function LabNotesPage() {
       <section className="container-main pt-16 md:pt-24 pb-8 text-center">
         <span className="text-[0.6rem] font-bold tracking-[0.25em] uppercase opacity-40 mb-4 block" style={{ color: 'var(--color-text-muted)' }}>Lab Notes</span>
         <h1 className="text-3xl md:text-5xl font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>No Filter Lens</h1>
-        <p className="text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-4" style={{ color: 'var(--color-text-secondary)' }}>
-          Six economics concepts distilled from the headlines. Each lens reveals the hidden costs, incentives, and trade-offs behind one story.
+        <p className="text-sm md:text-base max-w-xl mx-auto leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+          Extracting economic concepts from the stories. Each shot reveals something lies hidden behind.
         </p>
-        <p className="text-xs font-semibold tracking-[0.12em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>Three minutes to understand the logic behind any event</p>
       </section>
 
       {/* Concept Map */}
