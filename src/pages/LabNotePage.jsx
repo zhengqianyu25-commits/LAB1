@@ -1,5 +1,15 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import articles from '../data/articles';
+
+function Lightbox({ src, onClose }) {
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" style={{ background: 'rgba(0,0,0,0.9)' }} onClick={onClose}>
+      <button onClick={onClose} className="absolute top-6 right-6 text-white text-2xl opacity-60 hover:opacity-100">&times;</button>
+      <img src={src} alt="" className="max-w-full max-h-[90vh] object-contain" onClick={e => e.stopPropagation()} />
+    </div>
+  );
+}
 
 const contentMap = {
   'attention-economy': {
@@ -154,6 +164,7 @@ const contentMap = {
 export default function LabNotePage() {
   const { slug } = useParams();
   const data = contentMap[slug];
+  const [lightbox, setLightbox] = useState(null);
 
   if (!data) {
     return (
@@ -192,8 +203,8 @@ export default function LabNotePage() {
                     <iframe src={s.tableau} className="w-full h-full border-0" allowFullScreen />
                   </div>
                 ) : s.image ? (
-                  <div className="max-w-[280px] mx-auto">
-                    <img src={s.image} alt="" className="w-full h-auto" loading="lazy" />
+                  <div className="max-w-[280px] mx-auto cursor-zoom-in" onClick={() => setLightbox(s.image)}>
+                    <img src={s.image} alt="" className="w-full h-auto hover:opacity-90 transition-opacity" loading="lazy" />
                   </div>
                 ) : null}
               </div>
@@ -220,6 +231,8 @@ export default function LabNotePage() {
           </div>
         </div>
       </section>
+
+      {lightbox && <Lightbox src={lightbox} onClose={() => setLightbox(null)} />}
     </div>
   );
 }
