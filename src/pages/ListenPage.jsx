@@ -68,7 +68,7 @@ export default function ListenPage() {
       {/* Top bar */}
       <div className="container-main flex items-center justify-center py-6 border-b" style={{ borderColor: 'var(--color-border)' }}>
         <div className="text-center">
-          <p className="text-sm font-display font-medium" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
+          <p className="text-base md:text-lg font-display font-medium" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
           <div className="flex items-center justify-center gap-1 mt-0.5">
             <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: playing ? 'var(--color-accent)' : 'var(--color-text-muted)' }} />
             <span className="text-[0.55rem] opacity-50" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</span>
