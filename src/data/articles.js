@@ -198,7 +198,9 @@ const articles = [
         { src: 'media/clothing-sizes/doc3.jpeg', alt: "Women\'s clothing sizing issues across the market", caption: "Women\'s clothing sizes continue to shrink across the market." },
       ],
     },
-  slug: 'child-stars', number: '04', category: 'labor-protection',
+  },
+  {
+    slug: 'child-stars', number: '04', category: 'labor-protection',
     titleEn: 'Who Speaks for Child Actors?',
     titleZh: "A Shanghai child actor was slapped for real during filming. His case exposes gaps in China's child performer protections.",
     conceptEn: 'Labor Protection', conceptZh: '劳动保护与监管成本',
