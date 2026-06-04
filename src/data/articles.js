@@ -48,51 +48,51 @@ const articles = [
   },
   {
     slug: 'zibo-bbq', number: '02', category: 'attention-economy',
-    titleEn: 'Zibo\'s Barbecue Trend Takes Chinese Youth by Storm',
-    titleZh: 'How a viral food trend turned an industrial city into a national tourism phenomenon.',
+    titleEn: 'Zibo Grills Its Way to Viral Fame',
+    titleZh: 'How digital attention converted into real tourism dollars &mdash; and whether the city can sustain the heat.',
     conceptEn: 'Attention Economy', conceptZh: '注意力经济',
     readTime: '5 min', section: 'City',
-    summary: 'A hashtag, a vlogger review, and 1.38 billion views later, Zibo transformed from an obscure Shandong industrial hub into China\'s most talked-about destination &mdash; drawing 240,000 visitors during the May Day holiday alone.',
+    summary: 'Zibo turned online hype into real tourism dollars: millions of visitors, a 2,000% booking spike, and a 73% consumption jump. But the real story isn&apos;t the grill &mdash; it&apos;s whether the city can sustain the heat after the hashtag fades.',
 
     body: [
-      'ZIBO, China &mdash; On March 5, the hashtag &ldquo;University Students Flock to Zibo for Barbecue&rdquo; trended as the top topic on Douyin. Students from Shandong University had visited Zibo that spring to thank the local government for its hospitality during the pandemic, and videos of their barbecue experiences quickly went viral, igniting enthusiasm among young people across the country.',
+      'ZIBO, China &mdash; On March 5, the hashtag &ldquo;University Students Flock to Zibo for Barbecue&rdquo; trended as the top topic on the Douyin app. Numerous college students in Shandong Province visited Zibo this spring to express their gratitude to the local government for its warm hospitality during the pandemic. Videos showcasing their delightful barbecue experiences quickly went viral, creating the initial wave of enthusiasm among young people.',
 
-      'On April 8, influential vlogger Super B Tai posted a review highlighting Zibo&apos;s barbecue stalls, praising their quality and generous portions. Within three hours, the video received half a million likes and was reposted by the official Douyin account of People&apos;s Daily, China&apos;s leading newspaper. Food bloggers and online influencers soon flocked to the city to document the phenomenon.',
+      'On April 8, influential vlogger Super B Tai posted a review video highlighting Zibo&apos;s outstanding barbecue stalls, all of which he praised for the abundance and quality of the food. Within three hours, the video garnered half a million likes and was subsequently reposted by the official Douyin account of People&apos;s Daily, China&apos;s leading newspaper.',
 
-      'Since March, more than 285,000 online posts containing the keywords &ldquo;Zibo&rdquo; and &ldquo;barbecue&rdquo; have been generated, averaging over 10,000 posts per day. Related videos accumulated 1.38 billion views, while Weibo topics were read more than 230 million times. &ldquo;Zibo Barbecue&rdquo; became one of the most widely discussed subjects in the country.',
+      'Following the viral spread of the &ldquo;Zibo Barbecue&rdquo; trend, many food bloggers and online influencers flocked to Zibo to experience and document the phenomenon. Since March, over 285,000 related online posts containing the keywords &ldquo;Zibo&rdquo; and &ldquo;barbecue&rdquo; have been generated, with an average daily dissemination rate of 10,179 posts. The videos related to Zibo&apos;s barbecue culture have accumulated over 1.38 billion views, while the related topics on Weibo have been read over 230 million times. By any measure, &ldquo;Zibo Barbecue&rdquo; became one of the most widely discussed topics in China.',
 
-      'Major state media &mdash; including CCTV, Xinhua News Agency, and People&apos;s Daily &mdash; swiftly reported on the trend. The Director of Zibo&apos;s Tourism and Culture Bureau personally addressed the media, introducing the city&apos;s distinctive barbecue style: grilled meat and vegetables on iron skewers, served with special sauce, chili powder, cumin, and wrapped in a thin pancake with spring onions.',
+      'Major official media outlets, including CCTV, Xinhua News Agency, and People&apos;s Daily, swiftly reported on the rising popularity of Zibo&apos;s barbecue culture. The Director of Zibo&apos;s Tourism and Culture Bureau personally addressed the media and live-streaming audiences, introducing the unique way of enjoying Zibo barbecue: &ldquo;Grilled meat and vegetables on iron skewers, served with special barbecue sauce, chili powder, and cumin, then wrapped in a pancake along with scallions.&rdquo;',
 
-      'The Zibo government moved quickly to accommodate the surge. On March 31, China Railway Group launched a dedicated barbecue train service from Jinan to Zibo, offering gifts and guidebooks to visitors. Within the city, 21 specialized bus routes were established, covering all popular barbecue areas. When a tourist was overcharged 20 yuan for a pancake originally priced at 6 yuan, the government launched rectification campaigns targeting restaurants, hotels, and transportation fees.',
+      'To accommodate the growing interest, the Zibo government implemented a series of convenient policies. On March 31, the National Railway Administration launched the first dedicated barbecue train service from Jinan to Zibo, offering gifts and city guidebooks to visiting tourists. Within the city, 21 specialized barbecue bus routes were established, covering all popular barbecue shops in the urban area.',
 
-      'Local residents also joined the effort. Taxi drivers organized free rides for tourists at the train station. Locals handed out delicacies and gave up their own dining and parking spaces. Barbecue shop owners recommended competitors to minimize waiting times.',
+      'On April 16, a video of a tourist who paid 20 yuan for a pancake that was originally priced at 6 yuan quickly gained attention online. In response, the Zibo government launched initiatives to rectify various issues related to restaurant, hotel, and transportation fees. Meanwhile, local residents actively participated in efforts to enhance the city&apos;s image. Taxi drivers organized free transportation services for tourists at the train station, and locals presented visitors with local delicacies while encouraging them to enjoy the barbecue, even at the expense of their own dining and parking spaces. Barbecue shop owners would proactively recommend other delicious barbecue establishments to minimize customers&apos; waiting time.',
 
-      'During the May Day holiday, Zibo hosted a dedicated &ldquo;Barbecue Festival,&rdquo; welcoming 240,000 visitors in five days. Tourism consumption rose 73 percent compared to April, and bookings surged 2,000 percent year-over-year, propelling Zibo to the top of national destination rankings.',
+      'During the May Day holiday, the Zibo government organized a dedicated &ldquo;Barbecue Festival,&rdquo; attracting a large number of tourists who came to experience the city&apos;s warmth and hospitality. Over the five-day holiday, Zibo welcomed a total of over 4.8 million visitors, resulting in a 73% increase in tourism consumption compared to April. Tourism bookings also grew by 2,000% compared to the previous year, catapulting Zibo to the top of the list of popular tourist destinations nationwide.',
 
-      'The phenomenon demonstrates the raw power of attention economics: a single hashtag and a few viral videos converted public focus into consumer spending, infrastructure investment, and a national city brand virtually overnight. But the challenge remains: how to sustain that enthusiasm and translate a fleeting trend into lasting development. &ldquo;The question isn&apos;t whether you can go viral,&rdquo; a tourism economist said. &ldquo;It&apos;s what you build that outlasts the viral moment.&rdquo;',
+      'Leveraging the power of online platforms and social media, barbecue has become a calling card for Zibo &mdash; a textbook case of how digital attention converts into tourism revenue. Yet the real challenge is whether the city can sustain this momentum or face diminishing returns once the novelty fades. Zibo is now exploring long-term branding strategies to turn a viral moment into lasting growth.',
     ],
 
-    lensExplanation: 'The attention economy treats public focus as a scarce, monetizable resource. Zibo&apos;s barbecue phenomenon is a textbook case: a single hashtag and a vlogger review triggered 1.38 billion video views, which converted into tourism spending, government infrastructure investment, and a national city brand &mdash; all within weeks.',
-    whoGains: 'Zibo&apos;s hospitality and transportation sectors saw immediate revenue surges. The city gained a national brand virtually overnight. Content creators and platforms profited from massive engagement. Local businesses experienced unprecedented demand.',
-    whoPays: 'Local residents bore the costs of congestion, rising prices, and strained public services. The government committed substantial resources to manage the influx. Competing destinations lost tourism share. The city faces the risk of overinvestment if the trend fades.',
-    pullQuote: 'The question isn\'t whether you can go viral. It\'s what you build after.',
-    takeaway: 'Zibo proves that a single viral moment can transform a city&apos;s economic trajectory. But attention is rented, not owned. The real question is whether the infrastructure, governance, and brand equity built during the boom can generate returns long after the hashtag stops trending.',
+    lensExplanation: 'The attention economy treats public focus as a scarce, monetizable resource. Zibo&apos;s barbecue phenomenon is a textbook case: a single hashtag triggered 1.38 billion video views, which converted into tourism spending, government infrastructure investment, and a national city brand &mdash; all within weeks.',
+    whoGains: 'Zibo&apos;s hospitality, dining, and transportation sectors saw immediate revenue surges. The city gained a national brand virtually overnight. Content creators and platforms profited from massive engagement. Local businesses experienced unprecedented demand during the holiday boom.',
+    whoPays: 'Local residents bore the costs of congestion, rising prices, and strained public services. The government committed substantial resources to manage the influx of 4.8 million visitors. Competing destinations lost tourism share. The city faces the risk of overinvestment if the trend fades.',
+    pullQuote: 'The real story isn\'t the grill &mdash; it\'s whether the city can sustain the heat after the hashtag fades.',
+    takeaway: 'Zibo turned a viral hashtag into a national tourism phenomenon and a 2,000% booking surge. But attention is rented, not owned. The real test is whether the city can build lasting brand equity before the novelty wears off.',
 
     visualStyle: 'flame-grill', accentColor: '#CC5500',
     keyStats: {
-      bigNumber: '1.38B',
-      bigLabel: 'Total video views on Douyin',
-      compareA: { value: 'Before', label: 'Unknown industrial city' },
-      compareB: { value: '240K', label: 'May Day holiday visitors' },
+      bigNumber: '4.8M',
+      bigLabel: 'Visitors during the May Day holiday',
+      compareA: { value: '1.38B', label: 'Douyin video views' },
+      compareB: { value: '+2,000%', label: 'Tourism bookings YoY' },
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/zibo-bbq/video.mp4', type: 'video/mp4', caption: 'Video report on the Zibo barbecue tourism phenomenon' },
+      video: { src: '/media/zibo-bbq/video.mp4', type: 'video/mp4', caption: 'Video report on the Zibo barbecue phenomenon' },
       audio: { src: '/media/zibo-bbq/audio.wav', type: 'audio/wav', caption: 'Audio report' },
       images: [
-        { src: '/media/zibo-bbq/image1.jpeg', alt: 'Zibo barbecue with grilled meat and dipping sauce' },
-        { src: '/media/zibo-bbq/image2.jpeg', alt: 'Tourists enjoying Zibo\'s signature barbecue experience' },
-        { src: '/media/zibo-bbq/image3.jpeg', alt: 'Zibo city street scene during the barbecue boom' },
+        { src: '/media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
+        { src: '/media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
+        { src: '/media/zibo-bbq/image3.jpeg', alt: 'A chef preparing skewers in a Zibo restaurant kitchen' },
       ],
     },
   },
