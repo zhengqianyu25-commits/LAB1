@@ -27,18 +27,19 @@ function Waveform({ playing }) {
 
 function AudioSubtitles({ article, elapsed }) {
   if (!article) return null;
-  const paragraphs = article.body || [];
-  const idx = Math.min(Math.floor(elapsed / 8), paragraphs.length - 1);
-  const p = paragraphs[idx];
-  if (!p || typeof p !== 'string') return null;
+  const subtitles = article.media?.audio?.subtitles;
+  const source = subtitles || article.body || [];
+  const paragraphs = source.filter(p => typeof p === 'string');
+  if (paragraphs.length === 0) return null;
+  const idx = Math.min(Math.floor(elapsed / 10), paragraphs.length - 1);
 
   return (
     <div className="mt-6 p-5 rounded-sm border transition-all duration-500" style={{ background: 'rgba(255,255,255,0.85)', borderColor: 'var(--color-accent)', borderLeftWidth: '3px' }}>
       <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase mb-2 block" style={{ color: 'var(--color-accent)' }}>
-        Subtitles &middot; {article.titleZh}
+        {subtitles ? 'Audio Transcript' : 'Subtitles'} &middot; {article.titleZh}
       </span>
       <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-        {p}
+        {paragraphs[idx]}
       </p>
     </div>
   );

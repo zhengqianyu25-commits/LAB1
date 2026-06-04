@@ -57,7 +57,12 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'jI1g-iUrAO8', type: 'youtube', caption: 'How Concert Tickets Became a Business — video report' },
-      audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
+        subtitles: [
+          "During the Mayday concert, not only was the venue packed, but it was also very crowded outside the venue. Many scalpers were selling concert tickets outside the venue. And it was very chaotic, with many police officers around to maintain order. Afterwards, we made a phone call to Mr. Chen, who was in charge of security work at the time, and he held some opinions on this.",
+          "Mayday is a popular band with a lot of people and a lively atmosphere. I think scalpers' scalping behavior is quite bad. Many people who want to watch the concert cannot get tickets, and those who are unwilling to buy scalper tickets can only stay outside the venue. Sometimes, they argue with scalpers, which affects their governance. The scene is sometimes chaotic and out of control. And this situation is not easy to manage. So I'm quite resistant to this kind of behavior.",
+        ],
+      },
       images: [
         { src: '/media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
         { src: '/media/concert-scalping/image2.png', alt: 'Fans quarreling with scalpers outside concert venue' },
