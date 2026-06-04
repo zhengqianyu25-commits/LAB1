@@ -23,7 +23,7 @@ export function AudioProvider({ children }) {
   useEffect(() => {
     // Pause audio when any video on the page starts playing
     const onVideoPlay = (e) => {
-      if (e.target.tagName === 'VIDEO' && audioRef.current && !audioRef.current.paused) {
+      if ((e.target.tagName === 'VIDEO' || e.target.tagName === 'AUDIO') && audioRef.current && !audioRef.current.paused && e.target !== audioRef.current) {
         audioRef.current.pause(); setPlaying(false);
       }
     };
@@ -76,8 +76,12 @@ export function AudioProvider({ children }) {
     if (!ep) return;
     const audio = audioRef.current;
     if (!audio) return;
-    // Pause any playing video on the page
-    document.querySelectorAll('video').forEach(v => { if (!v.paused) v.pause(); });
+    // Pause all other media on the page
+    document.querySelectorAll('video, audio').forEach(v => { if (!v.paused && v !== audioRef.current) v.pause(); });
+    // Pause YouTube iframes
+    document.querySelectorAll('iframe[src*="youtube.com/embed"], iframe[src*="youtube.com/embed"]').forEach(f => {
+      f.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
     if (episode?.number === ep.number) {
       if (audio.paused) { audio.play().catch(() => {}); } else { audio.pause(); }
       return;
