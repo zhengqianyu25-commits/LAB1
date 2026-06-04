@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 import Header from './Header';
@@ -14,32 +14,26 @@ import articles from '../../data/articles';
 export default function Layout() {
   const { pathname } = useLocation();
   const { dark } = useTheme();
+  const [bgImage, setBgImage] = useState('');
 
   useEffect(() => {
     const isArticle = pathname.startsWith('/article/');
     const isHome = pathname === '/' || pathname === '';
 
     if (isHome) {
-      const overlay = dark
-        ? 'linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65))'
-        : 'linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55))';
-      document.body.style.backgroundImage = `${overlay}, url("media/zibo-bbq/image3.jpeg")`;
+      setBgImage('media/zibo-bbq/image3.jpeg');
+      document.body.style.background = '';
     } else if (isArticle) {
       const slug = pathname.split('/').pop();
       const article = articles.find(a => a.slug === slug);
-      const img = article?.media?.images?.[0]?.src;
-      if (img) {
-        const overlay = dark
-          ? 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))'
-          : 'linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6))';
-        document.body.style.backgroundImage = `${overlay}, url("${img}")`;
-      } else {
-        document.body.style.backgroundImage = '';
-      }
+      const img = article?.media?.images?.[0]?.src || '';
+      setBgImage(img);
+      document.body.style.background = '';
     } else {
-      document.body.style.backgroundImage = '';
+      setBgImage('');
+      document.body.style.background = '';
     }
-    return () => { document.body.style.backgroundImage = ''; };
+    return () => { setBgImage(''); document.body.style.background = ''; };
   }, [pathname, dark]);
 
   return (
@@ -55,6 +49,16 @@ export default function Layout() {
       <Footer />
       <MiniPlayer />
       <VideoModal />
+
+      {bgImage && (
+        <div className="fixed inset-0 -z-10 overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-fixed"
+            style={{ backgroundImage: `url("${bgImage}")`, filter: 'blur(24px)', transform: 'scale(1.1)' }}
+          />
+          <div className="absolute inset-0" style={{ background: dark ? 'rgba(0,0,0,0.65)' : 'rgba(255,255,255,0.55)' }} />
+        </div>
+      )}
     </div>
   );
 }
