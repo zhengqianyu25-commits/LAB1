@@ -347,7 +347,7 @@ const articles = [
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/student-films/video.mov', type: 'video/quicktime', caption: 'Bangzijing Murder Incident — original student horror short' },
+      video: { src: 'bbCP__8pa6U', type: 'youtube', caption: '79-Point Horror Film — student documentary' },
       audio: { src: '/media/student-films/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
         { src: '/media/student-films/image1.png', alt: 'Living environment of director Li Hans' },
