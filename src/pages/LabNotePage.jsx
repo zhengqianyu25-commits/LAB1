@@ -9,28 +9,29 @@ const contentMap = {
     quote: 'Traffic creates the spark; service decides whether it lasts.',
     sections: [
       {
-        text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
+        image: '/media/lab-notes/ae-1.png',
         source: 'Source: Douyin (ByteDance) public data, compiled by Juzi Suannai',
+        text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
       },
       {
-        tableau: 'https://public.tableau.com/views/Otherdatas/2?:showVizHome=no&:embed=true',
+        image: '/media/lab-notes/ae-2.png',
         source: 'Source: Guojí · Feigua Data',
         text: 'As search interest rose, so did the number of short videos. User-generated content supply jumped from almost zero to 10,000 videos on April 29 alone. This flood of free advertising lowered Zibo\'s customer acquisition cost to near zero. In attention economy terms, creators acted as unpaid brand ambassadors, amplifying the city\'s reach exponentially.',
       },
       {
-        image: '/media/lab-notes/attention-economy-3.png',
+        image: '/media/lab-notes/ae-3.jpeg',
         source: 'Source: China Railway Jinan Group Co Ltd.',
         text: 'All that online attention had to translate into offline action — and it did. On April 29, the peak day of the holiday, Zibo Station recorded 94,594 arrivals and 41,279 departures. This physical movement of people is the hard currency of attention conversion. Online interest turned into offline arrivals, proving that Zibo\'s infrastructure successfully captured the viral wave.',
       },
       {
-        image: '/media/lab-notes/attention-economy-4.webp',
+        image: '/media/lab-notes/ae-4.jpeg',
         source: 'Source: Guojí · Feigua Data – Douyin user analytics',
         text: 'The digital audience behind this phenomenon is remarkably specific. The largest age group engaged with Zibo barbecue content is 18-23 (29.74%), followed by 24-30 (28.29%). Gen Z is the most active cohort on short-video platforms and the most willing to travel for a "social experience." This demographic fit explains why Zibo barbecue spread so fast online.',
       },
       {
-        image: '/media/lab-notes/attention-economy-5.png',
+        image: '/media/lab-notes/ae-5.jpeg',
         source: 'Source: Guojí · Feigua Data – Douyin user analytics',
-        text: 'Female users accounted for 55.51% of engaged viewers, compared to 44.49% male. Research shows that women share food, travel and lifestyle content more actively on social media. This slight female skew helped the hashtag move from passive viewing to active trip planning.',
+        text: 'Female users accounted for 55.51% of engaged viewers, compared to 44.49% male. Research consistently shows that women share food, travel and lifestyle content more actively on social media. This slight female skew helped the hashtag move from passive viewing to active trip planning.',
       },
     ],
     conclusion: 'Zibo\'s barbecue boom turned viral attention into a 73% consumption spike and 200% booking growth (WeChat Pay\'s "2023 May Day Travel Boom Data Report"). But attention fades. The same charts show a post-holiday decline in search index and new video uploads. The real question is whether Zibo can build repeat visitation and long-term brand value — or become a one-season wonder.',
