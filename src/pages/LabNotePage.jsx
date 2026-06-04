@@ -52,6 +52,26 @@ const contentMap = {
     conclusion: 'The pie chart shows that 70% of tickets come from official channels, exactly meeting the policy\'s minimum public sale requirement. However, 30% still flow through other channels. This indicates that even with the policy mandating 70% public sales, information asymmetry, differences in ticketing speed, and advantages from social capital still push some tickets into the secondary market. The shortage effect caused by the price ceiling has not been fully eliminated, and the policy has clear boundaries in its implementation. The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
     relatedArticle: 'concert-scalping',
   },
+  'creator-economy': {
+    title: 'Why the old market said no to horror',
+    subtitle: 'What is signal failure in creative markets?',
+    intro: 'In any creative industry, producers rely on market signals to decide what to make. Box office returns and genre counts are clear signals: romance and feature films dominate; horror barely registers. But signals can become outdated when the distribution model changes. A low-box-office genre in cinemas may become a high-return niche on digital platforms.',
+    quote: 'Old data explains past choices. New platforms rewrite the rules.',
+    sections: [
+      {
+        image: '/media/lab-notes/ce-1.png',
+        source: 'Source: National Administration of China',
+        text: 'New films by genre. Horror is not even a separate category — it sits inside "others" (38 films), far behind romance (39) and feature films (133). For a decade, producers saw this chart and decided: don\'t waste budget on horror. The supply side had already abandoned the genre.',
+      },
+      {
+        image: '/media/lab-notes/ce-2.png',
+        source: 'Data source: https://www.sohu.com/a/70466255_398736',
+        text: 'Horror\'s share of China\'s annual box office. Always below 3%, often below 1%. On the demand side, audiences paid very little to see horror in theaters. That\'s two clear signals — low supply and low demand — telling filmmakers to stay away. These two charts explain why Li Hans\' professor gave his horror short a 79. In the old market, horror was a losing bet. Professors who discourage it aren\'t being arbitrary — they\'re reading the data of the past decade.',
+      },
+    ],
+    conclusion: 'But Li isn\'t playing the cinema game. He distributes on bilibili, where distribution costs are zero and a niche audience can find him through search and recommendations. The old logic said "go big or go home." The creator economy says "go small, go cheap, find your tribe." The charts don\'t prove Li wrong. They explain why his bet is a real bet — and why, if he wins, it\'s because the market structure has changed.',
+    relatedArticle: 'student-films',
+  },
   'labor-protection': {
     title: 'Labor Protection: Experiencing the Shadow Behind the Glory',
     subtitle: 'What is Labor Protection?',
