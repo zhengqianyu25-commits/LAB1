@@ -79,12 +79,6 @@ export default function HeroSection() {
             </Link>
           </div>
         </div>
-
-        <div className="mt-14 md:mt-20 flex flex-wrap gap-x-5 gap-y-2">
-          {keywords.map(k => (
-            <span key={k} className="text-[0.65rem] font-semibold tracking-[0.12em] uppercase opacity-30 hover:opacity-60 transition-opacity cursor-default" style={{ color: 'var(--color-text-muted)' }}>{k}</span>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -25,22 +25,6 @@ export default function Footer() {
           </div>
 
           <div>
-            <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase opacity-40 mb-3 block">Concepts</span>
-            <div className="flex flex-wrap gap-2">
-              {concepts.map(c => (
-                <Link
-                  key={c}
-                  to="/lab-notes"
-                  className="text-[0.6rem] font-semibold tracking-wider uppercase px-2.5 py-1 rounded-full border transition-all duration-200 hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
-                  style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-muted)' }}
-                >
-                  {c}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div>
             <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase opacity-40 mb-3 block">Explore</span>
             <div className="flex flex-col gap-2">
               <Link to="/stories" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>All Stories</Link>
