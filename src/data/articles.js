@@ -118,6 +118,7 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'I6ndDG7Pcmw', type: 'youtube', caption: 'Zibo grills its way to viral fame — video report' },
+      audio: { src: '/media/zibo-bbq/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
         { src: '/media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
         { src: '/media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
