@@ -132,7 +132,7 @@ const contentMap = {
     sections: [
       {
         image: '/media/lab-notes/labor-protection-1.png',
-        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent. To understand what child actors face, readers can enter Oscar's day and make the next choice for themselves...',
+        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent. To understand what child actors face, readers can enter Oscar\'s day and make the next choice for themselves...',
         source: 'Source: 66RPG interactive game',
       },
       {
@@ -143,10 +143,10 @@ const contentMap = {
         image: '/media/lab-notes/labor-protection-2.png',
         tableau: 'https://public.tableau.com/views/story_16881121764440/1_1?:language=zh-CN&:display_count=n&:origin=viz_share_link',
         source: 'Source: UNICEF Global Databases, last updated May 2022; visualized through Tableau Public',
-        text: 'The chart represents the global child labor rate based on UNICEF's data in May 2022. Unfortunately, the data is incomplete, with a primary focus on Central Asia, South America, and Africa. Child labor is a social issue of global concern. Despite many countries having legislated against child labor practices, there are still numerous children forced into dangerous work. These children are deprived of a normal childhood and the right to education, significantly affecting their physical and mental well-being, as well as their future development.',
+        text: 'The chart represents the global child labor rate based on UNICEF\'s data in May 2022. Unfortunately, the data is incomplete, with a primary focus on Central Asia, South America, and Africa. Child labor is a social issue of global concern. Despite many countries having legislated against child labor practices, there are still numerous children forced into dangerous work. These children are deprived of a normal childhood and the right to education, significantly affecting their physical and mental well-being, as well as their future development.',
       },
     ],
-    conclusion: 'This data page connects the child actor story to a broader labor-protection question. Child actors are not identical to children in hazardous labor, but both cases ask how adults, institutions and industries should prevent children from carrying risks they cannot fully understand or negotiate. The interactive game makes that question experiential, while the global map reminds readers that children's work and protection remain urgent public issues.',
+    conclusion: 'This data page connects the child actor story to a broader labor-protection question. Child actors are not identical to children in hazardous labor, but both cases ask how adults, institutions and industries should prevent children from carrying risks they cannot fully understand or negotiate. The interactive game makes that question experiential, while the global map reminds readers that children\'s work and protection remain urgent public issues.',
     relatedArticle: 'child-stars',
   }
 };
