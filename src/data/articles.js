@@ -124,7 +124,17 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'I6ndDG7Pcmw', type: 'youtube', caption: 'Zibo grills its way to viral fame — video report' },
-      audio: { src: 'media/zibo-bbq/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      audio: { src: 'media/zibo-bbq/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
+        subtitles: [
+          { time: 0, text: "I am Kang Qiujie, a researcher at the Institute of Communication Studies, Communication University of China. Today, let's talk about Zibo barbecue." },
+          { time: 6, text: "What role did self-media play in the explosion of Zibo barbecue? And how did they influence this phenomenon?" },
+          { time: 14, text: "The explosion of Zibo barbecue is itself a self-media event. Today's communication environment is highly socialized and contextualized. It starts with self-media, quickly ignites public opinion and social relationships, and then translates into social action." },
+          { time: 28, text: "What is the difference between the self-media that first introduced Zibo barbecue and those that appeared after it became popular?" },
+          { time: 35, text: "This is a common pattern in almost all self-media-driven events. The early stage has stronger spontaneity and independence. The content doesn't need to be complicated; a single element can attract attention. Later on, it becomes more of a following behavior. Influencers join in for the hype and to ride the wave. Content becomes more homogenized. Only those who dig out different angles or so-called 'highlights' can get attention. Meanwhile, the quality becomes uneven, and problematic content also appears." },
+          { time: 63, text: "How do the communication methods and characteristics of self-media enable Zibo barbecue to reach audiences more widely and quickly? How do they effectively present the uniqueness and charm of Zibo barbecue?" },
+          { time: 75, text: "On topics like food, drink, and entertainment, self-media communication tends to easily trigger interest and heated discussion. The reason is exactly what you asked: it generates empathy and resonance, and easily stirs emotions. So, Zibo barbecue is just a label. What really matters is the emotional contagion — warmth, hospitality, honest business practices, all-around service spirit, and so on. Everyone knows that Zibo barbecue may not be that special, but Zibo itself seems different. So the focus is not eating barbecue; it's experiencing the atmosphere and emotion. That atmosphere and emotion are exactly the strengths of self-media communication." },
+        ],
+      },
       images: [
         { src: 'media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
         { src: 'media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
