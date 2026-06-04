@@ -152,7 +152,7 @@ const articles = [
     slug: 'clothing-sizes', number: '03', category: 'cost-control',
     titleEn: 'Chinese Actress Exposes Shrinking Women\'s Clothing Sizes – A Coordination Failure',
     audioTitle: 'I Once Doubted I Was Gaining Weight',
-    titleZh: '中国女星吐槽女装尺码越做越小，为何无人能独自回头？',
+    titleZh: "A Chinese actress could not fit into a brand's largest size — sparking a debate on shrinking women's clothing and the coordination failure behind it.",
     conceptEn: 'Coordination Failure', conceptZh: '协调失灵',
     readTime: '5 min', section: 'Body',
     summary: 'A Chinese actress complained that she could not fit into a brand\'s large-sized clothes despite being traditionally thin, reigniting public debate over shrinking women\'s clothing sizes. Merchants cut sizes to save costs, relabel inventory, and chase the \u201Cthinness as beauty\u201D signal, but no single brand can restore honest sizing alone. Economists say this is a coordination failure \u2014 one that will persist until regulators, industry standards, or consumer resistance reset the baseline.',
