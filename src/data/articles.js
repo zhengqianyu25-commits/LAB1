@@ -190,7 +190,7 @@ const articles = [
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: 'media/clothing-sizes/video.mp4', type: 'video/mp4', caption: 'Video report on women\'s clothing size shrinkage' },
+      video: { src: 'H-V_lsaljS0', type: 'youtube', caption: 'Video report on women\'s clothing size shrinkage' },
       audio: { src: 'media/clothing-sizes/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
         { src: 'media/clothing-sizes/doc1.png', alt: "Children\'s size compared to women\'s size", caption: 'The children\'s size looks even larger than the women\'s version.' },
