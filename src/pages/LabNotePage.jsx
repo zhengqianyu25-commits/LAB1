@@ -102,6 +102,28 @@ const contentMap = {
     conclusion: 'But Li isn\'t playing the cinema game. He distributes on bilibili, where distribution costs are zero and a niche audience can find him through search and recommendations. The old logic said "go big or go home." The creator economy says "go small, go cheap, find your tribe." The charts don\'t prove Li wrong. They explain why his bet is a real bet — and why, if he wins, it\'s because the market structure has changed.',
     relatedArticle: 'student-films',
   },
+  externalities: {
+    title: 'Rescue Economics: The Cost of Compassion',
+    subtitle: 'Externalities & Public Good',
+    intro: 'In urban systems, stray animals are often treated as a "negative externality" — a cost to be managed. Yet, private rescue groups operate as shadow welfare providers. By analyzing the flow of pets from breeders to streets, we uncover the economic friction between commercial desire and the hard reality of abandonment.',
+    quote: 'The market sells the fantasy; rescue pays the bill.',
+    sections: [
+      {
+        text: 'Behind the Adoption Day lies a systemic imbalance: 51.80% of pets enter homes through purchasing. This isn\'t just a consumer preference; it\'s a market failure in resource allocation. While micro-donations (the "One Cup of Milk Tea" model) provide a lifeline for strays, they are fighting against the tide of a commercial breeding industry. The sheer volume of purchases fuels the supply chain that ultimately leads to the 43.07% abandonment rate. The economic incentive for breeders is profit; the economic consequence for society is a growing stray population.',
+        source: 'Source: NetEase News Public Welfare Survey',
+      },
+      {
+        text: 'Survey data indicates that 34.09% of respondents have witnessed animal abuse, and a combined 43.07% have either abandoned pets or know someone who has. In economic terms, abandoned animals generate massive negative externalities. They impose hidden costs on municipalities: public sanitation, disease control, and traffic safety risks. The 20-year dedication of the rescue team — finding a lost cat after four days of searching — illustrates the high opportunity cost of unpaid labor required to mitigate these externalities. Society saves on taxes by underfunding animal control, but it pays in the form of volunteer burnout and street-level suffering.',
+        source: 'Source: NetEase News Public Welfare Survey',
+      },
+      {
+        text: 'Counteracting this trend, institutional rescue platforms like Beijing Adoption Day account for 22.10% of pet sources. This figure represents the "Milk Tea Premium." It proves that lowering the barrier to entry (from hundreds of dollars to the price of a drink) can mobilize the masses. Economically, this is a superior model: it transforms a commodity (a purchased pet) into a social contract (an adopted rescue). It is the most cost-effective way to internalize the externalities created by the 51.8% purchase market.',
+        source: 'Source: NetEase News Public Welfare Survey',
+      },
+    ],
+    conclusion: 'The stray animal crisis is a textbook case of negative externalities. Commercial breeding generates profits for sellers while shifting the costs of abandonment onto volunteers, donors, and municipal services. Micro-donation models like the "One Cup of Milk Tea" approach offer a scalable way to internalize these externalities by lowering the barrier to participation. The economics of rescue is fundamentally about who pays for compassion — and whether society can build systems that make compassion economically sustainable.',
+    relatedArticle: 'stray-animals',
+  },
   'labor-protection': {
     title: 'Labor Protection: Experiencing the Shadow Behind the Glory',
     subtitle: 'What is Labor Protection?',
