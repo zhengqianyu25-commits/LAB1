@@ -249,6 +249,17 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'wDxA0_yeFCY', type: 'youtube', caption: 'After One Slap: Who Protects Child Actors on Set? — video report' },
+      audio: { src: 'media/child-stars/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
+        subtitles: [
+          { time: 0, text: "One of the challenges in upholding the rights of child actors lies in the lack of awareness among certain 'parent agents' who hold guardianship. These individuals often disregard the perspectives of child actors, resulting in the lack of adequate protection for their rights. Frank Zhang, assistant production controller of Culture Communication Company, has shared relevant insight with us regarding this matter." },
+          { time: 23, text: "For child actors who have just entered the industry, or who want to enter the industry, they may work part-time or be relatively amateur. For many of them, their parents will act as their agents." },
+          { time: 34, text: "It is disconcerting that some parents prioritize financial gains over the rights of child actors, compromising their well-being for the sake of securing filming assignments." },
+          { time: 43, text: "More formal agencies will sign contracts and have standard terms. Of course, this is also to protect the rights of their own child actors. But some parents who act as agents do not pay much attention to this, so they do not mention this issue in their contracts." },
+          { time: 57, text: "Children should possess the autonomy to express their demands and protect their rights, which even parents must not encroach on." },
+          { time: 64, text: "Some parents may be more understanding, or care about their children and communicate with them. But there are also some parents who ask children to complete more filming tasks, rather than giving priority to protecting them, such as ensuring rest time and so on." },
+          { time: 80, text: "We hope for the enhancement of laws and regulations concerning child actors, ensuring the protection of their rights and limiting the control exerted by parent agents." },
+        ],
+      },
       images: [
         { src: 'media/child-stars/image1.png', alt: 'Crew prepared toys for child actor before filming' },
         { src: 'media/child-stars/image2.png', alt: 'Artificial tears used instead of forcing child to cry' },
