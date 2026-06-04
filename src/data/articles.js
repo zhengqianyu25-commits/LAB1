@@ -173,6 +173,7 @@ const articles = [
       { "type": "image", "src": "media/clothing-sizes/doc2.png", "alt": "Spice Girls-style clothes compared to normal clothes", "caption": "A comparison of a Spice Girls-style tight outfit and a normal-sized garment." },
       '“Clothes should be for people to choose, not for clothes to choose people,” Xing said. “Female consumers don\'t need to damage their health just to fit into a dress.”',
       'He added: “I hope that more consumers who find that women\'s clothing sizes are getting smaller can join together to resist this chaos, because it stigmatizes honest merchants like us who specialize in \'hot girl\' style clothing.”',
+      { "type": "image", "src": "media/clothing-sizes/doc3.jpeg", "alt": "Women's clothing sizing issues across the market", "caption": "Women's clothing sizes continue to shrink across the market." },
       'This is a coordination failure. Every brand has an incentive to make sizes smaller, but no single brand can stop alone — the first to return to honest sizing would lose customers to rivals still chasing the “thin” signal. So the race continues. Clothes don\'t fit. Consumers lose. The only way out is an external push: new standards, regulation, or consumers saying “enough.”',
     ],
 
