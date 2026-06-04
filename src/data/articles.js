@@ -71,9 +71,10 @@ const articles = [
         ],
       },
       images: [
-        { src: 'media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
-        { src: 'media/concert-scalping/image2.png', alt: 'Fans quarreling with scalpers outside concert venue' },
-        { src: 'media/concert-scalping/image3.png', alt: 'Music returns after the pandemic' },
+        { src: 'media/concert-scalping/photo1.png', alt: 'Music and shouting returned after the pandemic', caption: 'The dissipation of the pandemic has brought music, shouting and agitation back this summer.' },
+        { src: 'media/concert-scalping/photo2.png', alt: 'Fans troubled by high-priced scalper tickets', caption: 'However, a large number of fans who did not have tickets were plagued by high-priced scalper tickets.' },
+        { src: 'media/concert-scalping/photo3.png', alt: 'Fans declared war on scalpers', caption: 'Many fans believed that scalpers were the key to making it so difficult to grab tickets, so they began to shout slogans to declare war on scalpers. Outside the concert venue, fans are still in the midst of fierce quarrels with scalpers, and the scene security is also in chaos.' },
+        { src: 'media/concert-scalping/photo4.png', alt: 'Fans cheered outside the Birds Nest', caption: 'Fans without tickets listened to the song and cheered outside the Bird\'s Nest, where display screens and lights could be seen.' },
       ],
     },
   },

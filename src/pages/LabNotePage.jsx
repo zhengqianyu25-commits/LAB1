@@ -9,12 +9,13 @@ const contentMap = {
     quote: 'Official price caps create the shortage; secondary markets reveal true demand.',
     sections: [
       {
-        text: "On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that \"the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience.\" This is China's first explicit regulation on the public sale ratio of concert tickets.",
-        source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association Notice, April 26, 2023',
-      },
-      {
+        image: '/media/lab-notes/scarcity-1.png',
         text: 'The pie chart shows that 70% of tickets come from official channels, exactly meeting the policy\'s minimum public sale requirement. However, 30% still flow through other channels. Even with the policy mandating 70% public sales, information asymmetry and social capital advantages still push some tickets into the secondary market. The shortage effect caused by the price ceiling has not been fully eliminated.',
         source: '',
+      },
+      {
+        text: "On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that \"the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience.\" This is China's first explicit regulation on the public sale ratio of concert tickets.",
+        source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association Notice, April 26, 2023',
       },
     ],
     conclusion: 'The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
