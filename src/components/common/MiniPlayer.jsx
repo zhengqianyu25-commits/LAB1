@@ -40,7 +40,7 @@ export default function MiniPlayer() {
               {img && <img src={img} alt="" className="w-full h-full object-cover" />}
             </div>
             <div className="min-w-0 overflow-hidden">
-              <p className="mini-text text-xs font-display font-medium whitespace-nowrap" style={{ color: 'var(--color-text)', animation: episode.titleEn && episode.titleEn.length > 30 ? 'marquee 12s linear infinite' : 'none' }}>{episode.titleEn}</p>
+              <p className="mini-text text-xs font-display font-medium truncate" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
               <p className="mini-sub text-[0.55rem] truncate" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</p>
             </div>
           </div>
