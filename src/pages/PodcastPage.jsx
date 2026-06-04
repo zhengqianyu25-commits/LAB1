@@ -6,45 +6,51 @@ import Engagement from '../components/common/Engagement';
 const audioArticles = articles.filter(a => a.media?.audio);
 
 function EpisodeItem({ article, index }) {
+  const img = article.media?.images?.[0]?.src;
   const hasSubtitles = !!article.media?.audio?.subtitles;
 
   return (
     <Link
       to={`/listen/${index}`}
-      className="flex items-start gap-5 px-5 py-4 border transition-all duration-300 hover:bg-[var(--color-bg-secondary)] border-l"
+      className="flex items-center gap-4 px-5 py-4 border transition-all duration-300 group hover:bg-[var(--color-bg-secondary)] border-l"
       style={{
         borderColor: 'var(--color-border)',
         background: 'rgba(255,255,255,0.5)',
       }}
     >
-      <div className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center" style={{ background: 'var(--color-accent)' }}>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-          <polygon points="5,3 19,12 5,21" />
-        </svg>
+      <span className="text-[0.6rem] font-bold tracking-[0.12em] uppercase shrink-0 w-5 opacity-50" style={{ color: 'var(--color-text-muted)' }}>
+        {article.number}
+      </span>
+
+      <div className="w-14 h-14 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
+        {img ? (
+          <img src={img} alt="" className="w-full h-full object-cover" />
+        ) : (
+          <span className="w-full h-full flex items-center justify-center text-lg font-display opacity-10">{article.number}</span>
+        )}
       </div>
 
       <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 mb-0.5">
-          <span className="text-[0.55rem] font-bold tracking-[0.12em] uppercase opacity-50" style={{ color: 'var(--color-text-muted)' }}>
-            EP {article.number}
-          </span>
-          <span className="text-[0.6rem] font-semibold tracking-wider uppercase" style={{ color: 'var(--color-accent)' }}>
+        <h3 className="text-base md:text-lg font-display font-medium leading-snug truncate transition-colors duration-300 group-hover:text-[var(--color-accent)]" style={{ color: 'var(--color-text)' }}>
+          {article.titleEn}
+        </h3>
+        <div className="flex items-center gap-2 mt-1">
+          <span className="text-[0.55rem] font-semibold tracking-[0.1em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>
             {article.conceptEn}
           </span>
           {hasSubtitles && (
-            <span className="text-[0.5rem] font-bold tracking-wider uppercase px-1.5 py-0.5 rounded-full" style={{ background: 'var(--color-accent-dim)', color: 'var(--color-accent)' }}>
+            <span className="text-[0.45rem] font-bold tracking-wider uppercase px-1.5 py-0.5 rounded-full opacity-40" style={{ background: 'var(--color-bg-tertiary)', color: 'var(--color-text-muted)' }}>
               CC
             </span>
           )}
         </div>
-        <h3 className="text-sm font-display font-medium leading-snug truncate" style={{ color: 'var(--color-text)' }}>
-          {article.titleEn}
-        </h3>
       </div>
 
-      <span className="text-[0.6rem] font-semibold tracking-wider uppercase shrink-0 opacity-40" style={{ color: 'var(--color-text-muted)' }}>
-        {article.readTime}
-      </span>
+      <div className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-[var(--color-accent)]" style={{ background: 'var(--color-bg-tertiary)' }}>
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="var(--color-text-muted)" className="transition-all duration-300 group-hover:fill-white">
+          <polygon points="5,3 19,12 5,21" />
+        </svg>
+      </div>
     </Link>
   );
 }
