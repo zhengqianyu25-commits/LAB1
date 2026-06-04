@@ -150,130 +150,54 @@ const articles = [
   },
   {
     slug: 'clothing-sizes', number: '03', category: 'cost-control',
-    titleEn: 'When “Large” Isn\'t Large Enough',
-    titleZh: 'The economics behind shrinking women\'s clothing sizes.',
-    conceptEn: 'Cost Control & Standards', conceptZh: '成本控制与标准缺失',
+    titleEn: 'Chinese Actress Exposes Shrinking Women\'s Clothing Sizes – A Coordination Failure',
+    titleZh: '中国女星吐槽女装尺码越做越小，为何无人能独自回头？',
+    conceptEn: 'Coordination Failure', conceptZh: '协调失灵',
     readTime: '5 min', section: 'Body',
-    summary: 'Across China\'s e-commerce platforms, women\'s clothing sizes are shrinking — a trend driven by cold cost calculations that shift the burden onto consumers\' bodies and mental health.',
+    summary: 'A Chinese actress complained that she could not fit into a brand\'s large-sized clothes despite being traditionally thin, reigniting public debate over shrinking women\'s clothing sizes. Merchants cut sizes to save costs, relabel inventory, and chase the "thinness as beauty" signal, but no single brand can restore honest sizing alone. Economists say this is a coordination failure — one that will persist until regulators, industry standards, or consumer resistance reset the baseline.',
 
     body: [
-      'SHANGHAI — Browse any major Chinese e-commerce platform for women’s clothing and the pattern is unmistakable: “one size fits all” labels dominate listings, “S” and “XS” sizes receive promotional pricing, and garments labeled “large” correspond to what older sizing standards would have called medium. For millions of female shoppers, the experience is the same: clothes that should fit do not.',
-      'Industry analysts say the primary driver is economic. Every additional size a brand produces requires a separate pattern, production run, and inventory management unit. By narrowing the size range and labeling generously, fast-fashion brands and e-commerce white-label sellers cut production costs and accelerate inventory turnover. “It’s not about aesthetics first,” one supply-chain researcher said. “It’s about reducing stock-keeping complexity.”',
-      'But cost control alone cannot explain why consumers accept it. A second mechanism is at work: the commodification of thinness. When social media platforms and fashion marketing converge on a single body ideal, “fitting into small sizes” becomes a status signal. Brands are selling more than fabric — they are selling inclusion in an aesthetic category.',
-      'Information asymmetry sharpens the problem. Online shoppers cannot try on garments before purchasing. They rely on size charts and model photography — both of which brands control. Models are selected for extreme thinness. Images are edited. Key measurements are omitted or averaged misleadingly. Consumers discover the mismatch only after delivery, and the time and psychological cost of returns often deters them from seeking redress.',
-      'The externalities are significant. When mainstream brands systematically exclude average body types, body dissatisfaction is amplified at a population level. Eating disorders, cosmetic surgery demand, and weight-loss product consumption all trace partial roots to a clothing market that defines normal bodies as too large. “The brand saves a few centimeters of fabric,” one consumer rights advocate said. “Society picks up the tab in mental health costs.”',
-      'China currently lacks enforceable, unified size standards for women’s apparel. Different brands and platforms operate on incompatible sizing systems, depriving consumers of a reliable baseline for comparison. Some countries have moved toward mandatory truthful-size labeling and restrictions on digitally altered advertising images, but regulatory action in China remains limited.',
-      'The dilemma is structural: it is both a business choice and a cultural choice. Demanding more sizes from brands also means demanding broader social acceptance of diverse body types. The economic insight is that shrinking sizes are not a random aesthetic trend — they are a deliberate cost-shifting mechanism. Brands lower their costs; consumers absorb the anxiety.',
+      'Chinese actress Zhang Xinyu complained on social media that she could not fit into a brand\'s large-sized clothes despite weighing 102 jin (about 112 pounds) at 169 centimeters tall, reigniting public debate over shrinking women\'s clothing sizes in China.',
+      '"There is a brand of clothes that I like, but I can\'t even wear its large size," Zhang wrote on Weibo on May 13. "Not children\'s clothing. I won\'t say the brand\'s name, but it\'s really a little harsh on the figure — weighing over 100 jin (about 110 pounds) is not qualified to wear it."',
+      { "type": "image", "src": "media/clothing-sizes/doc1.png", "alt": "Children\'s size compared to women\'s size", "caption": "The one below is the children\'s size, which looks even larger than the women\'s version above." },
+      'The hashtag "Are women\'s clothing sizes getting smaller?" has since trended online, with many women sharing similar experiences of being unable to find well-fitted clothes. Many people believe that this is the result of the unhealthy aesthetic of "thinness as beauty."',
+      'Industry observers trace the phenomenon to the growing popularity of "BM style" in China. BM stands for Brandy Melville, an Italian women\'s clothing brand known for its small sizing. In traditional Chinese consumer culture, wearing such small sizes is often seen as a marker of a good figure.',
+      '"The reason why \'BM style\' is popular is that women are pursuing beauty," said Xing Junjie, founder and designer of Iceonme, a brand that focuses on the "hot girl" style — including short, tight-fitting clothing that accentuates the curves of the female body. "Women will go to the gym or do yoga and something like that in order to become thin and beautiful, so there are more and more women with good figures, and \'BM style\' can be accepted by more people."',
+      'Uniqlo, a brand focusing on comfort and casualness, has also launched "hot girl" style clothes this summer.',
+      'But market forces also play a role. Cheng Weixiong, founder of the Liangqi brand and a former executive at several garment companies, told Jimu News that "Generation Z wants more personalized and differentiated clothing. Smaller sizes do that."',
+      'Some merchants produce smaller clothing to increase profits. According to The Paper, because some small-sized clothes are more difficult to sell than larger sizes, some sellers relabel unsold small-sized clothes as "average size" and sell them again. Besides, some merchants deliberately make sizes smaller to save on fabric costs.',
+      'Wang Henggang, deputy general manager of domestic garment industry platform "Threading Needle Network," told Sina News that "low-end clothing stores rely on sales volume to obtain profits. If the size is smaller, the same fabric can make more clothes."',
+      '"In fact, I do not understand this behavior of making sizes smaller in order to save on fabric costs," said Xing. "Because women\'s clothing, especially summer clothing like short-sleeved T-shirts or skirts, doesn\'t use much fabric, so the fabric cost is actually very low."',
+      'The trend has made it harder for women to buy suitable clothing, fueling anxiety and, in some cases, unhealthy weight-loss efforts.',
+      { "type": "image", "src": "media/clothing-sizes/doc2.png", "alt": "Spice Girls-style clothes compared to normal clothes", "caption": "A comparison of a Spice Girls-style tight outfit and a normal-sized garment." },
+      '"Clothes should be for people to choose, not for clothes to choose people," Xing said. "Female consumers don\'t need to damage their health just to fit into a dress."',
+      'He added: "I hope that more consumers who find that women\'s clothing sizes are getting smaller can join together to resist this chaos, because it stigmatizes honest merchants like us who specialize in \'hot girl\' style clothing."',
+      'This is a coordination failure. Every brand has an incentive to make sizes smaller, but no single brand can stop alone — the first to return to honest sizing would lose customers to rivals still chasing the "thin" signal. So the race continues. Clothes don\'t fit. Consumers lose. The only way out is an external push: new standards, regulation, or consumers saying "enough."',
     ],
 
-    lensExplanation: 'Shrinking women’s clothing sizes can be explained through two economic lenses: cost control, where fewer sizes mean lower production and inventory costs; and information asymmetry, where brands exploit the fact that online shoppers cannot verify fit before purchase, offloading the cost of that uncertainty onto consumers.',
-    whoGains: 'Fast-fashion brands and e-commerce sellers reduce production and inventory costs, boosting margins. The appearance and weight-loss industry benefits from sustained demand driven by body dissatisfaction.',
-    whoPays: 'Consumers whose bodies fall outside the narrowed size range bear the psychological cost of exclusion and additional shopping time. Young women face systematically amplified body anxiety. Society absorbs the cultural cost of narrowing beauty standards.',
-    pullQuote: 'The brand saves a few centimeters of fabric. Society picks up the tab.',
-    takeaway: 'Shrinking clothing sizes are not merely a fashion trend. They are a cost-transfer mechanism: brands save on fabric and inventory, while millions of women pay in chronic body insecurity.',
+    lensExplanation: 'Shrinking women\'s clothing sizes are a coordination failure: every brand has an incentive to make sizes smaller to cut costs and chase the "thinness as beauty" signal, but no single brand can restore honest sizing alone — the first to do so would lose customers to rivals. The race persists until an external anchor — regulators, industry standards, or mass consumer resistance — resets the baseline.',
+    whoGains: 'Fast-fashion brands and e-commerce sellers reduce fabric and inventory costs by making smaller sizes. Brands chasing the "thin" aesthetic benefit from social media-driven demand.',
+    whoPays: 'Women who cannot find clothes that fit bear the psychological cost of exclusion and body anxiety. Consumers absorb the cost of returns and additional shopping time. Society absorbs the cultural cost of narrowing beauty standards.',
+    pullQuote: 'Clothes should be for people to choose, not for clothes to choose people.',
+    takeaway: 'Shrinking clothing sizes are not merely a fashion trend. They are a coordination failure: each brand acts rationally alone, but together they shrink the market and harm consumers. Only an external anchor can break the cycle.',
 
     visualStyle: 'measuring-tape', accentColor: '#8B5E3C',
     keyStats: {
-      bigNumber: '65%',
-      bigLabel: 'Of brands now use one-size-fits-all',
-      compareA: { value: 'M (2010)', label: 'Standard size 10 years ago' },
-      compareB: { value: 'M (Today)', label: 'Fits like an XS' },
+      bigNumber: '102',
+      bigLabel: 'Jin — actress deemed "too big for large size"',
+      compareA: { value: '169cm', label: "Zhang Xinyu\'s height" },
+      compareB: { value: 'XL (reality)', label: 'Fits like a size S' },
     },
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'media/clothing-sizes/video.mp4', type: 'video/mp4', caption: 'Video report on women\'s clothing size shrinkage' },
       audio: { src: 'media/clothing-sizes/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
-        { src: 'media/clothing-sizes/image1.jpeg', alt: 'Side-by-side comparison of women\'s clothing sizes across brands' },
-        { src: 'media/clothing-sizes/image2.jpeg', alt: 'Fast-fashion brand size chart analysis' },
-        { src: 'media/clothing-sizes/image3.jpeg', alt: 'Examples of one-size-fits-all marketing' },
-        { src: 'media/clothing-sizes/image4.jpeg', alt: 'Visual representation of body image and sizing issues' },
-        { src: 'media/clothing-sizes/image5.jpeg', alt: 'Consumer feedback and complaints about sizing' },
+        { src: 'media/clothing-sizes/doc1.png', alt: "Children\'s size compared to women\'s size", caption: 'The children\'s size looks even larger than the women\'s version.' },
+        { src: 'media/clothing-sizes/doc2.png', alt: 'Spice Girls-style clothes compared to normal clothes', caption: 'A comparison of a Spice Girls-style tight outfit and a normal-sized garment.' },
+        { src: 'media/clothing-sizes/doc3.jpeg', alt: "Women\'s clothing sizing issues across the market", caption: "Women\'s clothing sizes continue to shrink across the market." },
       ],
-    },
-  },
-  {
-    slug: 'child-stars', number: '04', category: 'labor-protection',
-    titleEn: 'Who Speaks for Child Actors?',
-    titleZh: "A Shanghai child actor was slapped for real during filming. His case exposes gaps in China's child performer protections.",
-    conceptEn: 'Labor Protection', conceptZh: '劳动保护与监管成本',
-    readTime: '5 min', section: 'Rights',
-    summary: "A young Shanghai actor was slapped for real during filming, leaving his face visibly red and swollen. His case raises questions about child performers' rights, from safer filming methods to clearer industry standards for shooting hours, meals, and protection from physical harm.",
-
-    body: [
-      "SHANGHAI, May 23 — A worrying incident involving child actor Zhou Anxin in Shanghai has sparked widespread attention and concern over rights protection for child performers. The incident took place on the set of a film, where the production team opted for actual physical impact while portraying a scene in which a child is made to cry. After the shooting, the young actor's face remained red and swollen before recovering. His role that day required him to be slapped and cry.",
-
-      { "type": "image", "src": "media/child-stars/image2.png", "alt": "Crew uses artificial tears instead of forcing the child to cry", "caption": "During a crying scene, the 'Spark Fluorescent' crew used artificial tears instead of forcing the child actor to cry emotionally, aiming to protect the child's psychological well-being." },
-
-      "His mother said, \"After seeing the script, I actually didn't want him to shoot.\" She added, \"I went to the crew and asked whether we could use special effects or stage the action, but they didn't agree.\"",
-
-      "Despite his mother's prior inquiry about the possibility of using a staged action, her suggestion was not adopted because the production team leaned toward presenting an authentic scene. During the actual filming, Zhou Anxin cried real tears after being slapped and did not stop crying after the filming was over. His mother noticed that his face was visibly red and swollen, which made her deeply distressed and upset.",
-
-      "Zhou Anxin is an experienced child actor who has previously appeared in advertisements, TV dramas and films. His mother acknowledges the demands of the production team but genuinely hopes to find better and safer solutions. \"I could sometimes feel that he was under a lot of pressure, having to shoot and do homework, and going back to school to make up for it. Every time I see him exhausted, I think 'I don't want to count it,' but he doesn't tell me himself,\" his mother said.",
-
-      { "type": "image", "src": "media/child-stars/image1.png", "alt": "Crew prepared toys for the child actor before filming", "caption": "Before filming, the crew prepared toys for the child actor to reduce boredom and help create a more relaxed environment on set." },
-
-      "Numerous child actors are not given special care, and their rights are sometimes violated.",
-
-      "\"The use of child actors in the industry currently relies heavily on the awareness of each crew and lacks a uniform standard,\" said Frank Zhang, Assistant Production Controller at a culture communication company. \"While harsh beatings and forced labor are not common, children are often required to stay up late and shoot long hours, and filming is not purposely scheduled to avoid weekdays to ensure that the children have a normal school day.\"",
-
-      "\"It is also common for children to be treated poorly in order to advance the filming schedule. Due to gaps in national legislation and the lack of default norms in the industry, labor contracts often do not contain provisions specifically addressing the rights of child actors,\" Zhang added.",
-
-      "The lack of explicit legislation and specific regulations to protect child performers exposes them to various risks. Child performers often face issues such as sleep deprivation, long working hours, irregular eating habits and physical injuries.",
-
-      { "type": "image", "src": "media/child-stars/image3.png", "alt": "Crew member applies artificial tears tested by medical university", "caption": "A crew member applies artificial tears to the child actor during the crying scene. The material was tested in advance by doctoral students at Southern Medical University to confirm it was harmless to children." },
-
-      "For No Filter Lab, the case also shows the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost may be shifted onto children's bodies, emotions and education.",
-
-      "Against this backdrop, the \"Sparkling Stars\" project team, dedicated to safeguarding the legitimate rights of child actors, has expressed concern about the protection of their rights. The project team has conducted extensive interviews with child performers and agents, developing a set of professional standards aimed at safeguarding the rights of child actors. These standards include defining filming times, meal times and measures to prevent physical harm.",
-
-      "Project leader Yu Hailong expressed hope that more individuals will join efforts to protect the rights of child performers and urged the industry to promptly introduce relevant regulations.",
-
-      { "type": "image", "src": "media/child-stars/image4.png", "alt": "Crew films child actor while balancing production and child protection", "caption": "The crew films a child actor while trying to balance production needs with the protection of children's rights and mental health." },
-
-      "\"The overall goal of our project is to encourage the community to look at child performers as children in need of help, rather than only treating them as stars,\" Yu said. \"We hope people can focus more on the shadow of rights violations behind their glow. From there, more organizations can be called upon to defend their legal rights.\"",
-
-      { "type": "image", "src": "media/child-stars/image5.png", "alt": "Staff and child actors take a group photo after the project", "caption": "Staff and child actors take a group photo after the project, which aimed to explore a more child-friendly production model." },
-    ],
-
-    lensExplanation: "The case of Zhou Anxin exposes the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost is shifted onto children's bodies, emotions, and education. The lack of uniform industry standards means child performers' rights depend on individual crew awareness rather than enforceable regulations.",
-    whoGains: "Production companies save time and money by avoiding special effects, staged actions, and child-friendly scheduling. The entertainment industry benefits from child performers' marketability without bearing the full cost of their protection.",
-    whoPays: "Child performers bear the physical and psychological toll of adult working conditions, sleep deprivation, and irregular schedules. Their education and wellbeing are compromised. Parents face distress watching their children suffer. Society lacks a system to hold production companies accountable.",
-    pullQuote: "Look at child performers as children in need of help, rather than only treating them as stars.",
-    takeaway: "The Zhou Anxin case reveals that child performer protection in China relies on individual crew awareness rather than enforceable rules. Until uniform standards for filming hours, meals, and physical safety are legislated, the hidden costs of production will continue to fall on the most vulnerable.",
-
-    visualStyle: 'spotlight-stage', accentColor: '#6B3FA0',
-    keyStats: {
-      bigNumber: '0',
-      bigLabel: 'Uniform national standards for child actors in China',
-      compareA: { value: 'China', label: 'Relies on individual crew awareness' },
-      compareB: { value: 'Sparkling Stars', label: 'Proposed: filming times, meals, anti-harm measures' },
-    },
-    media: {
-      caption: 'MULTIMEDIA',
-      video: { src: 'wDxA0_yeFCY', type: 'youtube', caption: 'After One Slap: Who Protects Child Actors on Set? — video report' },
-      audio: { src: 'media/child-stars/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
-        subtitles: [
-          { time: 0, text: "One of the challenges in upholding the rights of child actors lies in the lack of awareness among certain 'parent agents' who hold guardianship. These individuals often disregard the perspectives of child actors, resulting in the lack of adequate protection for their rights. Frank Zhang, assistant production controller of Culture Communication Company, has shared relevant insight with us regarding this matter." },
-          { time: 23, text: "For child actors who have just entered the industry, or who want to enter the industry, they may work part-time or be relatively amateur. For many of them, their parents will act as their agents." },
-          { time: 34, text: "It is disconcerting that some parents prioritize financial gains over the rights of child actors, compromising their well-being for the sake of securing filming assignments." },
-          { time: 43, text: "More formal agencies will sign contracts and have standard terms. Of course, this is also to protect the rights of their own child actors. But some parents who act as agents do not pay much attention to this, so they do not mention this issue in their contracts." },
-          { time: 57, text: "Children should possess the autonomy to express their demands and protect their rights, which even parents must not encroach on." },
-          { time: 64, text: "Some parents may be more understanding, or care about their children and communicate with them. But there are also some parents who ask children to complete more filming tasks, rather than giving priority to protecting them, such as ensuring rest time and so on." },
-          { time: 80, text: "We hope for the enhancement of laws and regulations concerning child actors, ensuring the protection of their rights and limiting the control exerted by parent agents." },
-        ],
-      },
-      images: [
-        { src: 'media/child-stars/photo1.png', alt: 'Crew used artificial tears for crying scene', caption: 'During a crying scene, the crew used artificial tears instead of forcing the child actor to cry emotionally, aiming to reduce psychological pressure on the young performer.' },
-        { src: 'media/child-stars/photo2.png', alt: 'Toys prepared to help child actor relax', caption: 'Before filming the crying scene, the crew prepared toys for the child actor to help him stay relaxed and avoid boredom on set.' },
-        { src: 'media/child-stars/photo3.png', alt: 'Artificial tears as child-friendly alternative', caption: 'Artificial tears were used during the crying scene as a child-friendly alternative to forcing real emotional crying.' },
-        { src: 'media/child-stars/photo4.png', alt: 'Crew balancing production and child protection', caption: 'The crew works with child actors during filming, showing the effort to balance production needs with child protection.' },
-        { src: 'media/child-stars/photo5.png', alt: 'Group photo after child-friendly production', caption: 'After the project was completed, staff and child actors took a group photo, marking the end of a child-friendly production experiment.' },
-      ],
-    },
-  },
-  {
-    slug: 'stray-animals', number: '05', category: 'externalities',
+    },slug: 'stray-animals', number: '05', category: 'externalities',
     titleEn: '20 Years of Finding Homes for Strays',
     titleZh: "How Beijing Adoption Day turns micro-donations into a systematic solution for stray animal welfare.",
     conceptEn: 'Externalities & Donations', conceptZh: '外部性与捐赠经济',
