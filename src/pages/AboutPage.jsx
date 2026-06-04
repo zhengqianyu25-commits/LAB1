@@ -83,12 +83,12 @@ export default function AboutPage() {
 
           <div className="space-y-4">
             {[
-              { name: 'Ma Zihan', role: 'Concert Scalping + Home', desc: 'Authored the headline story on ticket scarcity; built the Home page layout.' },
-              { name: 'Fang Yiran', role: 'Zibo Barbecue + Stories Index', desc: 'Analyzed the attention economy of city branding; built the Stories index page with six news cards.' },
-              { name: 'Zheng Qianyu', role: "Women's Sizing + Visual Template", desc: 'Investigated cost control in fashion; established the universal article template and visual standards.' },
-              { name: 'Zhu Kaixue', role: 'Child Star Rights + Lab Notes', desc: 'Examined labor protection for minors; created the Lab Notes section explaining economic concepts.' },
-              { name: 'Mo Siyang', role: 'Stray Animals + About/Credits', desc: 'Calculated the efficiency of micro-donations; wrote the About page and credited all sources.' },
-              { name: 'Tang Yani', role: 'Student Films + QA & Delivery', desc: 'Analyzed the creator economy; handled mobile optimization, link testing, QR codes, and final submission.' },
+              { name: 'Fang Yiran', role: 'Editor-in-Chief', desc: 'Oversees editorial direction, approves final content, and ensures every story meets the site\'s clarity and accuracy standards.' },
+              { name: 'Tang Yani', role: 'Executive Producer', desc: 'Manages production workflow, coordinates contributors, and ensures timely delivery of multimedia stories.' },
+              { name: 'Ma Zihan', role: 'Reviewing Expert', desc: 'Reviews factual accuracy, checks sources, and verifies data interpretation before publication.' },
+              { name: 'Zheng Qianyu', role: 'Creative Director', desc: 'Defines visual identity, oversees layout and graphics, and ensures consistency across all story formats.' },
+              { name: 'Zhu Kaixue', role: 'Chief Commentator', desc: 'Writes opinion-led analysis and provides editorial perspective on social and cultural issues.' },
+              { name: 'Mo Siyang', role: 'Chief Economic Analyst', desc: 'Leads economics-angle storytelling, interprets market signals and incentives in each feature.' },
             ].map((m, i) => (
               <div key={i} className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 p-4 border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}>
                 <div className="md:w-32 shrink-0">
