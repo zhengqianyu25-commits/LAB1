@@ -1,28 +1,66 @@
 import { Link } from 'react-router-dom';
 
-const examples = {
-  scarcity: 'Limited seats, massive demand &mdash; the gap scalpers exploit.',
-  'attention-economy': 'Zibo\'s Douyin search index skyrocketed 181,376% year-on-year, from near zero to over 11 million. 10,000 UGC videos flooded the platform on April 29 alone, acting as free advertising. On peak day, Zibo Station recorded 94,594 arrivals — online attention converted into physical footfall. Gen Z (18-30) drove 58% of engagement, with a 55% female skew accelerating trip planning. The result: a 73% consumption spike and 200% booking growth — but attention fades. The question is whether Zibo can build lasting brand value or become a one-season wonder.',
-  'cost-control': 'One-size-fits-all is not just aesthetic; it\'s a cost decision.',
-  'labor-protection': 'Child performers need stricter rules than adult actors.',
-  externalities: 'Abandoned pets create costs society as a whole bears.',
-  'creator-economy': 'A film can go viral online but score a mediocre grade.',
+const cards = {
+  scarcity: {
+    title: 'Price Ceiling',
+    explanation: 'When regulators or organizers set a maximum ticket price below the market-clearing level, quantity demanded exceeds quantity supplied, creating a shortage. This shortage is typically rationed through non-price mechanisms such as lotteries, queues, or social connections rather than price. A secondary market then emerges to reallocate tickets to those willing to pay more.',
+    quote: 'Official price caps create the shortage; secondary markets reveal true demand.',
+    related: "Why Scalpers Create Chaos Outside Mayday's Concerts for Profits",
+  },
+  'attention-economy': {
+    title: 'Attention Economy',
+    explanation: 'In the attention economy, human attention is a scarce resource, and platforms compete to capture and monetize it in a world where information is abundant. Online attention can become local revenue only if a city can absorb the crowd. Zibo\'s barbecue trend turned student gratitude, influencer videos, train and bus services, festival activities and citizen hospitality into a tourism boom. The economic question is whether a viral moment can become repeat visits and long-term city value.',
+    quote: '',
+    related: 'Zibo grills its way to viral fame',
+  },
+  'cost-control': {
+    title: 'Race to the Bottom',
+    explanation: 'Race to the bottom occurs when competitors continuously undercut each other on a single metric, harming overall quality or welfare. Brands compete to make smaller sizes, chasing the "thinness as beauty" signal. The result: size standards collapse across the market. Women of average build can\'t find clothes that fit — a race to the bottom in sizing.',
+    quote: '',
+    related: 'Chinese actress exposes shrinking women\'s clothing sizes, market failure follows',
+  },
+  'labor-protection': {
+    title: 'Labor Protection',
+    explanation: 'Labor protection establishes rules for working hours, safety, breaks and fair treatment to prevent employers from shifting risks and costs onto workers. Child actors create value for productions, but they have weaker bargaining power than adults. If safety rules, working hours, meal breaks and physical-contact boundaries are unclear, crews may save time by shifting risk to children. Labor protection makes that hidden cost visible and demands safer production routines.',
+    quote: '',
+    related: 'After One Slap: Who Protects Child Actors on Set?',
+  },
+  externalities: {
+    title: 'Externalities & Public Good',
+    explanation: 'An externality is a cost or benefit from an economic activity that affects someone who did not choose to be involved. A public good is available to everyone and one person\'s use does not reduce its availability to others. Stray animal rescue creates benefits beyond the adopter: fewer abandoned animals, better community safety and stronger responsible-pet culture. But the cost of care often falls on volunteers and small donors. That gap shows why animal welfare is a public-good problem, not only a private act of kindness.',
+    quote: '',
+    related: 'One Cup of Milk Tea: Changing the Fate of Stray Animals',
+  },
+  'creator-economy': {
+    title: 'Creator Economy',
+    explanation: 'In the creator economy, individuals use digital platforms to produce and monetize content directly, bypassing traditional media gatekeepers. Low-budget creators can turn small spaces, daily problems and niche interests into online attention. But audience approval does not always match institutional evaluation. The dorm horror film shows a recognition gap: platforms reward entertainment and originality, while course grading may reward safer or more traditional aesthetics.',
+    quote: '',
+    related: '79-point horror film exposes signal failure between grade and market',
+  },
 };
 
 export default function ConceptCard({ article, index }) {
+  const c = cards[article.category] || { title: article.conceptEn, explanation: article.lensExplanation, quote: '', related: '' };
+
   return (
     <div className={`news-card p-7 flex flex-col animate-in stagger-${Math.min((index || 0) + 1, 6)}`} style={{ borderRadius: '2px' }}>
       <div className="flex items-start justify-between mb-4">
         <span className="text-4xl font-display font-medium opacity-10">{article.number}</span>
-        <span className="text-[0.6rem] font-semibold tracking-[0.15em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>{article.section.split(' / ')[0]}</span>
+        <span className="text-[0.6rem] font-semibold tracking-[0.15em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>Card {('0' + (index + 1)).slice(-2)}</span>
       </div>
 
-      <h3 className="text-xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>{article.conceptEn}</h3>
-      <p className="text-sm mb-4 leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{article.lensExplanation.slice(0, 160)}&hellip;</p>
+      <h3 className="text-xl font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>{c.title}</h3>
+      <p className="text-sm mb-4 leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{c.explanation}</p>
+
+      {c.quote && (
+        <p className="text-sm font-display italic mb-4 px-3 py-2 border-l-[3px]" style={{ color: 'var(--color-accent)', borderColor: 'var(--color-accent)', background: 'var(--color-accent-dim)' }}>
+          &ldquo;{c.quote}&rdquo;
+        </p>
+      )}
 
       <div className="mt-auto pt-4 border-t" style={{ borderColor: 'var(--color-border)' }}>
-        <span className="section-label mb-1.5 block">In One Sentence</span>
-        <p className="text-xs leading-relaxed mb-4 opacity-70" style={{ color: 'var(--color-text-secondary)' }}>{examples[article.category]}</p>
+        <span className="section-label mb-1.5 block">Related Story</span>
+        <p className="text-xs leading-relaxed mb-4 opacity-60" style={{ color: 'var(--color-text-secondary)' }}>{c.related}</p>
       </div>
 
       <Link to={`/lab-note/${article.category}`} className="accent-link">Explore Data &rarr;</Link>
