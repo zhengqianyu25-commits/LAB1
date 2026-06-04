@@ -39,7 +39,7 @@ function AudioSubtitles({ article, elapsed }) {
     return (
       <div className="mt-6 p-5 rounded-sm border transition-all duration-500" style={{ background: 'rgba(255,255,255,0.85)', borderColor: 'var(--color-accent)', borderLeftWidth: '3px' }}>
         <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase mb-2 block" style={{ color: 'var(--color-accent)' }}>
-          Audio Transcript &middot; {article.titleZh}
+          Subtitle &middot; {article.titleZh}
         </span>
         <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
           {current.text}
