@@ -53,10 +53,7 @@ export default function PodcastPage() {
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
-        <SectionTitle subtitle="FM">No Filter FM</SectionTitle>
-        <p className="dark-bright text-paper-text-secondary max-w-2xl -mt-6 mb-8 leading-relaxed">
-          Sounds like economics. Audio stories with synced subtitles — click an episode to enter lyric mode.
-        </p>
+        <SectionTitle>No Filter FM</SectionTitle>
 
         <div className="border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}>
           <div className="px-5 py-3 border-b" style={{ borderColor: 'var(--color-border)' }}>

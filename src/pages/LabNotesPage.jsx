@@ -7,11 +7,7 @@ export default function LabNotesPage() {
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
-        <SectionTitle subtitle="Lab Notes">Lab Notes</SectionTitle>
-        <p className="dark-bright text-paper-text-secondary max-w-2xl -mt-6 mb-2 leading-relaxed">
-          Six economics concepts distilled from the headlines. Quick frameworks for clearer thinking.
-        </p>
-        <p className="dark-bright text-xs text-paper-text-muted max-w-2xl mb-10">No jargon. No filler. Three minutes to understand the logic behind any event.</p>
+        <SectionTitle>Lab Notes</SectionTitle>
 
         <div className="border p-6 mb-10" style={{ background: 'var(--color-accent-dim)', borderColor: 'var(--color-accent)', borderLeftWidth: '3px', borderRadius: '2px' }}>
           <span className="section-label mb-4 block">Concept Map</span>

@@ -92,7 +92,7 @@ export default function ListenPage() {
             >
               <p
                 className={isActive ? 'text-lg md:text-xl font-medium' : 'text-sm md:text-base'}
-                style={{ color: isActive ? 'var(--color-accent)' : 'var(--color-text)' }}
+                
               >
                 {en}
               </p>
