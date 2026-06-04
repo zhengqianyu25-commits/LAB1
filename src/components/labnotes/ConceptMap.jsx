@@ -19,13 +19,13 @@ const edges = [
 ];
 
 export default function ConceptMap() {
-  const w = 300, h = 200;
+  const w = 400, h = 280;
 
   const getXY = (node) => ({ x: (node.x / 100) * w, y: (node.y / 100) * h });
 
   return (
     <div className="flex flex-col md:flex-row gap-8 items-center mt-6 mb-4">
-      <svg viewBox={`0 0 ${w} ${h}`} className="w-full max-w-[300px] shrink-0">
+      <svg viewBox={`0 0 ${w} ${h}`} className="w-full max-w-[400px] shrink-0">
         {edges.map((e, i) => {
           const a = nodes.find(n => n.id === e.from);
           const b = nodes.find(n => n.id === e.to);
@@ -33,8 +33,8 @@ export default function ConceptMap() {
           const pa = getXY(a), pb = getXY(b);
           return (
             <g key={i}>
-              <line x1={pa.x} y1={pa.y} x2={pb.x} y2={pb.y} stroke="var(--color-border)" strokeWidth="1" strokeDasharray="3,2" />
-              <text x={(pa.x + pb.x) / 2} y={(pa.y + pb.y) / 2 - 4} textAnchor="middle" fontSize="6" fill="var(--color-text-muted)" opacity="0.6">{e.label}</text>
+              <line x1={pa.x} y1={pa.y} x2={pb.x} y2={pb.y} stroke="var(--color-border)" strokeWidth="1.5" strokeDasharray="4,2" />
+              <text x={(pa.x + pb.x) / 2} y={(pa.y + pb.y) / 2 - 5} textAnchor="middle" fontSize="9" fill="var(--color-text-muted)" opacity="0.7">{e.label}</text>
             </g>
           );
         })}
@@ -42,15 +42,15 @@ export default function ConceptMap() {
           const p = getXY(n);
           return (
             <Link key={n.id} to={n.to}>
-              <circle cx={p.x} cy={p.y} r="20" fill="var(--color-accent-dim)" stroke="var(--color-accent)" strokeWidth="1.5" className="transition-all duration-300 hover:fill-[var(--color-accent)]" />
-              <text x={p.x} y={p.y + 4} textAnchor="middle" fontSize="7" fontWeight="600" fill="var(--color-text)" fontFamily="system-ui" className="transition-colors duration-300">{n.label}</text>
+              <circle cx={p.x} cy={p.y} r="24" fill="var(--color-accent-dim)" stroke="var(--color-accent)" strokeWidth="1.5" className="transition-all duration-300 hover:fill-[var(--color-accent)]" />
+              <text x={p.x} y={p.y + 5} textAnchor="middle" fontSize="10" fontWeight="600" fill="var(--color-text)" fontFamily="system-ui" className="transition-colors duration-300">{n.label}</text>
             </Link>
           );
         })}
       </svg>
-      <div className="text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-        <p className="mb-3 dark-bright">Six concepts. One framework. They connect:</p>
-        <ul className="space-y-1.5 text-xs">
+      <div className="leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
+        <p className="mb-3 dark-bright text-base font-medium">Six concepts. One framework. They connect:</p>
+        <ul className="space-y-2 text-sm">
           {edges.map(e => {
             const a = nodes.find(n => n.id === e.from);
             const b = nodes.find(n => n.id === e.to);
