@@ -94,6 +94,7 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: '/media/zibo-bbq/video.mp4', type: 'video/mp4', caption: 'Video report on the Zibo barbecue phenomenon' },
+      audio: { src: '/media/zibo-bbq/audio.wav', type: 'audio/wav', caption: 'Audio report' },
       images: [
         { src: '/media/zibo-bbq/image1.jpeg', alt: 'Customer grilling skewers at a Zibo barbecue stall' },
         { src: '/media/zibo-bbq/image2.jpeg', alt: 'Food bloggers livestreaming from Zibo barbecue street' },
@@ -147,90 +148,130 @@ const articles = [
   },
   {
     slug: 'child-stars', number: '04', category: 'labor-protection',
-    titleEn: 'After the Slap',
-    titleZh: 'Who protects child performers on China\'s film sets?',
+    titleEn: 'After One Slap: Who Protects Child Actors on Set?',
+    titleZh: "A Shanghai child actor was slapped for real during filming. His case exposes gaps in China's child performer protections.",
     conceptEn: 'Labor Protection', conceptZh: '劳动保护与监管成本',
     readTime: '5 min', section: 'Rights',
-    summary: 'A viral video of a child actor being struck during filming ignited national outrage — and exposed a regulatory vacuum around underage performers in China\'s entertainment industry.',
+    summary: "A young Shanghai actor was slapped for real during filming, leaving his face visibly red and swollen. His case raises questions about child performers' rights, from safer filming methods to clearer industry standards for shooting hours, meals, and protection from physical harm.",
 
     body: [
-      'BEIJING — In early 2023, a behind-the-scenes clip showing a young actor being struck across the face by an adult performer during a television drama shoot spread rapidly across Chinese social media. The production team later stated the slap was intended to achieve “artistic realism,” but the public response zeroed in on a deeper question: what protections exist for children who work on film sets?',
-      'Labor economists describe child performers as a textbook case of vulnerable workers. They operate in an industry with acute power imbalances, long and unpredictable hours, and contracts often negotiated by parents who may have financial incentives that do not fully align with their child’s welfare. “The child has virtually no bargaining power,” one labor rights researcher said. “And the adults around them may have competing interests.”',
-      'This is a classic principal-agent problem. Parents are legally the child’s guardians, entrusted to act in their best interest. But when parents also function as the child’s manager and primary beneficiary of their income, the alignment can break. The economic incentive to accept a lucrative role can override the protective impulse.',
-      'The regulatory gap is significant. Compared with South Korea, which tightened child-performer labor laws after a series of high-profile cases, or the United States, where California’s Coogan Act mandates that 15 percent of a child performer’s earnings be placed in a protected trust, China has limited enforceable rules governing working hours, mandatory education, psychological support, or independent on-set supervision for minors.',
-      'Establishing such protections imposes real costs: compliance monitoring, dedicated child welfare officers on set, restricted shooting schedules that extend production timelines. “The question is who pays for those costs,” the researcher said. “When the answer is nobody, the protection doesn’t happen.”',
-      'There is also a trade-off. Excessively strict regulations could lead production companies to avoid casting children altogether, reducing opportunities for young performers. The challenge is designing rules that protect without excluding.',
-      '“Ultimately, it comes down to whether we see child performers as workers or as children first,” the researcher said. “If they are workers, they deserve labor protections. If they are children first, their education and wellbeing must take priority over commercial interests. Either way, someone has to bear the cost. Right now, that cost falls on the child.”',
+      "SHANGHAI, May 23 — A worrying incident involving child actor Zhou Anxin in Shanghai has sparked widespread attention and concern over rights protection for child performers. The incident took place on the set of a film, where the production team opted for actual physical impact while portraying a scene in which a child is made to cry. After the shooting, the young actor's face remained red and swollen before recovering. His role that day required him to be slapped and cry.",
+
+      { "type": "image", "src": "/media/child-stars/image2.png", "alt": "Crew uses artificial tears instead of forcing the child to cry", "caption": "During a crying scene, the 'Spark Fluorescent' crew used artificial tears instead of forcing the child actor to cry emotionally, aiming to protect the child's psychological well-being." },
+
+      "His mother said, \"After seeing the script, I actually didn't want him to shoot.\" She added, \"I went to the crew and asked whether we could use special effects or stage the action, but they didn't agree.\"",
+
+      "Despite his mother's prior inquiry about the possibility of using a staged action, her suggestion was not adopted because the production team leaned toward presenting an authentic scene. During the actual filming, Zhou Anxin cried real tears after being slapped and did not stop crying after the filming was over. His mother noticed that his face was visibly red and swollen, which made her deeply distressed and upset.",
+
+      "Zhou Anxin is an experienced child actor who has previously appeared in advertisements, TV dramas and films. His mother acknowledges the demands of the production team but genuinely hopes to find better and safer solutions. \"I could sometimes feel that he was under a lot of pressure, having to shoot and do homework, and going back to school to make up for it. Every time I see him exhausted, I think 'I don't want to count it,' but he doesn't tell me himself,\" his mother said.",
+
+      { "type": "image", "src": "/media/child-stars/image1.png", "alt": "Crew prepared toys for the child actor before filming", "caption": "Before filming, the crew prepared toys for the child actor to reduce boredom and help create a more relaxed environment on set." },
+
+      "Numerous child actors are not given special care, and their rights are sometimes violated.",
+
+      "\"The use of child actors in the industry currently relies heavily on the awareness of each crew and lacks a uniform standard,\" said Frank Zhang, Assistant Production Controller at a culture communication company. \"While harsh beatings and forced labor are not common, children are often required to stay up late and shoot long hours, and filming is not purposely scheduled to avoid weekdays to ensure that the children have a normal school day.\"",
+
+      "\"It is also common for children to be treated poorly in order to advance the filming schedule. Due to gaps in national legislation and the lack of default norms in the industry, labor contracts often do not contain provisions specifically addressing the rights of child actors,\" Zhang added.",
+
+      "The lack of explicit legislation and specific regulations to protect child performers exposes them to various risks. Child performers often face issues such as sleep deprivation, long working hours, irregular eating habits and physical injuries.",
+
+      { "type": "image", "src": "/media/child-stars/image3.png", "alt": "Crew member applies artificial tears tested by medical university", "caption": "A crew member applies artificial tears to the child actor during the crying scene. The material was tested in advance by doctoral students at Southern Medical University to confirm it was harmless to children." },
+
+      "For No Filter Lab, the case also shows the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost may be shifted onto children's bodies, emotions and education.",
+
+      "Against this backdrop, the \"Sparkling Stars\" project team, dedicated to safeguarding the legitimate rights of child actors, has expressed concern about the protection of their rights. The project team has conducted extensive interviews with child performers and agents, developing a set of professional standards aimed at safeguarding the rights of child actors. These standards include defining filming times, meal times and measures to prevent physical harm.",
+
+      "Project leader Yu Hailong expressed hope that more individuals will join efforts to protect the rights of child performers and urged the industry to promptly introduce relevant regulations.",
+
+      { "type": "image", "src": "/media/child-stars/image4.png", "alt": "Crew films child actor while balancing production and child protection", "caption": "The crew films a child actor while trying to balance production needs with the protection of children's rights and mental health." },
+
+      "\"The overall goal of our project is to encourage the community to look at child performers as children in need of help, rather than only treating them as stars,\" Yu said. \"We hope people can focus more on the shadow of rights violations behind their glow. From there, more organizations can be called upon to defend their legal rights.\"",
+
+      { "type": "image", "src": "/media/child-stars/image5.png", "alt": "Staff and child actors take a group photo after the project", "caption": "Staff and child actors take a group photo after the project, which aimed to explore a more child-friendly production model." },
     ],
 
-    lensExplanation: 'Child performer rights are a labor-protection problem where the cost of safeguards is unallocated, so it defaults to zero. A principal-agent dynamic further complicates matters: parents, acting as agents, may not always prioritize the child’s best interest when financial incentives conflict with protective duties.',
-    whoGains: 'Production companies and investors benefit from the marketability of child performers. Some families improve their economic circumstances through their child’s income. The entertainment industry as a whole profits from the “cuteness premium” of young talent.',
-    whoPays: 'Child performers bear the physical and psychological toll of adult working conditions. Their education and normal social development are compromised. Society incurs downstream costs when former child stars face mental health struggles and career-transition difficulties as adults.',
-    pullQuote: 'When nobody is assigned to pay, protection doesn\'t happen.',
-    takeaway: 'Protecting child performers costs money. The question is not whether they should be protected, but who pays — and without mandatory cost allocation to those best positioned to bear it, child-star protections will remain paper promises.',
+    lensExplanation: "The case of Zhou Anxin exposes the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost is shifted onto children's bodies, emotions, and education. The lack of uniform industry standards means child performers' rights depend on individual crew awareness rather than enforceable regulations.",
+    whoGains: "Production companies save time and money by avoiding special effects, staged actions, and child-friendly scheduling. The entertainment industry benefits from child performers' marketability without bearing the full cost of their protection.",
+    whoPays: "Child performers bear the physical and psychological toll of adult working conditions, sleep deprivation, and irregular schedules. Their education and wellbeing are compromised. Parents face distress watching their children suffer. Society lacks a system to hold production companies accountable.",
+    pullQuote: "Look at child performers as children in need of help, rather than only treating them as stars.",
+    takeaway: "The Zhou Anxin case reveals that child performer protection in China relies on individual crew awareness rather than enforceable rules. Until uniform standards for filming hours, meals, and physical safety are legislated, the hidden costs of production will continue to fall on the most vulnerable.",
 
     visualStyle: 'spotlight-stage', accentColor: '#6B3FA0',
     keyStats: {
       bigNumber: '0',
-      bigLabel: 'Enforceable child-performer protections in China',
-      compareA: { value: 'China', label: 'No mandatory trust or hour limits' },
-      compareB: { value: 'California', label: '15% earnings in protected trust' },
+      bigLabel: 'Uniform national standards for child actors in China',
+      compareA: { value: 'China', label: 'Relies on individual crew awareness' },
+      compareB: { value: 'Sparkling Stars', label: 'Proposed: filming times, meals, anti-harm measures' },
     },
     media: {
       caption: 'MULTIMEDIA',
       images: [
-        { src: '/media/child-stars/image4.png', alt: 'Child actor on a television drama set' },
-        { src: '/media/child-stars/image7.png', alt: 'Director briefing a young performer between takes' },
-        { src: '/media/child-stars/image9.png', alt: 'Film crew on a production set' },
-        { src: '/media/child-stars/image10.png', alt: 'Discussion forum on minor performer rights' },
-        { src: '/media/child-stars/image11.png', alt: 'Child protection advocacy in entertainment industry' },
-        { src: '/media/child-stars/image12.png', alt: 'Behind-the-scenes footage from a child-star production' },
+        { src: '/media/child-stars/image1.png', alt: 'Crew prepared toys for child actor before filming' },
+        { src: '/media/child-stars/image2.png', alt: 'Artificial tears used instead of forcing child to cry' },
+        { src: '/media/child-stars/image3.png', alt: 'Crew member applies tested artificial tears' },
+        { src: '/media/child-stars/image4.png', alt: 'Filming while balancing production and child protection' },
+        { src: '/media/child-stars/image5.png', alt: 'Group photo after child-friendly production project' },
       ],
     },
   },
   {
     slug: 'stray-animals', number: '05', category: 'externalities',
-    titleEn: 'Adopt, Don\'t Shop',
-    titleZh: 'How China\'s animal rescues survive on love and small donations.',
+    titleEn: 'One Cup of Milk Tea: Changing the Fate of Stray Animals',
+    titleZh: "How Beijing Adoption Day turns micro-donations into a systematic solution for stray animal welfare.",
     conceptEn: 'Externalities & Donations', conceptZh: '外部性与捐赠经济',
     readTime: '5 min', section: 'Public Good',
-    summary: 'China\'s stray animal population keeps growing while rescue organizations operate in permanent financial precarity — a sector powered by compassion that reveals the economics of externalities and volunteer labor.',
+    summary: "Beijing's stray animals face numerous challenges in the bustling city. But a group of dedicated volunteers is making a difference through an initiative that treats animal welfare as a logistics and economics problem rather than merely a moral one.",
 
     body: [
-      'GUANGZHOU — On any given evening, volunteers with one of the city’s dozens of animal rescue groups sweep through parks and alleys, trapping stray cats and dogs for sterilization, vaccination, and rehoming. The work is grueling, unpaid, and ceaseless. The organizations that coordinate it are almost uniformly underfunded, relying on sporadic WeChat transfers and charity sales to cover monthly costs that can reach tens of thousands of yuan.',
-      'Economists describe stray animals as a negative-externality problem. When a person abandons a pet, the private benefit — freedom from the cost and responsibility of care — is fully captured by the individual. But the costs — public health risks from unvaccinated animals, noise complaints, sanitation issues — are distributed across the entire community. The person who creates the problem does not pay for its consequences.',
-      'Animal rescue, meanwhile, produces positive externalities. When a rescue group sterilizes and rehomes a stray, the entire neighborhood benefits from reduced disease risk and fewer nuisance animals. But the rescue group cannot charge every beneficiary for this service. Economists classify such services as public goods: everyone gains from them, yet no single person has sufficient incentive to fund them alone.',
-      'This structural mismatch explains the sector’s chronic funding crisis. A typical rescue organization faces fixed monthly costs for rent, veterinary care, food, and sterilization surgeries that can exceed 30,000 yuan. On the revenue side, the same organization depends on unpredictable small donations and volunteer labor. “We’re always one bad month away from crisis,” one shelter operator said.',
-      'The economics of volunteer labor are particularly striking. Most Chinese rescue groups rely almost entirely on unpaid workers who clean kennels, transport animals, manage adoption listings, and handle administrative tasks in their spare time. Their labor has enormous social value but is entirely invisible in GDP accounting. The true cost of rescue work — including volunteer hours — is systematically underestimated.',
-      'Some economists argue the solution requires internalizing the externalities: imposing an abandonment fee on pet purchases, mandating microchip registration, subsidizing sterilization, or requiring pet owners to carry liability insurance. Cities including Guangzhou and Shenzhen have begun experimenting with trap-neuter-return programs, and some municipalities are exploring administrative penalties for abandonment.',
-      '“The sector doesn’t lack compassion,” the shelter operator said. “It lacks a funding model. When the positive externalities of rescue can’t be converted into stable revenue, and the negative externalities of abandonment can’t be traced back to the person responsible, love and small donations can only carry you so far.”',
+      "BEIJING — Beijing's stray animals face numerous challenges in the bustling city. However, a group of dedicated volunteers is actively working to make a difference through an initiative known as Beijing Adoption Day. While driven by compassion, the initiative also serves as a grassroots response to the social costs imposed by pet overpopulation.",
+
+      { "type": "image", "src": "/media/stray-animals/image1.jpeg", "alt": "The team used low-cost equipment to multi-angle document Beijing Adoption Day", "caption": "The team used low-cost equipment to multi-angle document Beijing Adoption Day, delivering transparent, No Filter coverage of public welfare efforts." },
+
+      "With the aim of curbing the rising stray animal population and addressing associated issues, such as abandonment and neglect, one of the pivotal aspects of Beijing Adoption Day is their \"Monthly Donations\" program. By donating an amount equivalent to the cost of a cup of milk tea each month, people can have a significant impact on the lives of these animals. The donations received help provide much-needed resources, including shelters, food, insulated water bowls during winter, vaccines, and sterilization surgeries for stray animals.",
+
+      "From an economic standpoint, this micro-donation model lowers the barrier to entry for altruism, stabilizing the organization's cash flow similar to a subscription service.",
+
+      "Recognizing that finding loving homes for rescued stray cats and dogs is crucial, Beijing Adoption Day organizes regular pet adoption events. These events serve as a platform for connecting these animals with potential adopters, giving them a chance to become cherished family members. The events not only enable people to find furry companions but also emphasize the significance of adopting rather than buying pets from breeders or stores.",
+
+      "This helps correct the resource misallocation often seen in commercial breeding markets.",
+
+      { "type": "image", "src": "/media/stray-animals/image2.jpeg", "alt": "Adopters fill detailed forms at Beijing Adoption Day", "caption": "Adopters fill detailed forms and receive regular follow-ups. This rule reduces moral hazard and ensures responsible adoption." },
+
+      "In addition to facilitating adoptions, Beijing Adoption Day actively promotes age-appropriate sterilization as part of responsible pet ownership. Through educational campaigns and partnerships with local veterinary clinics, the organization aims to raise awareness about the benefits of spaying and neutering pets. By spreading this crucial message, they hope to prevent future instances of abandonment and reduce the stray animal population in the long run.",
+
+      "The success of Beijing Adoption Day heavily relies on the tireless dedication of passionate volunteers who selflessly invest their time and energy in this noble cause. Motivated solely by their desire to make a positive impact on stray animals' lives, these volunteers do not receive any compensation for their efforts.",
+
+      "Zhu Jiayin, one of the responsible personnel of Beijing Adoption Day, shared her two-year experience with the organization. She mentioned how the extended break brought about by the pandemic allowed her to actively participate in the work of Beijing Adoption Day and contribute to the welfare of vulnerable animals.",
+
+      { "type": "image", "src": "/media/stray-animals/image3.jpeg", "alt": "Beijing Adoption Day volunteers at a weekend event", "caption": "Unlike traditional charities that rely on emotional appeals, this operation runs on professionalized volunteerism. Their use of high-end cameras and audio gear isn't just for show — it's a strategic tool to produce data-backed visual reports." },
+
+      "To maximize their initiatives' impact, Beijing Adoption Day primarily organizes events on weekends. Firstly, many volunteers have their regular jobs during weekdays, making weekends the best available time for their commitment. Secondly, organizing events on weekends attracts larger crowds, increasing exposure for Beijing Adoption Day and spreading awareness about its mission to a wider audience.",
+
+      "Beijing Adoption Day's commitment to improving the lives of stray animals has garnered widespread support from both local residents and the international community. Their efforts have created a paradigm shift in people's attitudes towards animal welfare, leading to increased empathy and compassion for vulnerable animals.",
+
+      "Through advocacy for adoption and responsible pet ownership, Beijing Adoption Day aims to create a future where all animals are treated with kindness and compassion. Their efforts give abandoned cats and dogs hope for second chances. The power of collective action lies not just in good intentions, but in systemic efficiency. By treating animal welfare as a logistics and economics problem rather than merely a moral one, they are proving that even in a chaotic city, rational solutions can save lives.",
     ],
 
-    lensExplanation: 'Stray animal rescue sits at the intersection of multiple economic concepts. Abandonment generates negative externalities borne by society, while rescue produces positive externalities that cannot be efficiently charged for. Rescue organizations depend almost entirely on small donations and volunteer labor — a non-institutionalized funding model that keeps the sector in permanent resource scarcity.',
-    whoGains: 'Entire communities benefit from the public-health and safety gains produced by rescue organizations’ sterilization, vaccination, and adoption work. Adopters acquire pets at very low cost. Some platforms and content creators profit from rescue-related engagement and emotional content.',
-    whoPays: 'Volunteers contribute massive amounts of unpaid labor, absorbing physical exhaustion and emotional strain. Rescue leaders operate under persistent financial pressure. Donors collectively contribute significant sums without institutionalized safeguards or sustainability.',
-    pullQuote: 'We\'re always one bad month from crisis.',
-    takeaway: 'Stray animal rescue suffers not from a shortage of compassion but from a shortage of institutional design. When the positive externalities of rescue cannot be converted into stable funding, and the negative externalities of abandonment cannot be traced to perpetrators, a model built on love and spare change has structural limits.',
+    lensExplanation: "Beijing Adoption Day's micro-donation model — a cup of milk tea per month — lowers the barrier to altruism and stabilizes cash flow like a subscription service. The adoption events correct resource misallocation in commercial breeding markets, while volunteer professionalism builds social trust capital. This is welfare treated as a logistics and economics problem, not just a moral one.",
+    whoGains: "Stray animals receive shelter, food, medical care, and adoption opportunities. Donors contribute meaningfully with minimal individual cost. The community benefits from reduced stray populations and increased awareness of responsible pet ownership.",
+    whoPays: "Volunteers invest significant unpaid time and energy. The organization relies on unstable micro-donations. Society bears the continuing costs of pet abandonment and overpopulation that the initiative can only partially address.",
+    pullQuote: "The power of collective action lies not just in good intentions, but in systemic efficiency.",
+    takeaway: "Beijing Adoption Day proves that treating animal welfare as a logistics and economics problem — rather than merely a moral one — can create sustainable, scalable solutions. A cup of milk tea per month, multiplied by a community of donors, can systematically change the fate of stray animals.",
 
     visualStyle: 'paw-heart', accentColor: '#C06014',
     keyStats: {
-      bigNumber: '¥30K',
-      bigLabel: 'Monthly cost to run a rescue shelter',
-      compareA: { value: '¥0', label: 'Cost to abandon a pet' },
-      compareB: { value: '¥30,000', label: 'Monthly rescue operating cost' },
+      bigNumber: '1 Cup',
+      bigLabel: 'Monthly donation — the cost of a milk tea',
+      compareA: { value: 'Micro-donation', label: 'Lowers barrier to altruism' },
+      compareB: { value: 'Subscription model', label: 'Stabilizes organizational cash flow' },
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/stray-animals/video.mp4', type: 'video/mp4', caption: 'Video report on stray animal rescue operations' },
-      audio: { src: '/media/stray-animals/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
+      video: { src: '/media/stray-animals/video.mp4', type: 'video/mp4', caption: 'Video report on Beijing Adoption Day' },
       images: [
-        { src: '/media/stray-animals/image5.jpeg', alt: 'A stray cat on a city street' },
-        { src: '/media/stray-animals/image9.png', alt: 'Shelter volunteers caring for rescued dogs' },
-        { src: '/media/stray-animals/image10.png', alt: 'Animal rescue organization promotional material' },
-        { src: '/media/stray-animals/image11.png', alt: 'Adoption event for stray animals' },
-        { src: '/media/stray-animals/image12.png', alt: 'Daily care routine at a rescue shelter' },
-        { src: '/media/stray-animals/image13.png', alt: 'Rescue data and outcomes statistics' },
-        { src: '/media/stray-animals/image16.png', alt: 'Volunteers with rescued animals' },
+        { src: '/media/stray-animals/image1.jpeg', alt: 'Low-cost equipment documenting adoption day' },
+        { src: '/media/stray-animals/image2.jpeg', alt: 'Adoption forms and volunteer follow-up process' },
+        { src: '/media/stray-animals/image3.jpeg', alt: 'Beijing Adoption Day weekend volunteer event' },
       ],
     },
   },
