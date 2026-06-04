@@ -53,7 +53,7 @@ export default function PodcastPage() {
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
-        <SectionTitle subtitle="Podcast">No Filter Frequency</SectionTitle>
+        <SectionTitle subtitle="FM">No Filter FM</SectionTitle>
         <p className="dark-bright text-paper-text-secondary max-w-2xl -mt-6 mb-8 leading-relaxed">
           Sounds like economics. Audio stories with synced subtitles — click an episode to enter lyric mode.
         </p>

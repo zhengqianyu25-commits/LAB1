@@ -12,7 +12,7 @@ export default function FloatingBack() {
   if (pathname.startsWith('/article/')) {
     backTo = '/stories'; label = 'Stories';
   } else if (pathname.startsWith('/listen/')) {
-    backTo = '/frequency'; label = 'Frequency';
+    backTo = '/frequency'; label = 'FM';
   }
 
   return (
