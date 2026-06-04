@@ -14,8 +14,8 @@ const cards = {
     related: 'Zibo grills its way to viral fame',
   },
   'cost-control': {
-    title: 'Race to the Bottom',
-    explanation: 'Race to the bottom occurs when competitors continuously undercut each other on a single metric, harming overall quality or welfare. Brands compete to make smaller sizes, chasing the "thinness as beauty" signal. The result: size standards collapse across the market. Women of average build can\'t find clothes that fit — a race to the bottom in sizing.',
+    title: 'Coordination Failure',
+    explanation: 'Each brand shrinks sizes to cut costs and signal "thinness as beauty," but no single brand can restore honest sizing alone — its clothes would look "too big" next to rivals\' labels. The result: consumers can\'t find clothes that fit, brands shrink their own market, and the thin ideal becomes more extreme. Coordination failure persists until an external anchor — a regulator, industry standard, or mass consumer resistance — resets the baseline.',
     quote: '',
     related: 'Chinese actress exposes shrinking women\'s clothing sizes, market failure follows',
   },
