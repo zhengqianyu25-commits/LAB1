@@ -49,8 +49,17 @@ export default function Header() {
 
             <Clock />
 
-            <button onClick={() => setLoginOpen(true)} className={`text-[0.65rem] font-semibold tracking-wider uppercase text-white/70 hover:text-white transition-colors ${user ? 'opacity-100' : ''}`}>
-              {user ? user.name.split(' ')[0] : 'Sign In'}
+            <button onClick={() => setLoginOpen(true)} className="text-white/70 hover:text-white transition-colors" aria-label="Sign in">
+              {user ? (
+                <span className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ background: 'var(--color-accent)' }}>
+                  {user.name[0].toUpperCase()}
+                </span>
+              ) : (
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+                </svg>
+              )}
             </button>
 
             <button onClick={() => setSearchOpen(true)} className="p-1.5 text-white/70 hover:text-white transition-colors" aria-label="Search">
