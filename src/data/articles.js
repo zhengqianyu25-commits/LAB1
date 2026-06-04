@@ -204,6 +204,7 @@ const articles = [
     },
     media: {
       caption: 'MULTIMEDIA',
+      video: { src: 'wDxA0_yeFCY', type: 'youtube', caption: 'After One Slap: Who Protects Child Actors on Set? — video report' },
       images: [
         { src: '/media/child-stars/image1.png', alt: 'Crew prepared toys for child actor before filming' },
         { src: '/media/child-stars/image2.png', alt: 'Artificial tears used instead of forcing child to cry' },
@@ -266,7 +267,7 @@ const articles = [
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: 'wDxA0_yeFCY', type: 'youtube', caption: 'One Cup of Milk Tea: Changing the Fate of Stray Animals — video report' },
+      video: { src: '/media/stray-animals/video.mp4', type: 'video/mp4', caption: 'Video report on Beijing Adoption Day' },
       images: [
         { src: '/media/stray-animals/image1.jpeg', alt: 'Low-cost equipment documenting adoption day' },
         { src: '/media/stray-animals/image2.jpeg', alt: 'Adoption forms and volunteer follow-up process' },
