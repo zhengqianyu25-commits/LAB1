@@ -37,7 +37,7 @@ export default function StoryCard({ article, index }) {
           {article.titleEn}
         </h3>
 
-        <p className="text-sm leading-relaxed line-clamp-2 flex-1 mb-5" style={{ color: 'var(--color-text-muted)' }}>
+        <p className="text-sm leading-[1.6] line-clamp-2 flex-1 mb-5 overflow-hidden" style={{ color: 'var(--color-text-muted)' }}>
           {article.summary}
         </p>
 
