@@ -20,24 +20,40 @@ export function AudioProvider({ children }) {
   useEffect(() => { localStorage.setItem('nf_queue', JSON.stringify(queue)); }, [queue]);
   useEffect(() => { localStorage.setItem('nf_liked', JSON.stringify(liked)); }, [liked]);
 
+  // Listen for YouTube iframe playing state
   useEffect(() => {
-    // Pause audio when any video on the page starts playing
-    const onVideoPlay = (e) => {
+    const onMessage = (e) => {
+      try {
+        const data = JSON.parse(e.data);
+        if (data.event === 'infoDelivery' && data.info?.playerState === 1) {
+          if (audioRef.current && !audioRef.current.paused) {
+            audioRef.current.pause(); setPlaying(false);
+          }
+        }
+      } catch {}
+    };
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, []);
+
+  // Pause audio when a native video/audio element plays
+  useEffect(() => {
+    const onMediaPlay = (e) => {
       if ((e.target.tagName === 'VIDEO' || e.target.tagName === 'AUDIO') && audioRef.current && !audioRef.current.paused && e.target !== audioRef.current) {
         audioRef.current.pause(); setPlaying(false);
       }
     };
-    document.addEventListener('play', onVideoPlay, true);
-    return () => document.removeEventListener('play', onVideoPlay, true);
+    document.addEventListener('play', onMediaPlay, true);
+    return () => document.removeEventListener('play', onMediaPlay, true);
   }, []);
 
+  // Audio element event handlers
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
     const onTime = () => { setCurrentTime(audio.currentTime); setDuration(audio.duration || 0); };
     const onEnded = () => {
       setPlaying(false);
-      // If queue has items, play next in queue
       const q = JSON.parse(localStorage.getItem('nf_queue') || '[]');
       const curSlug = episode?.slug;
       const curQIdx = q.findIndex(e => e.slug === curSlug);
@@ -51,7 +67,6 @@ export function AudioProvider({ children }) {
           return;
         }
       }
-      // Otherwise stop and close
       setEpisode(null);
       setPlaying(false);
     };
@@ -76,9 +91,8 @@ export function AudioProvider({ children }) {
     if (!ep) return;
     const audio = audioRef.current;
     if (!audio) return;
-    // Pause all other media on the page
-    document.querySelectorAll('video, audio').forEach(v => { if (!v.paused && v !== audioRef.current) v.pause(); });
-    // Pause YouTube iframes via postMessage
+    // Pause all other media
+    document.querySelectorAll('video, audio').forEach(v => { if (!v.paused && v !== audio) v.pause(); });
     document.querySelectorAll('iframe').forEach(f => {
       if (f.src && f.src.includes('youtube')) {
         try { f.contentWindow?.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*'); } catch(e) {}
