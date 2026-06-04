@@ -309,6 +309,18 @@ const articles = [
     media: {
       caption: 'MULTIMEDIA',
       video: { src: 'd-AP2J6K72g', type: 'youtube', caption: 'One Cup of Milk Tea: Changing the Fate of Stray Animals — video report' },
+      audio: { src: 'media/stray-animals/audio.mp3', type: 'audio/mpeg', caption: 'Audio story',
+        subtitles: [
+          { time: 0, text: "A girl was crying bitterly in front of a dog, because it looks very similar to her dog, but her dog has been dead for three years." },
+          { time: 7, text: "By coincidence, the dog she was looking at was three years old, the moment touched everyone present." },
+          { time: 13, text: "In addition, we heard many adoption stories at Adoption Day, and the helpers had a lot to say." },
+          { time: 19, text: "I've been doing rescue for 20 years. Adoption Day is more mature, so they came here. The adopters are more mature." },
+          { time: 25, text: "When asking her about her most memorable adoption experience, she said, 'There is a puppy in the process of being sent abroad, it's doing this abroad, and got lost during the formalities. Then I went to this place to look for it, I searched for four days.'" },
+          { time: 42, text: "I got it back at the time, but the dog didn't want to leave me, so she ended up staying with me." },
+          { time: 47, text: "My family rescued 7 dogs, more than 40 cats. When adopting, they are two brothers. Save it's easy, it's me who stopped the car, see what's wrong with the car and open the door, and when I got in the car, it was coming up." },
+          { time: 73, text: "We hope that all street animals can find homes of their own." },
+        ],
+      },
       images: [
         { src: 'media/stray-animals/image1.jpeg', alt: 'Low-cost equipment documenting adoption day' },
         { src: 'media/stray-animals/image2.jpeg', alt: 'Adoption forms and volunteer follow-up process' },
