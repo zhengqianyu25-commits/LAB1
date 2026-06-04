@@ -36,10 +36,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-4 text-lg md:text-xl leading-relaxed opacity-70" style={{ color: 'var(--color-text-secondary)' }}>
-            Economics meets journalism.
-          </p>
-          <p className="text-xl md:text-2xl max-w-xl leading-relaxed" style={{ color: 'var(--color-accent)' }}>
-            No jargon. Just clarity.
+            Economics meets journalism. No jargon. Just clarity.
           </p>
 
           <div className="mt-3 h-10 flex items-center">

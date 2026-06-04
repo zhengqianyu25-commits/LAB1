@@ -7,7 +7,7 @@ export default function StoriesPage() {
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
-        <SectionTitle subtitle="All Stories">All Stories</SectionTitle>
+        <SectionTitle>All Stories</SectionTitle>
 
         <StoryCarousel articles={articles} />
 
