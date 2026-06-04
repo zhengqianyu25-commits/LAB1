@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useAudio, audioArticles } from '../context/AudioContext';
 
 export default function ListenPage() {
@@ -10,12 +10,6 @@ export default function ListenPage() {
   const idx = parseInt(index || '0', 10);
   const episode = audioArticles[idx];
   const subtitles = episode?.media?.audio?.subtitles;
-
-  // Determine back destination
-  const params = new URLSearchParams(location.search);
-  const fromSlug = params.get('from');
-  const backTo = fromSlug ? `/article/${fromSlug}` : '/frequency';
-  const backLabel = fromSlug ? 'Story' : 'FM';
 
   const [elapsed, setElapsed] = useState(0);
   const containerRef = useRef(null);
@@ -64,12 +58,8 @@ export default function ListenPage() {
   return (
     <div className="page-enter flex flex-col" style={{ minHeight: 'calc(100vh - 4rem)' }}>
       {/* Top bar */}
-      <div className="container-main flex items-center py-6 border-b" style={{ borderColor: 'var(--color-border)' }}>
-        <button onClick={() => navigate(backTo)} className="flex items-center gap-1 text-xs font-semibold tracking-wider uppercase opacity-50 hover:opacity-100" style={{ color: 'var(--color-text-muted)' }}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m15 18-6-6 6-6"/></svg>
-          {backLabel}
-        </button>
-        <div className="flex-1 text-center">
+      <div className="container-main flex items-center justify-center py-6 border-b" style={{ borderColor: 'var(--color-border)' }}>
+        <div className="text-center">
           <div className="flex items-center justify-center gap-1.5 mb-1">
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: playing ? 'var(--color-accent)' : 'var(--color-text-muted)' }} />
             <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase opacity-50" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</span>

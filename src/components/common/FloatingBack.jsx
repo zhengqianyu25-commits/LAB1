@@ -1,13 +1,18 @@
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 export default function FloatingBack() {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
 
   let backTo = '/';
   let label = '';
 
   if (pathname.startsWith('/article/')) {
     backTo = '/stories'; label = 'Stories';
+  } else if (pathname.startsWith('/listen/')) {
+    const params = new URLSearchParams(search);
+    const fromSlug = params.get('from');
+    backTo = fromSlug ? `/article/${fromSlug}` : '/frequency';
+    label = fromSlug ? 'Story' : 'FM';
   }
 
   if (!label) return null;
