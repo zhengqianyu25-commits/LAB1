@@ -21,8 +21,8 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="credits" element={<CreditsPage />} />
           <Route path="frequency" element={<PodcastPage />} />
+          <Route path="listen/:index" element={<ListenPage />} />
         </Route>
-        <Route path="listen/:index" element={<ListenPage />} />
       </Routes>
     </HashRouter>
   );
