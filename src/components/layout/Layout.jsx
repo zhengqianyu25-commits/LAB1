@@ -18,23 +18,24 @@ export default function Layout() {
 
   useEffect(() => {
     const isArticle = pathname.startsWith('/article/');
+    const isListen = pathname.startsWith('/listen/');
     const isHome = pathname === '/' || pathname === '';
 
-    if (isHome) {
-      setBgImage('media/zibo-bbq/image3.jpeg');
-      document.body.style.background = '';
-    } else if (isArticle) {
+    if (isArticle) {
       const slug = pathname.split('/').pop();
       const article = articles.find(a => a.slug === slug);
-      const img = article?.media?.images?.[0]?.src || '';
-      setBgImage(img);
-      document.body.style.background = '';
+      setBgImage(article?.media?.images?.[0]?.src || '');
+    } else if (isListen) {
+      const idx = parseInt(pathname.split('/').pop() || '0', 10);
+      const listenArticle = articles.filter(a => a.media?.audio)[idx];
+      setBgImage(listenArticle?.media?.images?.[0]?.src || '');
+    } else if (isHome) {
+      setBgImage('media/zibo-bbq/image3.jpeg');
     } else {
-      setBgImage('');
-      document.body.style.background = '';
+      setBgImage(articles[0]?.media?.images?.[0]?.src || '');
     }
-    return () => { setBgImage(''); document.body.style.background = ''; };
-  }, [pathname, dark]);
+    return () => { setBgImage(''); };
+  }, [pathname]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -56,7 +57,7 @@ export default function Layout() {
             className="absolute inset-0 bg-cover bg-center bg-fixed"
             style={{ backgroundImage: `url("${bgImage}")`, filter: 'blur(24px)', transform: 'scale(1.1)' }}
           />
-          <div className="absolute inset-0" style={{ background: dark ? 'rgba(0,0,0,0.65)' : 'rgba(255,255,255,0.35)' }} />
+          <div className="absolute inset-0" style={{ background: dark ? 'rgba(0,0,0,0.65)' : 'rgba(255,255,255,0.55)' }} />
         </div>
       )}
     </div>
