@@ -1,48 +1,63 @@
 const articles = [
   {
     slug: 'concert-scalping', number: '01', category: 'scarcity',
-    titleEn: 'Sold Out in Seconds',
-    titleZh: 'How scarcity and price caps fuel a billion-dollar ticket resale market.',
+    titleEn: 'How Concert Tickets Became a Business: The Harder Tickets Are to Get, the More Scalpers Profit',
+    titleZh: "A student scalper reveals how scarcity, connections, and market dynamics fuel the concert ticket resale industry.",
     conceptEn: 'Scarcity & Arbitrage', conceptZh: '稀缺性与套利',
     readTime: '5 min', section: 'Market',
-    summary: 'When 500,000 fans chase 20,000 seats and tickets sell out in under a minute, a secondary market emerges where prices soar far beyond face value — and scalpers pocket the difference.',
+    summary: "Boosted by MAYDAY's hot Beijing concerts amid recovering live shows, college student scalper Li Yang reveals how his ticket resale business works — and how profits swing with shifting market conditions.",
 
     body: [
-      'BEIJING — Tickets for Mandopop star Jay Chou’s 2024 arena tour vanished from official platforms in roughly 30 seconds. Minutes later, identical seats appeared on resale sites at prices ranging from three to eight times face value, according to consumer complaint records reviewed by reporters.',
-      'The phenomenon, repeated across major concerts in China this year, has drawn public anger and government scrutiny. But economists and industry analysts say the scalping problem is not simply a matter of enforcement failure. It is, at root, a pricing problem.',
-      '“When you price a good below what the market will bear, someone will capture that gap,” said an economics researcher who studies ticket markets. “Right now, that someone is rarely the artist or the promoter.”',
-      'The mechanism is straightforward. A major concert might draw half a million intending buyers for 20,000 seats. If promoters set face-value prices at 880 to 1,880 yuan — constrained by fan expectations, brand image, and regulatory pressure — the true market-clearing price may be several times higher. The difference between these two numbers is the arbitrage opportunity that scalpers exploit.',
-      'Scalpers operate with three advantages, investigators have found: information advantage, knowing exactly when and where tickets drop; technical advantage, deploying automated bots that can complete purchases faster than any human; and channel advantage, maintaining informal relationships with some ticket distribution points.',
-      'Critics argue that promoters are effectively leaving money on the table — and directing it into an unregulated gray market. “If your tickets consistently sell out within seconds and reappear at triple the price, your pricing model is broken,” one industry analyst said.',
-      'But charging the full market price carries its own costs. It would turn concerts into exclusive events for the wealthy, shutting out the very fans whose loyalty built the artist’s career. This tension between fairness and efficiency has no easy resolution.',
-      'Several countermeasures are being tested. Real-name registration tied to government ID, facial recognition at venue entrances, dynamic pricing that adjusts in real time, and fan-club presales that prioritize long-term supporters have all been deployed with mixed results. Each solution creates new problems: privacy concerns, longer entry queues, and the risk that dedicated but lower-income fans are priced out entirely.',
-      '“The scalper is a symptom, not the disease,” the researcher said. “The underlying problem is that concert tickets are a scarce resource whose price is artificially suppressed. Until that changes, the secondary market will find a way.”',
+      "\"What? \u00a51080 for a ticket originally priced at \u00a5555, \u00a51450 for a \u00a5855 face-value ticket?\" \"That's the cheapest.\" Li Yang, one of the scalpers, said to a reporter in a neutral tone.",
+
+      "MAYDAY, the renowned Asian pop band, recently held a highly anticipated seven-day concert in Beijing, sparking great excitement among fans. This event took place against the backdrop of a resurgent performance market in mainland China, where concert tickets have become hot commodities, often selling out on the first day. This surge in demand for live performances has given rise to a thriving market, attracting scalpers who aim to capitalize on the situation and make substantial profits.",
+
+      { "type": "image", "src": "/media/concert-scalping/image1.png", "alt": "Fans without tickets listened and cheered outside the Bird's Nest", "caption": "Fans without tickets listened to the song and cheered outside the Bird's Nest, where display screens and lights could be seen." },
+
+      "One such scalper, Li Yang (a pseudonym), recently shed light on the dynamics of the concert ticket scalping industry in an interview. Contrary to people's stereotyped views of scalpers, his slim, bespectacled look breaks common prejudices.",
+
+      "Originally from Wenshan, Yunnan Province, Li Yang is a computer science and technology student at Ningbo University. While pursuing his studies, he grew fond of rock music and became involved in his school's rock club. Attending local live rock shows, he often encountered the frustration of being unable to secure tickets for his favorite concerts due to their scarcity. This predicament led him to explore alternative methods of obtaining these coveted tickets.",
+
+      "Through extensive research on the ticketing market, Li Yang discovered the existence of the \"scalping\" industry, where individuals purchase and resell scarce tickets at inflated prices, profiting from the difference. Recognizing the potential business opportunity, he decided to give it a try.",
+
+      { "type": "image", "src": "/media/concert-scalping/image2.png", "alt": "Fans quarreled with scalpers outside the concert venue", "caption": "Outside the concert venue, fans were still in the midst of fierce quarrels with scalpers, and the scene security was also in chaos." },
+
+      "Initially, Li Yang focused on gathering concert information to identify events that would generate high demand. He established connections with other scalpers through various channels and managed to purchase tickets from them. With diligent efforts, he started selling these tickets at the entrances of major concerts, reselling tickets at marked-up prices to eager fans. However, entering the industry as a newcomer proved challenging for Li Yang, requiring increased resources and contacts. He actively engaged in concert events, collaborating with experienced scalpers and learning from their expertise, refining his sales skills and enhancing his ability to acquire ticket resources.",
+
+      "The cultural and entertainment events industry, including concerts, experienced a significant downturn during the pandemic, with many major events being canceled or postponed. This adverse situation dealt a severe blow to Li Yang's scalping business. As a scalper reliant on the resale of concert tickets for profitability, the suspension of concerts during the pandemic deprived him of access to scarce ticket resources and disrupted his profit-making ventures. The ticketing market he relied on slumped drastically. However, with the mainland performance market witnessing a remarkable resurgence in 2023, Li Yang has decided to reenter the scalping business, capitalizing on the MAYDAY concert in Beijing.",
+
+      { "type": "image", "src": "/media/concert-scalping/image3.png", "alt": "Music and excitement returned after the pandemic", "caption": "The dissipation of the pandemic has brought music, shouting and agitation back that summer." },
+
+      "Li Yang emphasizes that the profitability of scalpers does not solely depend on the transaction price but also relies on the overall money flow cycle. He explains that ticketing companies often sign contracts with performers, allowing scalpers to acquire tickets at a price lower than the original cost. Li Yang points out that without connections to the organizers, ordinary people would have a hard time acquiring tickets priced at a reasonable level.",
+
+      "Furthermore, scalpers do not always hold an abundance of tickets at their disposal. Reports indicate that the scalping industry suffered a major setback during the Xue Zhiqian concert in Nanjing over the Labor Day long holiday. Traffic congestion on the highways prevented numerous fans from reaching the venue, resulting in thousands of unsold tickets held by scalpers and incurring losses for them.",
+
+      "Li Yang also emphasizes that assessing the profitability of scalpers should consider the overall dynamics of the ticketing market, rather than focusing solely on transaction prices. He highlights that scalping involves a lengthy money flow cycle — one where profits can evaporate overnight when conditions shift.",
+
+      "The case of Li Yang illustrates the core economic mechanics of ticket scalping: scarcity creates demand, connections provide supply access, and market volatility determines who profits and who loses. For every scalper counting cash outside a sold-out arena, there is another left holding worthless tickets when the traffic doesn't move.",
     ],
 
-    lensExplanation: 'Ticket scalping is a textbook case of scarcity-driven arbitrage. When supply is fixed and demand far exceeds it, the true market price is higher than the official price. That gap creates room for intermediaries who buy low and sell high — capturing value that could have gone to artists, venues, or fans.',
-    whoGains: 'Scalpers capture the price spread through information and technical advantages. Some ticket distributors may benefit through informal channel arrangements. Consumers willing and able to pay the premium gain access to sold-out events.',
-    whoPays: 'Regular fans pay far above face value or are shut out entirely. Artists and promoters bear reputational damage and lost revenue. The overall cost of live entertainment rises, disproportionately excluding lower-income audiences.',
-    pullQuote: 'The scalper is a symptom, not the disease.',
-    takeaway: 'The scalping market is a signal: concert tickets are underpriced scarce goods. Stronger enforcement alone won’t fix it. The solution lies in redesigning how tickets are allocated so the value flows to those who create it, not those who extract it.',
+    lensExplanation: "Li Yang's story reveals the hidden economics of concert ticket scalping. Scarcity of tickets — driven by fixed venue capacity and surging demand — creates a price gap that scalpers exploit. Their profits depend not just on individual transaction prices but on access to supply channels, the overall money flow cycle, and market volatility. When conditions shift, scalpers can lose everything overnight.",
+    whoGains: "Scalpers with connections to ticketing companies acquire tickets below face value and profit from the resale markup. Some organizers and ticketing intermediaries benefit from the secondary market flow. Fans willing to pay premiums gain access to sold-out shows.",
+    whoPays: "Regular fans face inflated prices or are shut out entirely. Scalpers themselves bear significant risk — thousands of tickets can go unsold when events are disrupted, as happened during the Xue Zhiqian Nanjing concert. The pandemic showed how fragile the entire resale ecosystem is.",
+    pullQuote: "For every scalper counting cash outside a sold-out arena, there is another left holding worthless tickets when the traffic doesn't move.",
+    takeaway: "Li Yang's experience shows that concert ticket scalping is a high-risk arbitrage business built on scarcity, connections, and market timing. The same forces that create massive profits can also produce devastating losses when conditions change overnight.",
 
     visualStyle: 'ticket-overlap', accentColor: '#B8860B',
     keyStats: {
-      bigNumber: '30s',
-      bigLabel: 'Time for tickets to sell out',
-      compareA: { value: '¥880', label: 'Official face value' },
-      compareB: { value: '¥5,000', label: 'Resale market price' },
+      bigNumber: '¥1,080',
+      bigLabel: 'Resale price for a ¥555 face-value MAYDAY ticket',
+      compareA: { value: 'Connections', label: 'Access to below-cost tickets from organizers' },
+      compareB: { value: 'Market risk', label: 'Thousands of unsold tickets during disruptions' },
     },
     media: {
       caption: 'MULTIMEDIA',
-      video: { src: '/media/concert-scalping/video.mp4', type: 'video/mp4', caption: 'Video report on concert ticket scalping in China' },
+      video: { src: '/media/concert-scalping/video.mp4', type: 'video/mp4', caption: 'How Concert Tickets Became a Business — video report' },
       audio: { src: '/media/concert-scalping/audio.mp3', type: 'audio/mpeg', caption: 'Audio story' },
       images: [
-        { src: '/media/concert-scalping/image1.jpeg', alt: 'Concert crowd at a major arena show' },
-        { src: '/media/concert-scalping/image7.png', alt: 'Price comparison between official and resale ticket prices' },
-        { src: '/media/concert-scalping/image9.png', alt: 'Secondary market price premium data chart' },
-        { src: '/media/concert-scalping/image11.jpeg', alt: 'Fans lining up to purchase tickets' },
-        { src: '/media/concert-scalping/image12.jpeg', alt: 'Supply and demand analysis of the live music market' },
-        { src: '/media/concert-scalping/image13.jpeg', alt: 'Screenshot of a ticket platform sales interface' },
+        { src: '/media/concert-scalping/image1.png', alt: 'Fans outside the Birds Nest without tickets' },
+        { src: '/media/concert-scalping/image2.png', alt: 'Fans quarreling with scalpers outside concert venue' },
+        { src: '/media/concert-scalping/image3.png', alt: 'Music returns after the pandemic' },
       ],
     },
   },
