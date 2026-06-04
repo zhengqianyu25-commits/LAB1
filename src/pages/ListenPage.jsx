@@ -78,18 +78,31 @@ export default function ListenPage() {
       <div ref={containerRef} className="flex-1 overflow-y-auto py-16 px-6 max-w-xl mx-auto w-full">
         {subtitles ? subtitles.map((s, i) => {
           const isActive = i === activeIdx;
+          const en = s.en || s.text;
+          const zh = s.zh || '';
+          const hasBilingual = !!s.zh;
           return (
-            <p
+            <div
               key={i}
               className={`text-center transition-all duration-500 py-4 px-2 ${
-                isActive
-                  ? 'text-xl md:text-2xl font-medium opacity-100'
-                  : 'text-base md:text-lg opacity-20'
+                isActive ? 'opacity-100' : 'opacity-20'
               }`}
-              style={{ color: isActive ? 'var(--color-accent)' : 'var(--color-text)' }}
             >
-              {s.text}
-            </p>
+              <p
+                className={isActive ? 'text-lg md:text-xl font-medium' : 'text-sm md:text-base'}
+                style={{ color: isActive ? 'var(--color-accent)' : 'var(--color-text)' }}
+              >
+                {en}
+              </p>
+              {hasBilingual && (
+                <p
+                  className={`mt-1.5 ${isActive ? 'text-sm md:text-base' : 'text-xs'}`}
+                  style={{ color: isActive ? 'var(--color-text-secondary)' : 'var(--color-text-muted)' }}
+                >
+                  {zh}
+                </p>
+              )}
+            </div>
           );
         }) : (
           <p className="text-center opacity-30 mt-20" style={{ color: 'var(--color-text-muted)' }}>No subtitles available for this episode.</p>
