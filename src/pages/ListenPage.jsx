@@ -15,7 +15,7 @@ export default function ListenPage() {
   const params = new URLSearchParams(location.search);
   const fromSlug = params.get('from');
   const backTo = fromSlug ? `/article/${fromSlug}` : '/frequency';
-  const backLabel = fromSlug ? 'Article' : 'FM';
+  const backLabel = fromSlug ? 'Story' : 'FM';
 
   const [elapsed, setElapsed] = useState(0);
   const containerRef = useRef(null);
