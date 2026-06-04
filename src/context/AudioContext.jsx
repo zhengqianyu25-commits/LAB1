@@ -20,20 +20,17 @@ export function AudioProvider({ children }) {
   useEffect(() => { localStorage.setItem('nf_queue', JSON.stringify(queue)); }, [queue]);
   useEffect(() => { localStorage.setItem('nf_liked', JSON.stringify(liked)); }, [liked]);
 
-  // Listen for YouTube iframe playing state
+  // Pause audio when clicking on YouTube iframes
   useEffect(() => {
-    const onMessage = (e) => {
-      try {
-        const data = JSON.parse(e.data);
-        if (data.event === 'infoDelivery' && data.info?.playerState === 1) {
-          if (audioRef.current && !audioRef.current.paused) {
-            audioRef.current.pause(); setPlaying(false);
-          }
-        }
-      } catch {}
+    const onClick = (e) => {
+      const iframe = e.target.closest?.('.aspect-video, [class*="youtube"]') || e.target.closest('iframe');
+      if (iframe) {
+        const ga = audioRef.current;
+        if (ga && !ga.paused) { ga.pause(); setPlaying(false); }
+      }
     };
-    window.addEventListener('message', onMessage);
-    return () => window.removeEventListener('message', onMessage);
+    document.addEventListener('mousedown', onClick, true);
+    return () => document.removeEventListener('mousedown', onClick, true);
   }, []);
 
   // Pause audio when a native video/audio element plays
