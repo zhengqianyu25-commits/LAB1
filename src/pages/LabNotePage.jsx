@@ -2,53 +2,11 @@ import { useParams, Link } from 'react-router-dom';
 import articles from '../data/articles';
 
 const contentMap = {
-  'scarcity': {
-    title: 'What is a Price Ceiling? How Ticket Caps Fuel Scalping',
-    subtitle: 'What is a Price Ceiling?',
-    intro: 'When regulators or organizers set a maximum ticket price below the market-clearing level, quantity demanded exceeds quantity supplied, creating a shortage. This shortage is typically rationed through non-price mechanisms such as lotteries, queues, or social connections rather than price. A secondary market then emerges to reallocate tickets to those willing to pay more.',
-    quote: 'Official price caps create the shortage; secondary markets reveal true demand.',
-    sections: [
-      {
-        image: '/media/lab-notes/scarcity-1.png',
-        text: 'The pie chart shows that 70% of tickets come from official channels, exactly meeting the policy\'s minimum public sale requirement. However, 30% still flow through other channels. Even with the policy mandating 70% public sales, information asymmetry and social capital advantages still push some tickets into the secondary market. The shortage effect caused by the price ceiling has not been fully eliminated.',
-        source: '',
-      },
-      {
-        text: "On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that \"the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience.\" This is China's first explicit regulation on the public sale ratio of concert tickets.",
-        source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association Notice, April 26, 2023',
-      },
-    ],
-    conclusion: 'The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
-    relatedArticle: 'concert-scalping',
-  },
-  'labor-protection': {
-    title: 'Labor Protection: Experiencing the Shadow Behind the Glory',
-    subtitle: 'What is Labor Protection?',
-    intro: 'Labor protection means setting clear rules so that the cost of work is not shifted onto vulnerable workers. For child actors, it includes limits on shooting hours, protection from physical harm, regular meals and rest, schooling time, and psychological safety.',
-    quote: 'A child actor is a performer on screen, but still a child behind the camera.',
-    sections: [
-      {
-        text: '',
-      },
-      {
-        game: 'https://www.66rpg.com/game/1641073',
-        source: 'Source: 66RPG interactive game',
-        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent. To understand what child actors face, readers can enter Oscar\'s day and make the next choice for themselves...',
-      },
-      {
-        tableau: 'https://public.tableau.com/views/story_16881121764440/1_1?:language=zh-CN&:display_count=n&:origin=viz_share_link',
-        source: 'Source: UNICEF Global Databases, last updated May 2022; visualized through Tableau Public',
-        text: 'The chart represents the global child labor rate based on UNICEF\'s data in May 2022. Child labor is a social issue of global concern. Despite many countries having legislated against child labor practices, there are still numerous children forced into dangerous work. These children are deprived of a normal childhood and the right to education, significantly affecting their physical and mental well-being, as well as their future development.',
-      },
-    ],
-    conclusion: 'This data page connects the child actor story to a broader labor-protection question. Child actors are not identical to children in hazardous labor, but both cases ask how adults, institutions and industries should prevent children from carrying risks they cannot fully understand or negotiate. The interactive game makes that question experiential, while the global map reminds readers that children\'s work and protection remain urgent public issues.',
-    relatedArticle: 'child-stars',
-  },
   'attention-economy': {
     title: 'Attention Economy: How Zibo Turned Hashtags into Hard Cash',
     subtitle: 'What is Attention Economy?',
-    intro: "In an information-overloaded world, human attention is the scarce resource. Platforms, cities and brands compete for clicks, shares and views. The winner can convert that attention into real revenue — but only if the service infrastructure is ready to capture it.",
-    quote: "Traffic creates the spark; service decides whether it lasts.",
+    intro: 'In an information-overloaded world, human attention is the scarce resource. Platforms, cities and brands compete for clicks, shares and views. The winner can convert that attention into real revenue — but only if the service infrastructure is ready to capture it.',
+    quote: 'Traffic creates the spark; service decides whether it lasts.',
     sections: [
       {
         text: 'The search index for "Zibo Barbecue" on Douyin skyrocketed from near zero in early April to over 11 million by April 29 — a staggering 181,376% year-on-year increase. Each search represents a potential tourist evaluating a trip. This explosion of demand happened just before the May Day holiday, giving Zibo\'s government a clear signal to deploy extra trains, buses and price controls.',
@@ -78,6 +36,45 @@ const contentMap = {
     conclusion: 'Zibo\'s barbecue boom turned viral attention into a 73% consumption spike and 200% booking growth (WeChat Pay\'s "2023 May Day Travel Boom Data Report"). But attention fades. The same charts show a post-holiday decline in search index and new video uploads. The real question is whether Zibo can build repeat visitation and long-term brand value — or become a one-season wonder.',
     relatedArticle: 'zibo-bbq',
   },
+  'scarcity': {
+    title: 'What is a Price Ceiling? How Ticket Caps Fuel Scalping',
+    subtitle: 'What is a Price Ceiling?',
+    intro: 'When regulators or organizers set a maximum ticket price below the market-clearing level, quantity demanded exceeds quantity supplied, creating a shortage. This shortage is typically rationed through non-price mechanisms such as lotteries, queues, or social connections rather than price. A secondary market then emerges to reallocate tickets to those willing to pay more.',
+    quote: 'Official price caps create the shortage; secondary markets reveal true demand.',
+    sections: [
+      {
+        image: '/media/lab-notes/scarcity-1.png',
+        source: 'Source: General Office of the Ministry of Culture and Tourism & China Performance Industry Association Notice, April 26, 2023',
+        text: 'On April 26, 2023, the General Office of the Ministry of Culture and Tourism and the China Performance Industry Association issued a notice clearly stating that "the number of commercial performance tickets sold to the market by performance organizers and ticket management units shall not be less than 70% of the approved audience." This is China\'s first explicit regulation on the public sale ratio of concert tickets, aimed at increasing supply in the primary market and curbing the scale of the secondary market.',
+      },
+      {
+        text: 'The pie chart shows that 70% of tickets come from official channels, exactly meeting the policy\'s minimum public sale requirement. However, 30% still flow through other channels. This indicates that even with the policy mandating 70% public sales, information asymmetry, differences in ticketing speed, and advantages from social capital still push some tickets into the secondary market. The shortage effect caused by the price ceiling has not been fully eliminated, and the policy has clear boundaries in its implementation.',
+        source: '',
+      },
+    ],
+    conclusion: 'The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
+    relatedArticle: 'concert-scalping',
+  },
+  'labor-protection': {
+    title: 'Labor Protection: Experiencing the Shadow Behind the Glory',
+    subtitle: 'What is Labor Protection?',
+    intro: 'Labor protection means setting clear rules so that the cost of work is not shifted onto vulnerable workers. For child actors, it includes limits on shooting hours, protection from physical harm, regular meals and rest, schooling time, and psychological safety.',
+    quote: 'A child actor is a performer on screen, but still a child behind the camera.',
+    sections: [
+      {
+        game: 'https://www.66rpg.com/game/1641073',
+        source: 'Source: 66RPG interactive game',
+        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent.',
+      },
+      {
+        tableau: 'https://public.tableau.com/views/story_16881121764440/1_1?:language=zh-CN&:display_count=n&:origin=viz_share_link',
+        source: 'Source: UNICEF Global Databases, last updated May 2022; visualized through Tableau Public',
+        text: 'The chart represents the global child labor rate based on UNICEF\'s data in May 2022. Child labor is a social issue of global concern. Despite many countries having legislated against child labor practices, there are still numerous children forced into dangerous work.',
+      },
+    ],
+    conclusion: 'This data page connects the child actor story to a broader labor-protection question. Child actors are not identical to children in hazardous labor, but both cases ask how adults, institutions and industries should prevent children from carrying risks they cannot fully understand or negotiate.',
+    relatedArticle: 'child-stars',
+  },
 };
 
 export default function LabNotePage() {
@@ -98,7 +95,6 @@ export default function LabNotePage() {
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
-        {/* Header */}
         <div className="border-b pb-8 mb-8" style={{ borderColor: 'var(--color-border)' }}>
           <span className="section-label mb-3 block">Lab Note</span>
           <h1 className="text-2xl md:text-4xl font-display font-medium leading-tight mb-4" style={{ color: 'var(--color-text)' }}>{data.title}</h1>
@@ -109,7 +105,6 @@ export default function LabNotePage() {
           <p className="text-base md:text-lg font-display italic text-center max-w-2xl mx-auto" style={{ color: 'var(--color-accent)' }}>&ldquo;{data.quote}&rdquo;</p>
         </div>
 
-        {/* Data sections */}
         <div className="max-w-3xl mx-auto space-y-12">
           {data.sections.map((s, i) => (
             <div key={i}>
@@ -128,17 +123,15 @@ export default function LabNotePage() {
                   </div>
                 ) : null}
               </div>
-              <p className="text-[0.55rem] font-semibold tracking-wider uppercase opacity-40 mb-2" style={{ color: 'var(--color-text-muted)' }}>{s.source}</p>
-              <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{s.text}</p>
+              {s.source && <p className="text-[0.55rem] font-semibold tracking-wider uppercase opacity-40 mb-2" style={{ color: 'var(--color-text-muted)' }}>{s.source}</p>}
+              {s.text && <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{s.text}</p>}
             </div>
           ))}
 
-          {/* Conclusion */}
           <div className="border-t pt-8" style={{ borderColor: 'var(--color-border)' }}>
             <p className="text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{data.conclusion}</p>
           </div>
 
-          {/* Navigation */}
           <div className="flex items-center justify-between pt-8 border-t" style={{ borderColor: 'var(--color-border)' }}>
             <Link to="/lab-notes" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
               &larr; Back To Lab Notes
