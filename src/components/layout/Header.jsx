@@ -31,13 +31,13 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-50 border-b border-white/20 transition-colors duration-300" style={{ background: '#C68600' }}>
         <div className="container-main flex items-center justify-between h-14 md:h-16">
+          <Clock />
+
           <Link to="/" className="flex items-baseline gap-1 shrink-0">
             <span className="text-lg md:text-xl font-display font-semibold tracking-tight text-white">
               No Filter<span className="opacity-80"> Lab</span>
             </span>
           </Link>
-
-          <Clock />
 
           <div className="flex items-center gap-3 md:gap-5">
             <nav className="hidden md:flex items-center gap-5">
