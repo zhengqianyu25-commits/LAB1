@@ -52,6 +52,36 @@ const contentMap = {
     conclusion: 'The pie chart shows that 70% of tickets come from official channels, exactly meeting the policy\'s minimum public sale requirement. However, 30% still flow through other channels. This indicates that even with the policy mandating 70% public sales, information asymmetry, differences in ticketing speed, and advantages from social capital still push some tickets into the secondary market. The shortage effect caused by the price ceiling has not been fully eliminated, and the policy has clear boundaries in its implementation. The 70/30 split profoundly demonstrates the mechanism of price ceilings in the ticketing market. Although the policy successfully raised primary market supply to 70%, the continued existence of the secondary market reminds us that quantity mandates alone cannot eliminate arbitrage opportunities driven by information asymmetry and transaction costs. Only when the service efficiency and pricing mechanisms of official channels are truly optimized can the "70% public sale" requirement transform from a numerical target into genuine market clearing and equitable allocation.',
     relatedArticle: 'concert-scalping',
   },
+  'cost-control': {
+    title: 'The Cost of Thinness: How Shrinking Sizes Shift the Burden',
+    subtitle: 'Coordination Failure & Body Anxiety',
+    intro: 'When brands compete to make smaller sizes, they are not just chasing a trend — they are shifting costs onto consumers. Each brand acts rationally alone, but together they create a market where women cannot find clothes that fit, fueling anxiety and unhealthy behaviors. This is a coordination failure with real health consequences.',
+    quote: 'It should be for people to choose clothes, not for clothes to choose people.',
+    sections: [
+      {
+        image: '/media/lab-notes/cost-1.jpeg',
+        text: 'The origin of shrinking women\'s clothing sizes comes from the "BM style" that has become popular in China in recent years. BM stands for Brandy Melville, an Italian women\'s clothing brand known for its small sizes. In the traditional Chinese concept of thinness as beauty, consumers who can wear its small size clothes are usually considered to be the representative of a good figure. Xing Junjie, founder of Iceonme, notes that women pursue beauty and fitness, which enables more people to accept the BM style.',
+        source: 'Source: Iceonme brand interview',
+      },
+      {
+        image: '/media/lab-notes/cost-14.png',
+        text: 'The frequency of weighing among female netizens reveals deep body anxiety. 31.9% of female netizens weigh themselves once a day, compared to only 11.3% of males. 48.1% of male netizens weigh themselves only once a year. This data shows that women are significantly more affected by body image pressure than men.',
+        source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
+      },
+      {
+        image: '/media/lab-notes/cost-15.png',
+        text: '45.9% of netizens think they need to lose weight, with female respondents more likely to show anxiety about obesity. 46.4% are not worried about their figure, among which men account for a larger proportion. 7.7% of netizens consider themselves way too thin. The body anxiety gap between genders is a direct consequence of the shrinking-size market.',
+        source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
+      },
+      {
+        image: '/media/lab-notes/cost-13.jpeg',
+        text: 'Health consequences of body anxiety are significant. In the past year, 47% of respondents reported emotional issues (anxiety, depression), 43% had gastrointestinal problems, 29% experienced headaches, and 19% suffered from body anxiety disorders. These are the hidden costs of a market that systematically excludes average body types.',
+        source: 'Source: Doctor Lilac: 2022 National Health Insight Report',
+      },
+    ],
+    conclusion: 'Shrinking clothing sizes are not merely a fashion trend — they are a coordination failure with measurable health costs. Each brand has an incentive to make sizes smaller, but no single brand can restore honest sizing alone. The result: 45.9% of people feel they need to lose weight, and 47% report emotional distress. The market saves on fabric; society pays in mental health.',
+    relatedArticle: 'clothing-sizes',
+  },
   'creator-economy': {
     title: 'Why the old market said no to horror',
     subtitle: 'What is signal failure in creative markets?',
