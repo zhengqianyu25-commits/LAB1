@@ -88,14 +88,14 @@ export function AudioProvider({ children }) {
   };
   const isLiked = episode ? liked.includes(episode.slug) : false;
   const playAll = () => {
-    setQueue(audioArticles.map(a => ({ number: a.number, title: a.titleEn, slug: a.slug })));
+    setQueue(audioArticles.map(a => ({ number: a.number, title: a.audioTitle || a.titleEn, slug: a.slug })));
     playAudio(0);
   };
   const addToQueue = () => {
     if (!episode) return;
     setQueue(q => {
       if (q.find(e => e.slug === episode.slug)) return q;
-      return [...q, { number: episode.number, title: episode.titleEn, slug: episode.slug }];
+      return [...q, { number: episode.number, title: episode.audioTitle || episode.titleEn, slug: episode.slug }];
     });
   };
   const removeFromQueue = (slug) => setQueue(q => q.filter(e => e.slug !== slug));

@@ -1,7 +1,8 @@
 const articles = [
   {
     slug: 'concert-scalping', number: '01', category: 'scarcity',
-    titleEn: 'How Concert Tickets Became a Business: The Harder Tickets Are to Get, the More Scalpers Profit',
+    titleEn: "Why Scalpers Create Chaos Outside Mayday's Concerts for Profits",
+    audioTitle: "Ticket Scalping Causes Chaos Outside Mayday's Concert",
     titleZh: "A student scalper reveals how scarcity, connections, and market dynamics fuel the concert ticket resale industry.",
     conceptEn: 'Scarcity & Arbitrage', conceptZh: '稀缺性与套利',
     readTime: '5 min', section: 'Market',

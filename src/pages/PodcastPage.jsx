@@ -46,7 +46,7 @@ function EpisodeItem({ article, index }) {
 
       <div className="flex-1 min-w-0">
         <h3 className="text-base md:text-lg font-display font-medium leading-snug truncate transition-colors duration-300" style={{ color: isCurrent ? 'var(--color-accent)' : 'var(--color-text)' }}>
-          {article.titleEn}
+          {article.audioTitle || article.titleEn}
         </h3>
         <div className="flex items-center gap-2 mt-1">
           <span className={`text-[0.55rem] font-semibold tracking-[0.1em] uppercase ${isCurrent ? '' : 'opacity-40'}`} style={{ color: isCurrent ? 'var(--color-accent)' : 'var(--color-text-muted)' }}>
