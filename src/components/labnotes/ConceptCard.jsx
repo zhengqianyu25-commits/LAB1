@@ -25,7 +25,7 @@ export default function ConceptCard({ article, index }) {
         <p className="text-xs leading-relaxed mb-4 opacity-70" style={{ color: 'var(--color-text-secondary)' }}>{examples[article.category]}</p>
       </div>
 
-      <Link to={`/article/${article.slug}`} className="accent-link">Read Story &rarr;</Link>
+      <Link to={`/lab-note/${article.category}`} className="accent-link">Explore Data &rarr;</Link>
     </div>
   );
 }
