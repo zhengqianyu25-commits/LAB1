@@ -58,7 +58,7 @@ export default function ConceptCard({ article, index }) {
         </p>
       )}
 
-      <div className="mt-auto pt-4 border-t" style={{ borderColor: 'var(--color-border)' }}>
+      <div className="mt-auto pt-4">
         <span className="section-label mb-1.5 block">Related Story</span>
         <Link to={`/article/${article.slug}`} className="text-xs leading-relaxed mb-4 hover:opacity-70 transition-opacity" style={{ color: 'var(--color-accent)' }}>
           {article.titleEn} &rarr;
