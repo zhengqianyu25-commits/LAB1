@@ -69,17 +69,16 @@ const contentMap = {
     quote: 'It should be for people to choose clothes, not for clothes to choose people.',
     sections: [
       {
-        image: '/media/lab-notes/cc-1.png',
         text: 'The origin of shrinking women\'s clothing sizes comes from the "BM style" that has become popular in China in recent years. BM stands for Brandy Melville, an Italian women\'s clothing brand known for its small sizes. In the traditional Chinese concept of thinness as beauty, consumers who can wear its small size clothes are usually considered to be the representative of a good figure. Xing Junjie, founder of Iceonme, notes that women pursue beauty and fitness, which enables more people to accept the BM style.',
         source: '',
       },
       {
-        image: '/media/lab-notes/cc-2.png',
+        image: '/media/lab-notes/cc-1.png',
         source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
         text: 'The frequency of weighing among female netizens reveals deep body anxiety. 31.9% of female netizens weigh themselves once a day, compared to only 11.3% of males. 48.1% of male netizens weigh themselves only once a year. This data shows that women are significantly more affected by body image pressure than men.',
       },
       {
-        image: '/media/lab-notes/cc-3.png',
+        image: '/media/lab-notes/cc-2.png',
         source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
         text: '45.9% of netizens think they need to lose weight, with female respondents more likely to show anxiety about obesity. 46.4% are not worried about their figure, among which men account for a larger proportion. 7.7% of netizens consider themselves way too thin. The body anxiety gap between genders is a direct consequence of the shrinking-size market.',
       },
