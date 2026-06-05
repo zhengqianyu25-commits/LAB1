@@ -277,3 +277,31 @@ html.dark .carousel-caption { color: #FFFFFF !important; background: #1A1A18 !im
 }
 
 html.dark figcaption { color: #FFFFFF !important; }
+/* Dark mode: About / Team / Mission / Audio pages -- all text bright */
+html.dark .container-main h1,
+html.dark .container-main h2,
+html.dark .container-main h3,
+html.dark .container-main h4,
+html.dark .container-main h5,
+html.dark .container-main h6 { color: #FFFFFF !important; }
+html.dark .container-main p,
+html.dark .container-main span,
+html.dark .container-main li,
+html.dark .container-main label,
+html.dark .container-main small,
+html.dark .container-main .text-sm,
+html.dark .container-main .text-base,
+html.dark .container-main .text-lg,
+html.dark .container-main .text-xl,
+html.dark .container-main .text-2xl { color: #EEEEEE !important; }
+html.dark .container-main a:not([class*="btn"]):not([class*="button"]):not([style*="var(--color-accent)"]) { color: #93C5FD !important; }
+/* Keep accent-colored elements */
+html.dark .container-main [style*="color-accent"],
+html.dark .container-main .section-label { color: #F5C518 !important; }
+html.dark .container-main [style*="color-text-muted"] { color: #BBBBBB !important; }
+html.dark .container-main [style*="color-text-secondary"] { color: #DDDDDD !important; }
+/* Fix cards inside dark pages */
+html.dark .container-main .border { border-color: #4E4E4C !important; }
+/* Audio page specific */
+html.dark [class*="group"] h3,
+html.dark [class*="Episode"] h3 { color: inherit; }
