@@ -41,7 +41,7 @@ export default function ArticlePage() {
 
       <KeyStats data={article.keyStats} />
 
-      <section className="container-main pb-2">
+      <section className="container-main pb-6 mb-6 border-b" style={{ borderColor: 'var(--color-border)' }}>
         <div className="article-width flex items-center gap-5">
           <span className="section-label">{article.conceptEn}</span>
           <span className="text-xs opacity-50" style={{ color: 'var(--color-text-muted)' }}>{article.readTime} read</span>
