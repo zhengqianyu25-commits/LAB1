@@ -25,6 +25,12 @@ export default function Layout() {
       const slug = pathname.split('/').pop();
       const article = articles.find(a => a.slug === slug);
       setBgImage(article?.media?.images?.[0]?.src || '');
+    } else if (pathname.startsWith('/lab-note/')) {
+      const noteSlug = pathname.split('/').pop();
+      const map = { 'attention-economy': 'zibo-bbq', 'scarcity': 'concert-scalping', 'cost-control': 'clothing-sizes', 'labor-protection': 'child-stars', externalities: 'stray-animals', 'creator-economy': 'student-films' };
+      const artSlug = map[noteSlug];
+      const art = artSlug ? articles.find(a => a.slug === artSlug) : null;
+      setBgImage(art?.media?.images?.[0]?.src || '');
     } else if (isListen) {
       const idx = parseInt(pathname.split('/').pop() || '0', 10);
       const listenArticle = articles.filter(a => a.media?.audio)[idx];
