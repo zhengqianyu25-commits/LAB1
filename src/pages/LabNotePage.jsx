@@ -156,12 +156,12 @@ export default function LabNotePage() {
       <section className="container-main pt-12 md:pt-16 pb-8">
         <div className="border-b pb-8 mb-8" style={{ borderColor: 'var(--color-border)' }}>
           <span className="section-label mb-3 block">Lab Note</span>
-          <h1 className="font-display font-medium leading-tight mb-4" style={{ fontSize: "2rem" }} style={{ color: 'var(--color-text)' }}>{data.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-display font-semibold leading-tight mb-4" style={{ color: 'var(--color-text)' }}>{data.title}</h1>
           <div className="p-5 border-l-[3px] mb-4" style={{ borderColor: 'var(--color-accent)', background: 'var(--color-accent-dim)' }}>
-            <h2 className="font-display font-medium mb-2" style={{ fontSize: "1.25rem" }} style={{ color: 'var(--color-text)' }}>{data.subtitle}</h2>
+            <h2 className="text-xl md:text-2xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>{data.subtitle}</h2>
             <p className="body-text mb-4" style={{ color: 'var(--color-text-secondary)' }}>{data.intro}</p>
           </div>
-          <p className="lab-note-title text-base md:text-lg font-display italic text-center max-w-2xl mx-auto mt-1" style={{ color: 'var(--color-accent)' }}>&ldquo;{data.quote}&rdquo;</p>
+          <p className="text-lg md:text-xl font-display italic text-center max-w-2xl mx-auto mt-1" style={{ color: 'var(--color-accent)' }}>&ldquo;{data.quote}&rdquo;</p>
         </div>
 
         <div className="article-width space-y-4">
