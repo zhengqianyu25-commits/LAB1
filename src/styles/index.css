@@ -305,3 +305,12 @@ html.dark .container-main .border { border-color: #4E4E4C !important; }
 /* Audio page specific */
 html.dark [class*="group"] h3,
 html.dark [class*="Episode"] h3 { color: inherit; }
+
+/* Dark mode: About page Mission button stays white */
+html.dark a[href="/mission"] { color: #FFFFFF !important; }
+/* Dark mode: Audio page meta text */
+html.dark [class*="Episode"] span,
+html.dark [class*="episode"] span,
+html.dark .opacity-40,
+html.dark [class*="opacity-40"] { color: #D1D5DB !important; opacity: 1 !important; }
+html.dark [style*="color-text-muted"] { color: #D1D5DB !important; opacity: 0.85 !important; }
