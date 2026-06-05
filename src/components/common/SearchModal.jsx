@@ -21,7 +21,7 @@ export default function SearchModal({ open, onClose }) {
       a.titleZh.toLowerCase().includes(q) ||
       a.conceptEn.toLowerCase().includes(q) ||
       a.summary.toLowerCase().includes(q) ||
-      a.body.some(p => p.toLowerCase().includes(q))
+      a.body.some(p => typeof p === 'string' && p.toLowerCase().includes(q))
     );
     setResults(filtered);
   }, [query]);

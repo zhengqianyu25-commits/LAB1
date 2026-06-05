@@ -83,7 +83,7 @@ export default function HomePage() {
           </div>
 
           <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.6)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
-            <span className="section-label mb-3 block">No Filter FM</span>
+            <span className="section-label mb-3 block">No Filter Audio</span>
             <h3 className="text-xl md:text-2xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>Listen to the Stories</h3>
             <p className="text-sm font-display italic mb-3" style={{ color: 'var(--color-accent)' }}>
               Audio stories with synced subtitles.
@@ -91,7 +91,7 @@ export default function HomePage() {
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-text-secondary)' }}>
               Six episodes. Bilingual lyrics. Economics that you can hear — with a click. Dive into the audio experience.
             </p>
-            <Link to="/frequency" className="accent-link">Open FM &rarr;</Link>
+            <Link to="/frequency" className="accent-link">Open Audio &rarr;</Link>
           </div>
         </div>
       </section>

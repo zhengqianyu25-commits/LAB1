@@ -11,8 +11,8 @@ const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/stories', label: 'Stories' },
   { to: '/lab-notes', label: 'Lab Notes' },
-  { to: '/frequency', label: 'FM' },
-  { to: '/about', label: 'About' },
+  { to: '/frequency', label: 'Audio' },
+  { to: '/about', label: 'About Us' },
 ];
 
 const navStyle = (isActive) => ({

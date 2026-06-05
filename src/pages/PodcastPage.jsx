@@ -84,7 +84,7 @@ export default function PodcastPage() {
   return (
     <div className="page-enter">
       <section className="container-main pt-12 md:pt-16 pb-8">
-        <SectionTitle>No Filter FM</SectionTitle>
+        <SectionTitle>No Filter Audio</SectionTitle>
 
         <div className="border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}>
           <div className="px-5 py-3 border-b flex items-center gap-3" style={{ borderColor: 'var(--color-border)' }}>

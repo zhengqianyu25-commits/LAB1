@@ -28,8 +28,8 @@ export default function Footer() {
             <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase opacity-40 mb-3 block">Explore</span>
             <div className="flex flex-col gap-2">
               <Link to="/stories" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>All Stories</Link>
-              <Link to="/frequency" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>No Filter Frequency</Link>
-              <Link to="/about" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>About</Link>
+              <Link to="/frequency" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>Audio</Link>
+              <Link to="/about" className="text-xs opacity-60 hover:opacity-100 transition-opacity dark-bright" style={{ color: 'var(--color-text-muted)' }}>About Us</Link>
               <button
                 onClick={randomArticle}
                 className="text-xs text-left opacity-60 hover:opacity-100 transition-opacity dark-bright"
