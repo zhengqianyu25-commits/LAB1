@@ -1,16 +1,12 @@
 import { Link } from 'react-router-dom';
 import articles from '../data/articles';
 import HeroSection from '../components/home/HeroSection';
-import HeadlineStory from '../components/home/HeadlineStory';
-
 export default function HomePage() {
-  const headline = articles[0];
   const moreStories = articles.slice(1, 4);
 
   return (
     <div className="page-enter">
       <HeroSection />
-      <HeadlineStory article={headline} />
 
       {/* More Stories */}
       <section className="container-main pb-12">
