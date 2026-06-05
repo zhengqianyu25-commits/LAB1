@@ -44,16 +44,16 @@ export default function ArticlePage() {
 
       {article.media && <MediaSection media={article.media} />}
 
+      <AudioLink article={article} />
+
+      <ChartCarousel article={article} />
+
       <PullQuote quote={article.pullQuote} />
 
       <NoFilterLens
         conceptEn={article.conceptEn}
         explanation={article.lensExplanation}
       />
-
-      <AudioLink article={article} />
-
-      <ChartCarousel article={article} />
 
       <GainPayCard whoGains={article.whoGains} whoPays={article.whoPays} />
 
