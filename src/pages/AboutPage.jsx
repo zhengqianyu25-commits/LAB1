@@ -27,7 +27,7 @@ export default function AboutPage() {
           <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--color-text-secondary)' }}>
             No Filter Lab aims to be a "filter remover" for young readers — making a complex world understandable and turning clear, rational thinking into a daily habit.
           </p>
-          <Link to="/mission" className="inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-80" style={{ background: 'var(--color-accent)', color: '#fff' }}>
+          <Link to="/mission" className="about-cta inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-80" style={{ background: 'var(--color-accent)', color: '#fff' }}>
             Our Mission &amp; Philosophy &rarr;
           </Link>
         </div>

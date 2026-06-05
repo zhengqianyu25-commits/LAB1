@@ -307,7 +307,9 @@ html.dark [class*="group"] h3,
 html.dark [class*="Episode"] h3 { color: inherit; }
 
 /* Dark mode: About page Mission button stays white */
-html.dark a[href="/mission"] { color: #FFFFFF !important; }
+html.dark .about-cta,
+html.dark a.about-cta,
+html.dark a[href="/mission"] { color: #FFFFFF !important; background: #F5C518 !important; }
 /* Dark mode: Audio page meta text */
 html.dark [class*="Episode"] span,
 html.dark [class*="episode"] span,
