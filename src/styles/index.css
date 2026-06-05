@@ -294,7 +294,7 @@ html.dark .container-main .text-base,
 html.dark .container-main .text-lg,
 html.dark .container-main .text-xl,
 html.dark .container-main .text-2xl { color: #EEEEEE !important; }
-html.dark .container-main a:not([class*="btn"]):not([class*="button"]):not([style*="var(--color-accent)"]) { color: #93C5FD !important; }
+html.dark .container-main a:not([class*="btn"]):not([class*="button"]):not([class*="cta"]):not([style*="var(--color-accent)"]):not([style*="#fff"]):not([style*="#ffffff"]) { color: #93C5FD !important; }
 /* Keep accent-colored elements */
 html.dark .container-main [style*="color-accent"],
 html.dark .container-main .section-label { color: #F5C518 !important; }
@@ -307,9 +307,9 @@ html.dark [class*="group"] h3,
 html.dark [class*="Episode"] h3 { color: inherit; }
 
 /* Dark mode: About page Mission button stays white */
-html.dark .about-cta,
-html.dark a.about-cta,
-html.dark a[href="/mission"] { color: #FFFFFF !important; background: #F5C518 !important; }
+html.dark .container-main .about-cta,
+html.dark .container-main a.about-cta,
+html.dark .container-main a[href="/mission"] { color: #FFFFFF !important; background: #F5C518 !important; }
 /* Dark mode: Audio page meta text */
 html.dark [class*="Episode"] span,
 html.dark [class*="episode"] span,
