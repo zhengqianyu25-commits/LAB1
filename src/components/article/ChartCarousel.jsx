@@ -1,6 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-// Map article slugs to lab note category + chart images
 const chartData = {
   'concert-scalping': {
     category: 'scarcity',
@@ -54,6 +54,7 @@ const chartData = {
 
 export default function ChartCarousel({ article }) {
   const data = chartData[article.slug];
+  const [lightbox, setLightbox] = useState(null);
   if (!data || data.charts.length === 0) return null;
 
   return (
@@ -62,18 +63,26 @@ export default function ChartCarousel({ article }) {
         <span className="section-label mb-4 block">Data Behind the Story</span>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-5">
           {data.charts.map((chart, i) => (
-            <Link key={i} to={`/lab-note/${data.category}`} className="block group border rounded-sm overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)]" style={{ borderColor: 'var(--color-border)', background: 'rgba(255,255,255,0.7)' }}>
+            <div key={i} className="group border rounded-sm overflow-hidden cursor-zoom-in transition-all duration-300 hover:border-[var(--color-accent)]" style={{ borderColor: 'var(--color-border)', background: 'rgba(255,255,255,0.7)' }} onClick={() => setLightbox(chart)}>
               <div className="aspect-[4/3] overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
                 <img src={chart.src} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               </div>
               <p className="px-3 py-2 text-[0.7rem] leading-snug opacity-60 group-hover:opacity-100 transition-opacity" style={{ color: 'var(--color-text-secondary)' }}>{chart.caption}</p>
-            </Link>
+            </div>
           ))}
         </div>
         <Link to={`/lab-note/${data.category}`} className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
           Explore {data.title} Data &rarr;
         </Link>
       </div>
+
+      {lightbox && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4" style={{ background: 'rgba(0,0,0,0.9)' }} onClick={() => setLightbox(null)}>
+          <button className="absolute top-6 right-6 text-white text-3xl opacity-60 hover:opacity-100">&times;</button>
+          <img src={lightbox.src} alt="" className="max-w-full max-h-[90vh] object-contain" onClick={e => e.stopPropagation()} />
+          <p className="absolute bottom-8 text-sm text-white/60 text-center max-w-lg px-4">{lightbox.caption}</p>
+        </div>
+      )}
     </section>
   );
 }
