@@ -1,6 +1,5 @@
 import articles from '../data/articles';
 import ConceptGrid from '../components/labnotes/ConceptGrid';
-import ConceptMap from '../components/labnotes/ConceptMap';
 
 export default function LabNotesPage() {
   return (
@@ -12,16 +11,6 @@ export default function LabNotesPage() {
         <p className="text-sm md:text-base max-w-xl mx-auto leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
           Extracting economic concepts from the stories. Each shot reveals something lies hidden behind.
         </p>
-      </section>
-
-      {/* Concept Map */}
-      <section className="py-10 border-y" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
-        <div className="container-main max-w-4xl mx-auto">
-          <div className="p-6 md:p-10 border" style={{ background: 'rgba(255,255,255,0.7)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
-            <span className="section-label mb-5 block">Concept Map</span>
-            <ConceptMap />
-          </div>
-        </div>
       </section>
 
       {/* Cards Grid */}
