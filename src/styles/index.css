@@ -241,13 +241,15 @@ html.dark .article-width .opacity-40 { color: #CCCCCC !important; }
 }
 /* Unified image captions */
 .img-caption {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #444;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #333;
+  font-weight: 450;
 }
-html.dark .img-caption { color: #CCC; }
+html.dark .img-caption { color: #EEE; }
+html.dark .carousel-caption { color: #DDD !important; background: #1A1A18 !important; }
 @media (max-width: 767px) {
-  .img-caption { font-size: 0.875rem; }
+  .img-caption { font-size: 0.95rem; }
 }
 
 .page-enter {
