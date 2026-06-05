@@ -164,7 +164,7 @@ export default function LabNotePage() {
           <p className="lab-note-title text-base md:text-lg font-display italic text-center max-w-2xl mx-auto" style={{ color: 'var(--color-accent)' }}>&ldquo;{data.quote}&rdquo;</p>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-12">
+        <div className="max-w-3xl mx-auto space-y-6">
           {data.sections.map((s, i) => (
             <div key={i}>
               <div className="border overflow-hidden rounded-sm mb-3" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
@@ -177,7 +177,7 @@ export default function LabNotePage() {
                     <iframe src={s.tableau} className="w-full h-full border-0" allowFullScreen />
                   </div>
                 ) : s.image ? (
-                  <div className="max-w-md mx-auto cursor-zoom-in" onClick={() => setLightbox(s.image)}>
+                  <div className="max-w-xl mx-auto cursor-zoom-in" onClick={() => setLightbox(s.image)}>
                     <img src={s.image} alt="" className="w-full h-auto hover:opacity-90 transition-opacity" loading="lazy" />
                   </div>
                 ) : null}
@@ -187,7 +187,7 @@ export default function LabNotePage() {
             </div>
           ))}
 
-          <div className="border-t pt-8" style={{ borderColor: 'var(--color-border)' }}>
+          <div className="border-t pt-5" style={{ borderColor: 'var(--color-border)' }}>
             <p className="lab-note-text text-sm md:text-base leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{data.conclusion}</p>
           </div>
 
