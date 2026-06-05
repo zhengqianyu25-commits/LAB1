@@ -63,7 +63,7 @@ export default function ListenPage() {
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: playing ? 'var(--color-accent)' : 'var(--color-text-muted)' }} />
             <span className="text-[0.6rem] font-bold tracking-[0.15em] uppercase opacity-50" style={{ color: 'var(--color-text-muted)' }}>EP {episode.number}</span>
           </div>
-          <p className="listen-title text-base md:text-lg font-display font-medium" style={{ color: 'var(--color-text)' }}>{episode.titleEn}</p>
+          <p className="listen-title text-base md:text-lg font-display font-medium" style={{ color: 'var(--color-text)' }}>{episode.audioTitle || episode.titleEn}</p>
         </div>
       </div>
 
