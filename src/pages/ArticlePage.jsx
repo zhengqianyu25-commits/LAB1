@@ -11,6 +11,7 @@ import PullQuote from '../components/article/PullQuote';
 import RelatedStories from '../components/article/RelatedStories';
 import Engagement from '../components/common/Engagement';
 import AudioLink from '../components/article/AudioLink';
+import ChartCarousel from '../components/article/ChartCarousel';
 
 export default function ArticlePage() {
   const { slug } = useParams();
@@ -51,6 +52,8 @@ export default function ArticlePage() {
       />
 
       <AudioLink article={article} />
+
+      <ChartCarousel article={article} />
 
       <GainPayCard whoGains={article.whoGains} whoPays={article.whoPays} />
 
