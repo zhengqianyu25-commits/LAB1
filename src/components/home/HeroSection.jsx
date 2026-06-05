@@ -60,7 +60,6 @@ export default function HeroSection() {
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
               <div className="flex items-center gap-2 mb-2">
                 <span className="w-6 h-6 rounded-full flex items-center justify-center text-[0.55rem] font-bold" style={{ background: 'var(--color-accent)', color: '#fff' }}>{headline.number}</span>
-                <span className="text-[0.6rem] font-bold tracking-[0.12em] uppercase text-white/70">Lead Story</span>
               </div>
               <h2 className="text-xl md:text-2xl lg:text-3xl font-display font-medium leading-tight text-white max-w-md transition-colors group-hover:text-[var(--color-accent)]">
                 {headline.titleEn}
