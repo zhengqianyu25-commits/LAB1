@@ -9,34 +9,29 @@ export default function HomePage() {
     <div className="page-enter">
       <HeroSection />
 
-      {/* More Stories — horizontal scroll */}
-      <section className="pt-20 pb-10 overflow-hidden">
-        <div className="container-main flex items-end justify-between mb-10">
+      {/* More Stories */}
+      <section className="container-main pt-20 pb-10">
+        <div className="flex items-end justify-between mb-10">
           <span className="section-label">More Stories</span>
           <Link to="/stories" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
             View All &rarr;
           </Link>
         </div>
 
-        <div className="flex gap-5 overflow-x-auto pl-[max(1rem,calc(50vw-640px))] pr-8 pb-2 snap-x snap-mandatory" style={{ scrollbarWidth: 'none' }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {moreStories.map((a) => {
             const img = a.media?.images?.[0]?.src;
             return (
-              <Link key={a.slug} to={`/article/${a.slug}`} className="group shrink-0 w-[82vw] sm:w-[340px] snap-start">
-                <div className="aspect-[4/3] overflow-hidden mb-4" style={{ borderRadius: '3px', background: 'var(--color-bg-secondary)' }}>
+              <Link key={a.slug} to={`/article/${a.slug}`} className="group">
+                <div className="aspect-[3/4] overflow-hidden mb-4" style={{ borderRadius: '3px', background: 'var(--color-bg-secondary)' }}>
                   {img ? (
                     <img src={img} alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" loading="lazy" />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center text-7xl font-display font-bold opacity-5">{a.number}</div>
+                    <div className="w-full h-full flex items-center justify-center text-6xl font-display font-bold opacity-5">{a.number}</div>
                   )}
                 </div>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[0.65rem] font-bold opacity-25" style={{ color: 'var(--color-text-muted)' }}>{a.number}</span>
-                  <span className="text-[0.5rem] font-semibold tracking-[0.08em] uppercase px-2 py-0.5 rounded-full" style={{ background: 'var(--color-accent-dim)', color: 'var(--color-accent)' }}>{a.conceptEn}</span>
-                </div>
-                <h3 className="text-base font-display font-medium leading-snug group-hover:text-[var(--color-accent)] transition-colors line-clamp-2" style={{ color: 'var(--color-text)' }}>
-                  {a.titleEn}
-                </h3>
+                <span className="text-[0.6rem] font-bold opacity-30 mb-1.5 block" style={{ color: 'var(--color-text-muted)' }}>{a.number}</span>
+                <h3 className="text-sm font-display font-medium leading-snug group-hover:text-[var(--color-accent)] transition-colors line-clamp-2" style={{ color: 'var(--color-text)' }}>{a.titleEn}</h3>
               </Link>
             );
           })}
