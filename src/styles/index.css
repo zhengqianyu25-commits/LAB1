@@ -247,11 +247,11 @@ html.dark .article-width .opacity-40 { color: #CCCCCC !important; }
   font-weight: 500;
   letter-spacing: 0.01em;
 }
-html.dark .img-caption { color: #CBD5E1; font-weight: 400; }
+html.dark .img-caption { color: #FFFFFF !important; font-weight: 400; }
 @media (max-width: 767px) {
   .img-caption { font-size: 0.8125rem; }
 }
-html.dark .carousel-caption { color: #CBD5E1 !important; background: #1A1A18 !important; }
+html.dark .carousel-caption { color: #FFFFFF !important; background: #1A1A18 !important; }
 @media (max-width: 767px) {
   .img-caption { font-size: 0.95rem; }
 }
@@ -275,3 +275,5 @@ html.dark .carousel-caption { color: #CBD5E1 !important; background: #1A1A18 !im
   section { padding-top: 2rem; padding-bottom: 2rem; }
   .container-main { padding-left: 1rem; padding-right: 1rem; }
 }
+
+html.dark figcaption { color: #FFFFFF !important; }
