@@ -68,7 +68,7 @@ function ImageCarousel({ images }) {
         </button>
 
         {images[idx].caption && (
-          <p className="px-4 py-2.5 text-xs text-center leading-relaxed border-t" style={{ color: 'var(--color-text-muted)', borderColor: 'var(--color-border)', background: 'var(--color-bg)' }}>
+          <p className="px-4 py-2.5 img-caption text-center border-t" style={{ color: 'var(--color-text-muted)', borderColor: 'var(--color-border)', background: 'var(--color-bg)' }}>
             {images[idx].caption}
           </p>
         )}

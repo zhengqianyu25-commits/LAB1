@@ -67,7 +67,7 @@ export default function ChartCarousel({ article }) {
               <div className="aspect-[4/3] overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
                 <img src={chart.src} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               </div>
-              <p className="px-3 py-2 text-[0.7rem] leading-snug opacity-60 group-hover:opacity-100 transition-opacity" style={{ color: 'var(--color-text-secondary)' }}>{chart.caption}</p>
+              <p className="px-3 py-2 img-caption group-hover:opacity-100 transition-opacity" style={{ color: 'var(--color-text-muted)' }}>{chart.caption}</p>
             </div>
           ))}
         </div>
