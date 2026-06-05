@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import articles from '../data/articles';
 import HeroSection from '../components/home/HeroSection';
+
 export default function HomePage() {
   const moreStories = articles.slice(1, 4);
 
@@ -9,69 +10,88 @@ export default function HomePage() {
       <HeroSection />
 
       {/* More Stories */}
-      <section className="container-main pb-12">
-        <div className="flex items-center justify-between mb-6">
-          <span className="section-label">More Stories</span>
+      <section className="container-main pt-16 pb-8">
+        <div className="flex items-end justify-between mb-8">
+          <div>
+            <span className="section-label mb-2 block">More Stories</span>
+            <p className="text-xs opacity-50" style={{ color: 'var(--color-text-muted)' }}>Three perspectives. Six lenses.</p>
+          </div>
           <Link to="/stories" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
             All Stories &rarr;
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {moreStories.map((a, i) => {
             const img = a.media?.images?.[0]?.src;
             return (
-              <Link
-                key={a.slug}
-                to={`/article/${a.slug}`}
-                className="group border overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                style={{ borderColor: 'var(--color-border)', borderRadius: '2px', background: 'rgba(255,255,255,0.7)' }}
-              >
-                <div className="aspect-[16/10] overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
-                  {img && <img src={img} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />}
+              <Link key={a.slug} to={`/article/${a.slug}`} className="group block" style={{ borderRadius: '2px' }}>
+                <div className="aspect-[4/3] overflow-hidden mb-4" style={{ borderRadius: '2px', background: 'var(--color-bg-secondary)' }}>
+                  {img ? (
+                    <img src={img} alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-105" loading="lazy" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-5xl font-display font-bold opacity-5">{a.number}</div>
+                  )}
                 </div>
-                <div className="p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-[0.55rem] font-bold tracking-[0.12em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>
-                      {a.number}
-                    </span>
-                    <span className="text-[0.55rem] font-semibold tracking-[0.08em] uppercase" style={{ color: 'var(--color-accent)' }}>
-                      {a.conceptEn}
-                    </span>
-                  </div>
-                  <h3 className="text-sm font-display font-medium leading-snug line-clamp-2 group-hover:text-[var(--color-accent)] transition-colors" style={{ color: 'var(--color-text)' }}>
-                    {a.titleEn}
-                  </h3>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-[0.65rem] font-bold opacity-30" style={{ color: 'var(--color-text-muted)' }}>{a.number}</span>
+                  <span className="text-[0.55rem] font-semibold tracking-[0.08em] uppercase px-2 py-0.5 rounded-full" style={{ background: 'var(--color-accent-dim)', color: 'var(--color-accent)' }}>{a.conceptEn}</span>
                 </div>
+                <h3 className="text-base font-display font-medium leading-snug group-hover:text-[var(--color-accent)] transition-colors line-clamp-2" style={{ color: 'var(--color-text)' }}>
+                  {a.titleEn}
+                </h3>
+                <p className="text-xs leading-relaxed mt-1.5 opacity-50 line-clamp-1" style={{ color: 'var(--color-text-secondary)' }}>{a.summary}</p>
               </Link>
             );
           })}
         </div>
       </section>
 
-      {/* Lab Notes + About */}
-      <section className="container-main pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.75)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+      {/* Lab Notes */}
+      <section className="py-16 border-y" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
+        <div className="container-main">
+          <div className="max-w-3xl mx-auto text-center">
             <span className="section-label mb-3 block">Lab Notes</span>
-            <h3 className="text-xl md:text-2xl font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>We don&apos;t just report. We explain.</h3>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-text-secondary)' }}>
-              Every story includes a No Filter Lens — an economics concept that reveals the incentives, costs, and hidden mechanics behind the news. Six lenses for clearer thinking.
+            <h3 className="text-2xl md:text-3xl font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>
+              We don&apos;t just report. We explain.
+            </h3>
+            <p className="text-sm md:text-base leading-relaxed mb-2 max-w-xl mx-auto" style={{ color: 'var(--color-text-secondary)' }}>
+              Every story is anchored with one core economic concept — no jargon, just clarity.
             </p>
-            <Link to="/lab-notes" className="accent-link">Browse Lab Notes &rarr;</Link>
+            <p className="text-xs opacity-50 mb-8" style={{ color: 'var(--color-text-muted)' }}>
+              Scarcity &middot; Attention Economy &middot; Coordination Failure &middot; Labor Protection &middot; Externalities &middot; Creator Economy
+            </p>
+            <Link to="/lab-notes" className="accent-link text-sm">Browse All Lenses &rarr;</Link>
           </div>
+        </div>
+      </section>
 
-          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.75)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+      {/* About + FM */}
+      <section className="container-main py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.6)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
             <span className="section-label mb-3 block">About Us</span>
             <h3 className="text-xl md:text-2xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>No Filter Lab</h3>
-            <p className="text-xs font-semibold tracking-wider uppercase mb-2" style={{ color: 'var(--color-text-muted)' }}>无滤镜 Lab</p>
+            <p className="text-xs font-semibold tracking-wider uppercase mb-3" style={{ color: 'var(--color-text-muted)' }}>无滤镜 Lab</p>
             <p className="text-sm font-display italic mb-3" style={{ color: 'var(--color-accent)' }}>
               Clear stories. Hidden incentives.
             </p>
             <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-text-secondary)' }}>
-              We are an explanatory journalism project built by a team of six university students. Our mission: use economics to decode the hidden costs, incentives, and trade-offs behind the news.
+              Six university students. One mission: use economics to decode the hidden costs, incentives, and trade-offs behind the news you read every day.
             </p>
             <Link to="/about" className="accent-link">Learn More &rarr;</Link>
+          </div>
+
+          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.6)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+            <span className="section-label mb-3 block">No Filter FM</span>
+            <h3 className="text-xl md:text-2xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>Listen to the Stories</h3>
+            <p className="text-sm font-display italic mb-3" style={{ color: 'var(--color-accent)' }}>
+              Audio stories with synced subtitles.
+            </p>
+            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--color-text-secondary)' }}>
+              Six episodes. Bilingual lyrics. Economics that you can hear — with a click. Dive into the audio experience.
+            </p>
+            <Link to="/frequency" className="accent-link">Open FM &rarr;</Link>
           </div>
         </div>
       </section>
