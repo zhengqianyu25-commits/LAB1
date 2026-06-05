@@ -120,17 +120,12 @@ const contentMap = {
     quote: 'A child actor is a performer on screen, but still a child behind the camera.',
     sections: [
       {
-        image: '/media/lab-notes/labor-protection-1.png',
-        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent. To understand what child actors face, readers can enter Oscar\'s day and make the next choice for themselves...',
+        image: '/media/lab-notes/lp-1.png',
         source: 'Source: 66RPG interactive game',
+        text: 'This interactive game invites readers to step into the role of Oscar, a seven-year-old child actor who attends elementary school and lives with his mother in Beijing. Through scenes at home, school and a film set, the player sees how filming assignments can replace ordinary school time, how praise and pressure appear together, and how a child may have to choose between defending himself and remaining silent. To understand what child actors face, readers can enter Oscar\'s day and make the next choice for themselves...',
       },
       {
-        game: 'https://www.66rpg.com/game/1641073',
-        text: '',
-      },
-      {
-        image: '/media/lab-notes/labor-protection-2.png',
-        tableau: 'https://public.tableau.com/views/story_16881121764440/1_1?:language=zh-CN&:display_count=n&:origin=viz_share_link',
+        image: '/media/lab-notes/lp-2.png',
         source: 'Source: UNICEF Global Databases, last updated May 2022; visualized through Tableau Public',
         text: 'The chart represents the global child labor rate based on UNICEF\'s data in May 2022. Unfortunately, the data is incomplete, with a primary focus on Central Asia, South America, and Africa. Child labor is a social issue of global concern. Despite many countries having legislated against child labor practices, there are still numerous children forced into dangerous work. These children are deprived of a normal childhood and the right to education, significantly affecting their physical and mental well-being, as well as their future development.',
       },
