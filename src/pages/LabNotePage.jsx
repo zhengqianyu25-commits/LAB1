@@ -182,7 +182,7 @@ export default function LabNotePage() {
                     <iframe src={s.tableau} className="w-full h-full border-0" allowFullScreen />
                   </div>
                 ) : s.image ? (
-                  <div className="max-w-sm mx-auto cursor-zoom-in" onClick={() => setLightbox(s.image)}>
+                  <div className="max-w-md mx-auto cursor-zoom-in" onClick={() => setLightbox(s.image)}>
                     <img src={s.image} alt="" className="w-full h-auto hover:opacity-90 transition-opacity" loading="lazy" />
                   </div>
                 ) : null}
