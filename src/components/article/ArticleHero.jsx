@@ -6,10 +6,6 @@ export default function ArticleHero({ article }) {
           {article.titleEn}
         </h1>
 
-        <p className="mt-3 text-base md:text-lg leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-          {article.titleZh}
-        </p>
-
         <p className="mt-5 text-sm leading-relaxed opacity-60" style={{ color: 'var(--color-text-muted)' }}>{article.summary}</p>
       </div>
     </section>
