@@ -14,7 +14,6 @@ export default function HomePage() {
         <div className="flex items-end justify-between mb-8">
           <div>
             <span className="section-label mb-2 block">More Stories</span>
-            <p className="text-xs opacity-50" style={{ color: 'var(--color-text-muted)' }}>Three perspectives. Six lenses.</p>
           </div>
           <Link to="/stories" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
             All Stories &rarr;
