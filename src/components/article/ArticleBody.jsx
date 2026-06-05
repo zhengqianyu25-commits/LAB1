@@ -23,7 +23,7 @@ export default function ArticleBody({ body }) {
                   <img src={item.src} alt={item.alt || ''} className="w-full h-auto" loading="lazy" />
                 </div>
                 {item.caption && (
-                  <figcaption className="mt-3 text-xs text-center leading-relaxed opacity-60" style={{ color: 'var(--color-text-muted)' }}>
+                  <figcaption className="mt-3 text-sm text-left leading-relaxed opacity-80" style={{ color: 'var(--color-text-muted)' }}>
                     {item.caption}
                   </figcaption>
                 )}

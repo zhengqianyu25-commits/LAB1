@@ -182,7 +182,7 @@ export default function LabNotePage() {
                   </div>
                 ) : null}
               </div>
-              {s.source && <p className="mt-2 text-xs text-center leading-relaxed opacity-60 mb-3" style={{ color: 'var(--color-text-muted)' }}>{s.source}</p>}
+              {s.source && <p className="mt-2 text-sm text-left leading-relaxed opacity-80 mb-3" style={{ color: 'var(--color-text-muted)' }}>{s.source}</p>}
               {s.text && <p className="body-text mb-4" style={{ color: 'var(--color-text-secondary)' }}>{s.text}</p>}
             </div>
           ))}
