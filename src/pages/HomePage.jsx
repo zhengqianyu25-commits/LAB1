@@ -10,7 +10,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* More Stories */}
-      <section className="container-main pt-20 pb-10">
+      <section className="container-main py-12">
         <div className="flex items-end justify-between mb-10">
           <span className="section-label">More Stories</span>
           <Link to="/stories" className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
