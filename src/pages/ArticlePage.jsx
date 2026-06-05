@@ -40,6 +40,14 @@ export default function ArticlePage() {
       </div>
 
       <KeyStats data={article.keyStats} />
+
+      <section className="container-main pb-2">
+        <div className="article-width flex items-center gap-5">
+          <span className="section-label">{article.conceptEn}</span>
+          <span className="text-xs opacity-50" style={{ color: 'var(--color-text-muted)' }}>{article.readTime} read</span>
+        </div>
+      </section>
+
       <ArticleBody body={article.body} />
 
       {article.media && <MediaSection media={article.media} />}
