@@ -69,48 +69,27 @@ const contentMap = {
     quote: 'It should be for people to choose clothes, not for clothes to choose people.',
     sections: [
       {
-        image: '/media/lab-notes/cost-1.jpeg',
+        image: '/media/lab-notes/cc-1.png',
         text: 'The origin of shrinking women\'s clothing sizes comes from the "BM style" that has become popular in China in recent years. BM stands for Brandy Melville, an Italian women\'s clothing brand known for its small sizes. In the traditional Chinese concept of thinness as beauty, consumers who can wear its small size clothes are usually considered to be the representative of a good figure. Xing Junjie, founder of Iceonme, notes that women pursue beauty and fitness, which enables more people to accept the BM style.',
-        source: 'Source: Iceonme brand interview',
+        source: '',
       },
       {
-        image: '/media/lab-notes/cost-14.png',
+        image: '/media/lab-notes/cc-2.png',
+        source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
         text: 'The frequency of weighing among female netizens reveals deep body anxiety. 31.9% of female netizens weigh themselves once a day, compared to only 11.3% of males. 48.1% of male netizens weigh themselves only once a year. This data shows that women are significantly more affected by body image pressure than men.',
-        source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
       },
       {
-        image: '/media/lab-notes/cost-15.png',
+        image: '/media/lab-notes/cc-3.png',
+        source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
         text: '45.9% of netizens think they need to lose weight, with female respondents more likely to show anxiety about obesity. 46.4% are not worried about their figure, among which men account for a larger proportion. 7.7% of netizens consider themselves way too thin. The body anxiety gap between genders is a direct consequence of the shrinking-size market.',
-        source: 'Source: Momo: 2021 Netizens\' Body Anxiety Report',
       },
       {
-        image: '/media/lab-notes/cost-13.jpeg',
-        text: 'Health consequences of body anxiety are significant. In the past year, 47% of respondents reported emotional issues (anxiety, depression), 43% had gastrointestinal problems, 29% experienced headaches, and 19% suffered from body anxiety disorders. These are the hidden costs of a market that systematically excludes average body types.',
         source: 'Source: Doctor Lilac: 2022 National Health Insight Report',
+        text: 'Health consequences of body anxiety are significant. In the past year, 47% of respondents reported emotional issues (anxiety, depression), 43% had gastrointestinal problems, 29% experienced headaches, and 19% suffered from body anxiety disorders. These are the hidden costs of a market that systematically excludes average body types.',
       },
     ],
     conclusion: 'Shrinking clothing sizes are not merely a fashion trend — they are a coordination failure with measurable health costs. Each brand has an incentive to make sizes smaller, but no single brand can restore honest sizing alone. The result: 45.9% of people feel they need to lose weight, and 47% report emotional distress. The market saves on fabric; society pays in mental health.',
     relatedArticle: 'clothing-sizes',
-  },
-  'creator-economy': {
-    title: 'Why the old market said no to horror',
-    subtitle: 'What is signal failure in creative markets?',
-    intro: 'In any creative industry, producers rely on market signals to decide what to make. Box office returns and genre counts are clear signals: romance and feature films dominate; horror barely registers. But signals can become outdated when the distribution model changes. A low-box-office genre in cinemas may become a high-return niche on digital platforms.',
-    quote: 'Old data explains past choices. New platforms rewrite the rules.',
-    sections: [
-      {
-        image: '/media/lab-notes/ce-1.png',
-        source: 'Source: National Administration of China',
-        text: 'New films by genre. Horror is not even a separate category — it sits inside "others" (38 films), far behind romance (39) and feature films (133). For a decade, producers saw this chart and decided: don\'t waste budget on horror. The supply side had already abandoned the genre.',
-      },
-      {
-        image: '/media/lab-notes/ce-2.png',
-        source: 'Data source: https://www.sohu.com/a/70466255_398736',
-        text: 'Horror\'s share of China\'s annual box office. Always below 3%, often below 1%. On the demand side, audiences paid very little to see horror in theaters. That\'s two clear signals — low supply and low demand — telling filmmakers to stay away. These two charts explain why Li Hans\' professor gave his horror short a 79. In the old market, horror was a losing bet. Professors who discourage it aren\'t being arbitrary — they\'re reading the data of the past decade.',
-      },
-    ],
-    conclusion: 'But Li isn\'t playing the cinema game. He distributes on bilibili, where distribution costs are zero and a niche audience can find him through search and recommendations. The old logic said "go big or go home." The creator economy says "go small, go cheap, find your tribe." The charts don\'t prove Li wrong. They explain why his bet is a real bet — and why, if he wins, it\'s because the market structure has changed.',
-    relatedArticle: 'student-films',
   },
   externalities: {
     title: 'Rescue Economics: The Cost of Compassion',

@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../components/common/SectionTitle';
 
 export default function AboutPage() {
+  const [storyExpanded, setStoryExpanded] = useState(false);
+
   return (
     <div className="page-enter">
       {/* Hero */}
@@ -20,15 +22,28 @@ export default function AboutPage() {
       {/* Story */}
       <section className="py-16 border-y" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
         <div className="container-main max-w-3xl mx-auto">
-          <h2 className="text-lg font-display font-medium mb-8 text-center" style={{ color: 'var(--color-text)' }}>Our Story</h2>
-          <div className="space-y-5 text-sm leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>
-            <p>In an era where information overload and emotionally charged communication have become the norm, No Filter Lab was born.</p>
-            <p>We noticed that young people are surrounded daily by trending topics, short videos, and algorithmic feeds, yet they are often only told "what happened" without understanding "why it happened this way." Who benefits? Who bears the costs? What rules created the problem? And what choices might change the outcome?</p>
-            <p>We believe economics provides a powerful and practical analytical lens — not just academic theory, but a way to see through scarcity, information asymmetry, attention economy, externalities, incentive structures, and cost shifting.</p>
-            <p>No Filter Lab was founded by a group of creators passionate about youth culture and public issues. We set out to build an explanatory fusion news website. We do not write dense economics papers. Instead, we use clear journalistic writing, multimedia storytelling, and accessible explanatory frameworks so that 18–25-year-old Chinese university students can understand the operating logic behind events in just three minutes.</p>
-            <p>We focus on six themes closely connected to young people's lives: Concert consumption, urban cultural tourism, female body image anxiety, rights of minor actors, stray animal rescue, and student original film & TV creation.</p>
-            <p>No Filter Lab aims to be a "filter remover" for young readers — making a complex world understandable and turning clear, rational thinking into a daily habit.</p>
-          </div>
+          <h2 className="text-lg font-display font-medium mb-6 text-center" style={{ color: 'var(--color-text)' }}>Our Story</h2>
+          <p className="text-sm leading-relaxed text-center mb-4" style={{ color: 'var(--color-text-secondary)' }}>
+            In an era of information overload, No Filter Lab was born. We use economics to decode the hidden costs, incentives, and trade-offs behind trending topics — helping young readers understand not just what happened, but why.
+          </p>
+          {!storyExpanded ? (
+            <div className="text-center">
+              <button onClick={() => setStoryExpanded(true)} className="text-xs font-semibold tracking-wider uppercase hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
+                Read the Full Story &darr;
+              </button>
+            </div>
+          ) : (
+            <div className="space-y-4 text-sm leading-relaxed mt-6" style={{ color: 'var(--color-text-secondary)' }}>
+              <p>We noticed that young people are surrounded daily by trending topics, short videos, and algorithmic feeds, yet they are often only told "what happened" without understanding "why it happened this way."</p>
+              <p>We believe economics provides a powerful and practical analytical lens — a way to see through scarcity, information asymmetry, attention economy, externalities, incentive structures, and cost shifting.</p>
+              <p>No Filter Lab was founded by a group of creators passionate about youth culture and public issues, aiming to build an explanatory fusion news website for 18–25-year-old Chinese university students.</p>
+              <p>We focus on six themes: Concert consumption, urban cultural tourism, female body image anxiety, rights of minor actors, stray animal rescue, and student original film & TV creation.</p>
+              <p>No Filter Lab aims to be a "filter remover" for young readers — making a complex world understandable and turning clear, rational thinking into a daily habit.</p>
+              <div className="text-center mt-4">
+                <button onClick={() => setStoryExpanded(false)} className="text-xs opacity-50 hover:opacity-100" style={{ color: 'var(--color-text-muted)' }}>Show Less &uarr;</button>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
