@@ -18,20 +18,28 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {moreStories.map((a) => {
             const img = a.media?.images?.[0]?.src;
             return (
-              <Link key={a.slug} to={`/article/${a.slug}`} className="group">
-                <div className="aspect-[3/4] overflow-hidden mb-4" style={{ borderRadius: '3px', background: 'var(--color-bg-secondary)' }}>
+              <Link key={a.slug} to={`/article/${a.slug}`} className="group border transition-all duration-300 hover:-translate-y-1 hover:shadow-md" style={{ background: 'rgba(255,255,255,0.7)', borderColor: 'var(--color-border)', borderRadius: '3px', overflow: 'hidden' }}>
+                <div className="aspect-[16/9]" style={{ background: 'var(--color-bg-secondary)' }}>
                   {img ? (
                     <img src={img} alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" loading="lazy" />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center text-6xl font-display font-bold opacity-5">{a.number}</div>
+                    <div className="w-full h-full flex items-center justify-center text-5xl font-display font-bold opacity-5">{a.number}</div>
                   )}
                 </div>
-                <span className="text-[0.6rem] font-bold opacity-30 mb-1.5 block" style={{ color: 'var(--color-text-muted)' }}>{a.number}</span>
-                <h3 className="text-sm font-display font-medium leading-snug group-hover:text-[var(--color-accent)] transition-colors line-clamp-2" style={{ color: 'var(--color-text)' }}>{a.titleEn}</h3>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-[0.65rem] font-bold opacity-30" style={{ color: 'var(--color-text-muted)' }}>{a.number}</span>
+                    <span className="text-[0.5rem] font-semibold tracking-[0.08em] uppercase px-2 py-0.5 rounded-full" style={{ background: 'var(--color-accent-dim)', color: 'var(--color-accent)' }}>{a.conceptEn}</span>
+                  </div>
+                  <h3 className="text-sm md:text-base font-display font-medium leading-snug group-hover:text-[var(--color-accent)] transition-colors line-clamp-2" style={{ color: 'var(--color-text)' }}>
+                    {a.titleEn}
+                  </h3>
+                  <p className="text-xs leading-relaxed mt-2 opacity-40 line-clamp-1" style={{ color: 'var(--color-text-secondary)' }}>{a.summary}</p>
+                </div>
               </Link>
             );
           })}
