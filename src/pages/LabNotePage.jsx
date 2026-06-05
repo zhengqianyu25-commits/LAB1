@@ -83,6 +83,7 @@ const contentMap = {
         text: '45.9% of netizens think they need to lose weight, with female respondents more likely to show anxiety about obesity. 46.4% are not worried about their figure, among which men account for a larger proportion. 7.7% of netizens consider themselves way too thin. The body anxiety gap between genders is a direct consequence of the shrinking-size market.',
       },
       {
+        image: '/media/lab-notes/cc-3.png',
         source: 'Source: Doctor Lilac: 2022 National Health Insight Report',
         text: 'Health consequences of body anxiety are significant. In the past year, 47% of respondents reported emotional issues (anxiety, depression), 43% had gastrointestinal problems, 29% experienced headaches, and 19% suffered from body anxiety disorders. These are the hidden costs of a market that systematically excludes average body types.',
       },
