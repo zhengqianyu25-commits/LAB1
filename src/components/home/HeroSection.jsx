@@ -47,9 +47,19 @@ export default function HeroSection() {
           ))}
         </div>
 
-        <div className="mt-6 flex gap-3">
+        <div className="flex items-start gap-2 mt-5 text-white/60">
+          <span className="w-5 h-5 mt-0.5 rounded-full flex items-center justify-center text-[0.5rem] font-bold shrink-0 bg-[var(--color-accent)] text-white">{headline.number}</span>
+          <div>
+            <h2 className="text-lg md:text-xl font-display font-medium leading-snug text-white/90 hover:text-white transition-colors cursor-pointer" onClick={() => window.location.href = '/#/article/' + headline.slug}>
+              {headline.titleEn}
+            </h2>
+            <p className="text-sm leading-relaxed mt-1.5 text-white/50 line-clamp-2 max-w-lg">{headline.summary}</p>
+          </div>
+        </div>
+
+        <div className="mt-5 flex gap-3">
           <Link to={`/article/${headline.slug}`} className="inline-flex items-center gap-1.5 px-6 py-3 bg-white/10 backdrop-blur border border-white/20 rounded-full text-sm font-semibold text-white tracking-wider uppercase transition-all duration-300 hover:bg-white hover:text-black">
-            Read Lead Story <span>&rarr;</span>
+            Read Story <span>&rarr;</span>
           </Link>
           <Link to="/stories" className="inline-flex items-center gap-1.5 px-6 py-3 border border-white/20 rounded-full text-sm font-semibold text-white/80 tracking-wider uppercase transition-all duration-300 hover:border-white hover:text-white">
             All Stories
