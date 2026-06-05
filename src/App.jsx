@@ -9,6 +9,7 @@ import PodcastPage from './pages/PodcastPage';
 import ListenPage from './pages/ListenPage';
 import LabNotePage from './pages/LabNotePage';
 import TeamPage from './pages/TeamPage';
+import MissionPage from './pages/MissionPage';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="listen/:index" element={<ListenPage />} />
           <Route path="lab-note/:slug" element={<LabNotePage />} />
           <Route path="team" element={<TeamPage />} />
+          <Route path="mission" element={<MissionPage />} />
         </Route>
       </Routes>
     </HashRouter>
