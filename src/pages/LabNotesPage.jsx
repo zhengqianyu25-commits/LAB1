@@ -25,8 +25,8 @@ export default function LabNotesPage() {
       {/* Method */}
       <section className="py-12 border-t" style={{ borderColor: 'var(--color-border)', background: 'var(--color-bg-secondary)' }}>
         <div className="container-main max-w-4xl mx-auto">
-          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.7)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
-            <span className="section-label mb-5 block">How We Read the News</span>
+          <div className="p-8 md:p-10 border" style={{ background: '#1E1E1C', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+            <span className="mb-5 block" style={{ fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#7A5C10' }}>How We Read the News</span>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { step: '01', title: 'Pick', desc: 'Select stories with room for economic explanation.' },
@@ -34,9 +34,9 @@ export default function LabNotesPage() {
                 { step: '03', title: 'Explain', desc: 'Clear writing + multimedia. Three minutes to get it.' },
               ].map(item => (
                 <div key={item.step} className="text-center">
-                  <span className="text-4xl font-display font-medium opacity-10">{item.step}</span>
-                  <h4 className="text-sm font-display font-medium mt-2 mb-1" style={{ color: 'var(--color-text)' }}>{item.title}</h4>
-                  <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{item.desc}</p>
+                  <span className="text-4xl font-display font-medium opacity-15" style={{ color: '#fff' }}>{item.step}</span>
+                  <h4 className="text-sm font-display font-medium mt-2 mb-1" style={{ color: '#fff' }}>{item.title}</h4>
+                  <p className="text-xs leading-relaxed" style={{ color: '#bbb' }}>{item.desc}</p>
                 </div>
               ))}
             </div>

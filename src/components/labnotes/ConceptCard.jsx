@@ -43,29 +43,29 @@ export default function ConceptCard({ article, index }) {
   const c = cards[article.category] || { title: article.conceptEn, explanation: article.lensExplanation, quote: '', related: '' };
 
   return (
-    <div className={`news-card p-7 flex flex-col border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[var(--color-accent)]`} style={{ borderRadius: '2px', borderColor: 'var(--color-border)', background: 'rgba(255,255,255,0.7)' }}>
+    <div className={`news-card p-7 flex flex-col border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[var(--color-accent)]`} style={{ borderRadius: '2px', borderColor: 'var(--color-border)', background: '#1E1E1C' }}>
       <div className="flex items-center gap-3 mb-4">
-        <span className="text-3xl font-display font-medium opacity-10">{article.number}</span>
-        <span className="text-[0.55rem] font-semibold tracking-[0.12em] uppercase opacity-40" style={{ color: 'var(--color-text-muted)' }}>Lens {('0' + (index + 1)).slice(-2)}</span>
+        <span className="text-3xl font-display font-medium opacity-15" style={{ color: '#fff' }}>{article.number}</span>
+        <span className="text-[0.55rem] font-semibold tracking-[0.12em] uppercase" style={{ color: '#ccc' }}>Lens {('0' + (index + 1)).slice(-2)}</span>
       </div>
 
-      <h3 className="text-lg font-display font-medium mb-3 leading-snug" style={{ color: 'var(--color-text)' }}>{c.title}</h3>
-      <p className="text-sm mb-4 leading-relaxed" style={{ color: 'var(--color-text-secondary)' }}>{c.explanation}</p>
+      <h3 className="text-lg font-display font-medium mb-3 leading-snug card-title">{c.title}</h3>
+      <p className="text-sm mb-4 leading-relaxed card-text">{c.explanation}</p>
 
       {c.quote && (
-        <p className="text-sm font-display italic mb-4 px-3 py-2 border-l-[3px]" style={{ color: 'var(--color-accent)', borderColor: 'var(--color-accent)', background: 'var(--color-accent-dim)' }}>
+        <p className="text-sm font-display italic mb-4 px-3 py-2 border-l-[3px]" style={{ color: '#F5C518', borderColor: '#F5C518', background: 'rgba(122,92,16,0.08)' }}>
           &ldquo;{c.quote}&rdquo;
         </p>
       )}
 
       <div className="mt-auto pt-4">
-        <span className="section-label mb-1.5 block">Related Story</span>
-        <Link to={`/article/${article.slug}`} className="text-xs leading-relaxed mb-4 hover:opacity-70 transition-opacity" style={{ color: 'var(--color-accent)' }}>
+        <span className="mb-1.5 block" style={{ fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#F5C518' }}>Related Story</span>
+        <Link to={`/article/${article.slug}`} className="text-xs leading-relaxed mb-4 hover:opacity-70 transition-opacity" style={{ color: '#F5C518' }}>
           {article.titleEn} &rarr;
         </Link>
       </div>
 
-      <Link to={`/lab-note/${article.category}`} className="inline-flex items-center gap-1.5 mt-1 text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-70" style={{ color: 'var(--color-accent)' }}>Explore Data <span className="text-base">&rarr;</span></Link>
+      <Link to={`/lab-note/${article.category}`} className="inline-flex items-center gap-1.5 mt-1 text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-70" style={{ color: '#F5C518' }}>Explore Data <span className="text-base">&rarr;</span></Link>
     </div>
   );
 }

@@ -137,10 +137,10 @@
   .news-card {
     @apply border transition-all duration-300;
     border-color: var(--color-border);
-    background: rgba(255,255,255,0.75);
+    background: #1E1E1C;
   }
   .dark .news-card {
-    background: rgba(255,255,255,0.92);
+    background: #1E1E1C;
     border-color: rgba(255,255,255,0.12);
   }
   .news-card:hover {
@@ -152,6 +152,15 @@
     border-color: var(--color-accent);
     box-shadow: 0 8px 32px rgba(245,197,24,0.15);
   }
+  /* Lab Notes card text */
+  .news-card h3,
+  .news-card .card-title { color: #FFFFFF; }
+  .news-card .card-body,
+  .news-card p.card-text { color: #DDDDDD; }
+  html.dark .news-card h3,
+  html.dark .news-card .card-title { color: #FFFFFF; }
+  html.dark .news-card .card-body,
+  html.dark .news-card p.card-text { color: #E8E8E8; }
 
   /* Accent link */
   .accent-link {
