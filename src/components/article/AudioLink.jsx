@@ -8,7 +8,7 @@ export default function AudioLink({ article }) {
   if (idx === -1) return null;
 
   return (
-    <section className="container-main py-4">
+    <section className="container-main pt-0 pb-4">
       <div className="article-width">
         <div className="flex items-center gap-3 p-5 border rounded-sm" style={{ background: 'var(--color-accent-dim)', borderColor: 'var(--color-border)' }}>
           <button

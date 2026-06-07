@@ -85,7 +85,7 @@ export default function MediaSection({ media }) {
   const { images, video, audio, caption } = media;
 
   return (
-    <section className="container-main py-8">
+    <section className="container-main pt-8 pb-2">
       <div className="max-w-3xl mx-auto">
         {caption && (
           <p className="text-sm text-paper-text-muted mb-6 font-mono tracking-wide uppercase">{caption}</p>
