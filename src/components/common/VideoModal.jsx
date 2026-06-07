@@ -9,7 +9,7 @@ export default function VideoModal() {
       <div className="relative w-full max-w-4xl aspect-video" onClick={e => e.stopPropagation()}>
         <button onClick={closeVideo} className="absolute -top-10 right-0 text-white text-sm font-semibold tracking-wider uppercase opacity-70 hover:opacity-100">&times; Close</button>
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${video.src}?rel=0&modestbranding=1&showinfo=0&autoplay=1`}
+          src={`https://www.youtube.com/embed/${video.src}?rel=0&modestbranding=1&showinfo=0&autoplay=1`}
           className="w-full h-full rounded-sm"
           allow="autoplay; encrypted-media; picture-in-picture"
           allowFullScreen

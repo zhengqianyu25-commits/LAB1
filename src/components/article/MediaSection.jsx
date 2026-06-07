@@ -10,7 +10,7 @@ function VideoThumb({ article }) {
       onClick={() => playVideo(video)}
     >
       <img
-        src={`https://img.youtube.com/vi/${video.src}/hqdefault.jpg`}
+        src={`https://i.ytimg.com/vi/${video.src}/hqdefault.jpg`}
         alt={video.caption || ''}
         className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity"
       />

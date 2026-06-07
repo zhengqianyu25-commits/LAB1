@@ -27,7 +27,7 @@ const articles = [
     lensExplanation: 'Li Yang\'s story reveals the hidden economics of concert ticket scalping. Scarcity of tickets — driven by fixed venue capacity and surging demand — creates a price gap that scalpers exploit. Their profits depend not just on individual transaction prices but on access to supply channels, the overall money flow cycle, and market volatility. When conditions shift, scalpers can lose everything overnight.',
     whoGains: 'Scalpers with connections to ticketing companies acquire tickets below face value and profit from the resale markup. Some organizers and ticketing intermediaries benefit from the secondary market flow. Fans willing to pay premiums gain access to sold-out shows.',
     whoPays: 'Regular fans face inflated prices or are shut out entirely. Scalpers themselves bear significant risk — thousands of tickets can go unsold when events are disrupted, as happened during the Xue Zhiqian Nanjing concert. The pandemic showed how fragile the entire resale ecosystem is.',
-    pullQuote: 'For every scalper counting cash outside a sold-out arena, there is another left holding worthless tickets when the traffic doesn\'t move. ——Liyang',
+    pullQuote: 'For every scalper counting cash outside a sold-out arena, there is another left holding worthless tickets when the traffic doesn\'t move.——Liyang',
     takeaway: 'Li Yang\'s experience shows that concert ticket scalping is a high-risk arbitrage business built on scarcity, connections, and market timing. The same forces that create massive profits can also produce devastating losses when conditions change overnight.',
 
     visualStyle: 'ticket-overlap', accentColor: '#B8860B',
