@@ -215,7 +215,7 @@ const articles = [
         { src: 'media/clothing-sizes/doc1.png', alt: 'The children\'s size looks even larger than the women\'s versi', caption: 'The children\'s size looks even larger than the women\'s version.' },
         { src: 'media/clothing-sizes/doc2.png', alt: 'A comparison of a Spice Girls-style tight outfit and a norma', caption: 'A comparison of a Spice Girls-style tight outfit and a normal-sized garment.' },
         { src: 'media/clothing-sizes/doc3.jpeg', alt: 'Women\'s clothing sizes continue to shrink across the market.', caption: 'Women\'s clothing sizes continue to shrink across the market.' },
-        { src: 'media/clothing-sizes/doc4.jpeg', alt: 'Miss Xu, the owner of the Plus-size women’s clothing store, ', caption: 'Miss Xu, the owner of the Plus-size women’s clothing store, is tidying up the clothes.' }
+        { src: 'media/clothing-sizes/gallery.jpeg', alt: 'Miss Xu, the owner of the Plus-size women’s clothing store, ', caption: 'Miss Xu, the owner of the Plus-size women’s clothing store, is tidying up the clothes.' }
       ],
     },
   },

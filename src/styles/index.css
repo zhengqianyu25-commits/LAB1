@@ -25,7 +25,7 @@
   --color-text: #0D0D0D;
   --color-text-secondary: #3A3A3A;
   --color-text-muted: #5C5C5C;
-  --color-border: #4E4E4C;
+  --color-border: #5A5A54;
   --color-accent: #F5C518;
   --color-accent-light: #3D3108;
   --color-accent-dim: rgba(245, 197, 24, 0.1);
@@ -164,13 +164,21 @@
   }
   .accent-link:hover { opacity: 0.7; }
 
-  /* Divider */
-  .section-divider {
+  /* Unified dividers */
+  .section-divider,
+  .section-divider-dark {
     border: 0;
     height: 1px;
-    background: var(--color-border);
+    background: linear-gradient(to right, transparent, var(--color-accent), var(--color-accent), var(--color-accent), transparent);
+    opacity: 0.4;
     margin: 3rem 0;
   }
+  html.dark .section-divider,
+  html.dark .section-divider-dark,
+  html.dark [style*="border-bottom"],
+  html.dark [style*="border-top"],
+  html.dark .border-b,
+  html.dark .border-t { border-color: var(--color-border) !important; }
 }
 
 html.dark .hero-section h1,

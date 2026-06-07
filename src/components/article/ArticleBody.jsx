@@ -33,7 +33,6 @@ export default function ArticleBody({ body }) {
           return null;
         })}
       </div>
-      <hr className="section-divider article-width" />
     </section>
   );
 }

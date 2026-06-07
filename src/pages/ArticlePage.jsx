@@ -7,7 +7,7 @@ import GainPayCard from '../components/article/GainPayCard';
 import ArticleTakeaway from '../components/article/ArticleTakeaway';
 import MediaSection from '../components/article/MediaSection';
 import KeyStats from '../components/article/KeyStats';
-import PullQuote from '../components/article/PullQuote';
+
 import RelatedStories from '../components/article/RelatedStories';
 import Engagement from '../components/common/Engagement';
 import AudioLink from '../components/article/AudioLink';
@@ -55,8 +55,6 @@ export default function ArticlePage() {
       <AudioLink article={article} />
 
       <ChartCarousel article={article} />
-
-      <PullQuote quote={article.pullQuote} />
 
       <NoFilterLens
         conceptEn={article.conceptEn}
