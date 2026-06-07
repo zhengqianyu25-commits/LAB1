@@ -10,12 +10,12 @@ export default function StoryEntry({ article, index }) {
       className={`group flex gap-6 py-7 border-b transition-all duration-300 px-3 -mx-3 rounded-sm animate-in stagger-${Math.min(delay + 1, 6)}`}
       style={{
         borderColor: 'var(--color-border)',
-        background: 'rgba(255,255,255,0.75)',
+        background: '#1E1E1C',
       }}
       onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.9)'; e.currentTarget.style.borderColor = 'transparent'; }}
       onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.75)'; e.currentTarget.style.borderColor = 'var(--color-border)'; }}
     >
-      <div className="w-28 h-20 shrink-0 overflow-hidden flex-shrink-0 rounded-sm" style={{ background: 'rgba(255,255,255,0.5)' }}>
+      <div className="w-28 h-20 shrink-0 overflow-hidden flex-shrink-0 rounded-sm" style={{ background: '#1E1E1C' }}>
         {img ? (
           <img src={img} alt="" className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
         ) : (

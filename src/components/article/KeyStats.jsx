@@ -16,12 +16,12 @@ export default function KeyStats({ data }) {
           </div>
 
           {/* Compare */}
-          <div className="border p-2 flex flex-col justify-center" style={{ background: 'rgba(255,255,255,0.5)', borderColor: 'var(--color-border)' }}>
+          <div className="border p-2 flex flex-col justify-center" style={{ background: '#1E1E1C', borderColor: 'var(--color-border)' }}>
             <span className="text-xs opacity-50 mb-1" style={{ color: 'var(--color-text-muted)' }}>{data.compareA.label}</span>
             <span className="text-lg font-display font-bold" style={{ color: 'var(--color-text)' }}>{data.compareA.value}</span>
           </div>
 
-          <div className="border p-2 flex flex-col justify-center" style={{ background: 'rgba(255,255,255,0.5)', borderColor: 'var(--color-border)' }}>
+          <div className="border p-2 flex flex-col justify-center" style={{ background: '#1E1E1C', borderColor: 'var(--color-border)' }}>
             <span className="text-xs opacity-50 mb-1" style={{ color: 'var(--color-text-muted)' }}>{data.compareB.label}</span>
             <span className="text-lg font-display font-bold" style={{ color: 'var(--color-accent)' }}>{data.compareB.value}</span>
           </div>

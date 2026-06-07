@@ -9,7 +9,7 @@ export default function StoryStrip({ article }) {
       className="group flex items-center gap-3 px-4 py-3.5 border-b transition-all duration-300"
       style={{
         borderColor: 'var(--color-border)',
-        background: 'rgba(255,255,255,0.55)',
+        background: '#1E1E1C',
       }}
       onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.8)'}
       onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.55)'}

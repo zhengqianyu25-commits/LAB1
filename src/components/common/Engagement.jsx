@@ -75,7 +75,7 @@ export default function Engagement({ slug }) {
               placeholder="Add a comment..."
               maxLength={280}
               className="flex-1 px-4 py-2.5 text-sm border rounded-sm outline-none transition-colors focus:border-[var(--color-accent)]"
-              style={{ background: 'rgba(255,255,255,0.7)', borderColor: 'var(--color-border)', color: 'var(--color-text)' }}
+              style={{ background: '#1E1E1C', borderColor: 'var(--color-border)', color: 'var(--color-text)' }}
             />
             <button
               type="submit"

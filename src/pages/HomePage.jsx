@@ -22,7 +22,7 @@ export default function HomePage() {
           {moreStories.map((a) => {
             const img = a.media?.images?.[0]?.src;
             return (
-              <Link key={a.slug} to={`/article/${a.slug}`} className="group border transition-all duration-300 hover:-translate-y-1 hover:shadow-md" style={{ background: 'rgba(255,255,255,0.7)', borderColor: 'var(--color-border)', borderRadius: '3px', overflow: 'hidden' }}>
+              <Link key={a.slug} to={`/article/${a.slug}`} className="group border transition-all duration-300 hover:-translate-y-1 hover:shadow-md" style={{ background: '#1E1E1C', borderColor: 'var(--color-border)', borderRadius: '3px', overflow: 'hidden' }}>
                 <div className="aspect-[16/9]" style={{ background: 'var(--color-bg-secondary)' }}>
                   {img ? (
                     <img src={img} alt="" className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" loading="lazy" />
@@ -68,7 +68,7 @@ export default function HomePage() {
       {/* About + FM */}
       <section className="container-main py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.6)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+          <div className="p-8 md:p-10 border" style={{ background: '#1E1E1C', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
             <span className="section-label mb-3 block">About Us</span>
             <h3 className="text-xl md:text-2xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>No Filter Lab</h3>
             <p className="text-xs font-semibold tracking-wider uppercase mb-3" style={{ color: 'var(--color-text-muted)' }}>无滤镜 Lab</p>
@@ -81,7 +81,7 @@ export default function HomePage() {
             <Link to="/about" className="accent-link">Learn More &rarr;</Link>
           </div>
 
-          <div className="p-8 md:p-10 border" style={{ background: 'rgba(255,255,255,0.6)', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+          <div className="p-8 md:p-10 border" style={{ background: '#1E1E1C', borderColor: 'var(--color-border)', borderRadius: '2px' }}>
             <span className="section-label mb-3 block">No Filter Audio</span>
             <h3 className="text-xl md:text-2xl font-display font-medium mb-2" style={{ color: 'var(--color-text)' }}>Listen to the Stories</h3>
             <p className="text-sm font-display italic mb-3" style={{ color: 'var(--color-accent)' }}>

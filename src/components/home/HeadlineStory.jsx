@@ -11,7 +11,7 @@ export default function HeadlineStory({ article }) {
         to={`/article/${article.slug}`}
         className="group block"
       >
-        <div className="grid md:grid-cols-2 gap-0 news-card overflow-hidden transition-all duration-400" style={{ borderRadius: '2px', background: 'rgba(255,255,255,0.75)' }}
+        <div className="grid md:grid-cols-2 gap-0 news-card overflow-hidden transition-all duration-400" style={{ borderRadius: '2px', background: '#1E1E1C' }}
           onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 12px 48px rgba(0,0,0,0.15)'; e.currentTarget.style.borderColor = 'var(--color-accent)'; }}
           onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.borderColor = 'var(--color-border)'; }}
         >
