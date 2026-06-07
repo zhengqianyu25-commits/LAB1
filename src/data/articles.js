@@ -249,7 +249,7 @@ const articles = [
     lensExplanation: 'The case of Zhou Anxin exposes the hidden cost of production pressure. When a crew saves time by using real physical impact or long shooting hours, that cost is shifted onto children\'s bodies, emotions, and education. The lack of uniform industry standards means child performers\' rights depend on individual crew awareness rather than enforceable regulations.',
     whoGains: 'Production companies save time and money by avoiding special effects, staged actions, and child-friendly scheduling. The entertainment industry benefits from child performers\' marketability without bearing the full cost of their protection.',
     whoPays: 'Child performers bear the physical and psychological toll of adult working conditions, sleep deprivation, and irregular schedules. Their education and wellbeing are compromised. Parents face distress watching their children suffer. Society lacks a system to hold production companies accountable.',
-    pullQuote: '“Look at child performers as children in need of help, not just as stars.”  — Yu Hailong, project leader of the “Sparkling Stars” project',
+    pullQuote: 'Look at child performers as children in need of help, not just as stars. — Yu Hailong, project leader of the \'Sparkling Stars\' project',
     takeaway: 'The Zhou Anxin case reveals that child performer protection in China relies on individual crew awareness rather than enforceable rules. Until uniform standards for filming hours, meals, and physical safety are legislated, the hidden costs of production will continue to fall on the most vulnerable.',
 
     visualStyle: 'spotlight-stage', accentColor: '#6B3FA0',
@@ -359,7 +359,7 @@ const articles = [
       '“The professor gave me a score of 79, a very low score, because he did not like my theme. He preferred themes like suspense and love,” director Li Hans said.',
       '“The professor thinks that I shoot genre films that can be industrialized. He thinks that literary and artistic films need more ideas, so other students generally shoot a lot of youth literary and artistic love films, which is easier to get the teacher\'s approval.”',
       'Even though he was denied, the director still decided to make movies according to his hobbies.',
-      'Li Hans said, “Everyone\'s aesthetic is different. Everyone should have the right to choose the topic they like. I just like the funny things like American horror movies.”',
+      'Li Hans said, Everyone\'s aesthetic is different. Everyone should have the right to choose the topic they like. I just like the funny things like American horror movies.”',
       { "type": "image", "src": "media/student-films/image1.png", "alt": "The living environment of director, Li Hans.", "caption": "The living environment of director, Li Hans." },
       'The professor watched the thriller short film released on the Internet and learned the audience\'s views on the film. He understood the director\'s insistence.',
       'The professor commented, “It is really entertaining.”',
@@ -381,7 +381,7 @@ const articles = [
     lensExplanation: 'In the creator economy, individuals use digital platforms to produce and monetize content directly, bypassing traditional media gatekeepers.',
     whoGains: 'Platform audiences gain access to authentic, low-budget genre content that mainstream production ignores. Student creators who follow their interests build genuine portfolios and niche audiences. The internet rewards authenticity over academic approval.',
     whoPays: 'Student creators who pursue genre work risk lower grades from professors with different aesthetic preferences. The industry loses diverse talent when students are pushed toward homogeneous \'artistic\' themes. Audiences miss out on genre innovation that could emerge from student experimentation.',
-    pullQuote: '“Everyone\'s aesthetic is different. Everyone should have the right to choose the topic they like.” —— Li Hans, director of Bangzijing Murder Incident',
+    pullQuote: 'Everyone\'s aesthetic is different. Everyone should have the right to choose the topic they like. —— Li Hans, director of Bangzijing Murder Incident',
     takeaway: 'Li Hans\' story shows that academic evaluation and market demand can send completely different signals to student creators. When a professor\'s preference for romance films punishes a horror filmmaker with a 79, the real loss isn\'t the grade — it\'s the students who stop making what they love in pursuit of approval.',
 
     visualStyle: 'camera-lens', accentColor: '#2C6E8F',
