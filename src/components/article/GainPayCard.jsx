@@ -1,6 +1,6 @@
 export default function GainPayCard({ whoGains, whoPays }) {
   return (
-    <section className="container-main py-6">
+    <section className="container-main pt-2 pb-2">
       <div className="article-width">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="p-6 border" style={{ borderColor: 'var(--color-accent)', background: 'var(--color-accent-dim)' }}>
