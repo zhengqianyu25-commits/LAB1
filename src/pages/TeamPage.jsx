@@ -4,7 +4,7 @@ import SectionTitle from '../components/common/SectionTitle';
 const members = [
   { name: 'Fang Yiran', role: 'Editor-in-Chief', desc: 'Oversees editorial direction, approves final content, and ensures every story meets the site\'s clarity and accuracy standards.' },
   { name: 'Tang Yani', role: 'Executive Producer', desc: 'Manages production workflow, coordinates contributors, and ensures timely delivery of multimedia stories.' },
-  { name: 'Ma Zihan', role: 'Reviewing Expert', desc: 'Reviews factual accuracy, checks sources, and verifies data interpretation before publication.' },
+  { name: 'Ma Zihan', role: 'Reviewing Expert', photo: '/media/mazihan.png', desc: 'Reviews factual accuracy, checks sources, and verifies data interpretation before publication.' },
   { name: 'Zheng Qianyu', role: 'Creative Director', desc: 'Defines visual identity, oversees layout and graphics, and ensures consistency across all story formats.' },
   { name: 'Zhu Kaixue', role: 'Chief Commentator', desc: 'Writes opinion-led analysis and provides editorial perspective on social and cultural issues.' },
   { name: 'Mo Siyang', role: 'Chief Economic Analyst', desc: 'Leads economics-angle storytelling, interprets market signals and incentives in each feature.' },
@@ -28,6 +28,11 @@ export default function TeamPage() {
         <div className="max-w-2xl mx-auto space-y-4">
           {members.map((m, i) => (
             <div key={i} className="flex flex-col md:flex-row md:items-center gap-3 md:gap-6 p-5 border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+              {m.photo && (
+                <div className="shrink-0">
+                  <img src={m.photo} alt={m.name} className="w-20 h-20 rounded-full object-cover border-2" style={{ borderColor: 'var(--color-accent)' }} loading="lazy" />
+                </div>
+              )}
               <div className="md:w-36 shrink-0">
                 <p className="text-sm font-display font-medium" style={{ color: 'var(--color-text)' }}>{m.name}</p>
                 <p className="text-[0.6rem] font-semibold tracking-wider uppercase" style={{ color: 'var(--color-accent)' }}>{m.role}</p>
