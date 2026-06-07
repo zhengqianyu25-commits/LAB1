@@ -132,6 +132,26 @@ const contentMap = {
     ],
     conclusion: 'This data page connects the child actor story to a broader labor-protection question. Child actors are not identical to children in hazardous labor, but both cases ask how adults, institutions and industries should prevent children from carrying risks they cannot fully understand or negotiate. The interactive game makes that question experiential, while the global map reminds readers that children\'s work and protection remain urgent public issues.',
     relatedArticle: 'child-stars',
+  },
+  'creator-economy': {
+    title: 'What is Creator Economy? How do content creators select their topics?',
+    subtitle: 'What is Creator Economy?',
+    intro: 'In the creator economy, individuals use digital platforms to produce and monetize content directly, bypassing traditional media gatekeepers. Low-budget creators can turn small spaces, daily problems and niche interests into online attention. But audience approval does not always match institutional evaluation. The dorm horror film shows a recognition gap: platforms reward entertainment and originality, while course grading may reward safer or more traditional aesthetics.',
+    quote: 'Everyone\'s aesthetic is different. Everyone should have the right to choose the topic they like. —— Li Hans, director of Bangzijing Murder Incident',
+    sections: [
+      {
+        image: '/media/lab-notes/ce-1.png',
+        source: 'Source: National Administration of China',
+        text: 'New films by genre. Horror is not even a separate category — it sits inside "others" (38 films), far behind romance (39) and feature films (133). For a decade, producers saw this chart and decided: don\'t waste budget on horror. The supply side had already abandoned the genre.',
+      },
+      {
+        image: '/media/lab-notes/ce-2.png',
+        source: 'Source: https://www.sohu.com/a/70466255_398736',
+        text: 'Horror\'s share of China\'s annual box office. Always below 3%, often below 1%. On the demand side, audiences paid very little to see horror in theaters. That\'s two clear signals — low supply and low demand — telling filmmakers to stay away.',
+      },
+    ],
+    conclusion: 'These two charts explain why Li Hans\' professor gave his horror short a 79. In the old market, horror was a losing bet. Professors who discourage it aren\'t being arbitrary — they\'re reading the data of the past decade. But Li isn\'t playing the cinema game. He distributes on bilibili, where distribution costs are zero and a niche audience can find him through search and recommendations. The old logic said "go big or go home." The creator economy says "go small, go cheap, find your tribe." The charts don\'t prove Li wrong. They explain why his bet is a real bet — and why, if he wins, it\'s because the market structure has changed.',
+    relatedArticle: 'student-films',
   }
 };
 
@@ -178,7 +198,7 @@ export default function LabNotePage() {
                   </div>
                 ) : s.image ? (
                   <div className="cursor-zoom-in" onClick={() => setLightbox(s.image)}>
-                    <img src={s.image} alt="" className="w-full h-auto hover:opacity-90 transition-opacity" loading="lazy" />
+                    <img src={s.image.startsWith('/') ? import.meta.env.BASE_URL + s.image.slice(1) : s.image} alt="" className="w-full h-auto hover:opacity-90 transition-opacity" loading="lazy" />
                   </div>
                 ) : null}
               </div>
