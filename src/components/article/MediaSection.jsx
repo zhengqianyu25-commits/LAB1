@@ -10,7 +10,7 @@ function VideoThumb({ article }) {
       onClick={() => playVideo(video)}
     >
       <img
-        src={`https://i.ytimg.com/vi/${video.src}/hqdefault.jpg`}
+        src={`https://img.youtube.com/vi/${video.src}/hqdefault.jpg`}
         alt={video.caption || ''}
         className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity"
       />
@@ -68,7 +68,7 @@ function ImageCarousel({ images }) {
         </button>
 
         {images[idx].caption && (
-          <p className="px-4 py-3 img-caption carousel-caption text-center border-t" style={{ color: '#333', borderColor: 'var(--color-border)', background: '#F5F5F3' }}>
+          <p className="px-4 py-3 img-caption carousel-caption text-left border-t" style={{ color: '#333', borderColor: 'var(--color-border)', background: '#F5F5F3' }}>
             {images[idx].caption}
           </p>
         )}
