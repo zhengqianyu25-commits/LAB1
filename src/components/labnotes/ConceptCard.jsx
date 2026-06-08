@@ -43,7 +43,7 @@ export default function ConceptCard({ article, index }) {
   const c = cards[article.category] || { title: article.conceptEn, explanation: article.lensExplanation, quote: '', related: '' };
 
   return (
-    <div className={`news-card p-7 flex flex-col border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[var(--color-accent)]`} style={{ borderRadius: '2px', borderColor: 'var(--color-border)', background: '#1E1E1C' }}>
+    <div className={`news-card p-7 flex flex-col border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[var(--color-accent)]`} style={{ borderRadius: '2px', borderColor: 'var(--color-border)',  }}>
       <div className="flex items-center gap-3 mb-4">
         <span className="text-3xl font-display font-medium opacity-15" style={{ color: '#fff' }}>{article.number}</span>
         <span className="text-[0.55rem] font-semibold tracking-[0.12em] uppercase" style={{ color: '#ccc' }}>Lens {('0' + (index + 1)).slice(-2)}</span>

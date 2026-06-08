@@ -137,7 +137,7 @@
   .news-card {
     @apply border transition-all duration-300;
     border-color: var(--color-border);
-    background: #1E1E1C;
+    background: #FFFFFF;
   }
   .dark .news-card {
     background: #1E1E1C;
@@ -154,13 +154,16 @@
   }
   /* Lab Notes card text */
   .news-card h3,
-  .news-card .card-title { color: #FFFFFF; }
+  .news-card .card-title { color: #0A0A0A; }
   .news-card .card-body,
-  .news-card p.card-text { color: #DDDDDD; }
+  .news-card p.card-text { color: #1A1A1A; }
   html.dark .news-card h3,
   html.dark .news-card .card-title { color: #FFFFFF; }
   html.dark .news-card .card-body,
   html.dark .news-card p.card-text { color: #E8E8E8; }
+  /* Generic card bg — white in light, dark in dark */
+  .card-panel { background: #FFFFFF; }
+  html.dark .card-panel { background: #1E1E1C; }
 
   /* Accent link */
   .accent-link {

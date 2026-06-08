@@ -41,7 +41,7 @@ export default function RelatedStories({ article }) {
               key={r.slug}
               to={`/article/${r.slug}`}
               className="group flex gap-4 p-4 border transition-all duration-300 hover:border-[var(--color-accent)]"
-              style={{ borderColor: 'var(--color-border)', background: '#1E1E1C', borderRadius: '2px' }}
+              style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}
             >
               <div className="w-20 h-16 shrink-0 overflow-hidden rounded-sm" style={{ background: 'var(--color-bg-secondary)' }}>
                 {r.media?.images?.[0] && (

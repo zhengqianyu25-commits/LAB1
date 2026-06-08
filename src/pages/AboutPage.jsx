@@ -37,12 +37,12 @@ export default function AboutPage() {
       <section className="container-main py-16">
         <div className="max-w-3xl mx-auto">
           <div className="grid md:grid-cols-2 gap-5 mb-12">
-            <div className="p-8 text-center border" style={{ borderColor: 'var(--color-border)', borderRadius: '2px', background: '#1E1E1C' }}>
-              <h3 className="text-sm font-display font-medium mb-3" style={{ color: '#fff' }}>Our Team</h3>
-              <p className="text-sm leading-relaxed mb-4" style={{ color: '#bbb' }}>
+            <div className="p-8 text-center border card-panel" style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}>
+              <h3 className="text-sm font-display font-medium mb-3" style={{ color: 'var(--color-text)' }}>Our Team</h3>
+              <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--color-text-secondary)' }}>
                 Six students from Communication University of China. A flat collaboration model with no editor-in-chief.
               </p>
-              <Link to="/team" className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-70" style={{ color: '#F5C518' }}>
+              <Link to="/team" className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase transition-all hover:opacity-70" style={{ color: 'var(--color-accent)' }}>
                 Meet the Team &rarr;
               </Link>
             </div>

@@ -8,7 +8,7 @@ export default function StoryRow({ article }) {
     <Link
       to={`/article/${article.slug}`}
       className="group grid grid-cols-1 md:grid-cols-2 gap-0 border overflow-hidden transition-all duration-300 hover:border-[var(--color-accent)]"
-      style={{ borderColor: 'var(--color-border)', background: '#1E1E1C', borderRadius: '2px' }}
+      style={{ borderColor: 'var(--color-border)', borderRadius: '2px' }}
     >
       <div className="aspect-[4/3] md:aspect-auto overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
         {img ? (

@@ -63,7 +63,7 @@ export default function ChartCarousel({ article }) {
         <span className="section-label mb-4 block">Data Behind the Story</span>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-5">
           {data.charts.map((chart, i) => (
-            <div key={i} className="group border rounded-sm overflow-hidden cursor-zoom-in transition-all duration-300 hover:border-[var(--color-accent)]" style={{ borderColor: 'var(--color-border)', background: '#1E1E1C' }} onClick={() => setLightbox(chart)}>
+            <div key={i} className="group border rounded-sm overflow-hidden cursor-zoom-in transition-all duration-300 hover:border-[var(--color-accent)]" style={{ borderColor: 'var(--color-border)',  }} onClick={() => setLightbox(chart)}>
               <div className="aspect-[4/3] overflow-hidden" style={{ background: 'var(--color-bg-secondary)' }}>
                 <img src={chart.src} alt="" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
               </div>
